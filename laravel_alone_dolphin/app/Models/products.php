@@ -14,9 +14,11 @@ class products extends Model
     public function orders_details(){
         return $this->hasMany('App\Models\orders_details','product_id','id');
     }
-    public function products_images(){
-        return $this->hasMany('App\Models\products_images','product_id','id');
+
+    public function product_images(){
+        return $this->hasMany('App\Models\product_images','product_id','id');
     }
+
     public function product_details(){
         return $this->hasMany('App\Models\product_details','product_id','id');
     }
