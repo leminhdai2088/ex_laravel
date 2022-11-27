@@ -78,6 +78,9 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 1,
                 'product_category_id' => 2,
+
+                'room_id' => 1,
+
                 'name' => 'Pure Pineapple',
                 'description' => 'Lorem ipsum dolor sit amet, consectetur ing elit, sed do eiusmod tempor sum dolor sit amet, consectetur adipisicing elit, sed do mod tempor',
                 'price' => 629.99,
@@ -90,6 +93,9 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 2,
                 'product_category_id' => 2,
+
+                'room_id' => 1,
+
                 'name' => 'Guangzhou sweater',
                 'description' => null,
                 'price' => 35,
@@ -102,6 +108,9 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 3,
                 'product_category_id' => 2,
+
+                'room_id' => 2,
+
                 'name' => 'Guangzhou sweater',
                 'description' => null,
                 'price' => 35,
@@ -114,6 +123,9 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 4,
                 'product_category_id' => 1,
+
+                'room_id' => 2,
+
                 'name' => 'Microfiber Wool Scarf',
                 'description' => null,
                 'price' => 64,
@@ -126,6 +138,8 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 5,
                 'product_category_id' => 3,
+                'room_id' => 3,
+
                 'name' => "Men's Painted Hat",
                 'description' => null,
                 'price' => 44,
@@ -138,6 +152,8 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 6,
                 'product_category_id' => 2,
+                'room_id' => 3,
+
                 'name' => 'Converse Shoes',
                 'description' => null,
                 'price' => 35,
@@ -150,6 +166,8 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 7,
                 'product_category_id' => 1,
+                'room_id' => 4,
+
                 'name' => 'Pure Pineapple',
                 'description' => null,
                 'price' => 64,
@@ -162,6 +180,8 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 8,
                 'product_category_id' => 1,
+                'room_id' => 4,
+
                 'name' => '2 Layer Windbreaker',
                 'description' => null,
                 'price' => 44,
@@ -174,6 +194,8 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 9,
                 'product_category_id' => 1,
+                'room_id' => 4,
+
                 'name' => 'Converse Shoes',
                 'description' => null,
                 'price' => 35,
@@ -270,6 +292,21 @@ class DatabaseSeeder extends Seeder
             [
                 'product_id' => 9,
                 'path' => 'product-9.jpg',
+            ],
+        ]);
+
+        DB::table('rooms')->insert([
+            [
+                'name' => 'Phòng khách',
+            ],
+            [
+                'name' => 'Phòng ngủ',
+            ],
+            [
+                'name' => 'Phòng tắm',
+            ],
+            [
+                'name' => 'Phòng làm việc',
             ],
         ]);
 

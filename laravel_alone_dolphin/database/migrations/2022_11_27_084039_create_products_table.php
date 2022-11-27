@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
 
             $table->integer('product_category_id')->unsigned();
+            $table->integer('room_id')->unsigned();
             $table->string('name');
             $table->string('description')->nullable();
             $table->integer('price');

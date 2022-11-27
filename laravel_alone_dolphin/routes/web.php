@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-   return \App\Models\products::find(1)->product_details;
+   return \App\Models\rooms::find(2)->products;
 
 
 });
