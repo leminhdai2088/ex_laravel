@@ -11,7 +11,7 @@ class products extends Model
     protected $table = 'products';
     protected $primaryKey = 'id';
     protected $guarded = [];
-    public function orders_details(){
+    public function order_details(){
         return $this->hasMany('App\Models\orders_details','product_id','id');
     }
 
