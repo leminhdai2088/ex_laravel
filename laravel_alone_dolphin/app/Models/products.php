@@ -20,6 +20,6 @@ class products extends Model
     }
 
     public function product_details(){
-        return $this->hasMany('App\Models\product_details','product_id','id');
+        return $this->hasOne('App\Models\product_details','product_id','id');
     }
 }
