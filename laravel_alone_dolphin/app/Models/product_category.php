@@ -13,6 +13,9 @@ class product_category extends Model
     protected $guarded = [];
 
     public function products(){
-        return $this->hasMany('App\Models\products');
+        // return $this->hasMany('App\Models\products');
+
+        return $this->hasMany(products::class,'product_category_id','id');
+        // related foreignkey locallkey
     }
 }

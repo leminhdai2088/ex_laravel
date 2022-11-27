@@ -11,4 +11,8 @@ class orders extends Model
     protected $table = 'orders';
     protected $primaryKey = 'id';
     protected $guarded = [];
+
+    public function order_details(){
+        return $this->hasMany(order_details::class,'order_id','id');
+    }
 }
