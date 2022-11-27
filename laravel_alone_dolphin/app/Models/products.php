@@ -11,4 +11,15 @@ class products extends Model
     protected $table = 'products';
     protected $primaryKey = 'id';
     protected $guarded = [];
+    public function orders_details(){
+        return $this->hasMany('App\Models\orders_details','product_id','id');
+    }
+
+    public function product_images(){
+        return $this->hasMany('App\Models\product_images','product_id','id');
+    }
+
+    public function product_details(){
+        return $this->hasOne('App\Models\product_details','product_id','id');
+    }
 }

@@ -11,4 +11,5 @@ class product_details extends Model
     protected $table = 'product_details';
     protected $primaryKey = 'id';
     protected $guarded = [];
+
 }
