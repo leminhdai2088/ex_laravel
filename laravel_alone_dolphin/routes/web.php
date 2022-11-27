@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\product_category;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+   return [\App\Models\product_category::find(1)->products];
 });

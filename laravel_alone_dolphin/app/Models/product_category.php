@@ -11,4 +11,8 @@ class product_category extends Model
     protected $table = 'product_category';
     protected $primaryKey = 'id';
     protected $guarded = [];
+
+    public function products(){
+        return $this->hasMany('App\Models\products');
+    }
 }
