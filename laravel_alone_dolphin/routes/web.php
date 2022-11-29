@@ -14,8 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-   return \App\Models\rooms::find(2)->products;
+Route::get('/bath_room', function () {
+   // return \App\Models\rooms::find(2)->products;
+   return view('front.bath_room');
 
+});
+
+
+Route::get('/bed_room', function () {
+   // return \App\Models\rooms::find(2)->products;
+   return view('front.bed_room');
 
 });

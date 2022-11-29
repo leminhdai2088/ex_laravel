@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('pay_method');
             $table->string('discount_code');
             $table->double('total');
+            
             $table->timestamps();
         });
     }
