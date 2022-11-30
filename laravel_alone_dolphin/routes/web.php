@@ -1,6 +1,8 @@
 <?php
 
-use App\Models\product_category;
+
+use App\Http\Controllers\front;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/home', [front\HomeController::class, 'index']);
+
 Route::get('/bath_room', function () {
    // return \App\Models\rooms::find(2)->products;
    return view('front.bath_room');
@@ -26,11 +30,7 @@ Route::get('/bed_room', function () {
    return view('front.bed_room');
 
 });
-Route::get('/home', function () {
-   // return \App\Models\rooms::find(2)->products;
-   return view('front.home');
 
-});
 Route::get('/page_intro', function () {
    // return \App\Models\rooms::find(2)->products;
    return view('front.page_intro');
