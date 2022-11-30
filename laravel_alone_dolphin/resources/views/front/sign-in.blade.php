@@ -557,6 +557,11 @@
             console.log(sidebar)
             sidebar.classList.toggle("hidden")
         }
+        function handleExpandChild(event){
+        const collapsible = event.currentTarget;
+        const parent = collapsible.parentElement.parentElement;
+        parent.classList.toggle("expanded")
+    }
     </script>
 
     <!-- form validate -->
