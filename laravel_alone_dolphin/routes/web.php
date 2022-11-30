@@ -16,58 +16,58 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', [front\HomeController::class, 'index']);
+Route::get('/', [front\HomeController::class, 'index']);
 
-Route::get('/bath_room', function () {
-   // return \App\Models\rooms::find(2)->products;
-   return view('front.bath_room');
-
-});
+Route::get('/a',[front\DisProController::class, 'index'] );
+// Route::get('/{room_name}',[front\PagesController::class, 'index'] );
 
 
-Route::get('/bed_room', function () {
-   // return \App\Models\rooms::find(2)->products;
-   return view('front.bed_room');
+// Route::get('/bath_room', function () {
+//    // return \App\Models\rooms::find(2)->products;
+//    return view('front.bath_room');
 
-});
+// });
 
-Route::get('/page_intro', function () {
-   // return \App\Models\rooms::find(2)->products;
-   return view('front.page_intro');
 
-});
-Route::get('/living_room', function () {
-   // return \App\Models\rooms::find(2)->products;
-   return view('front.living_room');
+// Route::get('/bed_room', function () {
+//    // return \App\Models\rooms::find(2)->products;
+//    return view('front.bed_room');
 
-});
-Route::get('/list_product', function () {
-   // return \App\Models\rooms::find(2)->products;
-   return view('front.list_product');
+// });
 
-});
-Route::get('/home_office', function () {
-   // return \App\Models\rooms::find(2)->products;
-   return view('front.home_office');
+// Route::get('/page_intro', function () {
+//    // return \App\Models\rooms::find(2)->products;
+//    return view('front.page_intro');
 
-});
-Route::get('/kitchen_room', function () {
-   // return \App\Models\rooms::find(2)->products;
-   return view('front.kitchen_room');
+// });
 
-});
-Route::get('/product_details', function () {
-   // return \App\Models\rooms::find(2)->products;
-   return view('front.product_details');
+// Route::get('/list_product', function () {
+//    // return \App\Models\rooms::find(2)->products;
+//    return view('front.list_product');
 
-});
-Route::get('/sign-in', function () {
-   // return \App\Models\rooms::find(2)->products;
-   return view('front.sign-in');
+// });
+// Route::get('/home_office', function () {
+//    // return \App\Models\rooms::find(2)->products;
+//    return view('front.home_office');
 
-});
-Route::get('/sign-up', function () {
-   // return \App\Models\rooms::find(2)->products;
-   return view('front.sign-up');
+// });
+// Route::get('/kitchen_room', function () {
+//    // return \App\Models\rooms::find(2)->products;
+//    return view('front.kitchen_room');
 
-});
+// });
+// Route::get('/product_details', function () {
+//    // return \App\Models\rooms::find(2)->products;
+//    return view('front.product_details');
+
+// });
+// Route::get('/sign-in', function () {
+//    // return \App\Models\rooms::find(2)->products;
+//    return view('front.sign-in');
+
+// });
+// Route::get('/sign-up', function () {
+//    // return \App\Models\rooms::find(2)->products;
+//    return view('front.sign-up');
+
+// });

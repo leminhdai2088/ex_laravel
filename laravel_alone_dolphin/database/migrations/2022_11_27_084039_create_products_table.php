@@ -22,7 +22,6 @@ return new class extends Migration
             $table->string('description')->nullable();
             $table->integer('price');
             $table->integer('qty');
-            $table->float('discount')->nullable();
             $table->float('weight')->nullable();
             $table->float('sku')->nullable();
             $table->boolean('featured')->nullable();

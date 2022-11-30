@@ -39,7 +39,7 @@
                             <div class="sub-menu">
                                 <ul>
                                     <li>
-                                        <a href="/living_room">PHÒNG KHÁCH - living room</a>
+                                        <a href="/living_room/">PHÒNG KHÁCH - living room</a>
                                         <ul class="details-menu details-living-menu">
 
 
@@ -614,47 +614,19 @@
             </div>
 
             
-<!-- grid items -->
+<!-- grid items -->  
             <div class="grid-container">
+                @foreach($products as $product)
+                {{ $pro = DB::table('product_details')->where('product_id',$product->id)->first() }}
                 <div class="grid-item">
                     <a href="#"><img src="/front/images/Living_Room_img/igm_living_room.webp" alt="img"></a>
                     <div class="text-items">
-                        <a href="#"><h3 class="name-item">ABS</h3></a>
-                        <p class="desc-item">Tranh 50*70cm</p>
-                        <p class="price-item">590,000đ</p>
+                        <a href="#"><h3 class="name-item">{{ $product->name }}</h3></a>
+                        <p class="desc-item">{{ $pro->size }}</p>
+                        <p class="price-item">{{ $product->price }}</p>
                     </div>
                 </div>
-
-
-                <div class="grid-item">
-                    <a href="#"><img src="/front/images/Living_Room_img/igm_living_room.webp" alt="img"></a>
-                    <div class="text-items">
-                        <a href="#"><h3 class="name-item">ABS</h3></a>
-                        <p class="desc-item">Tranh 50*70cm</p>
-                        <p class="price-item">590,000đ</p>
-                    </div>
-                </div>
-
-
-                <div class="grid-item">
-                    <a href="#"><img src="/front/images/Living_Room_img/igm_living_room.webp" alt="img"></a>
-                    <div class="text-items">
-                        <a href="#"><h3 class="name-item">ABS</h3></a>
-                        <p class="desc-item">Tranh 50*70cm</p>
-                        <p class="price-item">590,000đ</p>
-                    </div>
-                </div>
-
-
-                <div class="grid-item">
-                    <a href="#"><img src="/front/images/Living_Room_img/igm_living_room.webp" alt="img"></a>
-                    <div class="text-items">
-                        <a href="#"><h3 class="name-item">ABS</h3></a>
-                        <p class="desc-item">Tranh 50*70cm</p>
-                        <p class="price-item">590,000đ</p>
-                    </div>
-                </div>
-
+                @endforeach
 
               
 

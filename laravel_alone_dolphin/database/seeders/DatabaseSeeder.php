@@ -64,13 +64,19 @@ class DatabaseSeeder extends Seeder
 
         DB::table('product_category')->insert([
             [
+                'id' => 1,
                 'name' => 'Men',
+                'room_id' => 1
             ],
             [
+                'id' => 2,
                 'name' => 'Women',
+                'room_id' => 1
             ],
             [
+                'id' => 3,
                 'name' => 'Kids',
+                'room_id' => 1
             ],
         ]);
 
@@ -85,7 +91,6 @@ class DatabaseSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet, consectetur ing elit, sed do eiusmod tempor sum dolor sit amet, consectetur adipisicing elit, sed do mod tempor',
                 'price' => 629.99,
                 'qty' => 20,
-                'discount' => 495,
                 'weight' => 1.3,
                 'sku' => '00012',
                 'featured' => true,
@@ -100,7 +105,6 @@ class DatabaseSeeder extends Seeder
                 'description' => null,
                 'price' => 35,
                 'qty' => 20,
-                'discount' => 13,
                 'weight' => null,
                 'sku' => null,
                 'featured' => true,
@@ -115,7 +119,6 @@ class DatabaseSeeder extends Seeder
                 'description' => null,
                 'price' => 35,
                 'qty' => 20,
-                'discount' => 34,
                 'weight' => null,
                 'sku' => null,
                 'featured' => true,
@@ -130,7 +133,6 @@ class DatabaseSeeder extends Seeder
                 'description' => null,
                 'price' => 64,
                 'qty' => 20,
-                'discount' => 35,
                 'weight' => null,
                 'sku' => null,
                 'featured' => true,
@@ -138,13 +140,12 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 5,
                 'product_category_id' => 3,
-                'room_id' => 3,
+                'room_id' => 1,
 
                 'name' => "Men's Painted Hat",
                 'description' => null,
                 'price' => 44,
                 'qty' => 20,
-                'discount' => 35,
                 'weight' => null,
                 'sku' => null,
                 'featured' => false,
@@ -152,13 +153,12 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 6,
                 'product_category_id' => 2,
-                'room_id' => 3,
+                'room_id' => 1,
 
                 'name' => 'Converse Shoes',
                 'description' => null,
                 'price' => 35,
                 'qty' => 20,
-                'discount' => 34,
                 'weight' => null,
                 'sku' => null,
                 'featured' => true,
@@ -166,13 +166,12 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 7,
                 'product_category_id' => 1,
-                'room_id' => 4,
+                'room_id' => 1,
 
                 'name' => 'Pure Pineapple',
                 'description' => null,
                 'price' => 64,
                 'qty' => 20,
-                'discount' => 35,
                 'weight' => null,
                 'sku' => null,
                 'featured' => true,
@@ -180,13 +179,12 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 8,
                 'product_category_id' => 1,
-                'room_id' => 4,
+                'room_id' => 2,
 
                 'name' => '2 Layer Windbreaker',
                 'description' => null,
                 'price' => 44,
                 'qty' => 20,
-                'discount' => 35,
                 'weight' => null,
                 'sku' => null,
                 'featured' => true,
@@ -194,13 +192,12 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 9,
                 'product_category_id' => 1,
-                'room_id' => 4,
+                'room_id' => 1,
 
                 'name' => 'Converse Shoes',
                 'description' => null,
                 'price' => 35,
                 'qty' => 20,
-                'discount' => 34,
                 'weight' => null,
                 'sku' => null,
                 'featured' => true,
@@ -297,17 +294,14 @@ class DatabaseSeeder extends Seeder
 
         DB::table('rooms')->insert([
             [
+                'id' => 1,
                 'name' => 'Phòng khách',
             ],
             [
+                'id' => 2,
                 'name' => 'Phòng ngủ',
-            ],
-            [
-                'name' => 'Phòng tắm',
-            ],
-            [
-                'name' => 'Phòng làm việc',
-            ],
+                // 'image' => 'link.png'
+            ]
         ]);
 
     }

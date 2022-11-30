@@ -15,4 +15,9 @@ class rooms extends Model
     public function products(){
         return $this->hasMany(products::class,'room_id','id');
     }
+
+
+    public function product_category(){
+        return $this->hasMany(product_category::class,'room_id','id');
+    }
 }
