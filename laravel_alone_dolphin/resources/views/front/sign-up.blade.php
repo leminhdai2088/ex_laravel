@@ -55,7 +55,7 @@
     <div class="header fixed left-0 right-0 top-0 z-20 h-16">
         <div class="w-[1200px] m-auto flex items-center justify-between px-3">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
-            <a class="logo" href="#"><img height="64" width="64" src="/front/images/Alone Dolphin.png" alt="alone dolphin"></a>
+            <a class="logo" href="/home"><img height="64" width="64" src="/front/images/Alone Dolphin.png" alt="alone dolphin"></a>
             <div class="hidden md:flex items-center gap-10 cursor-pointer">
                 <div class="h-fit"><a href="/home">Trang chủ</a> </div>
                 <div class="h-fit"><a href="/page_intro">Giới thiệu</a></div>
