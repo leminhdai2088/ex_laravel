@@ -11,7 +11,7 @@
 
     
     <link rel="stylesheet" href="/front/css/page_intro.css">
-    <!-- <link rel="stylesheet" href="../dist/page_home/vendor/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="/front/css/page_home/vendor/bootstrap.css"> -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="/front/css/main.css" />
     <link href="/front/css/output.css" rel="stylesheet">
@@ -21,9 +21,9 @@
 </head>
 
 <body class="w-[1200px] m-auto">
-
-        <!-- header -->
-        <div class="header fixed left-0 right-0 top-0 z-20 h-16">
+    <!-- header -->
+    
+    <div class="header fixed left-0 right-0 top-0 z-20 h-16">
         <div class="w-[1200px] m-auto flex items-center justify-between px-3">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
             <a class="logo" href="#"><img height="64" width="64" src="/front/images/Alone Dolphin.png" alt="alone dolphin"></a>
@@ -441,35 +441,16 @@
         </div>
     </div>
 
+
     <!-- main -->
     <div class="main">
         <div class="nav-room">
             <p class="direction">
-                <a href="/home"><i>Trang chủ</i></a> / <a href="#"><i>PHÒNG NGỦ - Bed Room</i></a> / <span class="opacity-08">PHÒNG NGỦ - Bed Room</span>
+                <a href="/home"><i>Trang chủ</i></a> / <a href="#"><i>Giường ngủ</i></a>
             </p>
-            <table>
-                <tr>
-                    <td><a href="/list_product">BÀN TRANG ĐIỂM</a></td>
-                    <td><a href="/list_product">KỆ/TỦ GIÀY</a></td>
-                    <td><a href="/list_product">GIƯỜNG</a></td>
-                    <td><a href="/list_product">ĐÈN SÀN</a></td>
-                </tr>
-                <tr>
-                    <td><a href="/list_product">ĐÈN BÀN</a></td>
-                    <td><a href="/list_product">GIÁ/KỆ TREO TRANG TRÍ</a></td>
-                    <td><a href="/list_product">KỆ/TỦ QUẦN ÁO</a></td>
-                    <td><a href="/list_product">TỦ LƯU TRỮ</a></td>
-                   
-                </tr>
-                <tr>
-                    <td><a href="/list_product">GƯƠNG</a></td>
-                    <td><a href="/list_product">ĐÈN TRANG TRÍ</a></td>
-                </tr>
-            </table>
         </div>
         <div class="slider">
-            <h1 class="text-center">PHÒNG NGỦ - Bed Room</h1>
-            <img src="/front/images/Bed_Room_img/slider.webp" alt="">
+            <h1 class="text-center">Giường ngủ</h1>
         </div>
         
             <div class="filter">
@@ -941,10 +922,10 @@
                     <div class="footer-text">Email: 2052xxxx@gm.uit.edu.vn</div>
                     <div class="footer-text">Địa chỉ: trường đại học Công nghệ Thông tin</div>
                     <div class="link flex gap-5 mt-2">
-                        <a href="#"><img src="/front/images/icon/facebook.svg" alt="" height="30" width="30"></a>
-                        <a href="#"><img src="/front/images/icon/youtube.svg" alt="" height="30" width="30"></a>
-                        <a href="#"><img src="/front/images/icon/behance.svg" alt="" height="30" width="30"></a>
-                        <a href="#"><img src="/front/images/icon/wordpress.svg" alt="" height="30" width="30"></a>
+                        <a href="#"><img src="front/images/icon/facebook.svg" alt="" height="30" width="30"></a>
+                        <a href="#"><img src="front/images/icon/youtube.svg" alt="" height="30" width="30"></a>
+                        <a href="#"><img src="front/images/icon/behance.svg" alt="" height="30" width="30"></a>
+                        <a href="#"><img src="front/images/icon/wordpress.svg" alt="" height="30" width="30"></a>
                     </div>
                 </div>
             </div>
@@ -981,12 +962,8 @@
         console.log(sidebar)
         sidebar.classList.toggle("hidden")
     }
-    function handleExpand2(event){
-        const collapsible = event.currentTarget;
-        const parent = collapsible.parentElement.parentElement;
-        parent.classList.toggle("expanded")
-    }
 </script>
+
 </body>
 
 </html>

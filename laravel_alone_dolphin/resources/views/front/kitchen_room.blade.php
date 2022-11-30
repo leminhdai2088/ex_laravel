@@ -11,19 +11,20 @@
 
     
     <link rel="stylesheet" href="/front/css/page_intro.css">
-    <!-- <link rel="stylesheet" href="../dist/page_home/vendor/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="/front/css/page_home/vendor/bootstrap.css"> -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="/front/css/main.css" />
     <link href="/front/css/output.css" rel="stylesheet">
     <link href="/front/css/page_rooms.css" rel="stylesheet">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- header -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 </head>
 
 <body class="w-[1200px] m-auto">
-
-        <!-- header -->
-        <div class="header fixed left-0 right-0 top-0 z-20 h-16">
+    <!-- header -->
+    
+    <div class="header fixed left-0 right-0 top-0 z-20 h-16">
         <div class="w-[1200px] m-auto flex items-center justify-between px-3">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
             <a class="logo" href="#"><img height="64" width="64" src="/front/images/Alone Dolphin.png" alt="alone dolphin"></a>
@@ -445,31 +446,29 @@
     <div class="main">
         <div class="nav-room">
             <p class="direction">
-                <a href="/home"><i>Trang chủ</i></a> / <a href="#"><i>PHÒNG NGỦ - Bed Room</i></a> / <span class="opacity-08">PHÒNG NGỦ - Bed Room</span>
+                <a href="/home"><i>Trang chủ</i></a> / <a href="#"><i>BẾP & PHÒNG ĂN - Kitchen Room</i></a> / <span class="opacity-08">BẾP & PHÒNG ĂN - Kitchen Room</span>
             </p>
             <table>
                 <tr>
-                    <td><a href="/list_product">BÀN TRANG ĐIỂM</a></td>
-                    <td><a href="/list_product">KỆ/TỦ GIÀY</a></td>
-                    <td><a href="/list_product">GIƯỜNG</a></td>
-                    <td><a href="/list_product">ĐÈN SÀN</a></td>
+                    <td><a href="/list_product">BỘ BÀN ĂN</a></td>
+                    <td><a href="/list_product">BÀN ĂN</a></td>
+                    <td><a href="/list_product">GHẾ ĂN</a></td>
+                 
+             
                 </tr>
                 <tr>
-                    <td><a href="/list_product">ĐÈN BÀN</a></td>
-                    <td><a href="/list_product">GIÁ/KỆ TREO TRANG TRÍ</a></td>
-                    <td><a href="/list_product">KỆ/TỦ QUẦN ÁO</a></td>
-                    <td><a href="/list_product">TỦ LƯU TRỮ</a></td>
+                    <td><a href="/list_product">THẢM BẾP</a></td>
+                    <td><a href="/list_product">KỆ BẾP</a></td>
+                    <td><a href="/list_product">KHĂN BẾP</a></td>
+           
                    
                 </tr>
-                <tr>
-                    <td><a href="/list_product">GƯƠNG</a></td>
-                    <td><a href="/list_product">ĐÈN TRANG TRÍ</a></td>
-                </tr>
+
             </table>
         </div>
         <div class="slider">
-            <h1 class="text-center">PHÒNG NGỦ - Bed Room</h1>
-            <img src="/front/images/Bed_Room_img/slider.webp" alt="">
+            <h1 class="text-center">BẾP & PHÒNG ĂN - Kitchen Room</h1>
+            <img src="/front/images/Kitchen_Room_img/slider.webp" alt="">
         </div>
         
             <div class="filter">
@@ -981,12 +980,8 @@
         console.log(sidebar)
         sidebar.classList.toggle("hidden")
     }
-    function handleExpand2(event){
-        const collapsible = event.currentTarget;
-        const parent = collapsible.parentElement.parentElement;
-        parent.classList.toggle("expanded")
-    }
 </script>
+
 </body>
 
 </html>

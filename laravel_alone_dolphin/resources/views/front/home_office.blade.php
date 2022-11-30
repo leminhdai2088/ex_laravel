@@ -11,7 +11,7 @@
 
     
     <link rel="stylesheet" href="/front/css/page_intro.css">
-    <!-- <link rel="stylesheet" href="../dist/page_home/vendor/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="/front/css/page_home/vendor/bootstrap.css"> -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="/front/css/main.css" />
     <link href="/front/css/output.css" rel="stylesheet">
@@ -21,9 +21,9 @@
 </head>
 
 <body class="w-[1200px] m-auto">
-
-        <!-- header -->
-        <div class="header fixed left-0 right-0 top-0 z-20 h-16">
+    <!-- header -->
+    
+    <div class="header fixed left-0 right-0 top-0 z-20 h-16">
         <div class="w-[1200px] m-auto flex items-center justify-between px-3">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
             <a class="logo" href="#"><img height="64" width="64" src="/front/images/Alone Dolphin.png" alt="alone dolphin"></a>
@@ -445,31 +445,29 @@
     <div class="main">
         <div class="nav-room">
             <p class="direction">
-                <a href="/home"><i>Trang chủ</i></a> / <a href="#"><i>PHÒNG NGỦ - Bed Room</i></a> / <span class="opacity-08">PHÒNG NGỦ - Bed Room</span>
+                <a href="/home"><i>Trang chủ</i></a> / <a href="#"><i>PHÒNG LÀM VIỆC - home office</i></a> / <span class="opacity-08">PHÒNG LÀM VIỆC - home office</span>
             </p>
             <table>
                 <tr>
-                    <td><a href="/list_product">BÀN TRANG ĐIỂM</a></td>
-                    <td><a href="/list_product">KỆ/TỦ GIÀY</a></td>
-                    <td><a href="/list_product">GIƯỜNG</a></td>
-                    <td><a href="/list_product">ĐÈN SÀN</a></td>
+                    <td><a href="#">BÀN</a></td>
+                    <td><a href="#">GHẾ</a></td>
+                    <td><a href="#">ĐÈN BÀN</a></td>
+                    <td><a href="#">KỆ, TỦ LƯU TRỮ</a></td>
+             
                 </tr>
                 <tr>
-                    <td><a href="/list_product">ĐÈN BÀN</a></td>
-                    <td><a href="/list_product">GIÁ/KỆ TREO TRANG TRÍ</a></td>
-                    <td><a href="/list_product">KỆ/TỦ QUẦN ÁO</a></td>
-                    <td><a href="/list_product">TỦ LƯU TRỮ</a></td>
+                    <td><a href="#">ĐỒNG HỒ</a></td>
+                    <td><a href="#">VĂN PHÒNG PHẨM</a></td>
+                    <td><a href="#">BẢNG TRANG TRÍ</a></td>
+           
                    
                 </tr>
-                <tr>
-                    <td><a href="/list_product">GƯƠNG</a></td>
-                    <td><a href="/list_product">ĐÈN TRANG TRÍ</a></td>
-                </tr>
+
             </table>
         </div>
         <div class="slider">
-            <h1 class="text-center">PHÒNG NGỦ - Bed Room</h1>
-            <img src="/front/images/Bed_Room_img/slider.webp" alt="">
+            <h1 class="text-center">PHÒNG LÀM VIỆC - home office</h1>
+            <img src="/front/images/Home_office_img/slider.webp" alt="">
         </div>
         
             <div class="filter">
@@ -981,12 +979,8 @@
         console.log(sidebar)
         sidebar.classList.toggle("hidden")
     }
-    function handleExpand2(event){
-        const collapsible = event.currentTarget;
-        const parent = collapsible.parentElement.parentElement;
-        parent.classList.toggle("expanded")
-    }
 </script>
+
 </body>
 
 </html>

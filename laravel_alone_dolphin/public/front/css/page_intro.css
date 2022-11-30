@@ -62,7 +62,7 @@ h4{
 .background-image-heading{
     position: relative;
     top: 64px;
-    background-image: url(../assets/img_page_intro/header_bg.webp);
+    background-image: url(/front/images/img_page_intro/header_bg.webp);
     background-repeat: repeat;
     background-size: auto;
     width: 100%;
@@ -100,7 +100,7 @@ h4{
 .parallax{
     padding-top: 500px;
     padding-bottom: 500px;
-    background-image: url(../assets/img_page_intro/bg.jpg);
+    background-image: url(/front/images/img_page_intro/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

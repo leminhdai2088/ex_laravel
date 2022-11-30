@@ -3,28 +3,55 @@
 <!-- DONE -->
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="/front/css/header.css">
-
-
-    <link rel="stylesheet" href="/front/css/footer.css">
-    
-    <link rel="stylesheet" href="/front/css/page_intro.css">
-    <!-- <link rel="stylesheet" href="../dist/page_home/vendor/bootstrap.css"> -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="/front/css/main.css" />
     <link href="/front/css/output.css" rel="stylesheet">
-    <link href="/front/css/page_rooms.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- header -->
+    <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="/front/css/header.css">
+    <link href="/front/css/page_rooms.css" rel="stylesheet">
+    <!-- header -->
+    <link rel="stylesheet" href="/front/css/footer.css">
+    <!-- validate -->
+     <link rel="stylesheet" href="/front/css/form_validate.css">
+    <style>
+        #background-pattern {
+            height: 15vh;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.3;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 5px 8px;
+            border-radius: 0;
+            border: 2px solid rgb(113, 113, 113);
+            margin: 5px 0;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            border-radius: 0;
+            outline: none;
+            border: 2px solid black;
+        }
+
+        @media (min-width: 740px) {
+            #background-pattern {
+                height: 150px;
+                width: 1200px;
+                object-fit: cover;
+                opacity: 0.3;
+            }
+        }
+    </style>
 </head>
 
-<body class="w-[1200px] m-auto">
+<body class="w-full md:w-[1200px] m-auto text-gray-700">
     <!-- header -->
-    
-
     <div class="header fixed left-0 right-0 top-0 z-20 h-16">
         <div class="w-[1200px] m-auto flex items-center justify-between px-3">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
@@ -443,347 +470,133 @@
         </div>
     </div>
 
-
-    <!-- main -->
-    <div class="main">
-        <div class="nav-room">
-            <p class="direction">
-                <a href="/home"><i>Trang chủ</i></a> / <a href="#"><i>PHÒNG TẮM - bathroom</i></a> / <span class="opacity-08">PHÒNG TẮM - bathroom</span>
-            </p>
-            <table>
-                <tr>
-                    <td><a href="/list_product">RÈM</a></td>
-                    <td><a href="/list_product">KHĂN TẮM</a></td>
-                    <td><a href="/list_product">GƯƠNG</a></td>
-                    <td><a href="/list_product">THẢM CHÂN</a></td>
-                </tr>
-                <tr>
-                    <td><a href="/list_product">GIÁ, KỆ, TỦ TREO</a></td>
-
-                   
-                </tr>
-
-            </table>
-        </div>
-        <div class="slider">
-            <h1 class="text-center">PHÒNG TẮM - bathroom</h1>
-            <img src="/front/images/Bath_room_img/slider.webp" alt="">
-        </div>
+    <div class="">
+        <img src="/front/images/background-pattern.jpg" alt="pattern" id="background-pattern">
+    </div>
+    <div class="px-5 w-full md:w-1/2 m-auto">
+        <h1 class="text-2xl md:text-4xl text-center font-semibold my-5">Đăng ký</h1>
+        <form action="" method="POST" id="sign-up">
+            <div class="form-group">
+                <label for="fullname">Họ và tên</label><span><sup class="text-red-500">*</sup></span><br>
+                <input class="form-control" type="text" id="fullname" name="fullname">
+                <span class="form-message"></span>
+            </div>
+            <div class="mt-4 form-group">
+                <label for="email">Email</label><span><sup class="text-red-500">*</sup></span><br>
+                <input class="form-control" type="text" id="email" name="email">
+                <span class="form-message"></span>
+            </div>
+            <div class="mt-4 form-group">
+                <label for="password">Mật khẩu</label><span><sup class="text-red-500">*</sup></span><br>
+                <input class="form-control" type="password" id="password" name="password">
+                <span class="form-message"></span>
+            </div>
+            <div class="mt-4 form-group">
+                <label for="confirm-password">Xác nhận mật khẩu</label><span><sup
+                        class="text-red-500">*</sup></span><br>
+                <input class="form-control" type="password" id="confirm-password" name="confirm-password">
+                <span class="form-message"></span>
+            </div>
         
-            <div class="filter">
-                <div class="main-filter">
-                    <div class="filter-block price-js">
-                         <div class="filter-item lim-ch price-filter">
-                             <span class="title-filter">
-                                Giá
-                                 <i class="ti-plus"></i>
-                             </span>
-                             <ul class="price-choice choice">
-                                <li>
-                                    <input type="radio" name="price-choice" value="Dưới 1 triệu"  id="1">
-                                    <label for="1">Dưới 1 triệu</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="price-choice" id="1-2" value="Từ 1 - 2 triệu">
-                                    <label for="1-2">Từ 1 - 2 triệu</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="price-choice" id="2-3" value="Từ 2 - 3 triệu">
-                                    <label for="2-3">Từ 2 - 3 triệu</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="price-choice" id="3-5" value="Từ 3 - 5 triệu">
-                                    <label for="3-5">Từ 3 - 5 triệu</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="price-choice" id="5" value="Lớn hơn 5 triệu">
-                                    <label for="5">Lớn hơn 5 triệu</label>
-                                </li>
-                             </ul>
-                         </div>
-                    </div>
-     
-                    <div class="filter-block color-js">
-                          <div class="filter-item">
-                             <span class="title-filter">
-                                Màu sắc
-                                 <i class="ti-plus"></i>
-                             </span>
-                             <ul class="color-choice choice">
-                                <li>
-                                    <input type="radio" name="filter-color" id="xanh" value="Xanh ciment">
-                                    <label for="xanh">Xanh ciment</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="filter-color" id="nau" value="Nâu">
-                                    <label for="nau">Nâu</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="filter-color" id="trang" value="Trắng">
-                                    <label for="trang">Trắng</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="filter-color" id="be" value="Be">
-                                    <label for="be">Be</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="filter-color" id="xam" value="Xám">
-                                    <label for="xam">Xám</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="filter-color" id="den" value="Đen">
-                                    <label for="den">Đen</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="filter-color" id="do" value="Đỏ">
-                                    <label for="do">Đỏ</label>
-                                </li>
-                             </ul>
-                     </div>
-                    </div>
-     
-                    <div class="filter-block type-js">
-                         <div class="filter-item">
-                             <span class="title-filter">
-                                Loại sản phẩm
-                                 <i class="ti-plus"></i>
-                             </span>
-                             <ul class="type-choice choice">
-                                <li>
-                                    <input type="radio" name="categories" id="khac" value="Khác">
-                                    <label for="khac">Khác</label>
-                                </li>
-                                
-                                <li>
-                                    <input type="radio" name="categories" id="ke" value="Kệ">
-                                    <label for="ke">Kệ</label>
-                                </li>
-                                
-                                <li>
-                                    <input type="radio" name="categories" id="sofa" value="Sofa">
-                                   <label for="sofa">Sofa</label>
-                                </li>
-                                
-                                <li>
-                                    <input type="radio" name="categories" id="tranh" value="Tranh">
-                                    <label for="tranh">Tranh</label>
-                                </li>
-                                
-                                <li>
-                                    <input type="radio" name="categories" id="desk" value="Desk">
-                                    <label for="desk">Desk</label>
-                                </li>
+        <div class="mt-8">
+            <a href="/sign-in">Đã có tài khoản? Đăng nhập tại đây</a>
+        </div>
+        <div class="flex justify-center mt-8">
+            <!-- <input type="submit" value="Tạo tài khoản"
+                class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto"> -->
 
-                                <li>
-                                    <input type="radio" name="categories" id="ghe" value="Ghế">
-                                    <label for="ghe">Ghế</label>
-                                </li>
-                                
-                                <li>
-                                    <input type="radio" name="categories" id="ban" value="Bàn">
-                                    <label for="ban">Bàn</label>
-                                </li>
-                                
-                                <li>
-                                    <input type="radio" name="categories" id="den" value="Đèn">
-                                    <label for="den">Đèn</label>
-                                </li>
-                                
-                                <li>
-                                    <input type="radio" name="categories" id="trangtri" value="Trang trí">
-                                    <label for="trangtri">Trang trí</label>
-                                </li>
-                                
-                             </ul>
-                         </div>
-                    </div>
-                </div>
-
-
-               <div class="sort">
-                    <span class="amount-items">300 sản phẩm</span>
-                    <select name="" id="" class="sort-by">
-                        <option value="" selected>Sort by</option>
-                        <option value="">Mới nhất</option>
-                        <option value="">Giá tăng dần</option>
-                        <option value="">Giá giảm dần</option>
-                        <option value="">Tên: A - Z</option>
-                        <option value="">Tên: Z - A</option>
-                    </select>
-               </div>
-            </div>
-
-            
-<!-- grid items -->
-            <div class="grid-container">
-                <div class="grid-item">
-                    <a href="#"><img src="/front/images/Living_Room_img/igm_living_room.webp" alt="img"></a>
-                    <div class="text-items">
-                        <a href="#"><h3 class="name-item">ABS</h3></a>
-                        <p class="desc-item">Tranh 50*70cm</p>
-                        <p class="price-item">590,000đ</p>
-                    </div>
-                </div>
-
-
-                <div class="grid-item">
-                    <a href="#"><img src="/front/images/Living_Room_img/igm_living_room.webp" alt="img"></a>
-                    <div class="text-items">
-                        <a href="#"><h3 class="name-item">ABS</h3></a>
-                        <p class="desc-item">Tranh 50*70cm</p>
-                        <p class="price-item">590,000đ</p>
-                    </div>
-                </div>
-
-
-                <div class="grid-item">
-                    <a href="#"><img src="/front/images/Living_Room_img/igm_living_room.webp" alt="img"></a>
-                    <div class="text-items">
-                        <a href="#"><h3 class="name-item">ABS</h3></a>
-                        <p class="desc-item">Tranh 50*70cm</p>
-                        <p class="price-item">590,000đ</p>
-                    </div>
-                </div>
-
-
-                <div class="grid-item">
-                    <a href="#"><img src="/front/images/Living_Room_img/igm_living_room.webp" alt="img"></a>
-                    <div class="text-items">
-                        <a href="#"><h3 class="name-item">ABS</h3></a>
-                        <p class="desc-item">Tranh 50*70cm</p>
-                        <p class="price-item">590,000đ</p>
-                    </div>
-                </div>
-
-
-              
-
-
-            </div>
+                <button class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto">
+                    Tạo tài khoản 
+                </button>
+        </div>
+    </form>
     </div>
-<!-- chia sẻ khoảnh khắc -->
-<div class="container-fluid chiasekhoanhkhac">
-    <div class="row">
-      
-      <div class="main-share scol-xs-12 col-sm-9 col-md-9 col-lg-9">
-        <div class="image-slider-2">
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh1.png" alt="">
-            </div>
-          </div><!--end anh-->
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh2.png" alt="">
-            </div>
-          </div>
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh3.png" alt="">
-            </div>
-          </div>
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh4.png" alt="">
-            </div>
-          </div>
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh5.png" alt="">
-            </div>
-          </div>
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh6.png" alt="">
-            </div>
-          </div>
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh7.png" alt="">
-            </div>
-          </div>
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh8.png" alt="">
-            </div>
-          </div>
-      </div> 
-      </div> <!-- END 9 COT -->
-      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 share-title">
-        <h3>Chia sẻ khoảnh khắc</h3>
-      </div>
-    </div>
-  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- footer -->
-    <div id="footer" class=" footer h-fit pb-46">
-        <div class="w-[1200px] m-auto grid grid-cols-3">
-            <div class="footer-item">
-                <div class="head-footer font-medium my-2">Về chúng tôi</div>
-                <div class="text-gray-700 text-sm">
-                    <div class="footer-text"><a href="#">Project này</a></div>
-                    <div class="footer-text"><a href="#">Thành viên</a></div>
-                </div>
-    
+<!-- footer -->
+<div id="footer" class=" footer h-fit pb-46">
+    <div class="w-[1200px] m-auto grid grid-cols-3">
+        <div class="footer-item">
+            <div class="head-footer font-medium my-2">Về chúng tôi</div>
+            <div class="text-gray-700 text-sm">
+                <div class="footer-text"><a href="#">Project này</a></div>
+                <div class="footer-text"><a href="#">Thành viên</a></div>
             </div>
-            <div class="footer-item">
-                <div class="head-footer font-medium my-2">Sản phẩm</div>
-                <div class="text-gray-700 text-sm">
-                    <div class="footer-text"><a href="#">Giường</a></div>
-                    <div class="footer-text"><a href="#">Bàn</a></div>
-                    <div class="footer-text"><a href="#">Ghế</a></div>
-                    <div class="footer-text"><a href="#">Chăn ga gối</a></div>
-                </div>
+
+        </div>
+        <div class="footer-item">
+            <div class="head-footer font-medium my-2">Sản phẩm</div>
+            <div class="text-gray-700 text-sm">
+                <div class="footer-text"><a href="#">Giường</a></div>
+                <div class="footer-text"><a href="#">Bàn</a></div>
+                <div class="footer-text"><a href="#">Ghế</a></div>
+                <div class="footer-text"><a href="#">Chăn ga gối</a></div>
             </div>
-            <div class="footer-item">
-                <div class="head-footer font-medium my-2">Liên hệ</div>
-                <div class="text-gray-700 text-sm">
-                    <div class="footer-text">Sđt: 090292xxxx</div>
-                    <div class="footer-text">Email: 2052xxxx@gm.uit.edu.vn</div>
-                    <div class="footer-text">Địa chỉ: trường đại học Công nghệ Thông tin</div>
-                    <div class="link flex gap-5 mt-2">
-                        <a href="#"><img src="/front/images/icon/facebook.svg" alt="" height="30" width="30"></a>
-                        <a href="#"><img src="/front/images/icon/youtube.svg" alt="" height="30" width="30"></a>
-                        <a href="#"><img src="/front/images/icon/behance.svg" alt="" height="30" width="30"></a>
-                        <a href="#"><img src="/front/images/icon/wordpress.svg" alt="" height="30" width="30"></a>
-                    </div>
+        </div>
+        <div class="footer-item">
+            <div class="head-footer font-medium my-2">Liên hệ</div>
+            <div class="text-gray-700 text-sm">
+                <div class="footer-text">Sđt: 090292xxxx</div>
+                <div class="footer-text">Email: 2052xxxx@gm.uit.edu.vn</div>
+                <div class="footer-text">Địa chỉ: trường đại học Công nghệ Thông tin</div>
+                <div class="link flex gap-5 mt-2">
+                    <a href="#"><img src="/front/images/icon/facebook.svg" alt="" height="30" width="30"></a>
+                    <a href="#"><img src="/front/images/icon/youtube.svg" alt="" height="30" width="30"></a>
+                    <a href="#"><img src="/front/images/icon/behance.svg" alt="" height="30" width="30"></a>
+                    <a href="#"><img src="/front/images/icon/wordpress.svg" alt="" height="30" width="30"></a>
                 </div>
             </div>
         </div>
     </div>
+</div>
+    <!-- header -->
+    <script>
+        function handleExpand(event) {
+            const collapsible = event.currentTarget;
+            const parent = collapsible.parentElement;
+            parent.classList.toggle("expanded")
+        }
 
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar")
+            console.log(sidebar)
+            sidebar.classList.toggle("hidden")
+        }
+    </script>
 
-    <!-- modal -->
-    
+    <!-- form validate -->
+    <script src="../javascript/form_validate.js"></script>
+    <script>
+        Validator({
+            form: '#sign-up',
 
+            formGroup: '.form-group',
 
+            errorSelector:'.form-message',
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer">
-</script>
-        
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            rules:[
+            Validator.isRequired('#fullname'),
 
-<script src="/front/javascript/page_rooms.js"></script>
+            Validator.isRequired('#email'),
 
-<!-- header -->
-<script>
-    function handleExpand(event) {
-        const collapsible = event.currentTarget;
-        const parent = collapsible.parentElement;
-        parent.classList.toggle("expanded")
-    }
+            Validator.isEmail('#email'),
 
-    function toggleSidebar() {
-        const sidebar = document.getElementById("sidebar")
-        console.log(sidebar)
-        sidebar.classList.toggle("hidden")
-    }
-</script>
+            Validator.isRequired('#password'),
 
+            Validator.minLength('#password',6),
+
+            Validator.isRequired('#confirm-password'),
+
+            Validator.isConfirmed('#confirm-password',function(){
+                  return document.querySelector('#sign-up #password').value
+                },'Mật khẩu nhập lại không chính xác!'),
+            ],
+
+            onSubmit:function(data){
+              console.log(data);    
+            }
+        })
+    </script>
 </body>
 
 </html>
