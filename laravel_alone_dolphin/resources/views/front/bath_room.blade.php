@@ -263,7 +263,7 @@
                     <img src="/icon/cart-shopping-solid.svg" alt="" class="h-8 w-8">
                 </a> -->
                 <a href="/profile" class="flex items-center"><i class="fi fi-rr-user"></i></a>
-                <a href="./sign-in.html" class="flex items-center">
+                <a href="/sign-in" class="flex items-center">
                     <i class="fi fi-rr-shopping-cart"></i>
                 </a>
             </div>
