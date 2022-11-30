@@ -71,6 +71,3 @@ Route::get('/sign-up', function () {
    return view('front.sign-up');
 
 });
-Route::get('/', function(){
-   return \App\Models\rooms::find(2)->products;
-});
