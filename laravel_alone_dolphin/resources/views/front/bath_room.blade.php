@@ -553,7 +553,7 @@
                                 <li>
                                     {{-- <input type="radio" name="categories" id="{{ $filter_cate->id }}" value="{{ $filter_cate->name }}">
                                     <label for="{{ $filter_cate->id }}">{{ $filter_cate->name }}</label> --}}
-                                    <a href="rooms/{{ $filter_cate->id }}">{{ $filter_cate->name }}</a>
+                                    <a href="./{{ $filter_cate->id }}">{{ $filter_cate->name }}</a>
                                 </li>
                                 @endforeach
                                 
@@ -620,15 +620,16 @@
 <!-- grid items -->  
             <div class="grid-container">
                 @foreach($products as $product)
-                
-                <div class="grid-item">
-                    <a href="#"><img src="/front/images/Living_Room_img/{{ $product->product_images[0]->path }}" alt="img"></a>
-                    <div class="text-items">
-                        <a href="#"><h3 class="name-item">{{ $product->name }}</h3></a>
-                        <p class="desc-item">{{ $product->product_images[0]->path }}</p>
-                        <p class="price-item">{{ $product->price }}</p>
+                    @if($product->product_category_id == $loai)
+                    <div class="grid-item">
+                        <a href="#"><img src="/front/images/Living_Room_img/{{ $product->product_images[0]->path }}" alt="img"></a>
+                        <div class="text-items">
+                            <a href="#"><h3 class="name-item">{{ $product->name }}</h3></a>
+                            <p class="desc-item">{{ $product->product_images[0]->path }}</p>
+                            <p class="price-item">{{ $product->price }}</p>
+                        </div>
                     </div>
-                </div>
+                    @endif
                 @endforeach
 
               

@@ -13,7 +13,12 @@ class DisProController extends Controller
     public function index($loai){
         $products = products::where('featured', true)->get();
         $filter_cates= product_category::all();
-        return view('front.bath_room', compact('products','filter_cates','loai'));
+        return view('front.bath_room', compact('products','filter_cates'), ['loai'=>$loai]);
     }
 
+    public function room(){
+        $products = products::where('featured', true)->get();
+        $filter_cates= product_category::all();
+        return view('front.bath_room', compact('products','filter_cates'));
+    }
 }
