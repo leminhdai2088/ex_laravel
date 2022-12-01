@@ -18,7 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [front\HomeController::class, 'index']);
 
-Route::get('/a',[front\DisProController::class, 'index'] );
+Route::get('/rooms',[front\DisProController::class, 'index'] );
+
+Route::get('/rooms/{loai}',[front\DisProController::class, 'index'] );
 // Route::get('/{room_name}',[front\PagesController::class, 'index'] );
 
 

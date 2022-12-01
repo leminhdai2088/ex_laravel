@@ -549,12 +549,15 @@
                                  <i class="ti-plus"></i>
                              </span>
                              <ul class="type-choice choice">
+                                @foreach($filter_cates as $filter_cate)
                                 <li>
-                                    <input type="radio" name="categories" id="khac" value="Khác">
-                                    <label for="khac">Khác</label>
+                                    {{-- <input type="radio" name="categories" id="{{ $filter_cate->id }}" value="{{ $filter_cate->name }}">
+                                    <label for="{{ $filter_cate->id }}">{{ $filter_cate->name }}</label> --}}
+                                    <a href="rooms/{{ $filter_cate->id }}">{{ $filter_cate->name }}</a>
                                 </li>
+                                @endforeach
                                 
-                                <li>
+                                {{-- <li>
                                     <input type="radio" name="categories" id="ke" value="Kệ">
                                     <label for="ke">Kệ</label>
                                 </li>
@@ -592,7 +595,7 @@
                                 <li>
                                     <input type="radio" name="categories" id="trangtri" value="Trang trí">
                                     <label for="trangtri">Trang trí</label>
-                                </li>
+                                </li> --}}
                                 
                              </ul>
                          </div>
@@ -617,12 +620,12 @@
 <!-- grid items -->  
             <div class="grid-container">
                 @foreach($products as $product)
-                {{ $pro = DB::table('product_details')->where('product_id',$product->id)->first() }}
+                
                 <div class="grid-item">
-                    <a href="#"><img src="/front/images/Living_Room_img/igm_living_room.webp" alt="img"></a>
+                    <a href="#"><img src="/front/images/Living_Room_img/{{ $product->product_images[0]->path }}" alt="img"></a>
                     <div class="text-items">
                         <a href="#"><h3 class="name-item">{{ $product->name }}</h3></a>
-                        <p class="desc-item">{{ $pro->size }}</p>
+                        <p class="desc-item">{{ $product->product_images[0]->path }}</p>
                         <p class="price-item">{{ $product->price }}</p>
                     </div>
                 </div>
@@ -760,6 +763,8 @@
         parent.classList.toggle("expanded")
     }
 </script>
+
+<script src="/front/javascript/owlcarousel2-filter.min.js"></script>
 
 </body>
 
