@@ -16,6 +16,7 @@
     <link href="/front/css/page_rooms.css" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
 </head>
 
 <body class="w-[1200px] m-auto">
@@ -463,24 +464,19 @@
                              </span>
                              <ul class="price-choice choice">
                                 <li>
-                                    <input type="radio" name="price-choice" value="Dưới 1 triệu"  id="1">
-                                    <label for="1">Dưới 1 triệu</label>
+                                    <a href="?price=1">Dưới 1 triệu</a>
                                 </li>
                                 <li>
-                                    <input type="radio" name="price-choice" id="1-2" value="Từ 1 - 2 triệu">
-                                    <label for="1-2">Từ 1 - 2 triệu</label>
+                                   <a href="?price=2">Từ 1 - 2 triệu</a>
                                 </li>
                                 <li>
-                                    <input type="radio" name="price-choice" id="2-3" value="Từ 2 - 3 triệu">
-                                    <label for="2-3">Từ 2 - 3 triệu</label>
+                                    <a href="?price=3">Từ 2 - 3 triệu</a>
                                 </li>
                                 <li>
-                                    <input type="radio" name="price-choice" id="3-5" value="Từ 3 - 5 triệu">
-                                    <label for="3-5">Từ 3 - 5 triệu</label>
+                                    <a href="?price=4">Từ 3 - 5 triệu</a>
                                 </li>
                                 <li>
-                                    <input type="radio" name="price-choice" id="5" value="Lớn hơn 5 triệu">
-                                    <label for="5">Lớn hơn 5 triệu</label>
+                                    <a href="?price=5">Lớn hơn 5 triệu</a>
                                 </li>
                              </ul>
                          </div>
@@ -507,6 +503,12 @@
 
 
             </div>
+    </div>
+    <div class="shop-content-bottom">
+        <div class="pages">
+            {{$products->links()}}
+        </div>
+        
     </div>
 <!-- chia sẻ khoảnh khắc -->
 <div class="container-fluid chiasekhoanhkhac">
