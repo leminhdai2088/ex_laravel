@@ -549,18 +549,14 @@
                                  <i class="ti-plus"></i>
                              </span>
                              <ul class="type-choice choice">
-                                @foreach($filter_cates as $filter_cate)
+                                {{-- @foreach($filter_cates as $filter_cate)
                                 <li>
-                                    {{-- <input type="radio" name="categories" id="{{ $filter_cate->id }}" value="{{ $filter_cate->name }}">
-                                    <label for="{{ $filter_cate->id }}">{{ $filter_cate->name }}</label> --}}
+                           
                                     <a href="./{{ $filter_cate->id }}">{{ $filter_cate->name }}</a>
                                 </li>
-                                @endforeach
+                                @endforeach --}}
                                 
-                                {{-- <li>
-                                    <input type="radio" name="categories" id="ke" value="Kệ">
-                                    <label for="ke">Kệ</label>
-                                </li>
+                             
                                 
                                 <li>
                                     <input type="radio" name="categories" id="sofa" value="Sofa">
@@ -620,7 +616,7 @@
 <!-- grid items -->  
             <div class="grid-container">
                 @foreach($products as $product)
-                    @if($product->product_category_id == $loai)
+                   
                     <div class="grid-item">
                         <a href="#"><img src="/front/images/Living_Room_img/{{ $product->product_images[0]->path }}" alt="img"></a>
                         <div class="text-items">
@@ -629,7 +625,7 @@
                             <p class="price-item">{{ $product->price }}</p>
                         </div>
                     </div>
-                    @endif
+                  
                 @endforeach
 
               

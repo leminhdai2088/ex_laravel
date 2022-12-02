@@ -10,15 +10,9 @@ use Illuminate\Http\Request;
 
 class DisProController extends Controller
 {
-    public function index($loai){
+    public function index(){
         $products = products::where('featured', true)->get();
-        $filter_cates= product_category::all();
-        return view('front.bath_room', compact('products','filter_cates'), ['loai'=>$loai]);
+        return view('front.bath_room',compact('products'));
     }
 
-    public function room(){
-        $products = products::where('featured', true)->get();
-        $filter_cates= product_category::all();
-        return view('front.bath_room', compact('products','filter_cates'));
-    }
 }
