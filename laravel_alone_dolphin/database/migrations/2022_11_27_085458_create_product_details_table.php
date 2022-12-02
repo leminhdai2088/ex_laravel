@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
 
             $table->integer('product_id')->unsigned();
-            $table->string('size');
+            $table->string('size')->nullable();
             $table->integer('qty');
 
             $table->timestamps();

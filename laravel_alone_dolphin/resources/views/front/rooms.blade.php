@@ -615,7 +615,7 @@
                 @foreach($products as $product)
                    
                     <div class="grid-item">
-                        <a href="/{{ $room }}/product/{{ $product->id }}"><img src="/front/images/Living_Room_img/{{ $product->product_images[0]->path }}" alt="img"></a>
+                        <a href="/{{ $room }}/{{ $product->product_category_id }}/{{ $product->id }}"><img src="/front/images/Living_Room_img/{{ $product->product_images[0]->path }}" alt="img"></a>
                         <div class="text-items">
                             <a href="#"><h3 class="name-item">{{ $product->name }}</h3></a>
                             <p class="desc-item">{{ $product->product_images[0]->path }}</p>
