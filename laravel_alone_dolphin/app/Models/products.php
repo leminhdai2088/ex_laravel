@@ -23,4 +23,8 @@ class products extends Model
     public function product_details(){
         return $this->hasOne('App\Models\product_details','product_id','id');
     }
+
+    public function product_category(){
+        return $this->hasOne('App\Models\product_category','id','product_category_id');
+    }
 }

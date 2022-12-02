@@ -3,13 +3,13 @@
 <!-- CHƯA SỬA -->
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../main.css" />
-    <link href="/dist/output.css" rel="stylesheet">
-    <link href="/dist/page_rooms.css" rel="stylesheet">
+    <link rel="stylesheet" href="/front/css/main.css" />
+    <link href="/front/css/output.css" rel="stylesheet">
+    <link href="/front/css/page_rooms.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../assets/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel="stylesheet" href="../dist/header.css">
+    <link rel="stylesheet" href="/front/css/header.css">
 </head>
 
 <body class="w-[1200px] m-auto">
@@ -17,7 +17,7 @@
     <div class="header fixed left-0 right-0 top-0 z-20 h-16">
         <div class="w-[1200px] m-auto flex items-center justify-between px-3">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
-            <a class="logo" href="#"><img height="64" width="64" src="/Alone Dolphin.png" alt="alone dolphin"></a>
+            <a class="logo" href="#"><img height="64" width="64" src="/front/images/Alone Dolphin.png" alt="alone dolphin"></a>
             <div class="hidden md:flex items-center gap-10 cursor-pointer">
                 <div class="h-fit"><a href="./home.html">Trang chủ</a> </div>
                 <div class="h-fit"><a href="./page_intro.html">Giới thiệu</a></div>
@@ -27,193 +27,28 @@
                         <div class="container-sub-menu w-[1200px] m-auto">
                             <div class="sub-menu">
                                 <ul>
+                                    @foreach($rooms_header as $room)
                                     <li>
-                                        <a href="./living_room.html">PHÒNG KHÁCH - living room</a>
+                                        <a href="./living_room.html">{{ $room->name }}</a>
                                         <ul class="details-menu details-living-menu">
 
-
+                                            @foreach($categories_header as $cate)
+                                            @if($cate->room_id == $room->id)
                                             <li>
-                                                <a href="./list_product.html">SOFA</a>
+                                                <a href="./list_product.html">{{ $cate->name }}</a>
                                             </li>
-
-                                            <li>
-                                                <a href="./list_product.html">GHẾ ĐÔN, GHẾ BĂNG</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">KỆ, TỦ TV</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">ĐỒNG HỒ</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">TRANH ẢNH</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">GỐI TRANG TRÍ</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">ĐÈN SÀN</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">KỆ, TỦ GIÀY</a>
-                                            </li>
+                                            @endif
+                                            @endforeach
 
                                         </ul>
                                     </li>
-
-                                    <li>
-                                        <a href="./bed_room.html"> PHÒNG NGỦ - bedroom</a>
-                                        <ul class="details-menu details-bedroom-menu">
-
-
-                                            <li>
-                                                <a href="./list_product.html">GIƯỜNG</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">BỘ KỆ/TỦ QUẦN ÁO</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">ĐÈN SÀN</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">BÀN TRANG ĐIỂM</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">ĐÈN BÀN</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">ĐÈN TRANG TRÍ</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">TỦ LƯU TRỮ</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">KỆ/TỦ GIÀY</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">GIÁ/KỆ TREO TRANG TRÍ</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">GƯƠNG</a>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-
-                                    <li>
-                                        <a href="./kitchen_room.html"> BẾP & PHÒNG ĂN - kitchen room</a>
-                                        <ul class="details-menu details-kitchen-menu">
-
-
-                                            <li>
-                                                <a href="./list_product.html">BỘ BÀN ĂN</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">BÀN ĂN</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">GHẾ ĂN</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">THẢM BẾP</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">KỆ BẾP</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">KHĂN BẾP</a>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-
-                                    <li>
-                                        <a href="./home_office.html"> PHÒNG LÀM VIỆC - home office</a>
-                                        <ul class="details-menu details-office-menu">
-
-
-                                            <li>
-                                                <a href="./list_product.html">BÀN</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">GHẾ</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">ĐÈN BÀN</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">ĐỒNG HỒ</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">VĂN PHÒNG PHẨM</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">BẢNG TRANG TRÍ</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">KỆ, TỦ LƯU TRỮ</a>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-
-                                    <li>
-                                        <a href="./bath_room.html"> PHÒNG TẮM - bathroom</a>
-                                        <ul class="details-menu details-bath-menu">
-                                            <li>
-                                                <a href="./list_product.html">RÈM</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">KHĂN TẮM</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">GƯƠNG</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">THẢM CHÂN</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="./list_product.html">GIÁ, KỆ, TỦ TREO</a>
-                                            </li>
-
-                                        </ul>
-                                    </li>
+                                    @endforeach
 
 
                                 </ul>
                             </div>
                             <div class="img-sub-menu">
-                                <a href="#"><img src="../assets/img-menu/image_menu_products.webp" alt="image menu"></a>
+                                <a href="#"><img src="/front/images/img-menu/image_menu_products.webp" alt="image menu"></a>
                             </div>
                         </div>
                     </div>

@@ -7,12 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="/front/css/header.css">
-
-
     <link rel="stylesheet" href="/front/css/footer.css">
     
     <link rel="stylesheet" href="/front/css/page_intro.css">
-    <!-- <link rel="stylesheet" href="../dist/page_home/vendor/bootstrap.css"> -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="/front/css/main.css" />
     <link href="/front/css/output.css" rel="stylesheet">
@@ -591,7 +588,7 @@
                                 <li>
                                     <input type="radio" name="categories" id="trangtri" value="Trang trí">
                                     <label for="trangtri">Trang trí</label>
-                                </li> --}}
+                                </li>
                                 
                              </ul>
                          </div>
@@ -618,14 +615,13 @@
                 @foreach($products as $product)
                    
                     <div class="grid-item">
-                        <a href="#"><img src="/front/images/Living_Room_img/{{ $product->product_images[0]->path }}" alt="img"></a>
+                        <a href="/{{ $room }}/product/{{ $product->id }}"><img src="/front/images/Living_Room_img/{{ $product->product_images[0]->path }}" alt="img"></a>
                         <div class="text-items">
                             <a href="#"><h3 class="name-item">{{ $product->name }}</h3></a>
                             <p class="desc-item">{{ $product->product_images[0]->path }}</p>
                             <p class="price-item">{{ $product->price }}</p>
                         </div>
                     </div>
-                  
                 @endforeach
 
               

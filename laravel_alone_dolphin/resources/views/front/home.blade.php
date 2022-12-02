@@ -47,37 +47,9 @@
                                         <a href="/living_room">PHÒNG KHÁCH - living room</a>
                                         <ul class="details-menu details-living-menu">
 
-
+                                        
                                             <li>
                                                 <a href="/list_product">SOFA</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="/list_product">GHẾ ĐÔN, GHẾ BĂNG</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="/list_product">KỆ, TỦ TV</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="/list_product">ĐỒNG HỒ</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="/list_product">TRANH ẢNH</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="/list_product">GỐI TRANG TRÍ</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="/list_product">ĐÈN SÀN</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="/list_product">KỆ, TỦ GIÀY</a>
                                             </li>
 
                                         </ul>

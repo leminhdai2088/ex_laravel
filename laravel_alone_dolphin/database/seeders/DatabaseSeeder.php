@@ -88,7 +88,7 @@ class DatabaseSeeder extends Seeder
                 'room_id' => 1,
 
                 'name' => 'Pure Pineapple',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur ing elit, sed do eiusmod tempor sum dolor sit amet, consectetur adipisicing elit, sed do mod tempor',
+                'material' => 'Lorem ipsum dolor sit amet, consectetur ing elit, sed do eiusmod tempor sum dolor sit amet, consectetur adipisicing elit, sed do mod tempor',
                 'price' => 629.99,
                 'qty' => 20,
                 'weight' => 1.3,
@@ -102,7 +102,7 @@ class DatabaseSeeder extends Seeder
                 'room_id' => 1,
 
                 'name' => 'Guangzhou sweater',
-                'description' => null,
+                'material' => null,
                 'price' => 35,
                 'qty' => 20,
                 'weight' => null,
@@ -116,7 +116,7 @@ class DatabaseSeeder extends Seeder
                 'room_id' => 2,
 
                 'name' => 'Guangzhou sweater',
-                'description' => null,
+                'material' => null,
                 'price' => 35,
                 'qty' => 20,
                 'weight' => null,
@@ -130,7 +130,7 @@ class DatabaseSeeder extends Seeder
                 'room_id' => 2,
 
                 'name' => 'Microfiber Wool Scarf',
-                'description' => null,
+                'material' => null,
                 'price' => 64,
                 'qty' => 20,
                 'weight' => null,
@@ -143,7 +143,7 @@ class DatabaseSeeder extends Seeder
                 'room_id' => 1,
 
                 'name' => "Men's Painted Hat",
-                'description' => null,
+                'material' => null,
                 'price' => 44,
                 'qty' => 20,
                 'weight' => null,
@@ -156,7 +156,7 @@ class DatabaseSeeder extends Seeder
                 'room_id' => 1,
 
                 'name' => 'Converse Shoes',
-                'description' => null,
+                'material' => null,
                 'price' => 35,
                 'qty' => 20,
                 'weight' => null,
@@ -169,7 +169,7 @@ class DatabaseSeeder extends Seeder
                 'room_id' => 1,
 
                 'name' => 'Pure Pineapple',
-                'description' => null,
+                'material' => null,
                 'price' => 64,
                 'qty' => 20,
                 'weight' => null,
@@ -182,7 +182,7 @@ class DatabaseSeeder extends Seeder
                 'room_id' => 2,
 
                 'name' => '2 Layer Windbreaker',
-                'description' => null,
+                'material' => null,
                 'price' => 44,
                 'qty' => 20,
                 'weight' => null,
@@ -195,7 +195,7 @@ class DatabaseSeeder extends Seeder
                 'room_id' => 1,
 
                 'name' => 'Converse Shoes',
-                'description' => null,
+                'material' => null,
                 'price' => 35,
                 'qty' => 20,
                 'weight' => null,
@@ -209,37 +209,31 @@ class DatabaseSeeder extends Seeder
         DB::table('product_details')->insert([
             [
                 'product_id' => 1,
-                'color' => 'blue',
                 'size' => 'S',
                 'qty' => 5,
             ],
             [
                 'product_id' => 2,
-                'color' => 'blue',
                 'size' => 'M',
                 'qty' => 5,
             ],
             [
                 'product_id' => 3,
-                'color' => 'blue',
                 'size' => 'L',
                 'qty' => 5,
             ],
             [
                 'product_id' => 4,
-                'color' => 'blue',
                 'size' => 'XS',
                 'qty' => 5,
             ],
             [
                 'product_id' => 5,
-                'color' => 'yellow',
                 'size' => 'S',
                 'qty' => 0,
             ],
             [
                 'product_id' => 6,
-                'color' => 'violet',
                 'size' => 'S',
                 'qty' => 0,
             ],

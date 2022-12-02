@@ -33,6 +33,9 @@
         .tab-content.active {
             display: block;
         }
+        .main-detail{
+            margin-top: 104px;
+        }
     </style>
 </head>
 
@@ -458,43 +461,31 @@
     </div>
 
 
-    <div class="grid grid-cols-2 gap-10">
+    <div class="grid grid-cols-2 gap-10 main-detail">
         <div>
             <div class="gallery">
-                <img src="/front/images/product/ghe1.webp" alt="" width="300" height="300">
-                <img src="/front/images/product/ghe2.webp" alt="" width="300" height="300">
-                <img src="/front/images/product/ghe3.webp" alt="" width="300" height="300">
-                <img src="/front/images/product/ghe4.webp" alt="" width="300" height="300">
-                <img src="/front/images/product/ghe5.webp" alt="" width="300" height="300">
-                <img src="/front/images/product/ghe6.webp" alt="" width="300" height="300">
+                @for($i = 1; $i <= count($product->product_images); $i++)
+                    <img src="/front/images/product/ghe{{ $i }}.webp" alt="" width="300" height="300">
+                @endfor
             </div>
             <div class="gallery-slide">
-                <img src="/front/images/product/ghe1.webp" alt="" width="300" height="300" class="m-3">
-                <img src="/front/images/product/ghe2.webp" alt="" width="300" height="300" class="m-3">
-                <img src="/front/images/product/ghe3.webp" alt="" width="300" height="300" class="m-3">
-                <img src="/front/images/product/ghe4.webp" alt="" width="300" height="300" class="m-3">
-                <img src="/front/images/product/ghe5.webp" alt="" width="300" height="300" class="m-3">
-                <img src="/front/images/product/ghe6.webp" alt="" width="300" height="300" class="m-3">
+                @for($i = 1; $i <= count($product->product_images); $i++)
+                    <img src="/front/images/product/ghe{{ $i }}.webp" alt="" width="300" height="300">
+                @endfor 
+                
             </div>
         </div>
         <div>
-            <h1 class="uppercase text-gray-700 text-2xl font-bold">Noven</h1>
-            <div>Ghế ăn, ghế làm việc</div>
+            <h1 class="uppercase text-gray-700 text-2xl font-bold">{{ $product->name }}</h1>
+            <div>{{ $product->product_category->name }}</div>
             <div class="text-3xl">
-                742,500₫
+                {{ $product->price }}
             </div>
             <div class="product-description">
-                <p><strong>Kích thước: </strong><span>D47 x R53,5 x C77 cm</span></p>
-                <p><strong>Chất liệu: </strong><span>Gỗ cao su, nệm bọc vải</span></p>
+                <p><strong>Kích thước: </strong><span>{{ $product->product_details->size }}</span></p>
+                <p><strong>Chất liệu: </strong><span>{{ $product->material }}</span></p>
             </div>
             <form action="/gio-hang">
-                <div>
-                    <strong>Màu sắc:</strong>
-                    <select name="colors" id="colors-select">
-                        <option value="red">Đỏ</option>
-                        <option value="black">Đen</option>
-                    </select>
-                </div>
                 <div>
                     <strong>Số lượng:</strong>
                     <input type="number" value="1" min="1">
@@ -512,7 +503,7 @@
     </div>
 
     <div class="tab-content active" id="tab1">
-        this is tab1
+        Sản phẩm này được làm từ {{ $product->material }}, được chiếc xuất hoàn toàn từ thiên nhiên, không chất hóa học
     </div>
     <div class="tab-content" id="tab2">
         this is tab2
