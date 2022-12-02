@@ -289,13 +289,30 @@ class DatabaseSeeder extends Seeder
         DB::table('rooms')->insert([
             [
                 'id' => 1,
-                'name' => 'Phòng khách',
+                'name' => 'PHÒNG KHÁCH - living room',
+                'link' => 'living_room'
             ],
             [
                 'id' => 2,
-                'name' => 'Phòng ngủ',
-                // 'image' => 'link.png'
-            ]
+                'name' => 'PHÒNG NGỦ - bedroom',
+                'link' => 'bed_room'
+            ],
+            [
+                'id' => 3,
+                'name' => 'BẾP & PHÒNG ĂN - Kitchen room',
+                'link' => 'kitchen_room'
+            ],
+            [
+                'id' => 4,
+                'name' => 'PHÒNG LÀM VIỆC - home office',
+                'link' => 'home_office'
+            ],
+            [
+                'id' => 5,
+                'name' => 'PHÒNG TẮM - bathroom',
+                'link' => 'bath_room'
+            ],
+            
         ]);
 
     }

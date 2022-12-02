@@ -39,6 +39,10 @@ class DisProController extends Controller
                 return view('front.rooms',compact('products','room'));
                 break;
             }
+
+
+
+           
     }
 
     

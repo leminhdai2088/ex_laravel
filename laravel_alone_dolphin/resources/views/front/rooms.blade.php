@@ -445,25 +445,11 @@
     <div class="main">
         <div class="nav-room">
             <p class="direction">
-                <a href="/home"><i>Trang chủ</i></a> / <a href="#"><i>PHÒNG TẮM - bathroom</i></a> / <span class="opacity-08">PHÒNG TẮM - bathroom</span>
-            </p>
-            <table>
-                <tr>
-                    <td><a href="/list_product">RÈM</a></td>
-                    <td><a href="/list_product">KHĂN TẮM</a></td>
-                    <td><a href="/list_product">GƯƠNG</a></td>
-                    <td><a href="/list_product">THẢM CHÂN</a></td>
-                </tr>
-                <tr>
-                    <td><a href="/list_product">GIÁ, KỆ, TỦ TREO</a></td>
-
-                   
-                </tr>
-
-            </table>
+                <a href="/home"><i>Trang chủ</i></a> / <i>{{ $products[0]->room->name }}</i>
+            </p>    
         </div>
         <div class="slider">
-            <h1 class="text-center">PHÒNG TẮM - bathroom</h1>
+            <h1 class="text-center">{{ $products[0]->room->name }}</h1>
             <img src="/front/images/Bath_room_img/slider.webp" alt="">
         </div>
         
@@ -499,114 +485,7 @@
                              </ul>
                          </div>
                     </div>
-     
-                    <div class="filter-block color-js">
-                          <div class="filter-item">
-                             <span class="title-filter">
-                                Màu sắc
-                                 <i class="ti-plus"></i>
-                             </span>
-                             <ul class="color-choice choice">
-                                <li>
-                                    <input type="radio" name="filter-color" id="xanh" value="Xanh ciment">
-                                    <label for="xanh">Xanh ciment</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="filter-color" id="nau" value="Nâu">
-                                    <label for="nau">Nâu</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="filter-color" id="trang" value="Trắng">
-                                    <label for="trang">Trắng</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="filter-color" id="be" value="Be">
-                                    <label for="be">Be</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="filter-color" id="xam" value="Xám">
-                                    <label for="xam">Xám</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="filter-color" id="den" value="Đen">
-                                    <label for="den">Đen</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="filter-color" id="do" value="Đỏ">
-                                    <label for="do">Đỏ</label>
-                                </li>
-                             </ul>
-                     </div>
-                    </div>
-     
-                    <div class="filter-block type-js">
-                         <div class="filter-item">
-                             <span class="title-filter">
-                                Loại sản phẩm
-                                 <i class="ti-plus"></i>
-                             </span>
-                             <ul class="type-choice choice">
-                                {{-- @foreach($filter_cates as $filter_cate)
-                                <li>
-                           
-                                    <a href="./{{ $filter_cate->id }}">{{ $filter_cate->name }}</a>
-                                </li>
-                                @endforeach --}}
-                                
-                             
-                                
-                                <li>
-                                    <input type="radio" name="categories" id="sofa" value="Sofa">
-                                   <label for="sofa">Sofa</label>
-                                </li>
-                                
-                                <li>
-                                    <input type="radio" name="categories" id="tranh" value="Tranh">
-                                    <label for="tranh">Tranh</label>
-                                </li>
-                                
-                                <li>
-                                    <input type="radio" name="categories" id="desk" value="Desk">
-                                    <label for="desk">Desk</label>
-                                </li>
-
-                                <li>
-                                    <input type="radio" name="categories" id="ghe" value="Ghế">
-                                    <label for="ghe">Ghế</label>
-                                </li>
-                                
-                                <li>
-                                    <input type="radio" name="categories" id="ban" value="Bàn">
-                                    <label for="ban">Bàn</label>
-                                </li>
-                                
-                                <li>
-                                    <input type="radio" name="categories" id="den" value="Đèn">
-                                    <label for="den">Đèn</label>
-                                </li>
-                                
-                                <li>
-                                    <input type="radio" name="categories" id="trangtri" value="Trang trí">
-                                    <label for="trangtri">Trang trí</label>
-                                </li>
-                                
-                             </ul>
-                         </div>
-                    </div>
                 </div>
-
-
-               <div class="sort">
-                    <span class="amount-items">300 sản phẩm</span>
-                    <select name="" id="" class="sort-by">
-                        <option value="" selected>Sort by</option>
-                        <option value="">Mới nhất</option>
-                        <option value="">Giá tăng dần</option>
-                        <option value="">Giá giảm dần</option>
-                        <option value="">Tên: A - Z</option>
-                        <option value="">Tên: Z - A</option>
-                    </select>
-               </div>
             </div>
 
             

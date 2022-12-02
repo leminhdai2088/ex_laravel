@@ -2,16 +2,7 @@
 
 // xử lý filter
 const btnPrice = document.querySelector('.price-js');
-const btnColor = document.querySelector('.color-js');
-const btnType = document.querySelector('.type-js');
 
-
-  
-
-
-function addPlusRemoveMinus(){
-
-}
 
 btnPrice.addEventListener('click',function(){
   document.querySelector('.price-choice').classList.toggle('open-filter');
@@ -23,52 +14,12 @@ btnPrice.addEventListener('click',function(){
   }
 })
 
-btnColor.addEventListener('click',function(){
-  document.querySelector('.color-choice').classList.toggle('open-filter');
-
-  var elementI = document.querySelector('.color-js i');
-  if(elementI){
-    elementI.classList.toggle('ti-plus');
-    elementI.classList.toggle('ti-minus');
-  }
-})
-
-btnType.addEventListener('click',function(){
-  document.querySelector('.type-choice').classList.toggle('open-filter');
-
-  var elementI = document.querySelector('.type-js i');
-  if(elementI){
-    elementI.classList.toggle('ti-plus');
-    elementI.classList.toggle('ti-minus');
-  }
-})
 
 
 function closeFilterPrice(){
     document.querySelector('.price-choice').classList.remove('open-filter');
 
     var elementI = document.querySelector('.price-js i');
-    if(elementI){
-      elementI.classList.add('ti-plus');
-      elementI.classList.remove('ti-minus');
-    }
-    
-}
-
-function closeFilterColor(){
-    document.querySelector('.color-choice').classList.remove('open-filter');
-
-    var elementI = document.querySelector('.color-js i');
-    if(elementI){
-      elementI.classList.add('ti-plus');
-      elementI.classList.remove('ti-minus');
-    }
-}
-
-function closeFilterType(){
-    document.querySelector('.type-choice').classList.remove('open-filter');
-
-    var elementI = document.querySelector('.type-js i');
     if(elementI){
       elementI.classList.add('ti-plus');
       elementI.classList.remove('ti-minus');
@@ -85,18 +36,6 @@ document.addEventListener(
       ) {
         closeFilterPrice();
       }
-
-      if (!event.target.closest(".color-choice") &&
-      !event.target.closest(".color-js")
-      ) {
-        closeFilterColor();
-      }
-
-      if (!event.target.closest(".type-choice") &&
-      !event.target.closest(".type-js")
-      ) {
-        closeFilterType();
-      }
     },
     false
   )
@@ -112,40 +51,6 @@ for(var i = 0, length = filterPrice.length; i < length; i++ ){
 
   arrPrice[i].onclick = function(e){
     price.innerText = e.target.value;
-  }
-}
-// for(var i of filterPrice){
-//   i.onclick= function(e){
-//     price.innerText = e.target.value;
-//   }
-// }
-
-// lọc màu sắc
-
-
-var color = document.querySelector('.color-js .title-filter');
-
-var filterColor =document.querySelectorAll('.color-choice input');
-var arrColor = [];
-for(var i = 0, length = filterColor.length; i < length; i++ ){
-  arrColor.push(filterColor[i]);
-
-  arrColor[i].onclick = function(e){
-    color.innerText = e.target.value;
-  }
-}
-
-// lọc loại sản phẩm
-
-var type = document.querySelector('.type-js .title-filter');
-
-var filterType =document.querySelectorAll('.type-choice input');
-var arrType = [];
-for(var i = 0, length = filterType.length; i < length; i++ ){
-  arrType.push(filterType[i]);
-
-  arrType[i].onclick = function(e){
-    type.innerText = e.target.value;
   }
 }
 
