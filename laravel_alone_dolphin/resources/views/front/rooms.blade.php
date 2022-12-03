@@ -464,19 +464,19 @@
                              </span>
                              <ul class="price-choice choice">
                                 <li>
-                                    <a href="?price=1">Dưới 1 triệu</a>
+                                    <a href="{{ request()->fullUrlWithQuery(['price'=>1]) }}">Dưới 1 triệu</a>
                                 </li>
                                 <li>
-                                   <a href="?price=2">Từ 1 - 2 triệu</a>
+                                   <a href="{{ request()->fullUrlWithQuery(['price'=>2]) }}">Từ 1 - 2 triệu</a>
                                 </li>
                                 <li>
-                                    <a href="?price=3">Từ 2 - 3 triệu</a>
+                                    <a href="{{ request()->fullUrlWithQuery(['price'=>3]) }}">Từ 2 - 3 triệu</a>
                                 </li>
                                 <li>
-                                    <a href="?price=4">Từ 3 - 5 triệu</a>
+                                    <a href="{{ request()->fullUrlWithQuery(['price'=>4]) }}">Từ 3 - 5 triệu</a>
                                 </li>
                                 <li>
-                                    <a href="?price=5">Lớn hơn 5 triệu</a>
+                                    <a href="{{ request()->fullUrlWithQuery(['price'=>5]) }}">Lớn hơn 5 triệu</a>
                                 </li>
                              </ul>
                          </div>
