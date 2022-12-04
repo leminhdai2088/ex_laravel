@@ -85,23 +85,23 @@
     
 }
 
-.details-living-menu{
-    right: 30px;
+.details-living_room{
+    right: -155px;
 }
 
-.details-bedroom-menu{
+.details-bed_room{
     right: -229px;
 }
 
-.details-kitchen-menu{
+.details-kitchen_room{
     right: -128px;
 }
 
-.details-office-menu{
+.details-home_office{
     right: -181px;
 }
 
-.details-bath-menu{
+.details-bath_room{
     right: -165px;
 }
 .header{
