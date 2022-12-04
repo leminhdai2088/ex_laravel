@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- CHƯA SỬA -->
+
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/front/css/main.css" />
@@ -281,6 +281,9 @@
             <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="#footer">Liên hệ</a></div>
         </div>
     </div>
+
+    @yield('content')
+
 
 
     <script>

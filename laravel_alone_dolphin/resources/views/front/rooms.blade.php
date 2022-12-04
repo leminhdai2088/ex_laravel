@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/front/css/header.css">
     <link rel="stylesheet" href="/front/css/footer.css">
     
-    <link rel="stylesheet" href="/front/css/page_intro.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="/front/css/main.css" />
     <link href="/front/css/output.css" rel="stylesheet">

@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="/front/css/footer.css">
 
     
-    <link rel="stylesheet" href="/front/css/page_intro.css">
-    <!-- <link rel="stylesheet" href="/front/css/page_home/vendor/bootstrap.css"> -->
+    
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="/front/css/main.css" />
     <link href="/front/css/output.css" rel="stylesheet">
@@ -590,10 +589,10 @@
                     <div class="footer-text">Email: 2052xxxx@gm.uit.edu.vn</div>
                     <div class="footer-text">Địa chỉ: trường đại học Công nghệ Thông tin</div>
                     <div class="link flex gap-5 mt-2">
-                        <a href="#"><img src="front/images/icon/facebook.svg" alt="" height="30" width="30"></a>
-                        <a href="#"><img src="front/images/icon/youtube.svg" alt="" height="30" width="30"></a>
-                        <a href="#"><img src="front/images/icon/behance.svg" alt="" height="30" width="30"></a>
-                        <a href="#"><img src="front/images/icon/wordpress.svg" alt="" height="30" width="30"></a>
+                        <a href="#"><img src="/front/images/icon/facebook.svg" alt="" height="30" width="30"></a>
+                        <a href="#"><img src="/front/images/icon/youtube.svg" alt="" height="30" width="30"></a>
+                        <a href="#"><img src="/front/images/icon/behance.svg" alt="" height="30" width="30"></a>
+                        <a href="#"><img src="/front/images/icon/wordpress.svg" alt="" height="30" width="30"></a>
                     </div>
                 </div>
             </div>

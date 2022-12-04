@@ -156,6 +156,12 @@
 .row{
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+
+.share-title h3{
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .main-share{
