@@ -20,6 +20,8 @@ Route::get('/', [front\HomeController::class, 'index']);
 
 Route::get('/about_us', [front\HomeController::class, 'about']);
 
+Route::get('/profile', [front\HomeController::class, 'profile']);
+
 Route::get('/sign_in', [front\HomeController::class, 'signin']);
 
 Route::get('/sign_up', [front\HomeController::class, 'signup']);
