@@ -446,12 +446,12 @@
     <div class="main">
         <div class="nav-room">
             <p class="direction">
-                <a href="/home"><i>Trang chủ</i></a> / <i>{{ $products[0]->room->name }}</i>
+                <a href="/home"><i>Trang chủ</i></a> / <i>{{ $name_cate_room[0]->room->name }}</i>
             </p>    
         </div>
         <div class="slider">
-            <h1 class="text-center">{{ $products[0]->room->name }}</h1>
-            <img src="/front/images/Bath_room_img/slider.webp" alt="">
+            <h1 class="text-center">{{ $name_cate_room[0]->room->name }}</h1>
+            <img src="/front/images/image_products/{{ $name_cate_room[0]->room->image }}" alt="">
         </div>
         
             <div class="filter">
@@ -493,10 +493,10 @@
                 @foreach($products as $product)
                    
                     <div class="grid-item">
-                        <a href="/{{ $room }}/{{ $product->product_category_id }}/{{ $product->id }}"><img src="/front/images/Living_Room_img/{{ $product->product_images[0]->path }}" alt="img"></a>
+                        <a href="/{{ $room }}/{{ $product->product_category_id }}/{{ $product->id }}"><img style="width:270px; height:270px;" src="/front/images/image_products/{{ $product->product_images[0]->path }}" alt="img"></a>
                         <div class="text-items">
                             <a href="#"><h3 class="name-item">{{ $product->name }}</h3></a>
-                            <p class="desc-item">{{ $product->product_images[0]->path }}</p>
+                            <p class="desc-item">{{ $product->product_category->name }}</p>
                             <p class="price-item">{{ $product->price }}</p>
                         </div>
                     </div>

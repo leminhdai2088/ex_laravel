@@ -29,13 +29,13 @@
                                 <ul>
                                     @foreach($rooms_header as $room)
                                     <li>
-                                        <a href="./living_room">{{ $room->name }}</a>
+                                        <a href="/{{ $room->link }}">{{ $room->name }}</a>
                                         <ul class="details-menu details-living-menu">
 
                                             @foreach($categories_header as $cate)
                                                 @if($cate->room_id == $room->id)
                                                     <li>
-                                                        <a href="/living_room/{{ $cate->id }}">{{ $cate->name }}</a>
+                                                        <a href="/{{ $room->link }}/{{ $cate->id }}">{{ $cate->name }}</a>
                                                     </li>
                                                 @endif
                                             @endforeach

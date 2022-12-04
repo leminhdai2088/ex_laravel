@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('material')->nullable();
             $table->integer('price');
             $table->integer('qty');
-            $table->float('weight')->nullable();
+            $table->string('weight')->nullable();
             $table->float('sku')->nullable();
             $table->boolean('featured')->nullable();
 

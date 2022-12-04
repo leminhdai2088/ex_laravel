@@ -79,14 +79,17 @@ class ShopController extends Controller
                 where('room_id',5)->where('product_category_id',$loai);
                 break;
             }
+
+            $name_cate_room= $products->get();
+
             if($request->price){
                 $price= $request->price;
                 switch($price){
                     case 1: 
-                        $products->where('price', '<', 50);
+                        $products->where('price', '<', 1000000);
                         break;
                     case 2: 
-                        $products->whereBetween('price', [50,100]);
+                        $products->whereBetween('price', [1000000,2000000]);
                         break;
                     case 3: 
                         $products->whereBetween('price', [2000000,3000000]);
@@ -101,7 +104,7 @@ class ShopController extends Controller
                         break;
                 }
             }
-            $products=$products->paginate(2);
-            return view('front.list_product',compact('products','room','loai'));
+            $products=$products->paginate(8);
+            return view('front.list_product',compact('products','room','loai','name_cate_room'));
     }
 }

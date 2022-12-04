@@ -447,11 +447,11 @@
     <div class="main">
         <div class="nav-room">
             <p class="direction">
-                <a href="/home"><i>Trang chủ</i></a> / <i>{{ $products[0]->room->name }}</i> / <i>{{ $products[0]->product_category->name }}</i>
+                <a href="/home"><i>Trang chủ</i></a> / <i>{{ $name_cate_room[0]->room->name }}</i> / <i>{{ $name_cate_room[0]->product_category->name }}</i>
             </p>
         </div>
         <div class="slider">
-            <h1 class="text-center">{{ $products[0]->product_category->name }}</h1>
+            <h1 class="text-center"> {{ $name_cate_room[0]->product_category->name }}</h1>
         </div>
         
             <div class="filter">
@@ -492,12 +492,12 @@
             <div class="grid-container">
                 @foreach($products as $product)
                 <div class="grid-item">
-                    <a href="/{{ $room }}/{{ $loai }}/{{ $product->id }}"><img src="/front/images/Living_Room_img/{{ $product->product_images[0]->path }}" alt="img"></a>
+                    <a href="/{{ $room }}/{{ $loai }}/{{ $product->id }}"><img style="width:270px; height:270px;" src="/front/images/image_products/{{ $product->product_images[0]->path }}" alt="img"></a>
                     <div class="text-items">
                         <a href="#"><h3 class="name-item">{{ $product->name}}</h3></a>
                         {{-- <p class="desc-item">{{ $product->product_details->size}}</p> --}}
-                        <p class="price-item">{{ $product->price}}</p>
-                        <p>{{ $product->product_images[0]->path}}</p>
+                        <p class="desc-item">{{ $product->product_category->name }}</p>
+                        <p class="price-item">{{ $product->price }}</p>
                     </div>
                 </div>
                 @endforeach

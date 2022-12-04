@@ -464,13 +464,13 @@
     <div class="grid grid-cols-2 gap-10 main-detail">
         <div>
             <div class="gallery">
-                @for($i = 1; $i <= count($product->product_images); $i++)
-                    <img src="/front/images/product/ghe{{ $i }}.webp" alt="" width="300" height="300">
+                @for($i = 0; $i < count($product->product_images); $i++)
+                <img src="/front/images/image_products/{{ $product->product_images[$i]->path }}" alt="" width="300" height="300">
                 @endfor
             </div>
             <div class="gallery-slide">
-                @for($i = 1; $i <= count($product->product_images); $i++)
-                    <img src="/front/images/product/ghe{{ $i }}.webp" alt="" width="300" height="300">
+                @for($i = 0; $i < count($product->product_images); $i++)
+                    <img src="/front/images/image_products/{{ $product->product_images[$i]->path }}" alt="" width="300" height="300">
                 @endfor 
                 
             </div>

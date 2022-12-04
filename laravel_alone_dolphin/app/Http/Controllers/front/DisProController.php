@@ -35,14 +35,16 @@ class DisProController extends Controller
                 break;
             }
             
+            $name_cate_room= $products->get();
+
             if($request->price){
             $price= $request->price;
             switch($price){
                 case 1: 
-                    $products->where('price', '<', 50);
+                    $products->where('price', '<', 1000000);
                     break;
                 case 2: 
-                    $products->whereBetween('price', [50,100]);
+                    $products->whereBetween('price', [1000000,2000000]);
                     break;
                 case 3: 
                     $products->whereBetween('price', [2000000,3000000]);
@@ -57,7 +59,9 @@ class DisProController extends Controller
                     break;
             }
         }
-        return view('front.rooms',compact('products','room'));
+
+        $products = $products->paginate(20);
+        return view('front.rooms',compact('products','room','name_cate_room'));
     }
 
     
