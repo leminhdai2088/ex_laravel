@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/front/css/main.css" />
     <link href="/front/css/output.css" rel="stylesheet">
-    <link href="/front/css/page_rooms.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -19,8 +18,8 @@
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
             <a class="logo" href="#"><img height="64" width="64" src="/front/images/Alone Dolphin.png" alt="alone dolphin"></a>
             <div class="hidden md:flex items-center gap-10 cursor-pointer">
-                <div class="h-fit"><a href="./home.html">Trang chủ</a> </div>
-                <div class="h-fit"><a href="./page_intro.html">Giới thiệu</a></div>
+                <div class="h-fit"><a href="/">Trang chủ</a> </div>
+                <div class="h-fit"><a href="/about_us">Giới thiệu</a></div>
                 <div class="h-fit hover-product">
                     <a href="#" class="btn-product">Sản phẩm</a>
                     <div class="content-sub-menu">
@@ -99,8 +98,8 @@
             </div>
         </div>
         <div class="pl-7 pb-10">
-            <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="./home.html">Trang chủ</a></div>
-            <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="./page_intro.html">Giới thiệu</a></div>
+            <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="/">Trang chủ</a></div>
+            <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="/about_us">Giới thiệu</a></div>
             <div class="py-2 border-b-2 border-b-yellow-500 text-lg expanded">
                 <div class="flex justify-between pr-3 content-center" onclick="handleExpand(event)">
                     <a>Sản phẩm</a>

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\front;
 
 use App\Http\Controllers\Controller;
 use App\Models\product_category;
-use App\Models\product_details;
+use App\Models\rooms;
 use App\Models\products;
 use Illuminate\Http\Request;
 
@@ -59,11 +59,10 @@ class DisProController extends Controller
                     break;
             }
         }
-
+       
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
         $products = $products->paginate(20);
-        return view('front.rooms',compact('products','room','name_cate_room'));
+        return view('front.rooms',compact('products','room','name_cate_room','categories_header','rooms_header'));
     }
-
-    
-
 }

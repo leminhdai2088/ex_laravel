@@ -20,4 +20,10 @@ class HomeController extends Controller
         return view('front.header_update',compact('categories_header','rooms_header'));
     }
 
+    public function about(){
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        return view('front.page_intro',compact('categories_header','rooms_header'));
+    }
+
 }

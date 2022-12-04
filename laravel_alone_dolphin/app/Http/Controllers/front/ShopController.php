@@ -5,6 +5,7 @@ namespace App\Http\Controllers\front;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\products;
+use App\Models\rooms;
 use App\Models\product_category;
 class ShopController extends Controller
 {
@@ -104,7 +105,9 @@ class ShopController extends Controller
                         break;
                 }
             }
+            $categories_header = product_category::all();
+            $rooms_header = rooms::all();
             $products=$products->paginate(8);
-            return view('front.list_product',compact('products','room','loai','name_cate_room'));
+            return view('front.list_product',compact('products','room','loai','name_cate_room','categories_header','rooms_header'));
     }
 }
