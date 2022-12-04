@@ -26,7 +26,6 @@ Route::get('/sign_up', [front\HomeController::class, 'signup']);
 
 Route::get('/{room}',[front\DisProController::class, 'index'] );
 
-
 Route::get('/{room}/{loai}',[front\ShopController::class,'loai']);
 
 Route::get('/{room}/{loai}/{id}',[front\ShopController::class,'show']);
