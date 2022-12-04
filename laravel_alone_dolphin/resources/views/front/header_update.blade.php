@@ -39,12 +39,9 @@
                                                     </li>
                                                 @endif
                                             @endforeach
-
                                         </ul>
                                     </li>
                                     @endforeach
-
-
                                 </ul>
                             </div>
                             <div class="img-sub-menu">
@@ -111,7 +108,25 @@
                 </div>
                 <div class="px-5 collapse-section">
 
+                @foreach($rooms_header as $room)
                     <div class="py-1 border-b border-b-yellow-500 text-lg">
+                        <div class="flex justify-between pr-6 content-center" >
+                            <a href="/{{ $room->link }}">{{ $room->name }}</a>
+                            <i class="fi fi-rr-angle-small-down" onclick="handleExpandChild(event)"></i>
+                        </div>
+                        <div class="pl-5 collapse-section">
+                            @foreach($categories_header as $cate)
+                            <div class="flex justify-start gap-4 content-center">
+                                @if($cate->room_id == $room->id)
+                                <a href="/{{ $room->link }}/{{ $cate->id }}">{{ $cate->name }}</a>
+                                @endif
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                @endforeach
+
+                    {{-- <div class="py-1 border-b border-b-yellow-500 text-lg">
                         <div class="flex justify-between pr-6 content-center" >
                             <a href="./living_room.html">PHÒNG KHÁCH - living room</a>
                             <i class="fi fi-rr-angle-small-down" onclick="handleExpandChild(event)"></i>
@@ -260,7 +275,7 @@
                                 <a href="./list_product.html">GIÁ, KỆ, TỦ TREO</a>
                             </div>
                         </div>
-                    </div>
+                    </div>  --}}
                 </div>
             </div>
             <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="#footer">Liên hệ</a></div>
