@@ -26,4 +26,16 @@ class HomeController extends Controller
         return view('front.page_intro',compact('categories_header','rooms_header'));
     }
 
+
+    public function signin(){
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        return view('front.sign-in',compact('categories_header','rooms_header'));
+    }
+
+    public function signup(){
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        return view('front.sign-up',compact('categories_header','rooms_header'));
+    }
 }
