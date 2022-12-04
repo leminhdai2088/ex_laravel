@@ -463,6 +463,9 @@
                                  <i class="ti-plus"></i>
                              </span>
                              <ul class="price-choice choice">
+                                 <li>
+                                    <a href="{{ request()->fullUrlWithQuery(['price'=>0]) }}">All</a>
+                                </li>
                                 <li>
                                     <a href="{{ request()->fullUrlWithQuery(['price'=>1]) }}">Dưới 1 triệu</a>
                                 </li>

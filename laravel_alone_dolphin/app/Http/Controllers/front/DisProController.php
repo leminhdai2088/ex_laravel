@@ -34,6 +34,7 @@ class DisProController extends Controller
                 where('room_id',5);
                 break;
             }
+            
             if($request->price){
             $price= $request->price;
             switch($price){
@@ -52,9 +53,10 @@ class DisProController extends Controller
                 case 5: 
                     $products->where('price', '>',5000000);
                     break;
+                case 0:
+                    break;
             }
         }
-        $products=$products->paginate(2);
         return view('front.rooms',compact('products','room'));
     }
 
