@@ -48,19 +48,23 @@
     <div class="px-5 w-full md:w-1/2 m-auto">
             @if(Session::has('thanhcong'))
             <div>{{Session::get('thanhcong')}}</div>
+            @else
+            <div>123</div>
             @endif
         <h1 class="text-2xl md:text-4xl text-center font-semibold my-5">Đăng ký</h1>
-        <form action="{{ url('sign_up') }}" method="POST" id="sign-up">
-        <input type="hidden" name="_token" value="{{csrf_token()}}">
+        <form action="/user" method="POST" id="sign-up">
+            <input type="hidden" name="_token" value="{{csrf_token()}}">
             <div class="form-group">
                 <label for="fullname">Họ và tên</label><span><sup class="text-red-500">*</sup></span><br>
-                <input class="form-control" type="text" id="fullname" name="fullname">
+                <input class="form-control" type="text" id="name" name="name">
                 <span class="form-message"></span>
             </div>
             <div class="mt-4 form-group">
                 <label for="email">Email</label><span><sup class="text-red-500">*</sup></span><br>
-                <input class="form-control" type="text" id="email" name="email">
-                <span class="form-message"></span>
+                <input class="form-control" type="text" id="email" name="email"> 
+                @error('email')
+                <span class="form-message">{{ $message }}</span>
+                @enderror
             </div>
             <div class="mt-4 form-group">
                 <label for="password">Mật khẩu</label><span><sup class="text-red-500">*</sup></span><br>
@@ -81,9 +85,17 @@
             <!-- <input type="submit" value="Tạo tài khoản"
                 class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto"> -->
 
-                <button type="submit" class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto">
-                    Tạo tài khoản 
-                </button>
+                {{-- <button type="submit" class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto"
+                Tạo tài khoản
+                > --}}
+
+                {{-- <button type="submit" class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto">
+                    Tạo tài khoản
+                </button> --}}
+                <input type="submit" class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto"
+                   value="Tạo tài khoản">
+             
+            
         </div>
     </form>
     </div>

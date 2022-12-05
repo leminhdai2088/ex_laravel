@@ -3,6 +3,7 @@
 
 use App\Http\Controllers\front;
 use App\Http\Controllers\front\HomeController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,7 +25,9 @@ Route::get('/profile', [front\HomeController::class, 'profile']);
 
 Route::get('/sign_in', [front\HomeController::class, 'signin']);
 
-Route::get('/sign_up', [front\HomeController::class, 'signup']);
+// Route::get('/sign_up', [front\HomeController::class, 'signup']);
+
+// Route::post('/sign_upp', [front\HomeController::class, 'post_signup']);
 
 Route::get('/{room}',[front\DisProController::class, 'index'] );
 
@@ -32,4 +35,7 @@ Route::get('/{room}/{loai}',[front\ShopController::class,'loai']);
 
 Route::get('/{room}/{loai}/{id}',[front\ShopController::class,'show']);
 
-Route::post('/sign_up', [front\HomeController::class, 'post_signup']);
+//
+Route::get('/register',[UserController::class,'create']);
+
+Route::post('/user',[UserController::class,'store']);

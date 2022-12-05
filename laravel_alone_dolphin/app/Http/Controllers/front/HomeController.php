@@ -58,12 +58,16 @@ class HomeController extends Controller
         return view('front.product_details',compact('categories_header','rooms_header'));
     }
     public function post_signup(Request $request){
-        
-            $user = new User();
-            $user->name = $request->fullname;
-            $user->email = $request->email;
-            $user->password = FacadesHash::make($request->password);
-            $user->save();
-            return redirect()->back()->with('thanhcong','Tạo tài khoản thành công');
+            // $form_field = $request;
+            // dd($form_field);
+
+            return view('front.home');
+       
+            // $user = new User();
+            // $user->name = $request->fullname;
+            // $user->email = $request->email;
+            // $user->password = FacadesHash::make($request->password);
+            // $user->save();
+            // return redirect()->back()->with('thanhcong','Tạo tài khoản thành công');
     }
 }
