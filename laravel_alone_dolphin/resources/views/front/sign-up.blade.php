@@ -46,8 +46,12 @@
         <img src="/front/images/background-pattern.jpg" alt="pattern" id="background-pattern">
     </div>
     <div class="px-5 w-full md:w-1/2 m-auto">
+            @if(Session::has('thanhcong'))
+            <div>{{Session::get('thanhcong')}}</div>
+            @endif
         <h1 class="text-2xl md:text-4xl text-center font-semibold my-5">Đăng ký</h1>
-        <form action="" method="POST" id="sign-up">
+        <form action="{{ url('sign_up') }}" method="POST" id="sign-up">
+        <input type="hidden" name="_token" value="{{csrf_token()}}">
             <div class="form-group">
                 <label for="fullname">Họ và tên</label><span><sup class="text-red-500">*</sup></span><br>
                 <input class="form-control" type="text" id="fullname" name="fullname">
@@ -71,13 +75,13 @@
             </div>
         
         <div class="mt-8">
-            <a href="/sign-in">Đã có tài khoản? Đăng nhập tại đây</a>
+            <a href="/sign_in">Đã có tài khoản? Đăng nhập tại đây</a>
         </div>
         <div class="flex justify-center mt-8">
             <!-- <input type="submit" value="Tạo tài khoản"
                 class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto"> -->
 
-                <button class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto">
+                <button type="submit" class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto">
                     Tạo tài khoản 
                 </button>
         </div>

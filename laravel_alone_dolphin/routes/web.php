@@ -31,3 +31,5 @@ Route::get('/{room}',[front\DisProController::class, 'index'] );
 Route::get('/{room}/{loai}',[front\ShopController::class,'loai']);
 
 Route::get('/{room}/{loai}/{id}',[front\ShopController::class,'show']);
+
+Route::post('/sign_up', [front\HomeController::class, 'post_signup']);
