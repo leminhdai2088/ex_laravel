@@ -52,7 +52,7 @@
             <div>123</div>
             @endif
         <h1 class="text-2xl md:text-4xl text-center font-semibold my-5">Đăng ký</h1>
-        <form action="/user" method="POST" id="sign-up">
+        <form action="/sign_up" method="POST" id="sign-up">
             <input type="hidden" name="_token" value="{{csrf_token()}}">
             <div class="form-group">
                 <label for="name">Họ và tên</label><span><sup class="text-red-500">*</sup></span><br>

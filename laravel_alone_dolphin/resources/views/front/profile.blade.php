@@ -92,9 +92,13 @@
     <div class="md:grid grid-cols-4 my-5 border-t pt-5">
         <div class="md:border-r">
             <h2 class="text-lg md:text-2xl font-semibold mb-3 md:mb-6">Tài khoản của bạn</h2>
-            <p><b>Username: </b>myaccountabcxyz</p>
-            <p><b>Email: </b>myemail@gmail.com</p>
-            <button class="px-4 py-1 rounded-md border my-3">Đăng xuất</button>
+            <p><b>Username: </b>{{ Auth::user()->name }}</p>
+            <p><b>Email: </b>{{ Auth::user()->name }}</p>
+            <form action="/log_out" method="POST">
+                @csrf
+            {{-- <input type="hidden" name="_token" value="{{csrf_token()}}"> --}}
+                <button type="submit" class="px-4 py-1 rounded-md border my-3">Đăng xuất</button>
+            </form>
         </div>
         <div class="col-span-3 mt-5 md:mt-0">
 

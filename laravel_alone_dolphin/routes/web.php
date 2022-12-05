@@ -19,11 +19,23 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [front\HomeController::class, 'index']);
 
+Route::get('/home', [front\HomeController::class, 'index']);
+
+Route::get('/sign_up',[UserController::class,'create']);
+
+Route::post('/sign_up',[UserController::class,'store']);
+
+Route::get('/sign_in',[UserController::class,'show'])->name('login');
+
+Route::post('/sign_in',[UserController::class,'auth']);
+
+Route::post('/log_out',[UserController::class,'log_out']);
+
 Route::get('/about_us', [front\HomeController::class, 'about']);
 
-Route::get('/profile', [front\HomeController::class, 'profile']);
+Route::get('/profile', [front\HomeController::class, 'profile'])->middleware('auth');
 
-Route::get('/sign_in', [front\HomeController::class, 'signin']);
+// Route::get('/sign_in', [front\HomeController::class, 'signin']);
 
 // Route::get('/sign_up', [front\HomeController::class, 'signup']);
 
@@ -36,6 +48,3 @@ Route::get('/{room}/{loai}',[front\ShopController::class,'loai']);
 Route::get('/{room}/{loai}/{id}',[front\ShopController::class,'show']);
 
 //
-Route::get('/register',[UserController::class,'create']);
-
-Route::post('/user',[UserController::class,'store']);
