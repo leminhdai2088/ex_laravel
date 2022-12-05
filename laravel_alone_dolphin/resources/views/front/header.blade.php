@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="/front/css/header.css">
+    @vite('resources/css/app.css')
 </head>
 
 <body class="w-[1200px] m-auto">
@@ -16,7 +17,8 @@
     <div class="header fixed left-0 right-0 top-0 z-20 h-16">
         <div class="w-[1200px] m-auto flex items-center justify-between px-3">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
-            <a class="logo" href="#"><img height="64" width="64" src="/front/images/Alone Dolphin.png" alt="alone dolphin"></a>
+            <a class="logo" href="#"><img height="64" width="64" src="/front/images/Alone Dolphin.png"
+                    alt="alone dolphin"></a>
             <div class="hidden md:flex items-center gap-10 cursor-pointer">
                 <div class="h-fit"><a href="/">Trang chủ</a> </div>
                 <div class="h-fit"><a href="/about_us">Giới thiệu</a></div>
@@ -32,11 +34,11 @@
                                         <ul class="details-menu details-{{ $room->link }}">
 
                                             @foreach($categories_header as $cate)
-                                                @if($cate->room_id == $room->id)
-                                                    <li>
-                                                        <a href="/{{ $room->link }}/{{ $cate->id }}">{{ $cate->name }}</a>
-                                                    </li>
-                                                @endif
+                                            @if($cate->room_id == $room->id)
+                                            <li>
+                                                <a href="/{{ $room->link }}/{{ $cate->id }}">{{ $cate->name }}</a>
+                                            </li>
+                                            @endif
                                             @endforeach
                                         </ul>
                                     </li>
@@ -44,7 +46,8 @@
                                 </ul>
                             </div>
                             <div class="img-sub-menu">
-                                <a href="#"><img src="/front/images/img-menu/image_menu_products.webp" alt="image menu"></a>
+                                <a href="#"><img src="/front/images/img-menu/image_menu_products.webp"
+                                        alt="image menu"></a>
                             </div>
                         </div>
                     </div>
@@ -107,9 +110,9 @@
                 </div>
                 <div class="px-5 collapse-section">
 
-                @foreach($rooms_header as $room)
+                    @foreach($rooms_header as $room)
                     <div class="py-1 border-b border-b-yellow-500 text-lg">
-                        <div class="flex justify-between pr-6 content-center" >
+                        <div class="flex justify-between pr-6 content-center">
                             <a href="/{{ $room->link }}">{{ $room->name }}</a>
                             <i class="fi fi-rr-angle-small-down" onclick="handleExpandChild(event)"></i>
                         </div>
@@ -123,7 +126,7 @@
                             @endforeach
                         </div>
                     </div>
-                @endforeach
+                    @endforeach
 
                 </div>
             </div>

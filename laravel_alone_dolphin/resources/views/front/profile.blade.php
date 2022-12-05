@@ -1,10 +1,8 @@
-
-
-
 @extends('front.header')
 @section('content')
 
-    {{-- <link href="/front/css/page_rooms.css" rel="stylesheet"> --}}
+{{--
+<link href="/front/css/page_rooms.css" rel="stylesheet"> --}}
 
 <head>
     <link rel="stylesheet" href="/front/css/footer.css">
@@ -101,7 +99,7 @@
             <div id="empty" class="w-full m-auto md:flex flex-col md:text-center items-center gap-6 mb-20">
                 <h2 class="text-lg md:text-2xl md:text-center font-semibold mb-3 md:mb-0">Đơn hàng</h2>
                 <p>Bạn chưa đặt bất kỳ đơn hàng nào cả</p>
-                <img class="hidden md:block" src="../assets/empty.png" alt="">
+                <img class="hidden md:block" src="/front/images/empty.png" alt="">
                 <p>Bắt đầu mua sắm thôi nào!</p>
                 <a class="bg-yellow-400 px-1 text-black text-lg flex gap-3 w-fit" href="/cart"><span
                         class="underline">Xem
@@ -169,4 +167,4 @@
             </div>
         </div>
     </div>
-@endsection
+    @endsection

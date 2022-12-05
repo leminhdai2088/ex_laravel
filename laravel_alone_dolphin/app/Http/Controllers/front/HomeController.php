@@ -10,7 +10,7 @@ use App\Models\rooms;
 class HomeController extends Controller
 {
     public function index(){
-        
+
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
         return view('front.home',compact('categories_header','rooms_header'));
@@ -29,7 +29,7 @@ class HomeController extends Controller
     }
 
     public function profile(){
-        
+
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
         return view('front.profile',compact('categories_header','rooms_header'));
@@ -46,6 +46,12 @@ class HomeController extends Controller
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
         return view('front.sign-up',compact('categories_header','rooms_header'));
+    }
+
+    public function cart(){
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        return view('front.cart',compact('categories_header','rooms_header'));
     }
 
     public function pro_detail(){
