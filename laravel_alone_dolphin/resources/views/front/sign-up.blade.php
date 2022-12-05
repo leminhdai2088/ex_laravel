@@ -55,16 +55,17 @@
         <form action="/user" method="POST" id="sign-up">
             <input type="hidden" name="_token" value="{{csrf_token()}}">
             <div class="form-group">
-                <label for="fullname">Họ và tên</label><span><sup class="text-red-500">*</sup></span><br>
+                <label for="name">Họ và tên</label><span><sup class="text-red-500">*</sup></span><br>
                 <input class="form-control" type="text" id="name" name="name">
                 <span class="form-message"></span>
             </div>
             <div class="mt-4 form-group">
                 <label for="email">Email</label><span><sup class="text-red-500">*</sup></span><br>
                 <input class="form-control" type="text" id="email" name="email"> 
-                @error('email')
+                <span class="form-message"></span>
+                {{-- @error('email')
                 <span class="form-message">{{ $message }}</span>
-                @enderror
+                @enderror --}}
             </div>
             <div class="mt-4 form-group">
                 <label for="password">Mật khẩu</label><span><sup class="text-red-500">*</sup></span><br>
@@ -148,7 +149,7 @@
             errorSelector:'.form-message',
 
             rules:[
-            Validator.isRequired('#fullname'),
+            Validator.isRequired('#name'),
 
             Validator.isRequired('#email'),
 
