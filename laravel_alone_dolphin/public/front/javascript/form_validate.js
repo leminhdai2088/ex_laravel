@@ -64,7 +64,7 @@ Validator = function(options){
 
         // khi submit form
         formElement.onsubmit = function(e){
-            e.preventDefault();
+            // e.preventDefault();
 
             // đặt biến để ktra form có valid hay không
             var isValid=true;
