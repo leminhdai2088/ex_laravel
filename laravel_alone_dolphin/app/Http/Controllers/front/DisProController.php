@@ -11,29 +11,9 @@ use Illuminate\Http\Request;
 class DisProController extends Controller
 {
     public function index($room, Request $request){
-        switch($room){
-            case 'living_room':
-                $products = products::where('featured', true)->
-                where('room_id',1);
-                break;
-            case 'bed_room':
-                $products = products::where('featured', true)->
-                where('room_id',2);
-                break;
-            case 'kitchen_room':
-                $products = products::where('featured', true)->
-                where('room_id',3);
-                break;
-            case 'home_office':
-                
-                $products = products::where('featured', true)->
-                where('room_id',4);
-                break;
-            case 'bath_room':
-                $products = products::where('featured', true)->
-                where('room_id',5);
-                break;
-            }
+        $room_id = rooms::where('link',$room)->value('id');
+        $products = products::where('featured', true)->
+                    where('room_id',$room_id);
             
             $name_cate_room= $products->get();
 
