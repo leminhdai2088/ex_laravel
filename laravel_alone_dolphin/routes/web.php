@@ -53,6 +53,11 @@ Route::get('/sign_in', [front\HomeController::class, 'signin']);
 Route::prefix('cart')->group(function(){
     Route::get('/add/{id}', [front\CartController::class, 'add']); 
     Route::get('/', [front\CartController::class, 'index']); 
+    Route::get('delete/{rowId}', [front\CartController::class, 'delete']); 
+    Route::get('destroy', [front\CartController::class, 'destroy']); 
+
+
+
 });
 
 Route::get('/{room}', [front\DisProController::class, 'index']);

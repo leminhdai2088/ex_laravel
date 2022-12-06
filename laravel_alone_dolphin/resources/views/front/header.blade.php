@@ -12,7 +12,9 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="w-full md:w-[1200px] m-auto">
+{{-- <body class="w-full md:w-[1200px] m-auto"> --}}
+<body class="md:w-[1200px] m-auto">
+
     <!-- header -->
     @auth
     <div class="header fixed left-0 right-0 top-0 z-20 h-16">

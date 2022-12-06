@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="/front/css/form_validate.css">
 
     <style>
+        .btn-delete-row-cart{
+            cursor: pointer;
+            
+        }
+
+        .btn-delete-row-cart:hover{
+            opacity: 0.6;
+        }
+
         #background-pattern {
             height: 15vh;
             width: 100%;
@@ -159,16 +168,21 @@
     </div>
 
     <h1 class="text-3xl md:text-4xl text-center font-semibold mb-5 md:mb-10 mt-2">Giỏ hàng</h1>
-    <div id="empty" class="w-full m-auto md:flex flex-col md:text-center items-center gap-6 mb-20">
+    
+    @if(count($carts) == 0)
+    <div class="w-full m-auto md:flex flex-col md:text-center items-center gap-6 mb-20">
         <p>Giỏ hàng của bạn đang trống</p>
         <img class="hidden md:block" src="/front/images/empty.png" alt="">
         <p>Bắt đầu mua sắm thôi nào!</p>
-        <a class="bg-yellow-400 px-1 text-black text-lg flex gap-3 w-fit" href="/cart"><span class="underline">Xem
+        <a class="bg-yellow-400 px-1 text-black text-lg flex gap-3 w-fit" href="/home_office"><span class="underline">Xem
                 thêm nhiều
                 sản phẩm mới</span>
             <i class="fi fi-rr-arrow-small-right"></i></a>
 
     </div>
+
+    @else
+
     <div id="with-orders" class="px-5 mb-10">
         <p class="text-right mb-3">Có x sản phẩm trong giỏ hàng của bạn</p>
         <table>
@@ -177,6 +191,7 @@
                 <th class="hidden md:block">Giá</th>
                 <th>Số lượng</th>
                 <th>Số tiền</th>
+                <th><i onclick="confirm('Bạn có muốn xóa toàn bộ sản phẩm trong giỏ hàng?') === true ? window.location = '/cart/destroy' : ''" class="ti-close ti-close btn-delete-row-cart"></i></th>
                 <th>&nbsp;</th>
             </tr>
             @foreach($carts as $cart)
@@ -187,7 +202,7 @@
                         <a href="" target="_blank" class="">
                             <!-- link tới trang sản phẩm -->
                             
-                            <img src="/front/images/image_products/{{ $cart->options->images }}" alt="" height="200" width="200">
+                            <img src="/front/images/image_products/{{ $cart->options->images[0]->path }}" alt="" height="200" width="200">
                         </a>
                         <div>
                             <a href="" target="_blank" class="font-semibold text-lg">{{$cart->name}}</a>
@@ -200,9 +215,10 @@
                 </td>
                 <td>{{ number_format($cart->price) }}</td>
                 <td>
-                    <div class="quantity"><input type="text" value="{{$cart->qty}}" min="1" step="1"></div>
+                    <div class="quantity"><input type="text" value="{{$cart->qty}}" data-rowId="{{ $cart->rowId }}" min="1" step="1"></div>
                 </td>
                 <td>{{number_format($cart->price*$cart->qty)}}</td>
+                <td><a href="/cart/delete/{{ $cart->rowId }}"><i class="ti-close btn-delete-row-cart"></i></a></td>
             </tr>
             @endforeach
         </table>
@@ -224,6 +240,8 @@
         </div>
 
     </div>
+    @endif
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');

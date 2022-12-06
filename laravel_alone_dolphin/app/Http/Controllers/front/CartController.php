@@ -20,7 +20,7 @@ class CartController extends Controller
             'price' => $product->price,
             'weight' => $product->weight ?? 0,
             'options' => [
-                'images' => $product->product_images->path,
+                'images' => $product->product_images,
                 'category_name' => $product->product_category->name,
             ],
         ]);
@@ -34,4 +34,15 @@ class CartController extends Controller
 
         return view('front.cart',compact('categories_header','rooms_header', 'carts', 'total'));
     }
+
+    public function delete($rowId){
+        Cart::remove($rowId);
+        return back();
+    }   
+
+    public function destroy(){
+        Cart::destroy();
+        return back();
+    }
+
 }
