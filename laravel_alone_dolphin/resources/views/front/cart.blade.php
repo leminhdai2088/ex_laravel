@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/front/css/footer.css">
     <link rel="stylesheet" href="/front/css/form_validate.css">
 
-
     <style>
         #background-pattern {
             height: 15vh;
@@ -29,7 +28,7 @@
         } */
 
         th {
-            background-color: rgb(250 204 21);
+            background-color: rgb(254 240 138);
         }
 
         td {
@@ -59,6 +58,11 @@
         table td:nth-child(3) {
             text-align: right;
         } */
+
+        .product-img {
+            height: 100px;
+            width: 100px;
+        }
 
         .quantity {
             position: relative;
@@ -138,6 +142,11 @@
                 object-fit: cover;
                 opacity: 0.3;
             }
+
+            .product-img {
+                height: 200px;
+                width: 200px;
+            }
         }
     </style>
 </head>
@@ -145,12 +154,11 @@
 
 <body class="w-full md:w-[1200px] m-auto text-gray-700">
 
-
     <div class="">
         <img src="/front/images/background-pattern.jpg" alt="pattern" id="background-pattern">
     </div>
 
-    <h1 class="text-2xl md:text-4xl text-center font-semibold mb-10 mt-2">Giỏ hàng</h1>
+    <h1 class="text-3xl md:text-4xl text-center font-semibold mb-5 md:mb-10 mt-2">Giỏ hàng</h1>
     <div id="empty" class="w-full m-auto md:flex flex-col md:text-center items-center gap-6 mb-20">
         <p>Giỏ hàng của bạn đang trống</p>
         <img class="hidden md:block" src="/front/images/empty.png" alt="">
@@ -166,7 +174,7 @@
         <table>
             <tr>
                 <th>Sản phẩm</th>
-                <th>Giá</th>
+                <th class="hidden md:block">Giá</th>
                 <th>Số lượng</th>
                 <th>Số tiền</th>
                 <th>&nbsp;</th>
@@ -177,18 +185,19 @@
 
                         <a href="" target="_blank" class="">
                             <!-- link tới trang sản phẩm -->
-                            <img src="/front/images/product/ghe1.webp" alt="" height="200" width="200">
+                            <img src="/front/images/product/ghe1.webp" alt="" class="product-img">
                         </a>
                         <div>
                             <a href="" target="_blank" class="font-semibold text-lg">Bàn sắt</a>
                             <!-- link tới trang sản phẩm -->
                             <div class="text-gray-700">Màu sắc: đen</div>
+                            <div class="md:hidden">130,000₫</div>
                         </div>
 
                     </div>
 
                 </td>
-                <td>130,000₫</td>
+                <td class="hidden md:table-cell">130,000₫</td>
                 <td>
                     <div class="quantity"><input type="number" value="1" min="1" step="1"></div>
                 </td>
@@ -201,18 +210,19 @@
 
                         <a href="" target="_blank" class="">
                             <!-- link tới trang sản phẩm -->
-                            <img src="/front/images/product/ghe1.webp" alt="" height="200" width="200">
+                            <img src="/front/images/product/ghe1.webp" alt="" class="product-img">
                         </a>
                         <div>
                             <a href="" target="_blank" class="font-semibold text-lg">Bàn sắt</a>
                             <!-- link tới trang sản phẩm -->
                             <div class="text-gray-700">Màu sắc: đen</div>
+                            <div class="md:hidden">130,000₫</div>
                         </div>
 
                     </div>
 
                 </td>
-                <td>130,000₫</td>
+                <td class="hidden md:table-cell">130,000₫</td>
                 <td>
                     <div class="quantity"><input type="number" value="1" min="1" step="1"></div>
                 </td>
@@ -225,26 +235,28 @@
 
                         <a href="" target="_blank" class="">
                             <!-- link tới trang sản phẩm -->
-                            <img src="/front/images/product/ghe1.webp" alt="" height="200" width="200">
+                            <img src="/front/images/product/ghe1.webp" alt="" class="product-img">
                         </a>
                         <div>
                             <a href="" target="_blank" class="font-semibold text-lg">Bàn sắt</a>
                             <!-- link tới trang sản phẩm -->
                             <div class="text-gray-700">Màu sắc: đen</div>
+                            <div class="md:hidden">130,000₫</div>
                         </div>
 
                     </div>
 
                 </td>
-                <td>130,000₫</td>
+                <td class="hidden md:table-cell">130,000₫</td>
                 <td>
                     <div class="quantity"><input type="number" value="1" min="1" step="1"></div>
                 </td>
                 <td>130,000₫</td>
             </tr>
         </table>
+
         <div class="flex flex-row-reverse">
-            <div class="p-5 border border-gray-200 w-1/3">
+            <div class="p-5 border border-gray-200 w-full md:w-1/3">
                 <h3 class="text-center text-2xl font-semibold mb-3">Thông tin đơn hàng</h3>
                 <div class="border-y py-2 mb-3">
                     <p class="flex justify-between items-center">Tổng tiền: <span
@@ -331,4 +343,5 @@
             </div>
         </div>
     </div>
-    @endsection
+</body>
+<!-- @endsection -->
