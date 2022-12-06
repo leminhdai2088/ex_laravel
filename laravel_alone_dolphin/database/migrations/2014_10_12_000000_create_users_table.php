@@ -22,7 +22,7 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
 
-            $table->tinyInteger('level')->nullable();
+            $table->tinyInteger('level')->nullable()->default(0);
         });
     }
 

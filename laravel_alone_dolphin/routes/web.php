@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\front;
 use App\Http\Controllers\front\HomeController;
 use App\Http\Controllers\UserController;
@@ -18,6 +18,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [front\HomeController::class, 'index']);
+
+Route::prefix('admin')->middleware('admin')->group(function(){
+    Route::get('/adminpage', [AdminController::class, 'admin']);   
+});
+
+
 
 Route::get('/home', [front\HomeController::class, 'index']);
 
@@ -48,3 +54,5 @@ Route::get('/{room}', [front\DisProController::class, 'index']);
 Route::get('/{room}/{loai}', [front\ShopController::class, 'loai']);
 
 Route::get('/{room}/{loai}/{id}', [front\ShopController::class, 'show']);
+
+
