@@ -90,6 +90,9 @@
                 <a href="/cart" class="flex items-center">
                     <i class="fi fi-rr-shopping-cart"></i>
                 </a>
+                @if(auth()->user()->level == 1)
+                <a href="/admin/adminpage">Admin Page</a>
+                @endif
             </div>
         </div>
     </div>
