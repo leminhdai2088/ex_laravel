@@ -85,7 +85,7 @@
                     <img src="/icon/cart-shopping-solid.svg" alt="" class="h-8 w-8">
                 </a> -->
                 <a href="/profile" class="flex items-center"><i class="fi fi-rr-user"></i></a>
-                <a href="/profile" class="flex items-center">
+                <a href="/cart" class="flex items-center">
                     <i class="fi fi-rr-shopping-cart"></i>
                 </a>
             </div>
@@ -205,8 +205,8 @@
                 <a href="/cart" class="h-8 w-8">
                     <img src="/icon/cart-shopping-solid.svg" alt="" class="h-8 w-8">
                 </a> -->
-                <a href="/sign_up" class="flex items-center"><i class="fi fi-rr-user"></i></a>
-                <a href="./profile" class="flex items-center">
+                <a href="/sign_in" class="flex items-center"><i class="fi fi-rr-user"></i></a>
+                <a href="/cart" class="flex items-center">
                     <i class="fi fi-rr-shopping-cart"></i>
                 </a>
             </div>
