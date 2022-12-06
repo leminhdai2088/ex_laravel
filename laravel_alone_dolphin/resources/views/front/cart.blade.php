@@ -171,87 +171,42 @@
                 <th>Số tiền</th>
                 <th>&nbsp;</th>
             </tr>
+            @foreach($carts as $cart)
             <tr>
                 <td>
                     <div class="flex items-center gap-3">
 
                         <a href="" target="_blank" class="">
                             <!-- link tới trang sản phẩm -->
-                            <img src="/front/images/product/ghe1.webp" alt="" height="200" width="200">
+                            
+                            <img src="/front/images/image_products/{{ $cart->options->images }}" alt="" height="200" width="200">
                         </a>
                         <div>
-                            <a href="" target="_blank" class="font-semibold text-lg">Bàn sắt</a>
+                            <a href="" target="_blank" class="font-semibold text-lg">{{$cart->name}}</a>
                             <!-- link tới trang sản phẩm -->
-                            <div class="text-gray-700">Màu sắc: đen</div>
+                            <div class="text-gray-700">{{$cart->category_name}}</div>
                         </div>
 
                     </div>
 
                 </td>
-                <td>130,000₫</td>
+                <td>{{ number_format($cart->price) }}</td>
                 <td>
-                    <div class="quantity"><input type="number" value="1" min="1" step="1"></div>
+                    <div class="quantity"><input type="text" value="{{$cart->qty}}" min="1" step="1"></div>
                 </td>
-                <td>130,000₫</td>
+                <td>{{number_format($cart->price*$cart->qty)}}</td>
             </tr>
-
-            <tr>
-                <td>
-                    <div class="flex items-center gap-3">
-
-                        <a href="" target="_blank" class="">
-                            <!-- link tới trang sản phẩm -->
-                            <img src="/front/images/product/ghe1.webp" alt="" height="200" width="200">
-                        </a>
-                        <div>
-                            <a href="" target="_blank" class="font-semibold text-lg">Bàn sắt</a>
-                            <!-- link tới trang sản phẩm -->
-                            <div class="text-gray-700">Màu sắc: đen</div>
-                        </div>
-
-                    </div>
-
-                </td>
-                <td>130,000₫</td>
-                <td>
-                    <div class="quantity"><input type="number" value="1" min="1" step="1"></div>
-                </td>
-                <td>130,000₫</td>
-            </tr>
-
-            <tr>
-                <td>
-                    <div class="flex items-center gap-3">
-
-                        <a href="" target="_blank" class="">
-                            <!-- link tới trang sản phẩm -->
-                            <img src="/front/images/product/ghe1.webp" alt="" height="200" width="200">
-                        </a>
-                        <div>
-                            <a href="" target="_blank" class="font-semibold text-lg">Bàn sắt</a>
-                            <!-- link tới trang sản phẩm -->
-                            <div class="text-gray-700">Màu sắc: đen</div>
-                        </div>
-
-                    </div>
-
-                </td>
-                <td>130,000₫</td>
-                <td>
-                    <div class="quantity"><input type="number" value="1" min="1" step="1"></div>
-                </td>
-                <td>130,000₫</td>
-            </tr>
+            @endforeach
         </table>
         <div class="flex flex-row-reverse">
             <div class="p-5 border border-gray-200 w-1/3">
                 <h3 class="text-center text-2xl font-semibold mb-3">Thông tin đơn hàng</h3>
                 <div class="border-y py-2 mb-3">
                     <p class="flex justify-between items-center">Tổng tiền: <span
-                            class="text-2xl font-bold text-yellow-500">390,000₫</span></p>
+                            class="text-2xl font-bold text-yellow-500">{{ $total }}</span></p>
                 </div>
                 <div class="text-sm text-gray-400 mb-3">
-                    Phí vận chuyển sẽ được tính ở trang thanh toán
+                    Phí vận chuyển: Freeship
                 </div>
                 <button class="uppercase w-full h-10 bg-yellow-400 text-black mb-3">Thanh toán</button>
                 <p class="flex justify-center gap-3 text-blue-500"><a href="#" class="text-">Tiếp tục mua hàng</a><i

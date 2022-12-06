@@ -49,10 +49,17 @@ Route::get('/sign_in', [front\HomeController::class, 'signin']);
 
 // Route::post('/sign_upp', [front\HomeController::class, 'post_signup']);
 
+//Cart
+Route::prefix('cart')->group(function(){
+    Route::get('/add/{id}', [front\CartController::class, 'add']); 
+    Route::get('/', [front\CartController::class, 'index']); 
+});
+
 Route::get('/{room}', [front\DisProController::class, 'index']);
 
 Route::get('/{room}/{loai}', [front\ShopController::class, 'loai']);
 
 Route::get('/{room}/{loai}/{id}', [front\ShopController::class, 'show']);
+
 
 
