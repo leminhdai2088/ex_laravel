@@ -13,67 +13,82 @@ use Illuminate\Support\Facades\Hash as FacadesHash;
 
 class HomeController extends Controller
 {
-    public function index(){
+    public function index()
+    {
 
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        return view('front.home',compact('categories_header','rooms_header'));
+        return view('front.home', compact('categories_header', 'rooms_header'));
     }
 
-    public function loai_header(){
+    public function loai_header()
+    {
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        return view('front.header_update',compact('categories_header','rooms_header'));
+        return view('front.header_update', compact('categories_header', 'rooms_header'));
     }
 
-    public function about(){
+    public function about()
+    {
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        return view('front.page_intro',compact('categories_header','rooms_header'));
+        return view('front.page_intro', compact('categories_header', 'rooms_header'));
     }
 
-    public function profile(){
+    public function profile()
+    {
 
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        return view('front.profile',compact('categories_header','rooms_header'));
+        return view('front.profile', compact('categories_header', 'rooms_header'));
     }
 
 
-    public function signin(){
+    public function signin()
+    {
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        return view('front.sign-in',compact('categories_header','rooms_header'));
+        return view('front.sign-in', compact('categories_header', 'rooms_header'));
     }
 
-    public function signup(){
+    public function signup()
+    {
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        return view('front.sign-up',compact('categories_header','rooms_header'));
+        return view('front.sign-up', compact('categories_header', 'rooms_header'));
     }
 
-    public function cart(){
+    public function cart()
+    {
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        return view('front.cart',compact('categories_header','rooms_header'));
+        return view('front.cart', compact('categories_header', 'rooms_header'));
     }
 
-    public function pro_detail(){
+    public function checkout()
+    {
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        return view('front.product_details',compact('categories_header','rooms_header'));
+        return view('front.checkout', compact('categories_header', 'rooms_header'));
     }
-    public function post_signup(Request $request){
-            // $form_field = $request;
-            // dd($form_field);
+    public function pro_detail()
+    {
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        return view('front.product_details', compact('categories_header', 'rooms_header'));
+    }
+    public function post_signup(Request $request)
+    {
+        // $form_field = $request;
+        // dd($form_field);
 
-            return view('front.home');
-       
-            // $user = new User();
-            // $user->name = $request->fullname;
-            // $user->email = $request->email;
-            // $user->password = FacadesHash::make($request->password);
-            // $user->save();
-            // return redirect()->back()->with('thanhcong','Tạo tài khoản thành công');
+        return view('front.home');
+
+        // $user = new User();
+        // $user->name = $request->fullname;
+        // $user->email = $request->email;
+        // $user->password = FacadesHash::make($request->password);
+        // $user->save();
+        // return redirect()->back()->with('thanhcong','Tạo tài khoản thành công');
     }
 }

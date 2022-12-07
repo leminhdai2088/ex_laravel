@@ -19,8 +19,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [front\HomeController::class, 'index']);
 
-Route::prefix('admin')->middleware('admin')->group(function(){
-    Route::get('/adminpage', [AdminController::class, 'admin']);   
+Route::prefix('admin')->middleware('admin')->group(function () {
+    Route::get('/adminpage', [AdminController::class, 'admin']);
 });
 
 
@@ -43,6 +43,8 @@ Route::get('/profile', [front\HomeController::class, 'profile'])->middleware('au
 
 Route::get('/cart', [front\HomeController::class, 'cart']);
 
+Route::get('/checkout', [front\HomeController::class, 'checkout']);
+
 Route::get('/sign_in', [front\HomeController::class, 'signin']);
 
 // Route::get('/sign_up', [front\HomeController::class, 'signup']);
@@ -54,5 +56,3 @@ Route::get('/{room}', [front\DisProController::class, 'index']);
 Route::get('/{room}/{loai}', [front\ShopController::class, 'loai']);
 
 Route::get('/{room}/{loai}/{id}', [front\ShopController::class, 'show']);
-
-
