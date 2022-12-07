@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* product btn */
+.container .input-group select, 
+.container input,
+.container textarea {
+    font-size: 16px;
+    padding: 8px 12px;
+    height: 100%;
+}   
+
+.product-btn .product-check-category input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.product-btn .product-check-category label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    font-weight: 510;
+}
+
+.product-btn .product-check-category input[type="radio"]:checked + label {
+    background-color: #FCC06A;
+    border: 1px solid #000;
+}
+
+.product-check-category {
+    margin-bottom: 1rem;
+}
+
+.unit button:hover {
+    background: #FCC06A;
+}
+
+.removeProduct-btn {
+    border: 1px solid #E12323;
+    border-radius: 4px;
+    border-style: dashed;
+    display: inline-block;
+    padding: 6px 10px;
+    color: #E12323;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.removeProduct-btn:active {
+    background: #f5b6b6;
+}
+
+.removeProduct-btn:focus {
+    outline: none;
+}
+
+.unit .col-1, 
+.unit .col-3 {
+    padding-left: 0;
+    padding-right: 8px;
+}
+
+.unit .col-2 {
+    padding-right: 8px;
+}
+
+/* Phần nội dung bên phải */
+.container .add-image-btn {
+    background: #fff;
+    border: 1px dashed #ccc;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container .input-file {
+    display: none;
+}
+
+.btn-preview, 
+.btn-save {
+    border: 1px solid #000;
+}
+
+.btn-save {
+    background-color: #FCC06A;
+}
+
+.btn-save:hover {
+    background-color: #ED7D3E;
+}
+
+.btn-preview:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.add-image-btn label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.product-img {
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: 50%;
+    position: relative;
+}
+
+.array-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 16px;
+}
+
+.product-img i{
+    text-align: left;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
