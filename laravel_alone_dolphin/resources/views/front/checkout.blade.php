@@ -31,52 +31,27 @@
         }
 
         .product-img {
-            height: 100px;
-            width: 100px;
+            height: 80px;
+            width: 80px;
+        }
+
+        @media (min-width: 740px) {
+
+            .product-img {
+                height: 100px;
+                width: 100px;
+            }
         }
     </style>
     @vite('resources/css/app.css')
 </head>
 
 <body class="">
-    <div class="w-full md:w-[80%] mx-auto mt-10 md:mt-16">
+    <div class="w-full md:w-[80%] mx-auto mt-5 md:mt-16">
         <!-- <div class="w-full md:w-[90%] mx-auto mt-16"></div> -->
-        <div class="md:w-[60%] md:float-left px-5 md:px-0 md:pr-20 md:border-r">
-            <h1 class="text-3xl text-center">Alone Dolphin</h1>
-            <h2 class="text-xl">Thông tin giao hàng</h2>
-            <form action="" method="">
-                <div class="form-group">
-                    <label for="fullname">Họ và tên</label><span><sup class="text-red-500">*</sup></span><br>
-                    <input class="form-control" type="text" id="fullname" name="fullname">
-                    <span class="form-message"></span>
-                </div>
-                <div class="mt-4 form-group">
-                    <label for="phoneNumber">Số điện thoại</label><span><sup class="text-red-500">*</sup></span><br>
-                    <input class="form-control" type="text" id="phoneNumber" name="phoneNumber">
-                    <span class="form-message"></span>
-                </div>
-                <div class="mt-4 form-group">
-                    <label for="email">Email</label><span><sup class="text-red-500">*</sup></span><br>
-                    <input class="form-control" type="text" id="email" name="email">
-                    <span class="form-message"></span>
-                </div>
-                <div class="mt-4 form-group">
-                    <label for="address">Địa chỉ</label><span><sup class="text-red-500">*</sup></span><br>
-                    <input class="form-control" type="text" id="address" name="address">
-                    <span class="form-message"></span>
-                </div>
 
-                <div class="flex justify-between mt-8">
-                    <a href="" class="text-blue-500">
-                        Quay lại giỏ hàng
-                    </a>
-                    <button class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer">
-                        Đặt hàng
-                    </button>
-                </div>
-            </form>
-        </div>
         <div class="md:w-[40%] md:float-right px-5 md:px-0 md:pl-10">
+            <h1 class="md:hidden text-2xl text-center mb-5">Alone Dolphin</h1>
             <table class="w-full">
                 <tr>
                     <td class="w-1/4">
@@ -124,6 +99,42 @@
             <div class="flex justify-between"><span>Tổng cộng</span><span class="font-semibold text-xl">280,000₫</span>
             </div>
 
+        </div>
+        <div
+            class="px-5 py-8 border md:border-0 mt-5 md:py-0 md:mt-0 md:w-[60%] md:float-left md:px-0 md:pr-20 md:border-r">
+            <h1 class="hidden md:block text-3xl text-center">Alone Dolphin</h1>
+            <h2 class="text-xl">Thông tin giao hàng</h2>
+            <form action="" method="">
+                <div class="form-group">
+                    <label for="fullname">Họ và tên</label><span><sup class="text-red-500">*</sup></span><br>
+                    <input class="form-control" type="text" id="fullname" name="fullname">
+                    <span class="form-message"></span>
+                </div>
+                <div class="mt-4 form-group">
+                    <label for="phoneNumber">Số điện thoại</label><span><sup class="text-red-500">*</sup></span><br>
+                    <input class="form-control" type="text" id="phoneNumber" name="phoneNumber">
+                    <span class="form-message"></span>
+                </div>
+                <div class="mt-4 form-group">
+                    <label for="email">Email</label><span><sup class="text-red-500">*</sup></span><br>
+                    <input class="form-control" type="text" id="email" name="email">
+                    <span class="form-message"></span>
+                </div>
+                <div class="mt-4 form-group">
+                    <label for="address">Địa chỉ</label><span><sup class="text-red-500">*</sup></span><br>
+                    <input class="form-control" type="text" id="address" name="address">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="flex justify-between mt-8">
+                    <a href="" class="text-blue-500">
+                        Quay lại giỏ hàng
+                    </a>
+                    <button class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer">
+                        Đặt hàng
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
