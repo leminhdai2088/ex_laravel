@@ -45,4 +45,11 @@ class CartController extends Controller
         return back();
     }
 
+    public function update(Request $request){
+    if($request->ajax()){
+        Cart::update($request->rowId, $request->qty);
+    }
+    }
+
+
 }

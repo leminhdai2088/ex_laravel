@@ -9,6 +9,20 @@
     <link rel="stylesheet" href="/front/css/form_validate.css">
 
     <style>
+        .dec.qtybtn{
+            position: relative;
+            left: -20px;
+            top: 19px;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .inc.qtybtn{
+            position: relative;
+            font-size: 24px;
+            right: 36px;
+            cursor: pointer;
+        }
         .btn-delete-row-cart{
             cursor: pointer;
             
@@ -75,6 +89,7 @@
 
         .quantity {
             position: relative;
+            overflow: hidden;
         }
 
         input[type=number]::-webkit-inner-spin-button,
@@ -88,8 +103,8 @@
         }
 
         .quantity input {
-            width: 60px;
-            height: 42px;
+            width: 73px;
+            height: 50px;
             line-height: 1.65;
             float: left;
             display: block;
@@ -215,7 +230,9 @@
                 </td>
                 <td>{{ number_format($cart->price) }}</td>
                 <td>
-                    <div class="quantity"><input type="text" value="{{$cart->qty}}" data-rowId="{{ $cart->rowId }}" min="1" step="1"></div>
+                    <div class="quantity pro-qty">
+                        <input type="text" value="{{$cart->qty}}" data-rowid="{{ $cart->rowId }}" min="1" step="1">
+                    </div>
                 </td>
                 <td>{{number_format($cart->price*$cart->qty)}}</td>
                 <td><a href="/cart/delete/{{ $cart->rowId }}"><i class="ti-close btn-delete-row-cart"></i></a></td>
@@ -242,7 +259,7 @@
     </div>
     @endif
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
         jQuery('.quantity').each(function () {
@@ -276,7 +293,7 @@
             });
 
         });
-    </script>
+    </script> --}}
     <!-- footer -->
     <div id="footer" class=" footer h-fit pb-46">
         <div class="w-[1200px] m-auto grid grid-cols-3">
@@ -313,5 +330,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/front/javascript/cart.js"></script>
 </body>
 <!-- @endsection -->

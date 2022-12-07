@@ -55,6 +55,8 @@ Route::prefix('cart')->group(function(){
     Route::get('/', [front\CartController::class, 'index']); 
     Route::get('delete/{rowId}', [front\CartController::class, 'delete']); 
     Route::get('destroy', [front\CartController::class, 'destroy']); 
+    Route::get('update', [front\CartController::class, 'update']); 
+
 
 
 
