@@ -2,6 +2,7 @@
 @extends('front.header')
 @section('content')
 <head>
+    {{ $room_id_checked = 1 }}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,10 +33,15 @@
 
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/dashboard/css/pro_modifier.css">
+
+    <style>
+    </style>
 </head>
 
 
   
+<form action="/admin/add" method="POST">
+    <input type="hidden" name="_token" value="{{csrf_token()}}">
 
     <div class="container">
         <h2 class="text-center font-weight-bold mt-4 mb-4">Thêm sản phẩm</h2>
@@ -43,20 +49,21 @@
         <div class="row">
             <!-- Phần nội dung bên trái -->
             <div class="col-7">
-                <form>
+              
                     <div class="row mb-3">
                         <div class="col-8">
-                            <input type="text" class="product-name form-control" placeholder="Tên sản phẩm" required>
+                            <input name="product-name" type="text" class="product-name form-control" placeholder="Tên sản phẩm" required>
                         </div>
                         <div class="col-4">
                             <div class="input-group">
-                                <select class="custom-select custom-select-lg" id="inputGroupSelect01">
+                                <select name="category_name" class="custom-select custom-select-lg" id="inputGroupSelect01">
                                     <option selected></option>
-                                    <option value="1">Phòng khách</option>
-                                    <option value="2">Phòng ngủ</option>
-                                    <option value="3">Bếp & phòng ăn</option>
-                                    <option value="4">Phòng làm việc</option>
-                                    <option value="5">Phòng tắm</option>
+                                  @foreach($categories as $cate)
+                                  <option  value="{{ $cate->id }}">{{ $cate->name }} </option>
+                                    
+                                  @endforeach
+
+                                 
 
                                 </select>
                                 <div class="input-group-append">
@@ -66,40 +73,32 @@
                         </div>
                     </div>
 
-                    <textarea class="form-control mb-3" aria-label="With textarea" placeholder="Kích thước"
+                    <textarea name="size" class="form-control mb-3" aria-label="With textarea" placeholder="Kích thước"
                         style="height: 50px; resize: none;" required></textarea>
 
-                    <textarea class="form-control mb-3" aria-label="With textarea" placeholder="Chất liệu"
+                    <textarea name="mateial" class="form-control mb-3" aria-label="With textarea" placeholder="Chất liệu"
+                        style="height: 50px; resize: none;" required></textarea>
+                        <textarea name="room_id" class="form-control mb-3" aria-label="With textarea" placeholder="Mã phòng"
                         style="height: 50px; resize: none;" required></textarea>
 
                     <h4 class="font-weight-bold mb-3">Phòng</h4>
                     <div class="product-btn mb-3">
                         <div class="product-check-category">
-                            <input type="radio" name="kilo" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Summer
-                            </label>
 
-                            <input type="radio" name="kilo" id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                Party
-                            </label>
-
-                            <input type="radio" name="kilo" id="flexRadioDefault3">
-                            <label class="form-check-label" for="flexRadioDefault3">
-                                Chill
-                            </label>
-
-                            <input type="radio" name="kilo" id="flexRadioDefault4">
-                            <label class="form-check-label" for="flexRadioDefault4">
-                                Original
-                            </label>
+                            <form action="" method="">
+                             
+                                @foreach($rooms_header as $room)
+                                <a name="room_name" value="{{ $room->id }}" href="{{ request()->fullUrlWithQuery(['id_selected'=> $room->id]) }}">{{ $room->name }}</a>
+                                <br>
+                                @endforeach
+                           
+                            </form>
                         </div>
                     </div>
 
                     <h4 class="font-weight-bold mb-3">Đơn vị</h4>
 
-                    <div class="unit mb-3">
+                    {{-- <div class="unit mb-3">
                         <div class="row mb-3">
                             <div class="col-2">
                                 <input type="text" class="form-control" placeholder="Giá">
@@ -119,8 +118,9 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
-                </form>
+                    </div> --}}
+               
+                
             </div>
 
             <!-- phần nội dung bên phải -->
@@ -141,7 +141,7 @@
 
                 <div class="row mt-3">
                     <div class="col-6">
-                        <button type="button" class="btn btn-lg btn-block btn-save" onclick="renderItem()">SAVE</button>
+                        <button type="submit" class="btn btn-lg btn-block btn-save" onclick="renderItem()">SAVE</button>
                     </div>
                     <div class="col-6">
                         <button type="button" class="btn btn-lg btn-block btn-preview">PREVIEW</button>
@@ -149,10 +149,10 @@
                 </div>
 
             </div>
-
+       
         </div>
     </div>
-
+</form>
     <script>
         const list = [];
         const img_tag = document.querySelector('#load-img');
@@ -189,4 +189,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
         </script>
+
+
 @endsection
