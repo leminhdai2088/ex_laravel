@@ -54,14 +54,15 @@
                 <p><strong>Kích thước: </strong><span>{{ $product->product_details->size }}</span></p>
                 <p><strong>Chất liệu: </strong><span>{{ $product->material }}</span></p>
             </div>
-            <form action="/gio-hang">
+            <!-- <form action="/gio-hang" method="GET">
                 <div>
                     <strong>Số lượng:</strong>
                     <input type="number" value="1" min="1">
                 </div>
-
+                
                 <input type="submit" value="Thêm vào giỏ" class="cursor-pointer px-5 py-2 bg-yellow-400 my-5">
-            </form>
+            </form> -->
+            <a class="cursor-pointer px-5 py-2 bg-yellow-400 my-5" href="/cart/add/{{ $product->id }}">Thêm vào giỏ</a>
         </div>
     </div>
 

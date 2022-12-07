@@ -9,6 +9,29 @@
     <link rel="stylesheet" href="/front/css/form_validate.css">
 
     <style>
+        .dec.qtybtn{
+            position: relative;
+            left: -20px;
+            top: 19px;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .inc.qtybtn{
+            position: relative;
+            font-size: 24px;
+            right: 36px;
+            cursor: pointer;
+        }
+        .btn-delete-row-cart{
+            cursor: pointer;
+            
+        }
+
+        .btn-delete-row-cart:hover{
+            opacity: 0.6;
+        }
+
         #background-pattern {
             height: 15vh;
             width: 100%;
@@ -66,6 +89,7 @@
 
         .quantity {
             position: relative;
+            overflow: hidden;
         }
 
         input[type=number]::-webkit-inner-spin-button,
@@ -79,8 +103,8 @@
         }
 
         .quantity input {
-            width: 60px;
-            height: 42px;
+            width: 73px;
+            height: 50px;
             line-height: 1.65;
             float: left;
             display: block;
@@ -159,16 +183,21 @@
     </div>
 
     <h1 class="text-3xl md:text-4xl text-center font-semibold mb-5 md:mb-10 mt-2">Giỏ hàng</h1>
-    <div id="empty" class="w-full m-auto md:flex flex-col md:text-center items-center gap-6 mb-20">
+    
+    @if(count($carts) == 0)
+    <div class="w-full m-auto md:flex flex-col md:text-center items-center gap-6 mb-20">
         <p>Giỏ hàng của bạn đang trống</p>
         <img class="hidden md:block" src="/front/images/empty.png" alt="">
         <p>Bắt đầu mua sắm thôi nào!</p>
-        <a class="bg-yellow-400 px-1 text-black text-lg flex gap-3 w-fit" href="/cart"><span class="underline">Xem
+        <a class="bg-yellow-400 px-1 text-black text-lg flex gap-3 w-fit" href="/home_office"><span class="underline">Xem
                 thêm nhiều
                 sản phẩm mới</span>
             <i class="fi fi-rr-arrow-small-right"></i></a>
 
     </div>
+
+    @else
+
     <div id="with-orders" class="px-5 mb-10">
         <p class="text-right mb-3">Có x sản phẩm trong giỏ hàng của bạn</p>
         <table>
@@ -177,82 +206,38 @@
                 <th class="hidden md:block">Giá</th>
                 <th>Số lượng</th>
                 <th>Số tiền</th>
+                <th><i onclick="confirm('Bạn có muốn xóa toàn bộ sản phẩm trong giỏ hàng?') === true ? window.location = '/cart/destroy' : ''" class="ti-close ti-close btn-delete-row-cart"></i></th>
                 <th>&nbsp;</th>
             </tr>
+            @foreach($carts as $cart)
             <tr>
                 <td>
                     <div class="flex items-center gap-3">
 
                         <a href="" target="_blank" class="">
                             <!-- link tới trang sản phẩm -->
-                            <img src="/front/images/product/ghe1.webp" alt="" class="product-img">
+                            
+                            <img src="/front/images/image_products/{{ $cart->options->images[0]->path }}" alt="" height="200" width="200">
                         </a>
                         <div>
-                            <a href="" target="_blank" class="font-semibold text-lg">Bàn sắt</a>
+                            <a href="" target="_blank" class="font-semibold text-lg">{{$cart->name}}</a>
                             <!-- link tới trang sản phẩm -->
-                            <div class="text-gray-700">Màu sắc: đen</div>
-                            <div class="md:hidden">130,000₫</div>
+                            <div class="text-gray-700">{{$cart->category_name}}</div>
                         </div>
 
                     </div>
 
                 </td>
-                <td class="hidden md:table-cell">130,000₫</td>
+                <td>{{ number_format($cart->price) }}</td>
                 <td>
-                    <div class="quantity"><input type="number" value="1" min="1" step="1"></div>
-                </td>
-                <td>130,000₫</td>
-            </tr>
-
-            <tr>
-                <td>
-                    <div class="flex items-center gap-3">
-
-                        <a href="" target="_blank" class="">
-                            <!-- link tới trang sản phẩm -->
-                            <img src="/front/images/product/ghe1.webp" alt="" class="product-img">
-                        </a>
-                        <div>
-                            <a href="" target="_blank" class="font-semibold text-lg">Bàn sắt</a>
-                            <!-- link tới trang sản phẩm -->
-                            <div class="text-gray-700">Màu sắc: đen</div>
-                            <div class="md:hidden">130,000₫</div>
-                        </div>
-
+                    <div class="quantity pro-qty">
+                        <input type="text" value="{{$cart->qty}}" data-rowid="{{ $cart->rowId }}" min="1" step="1">
                     </div>
-
                 </td>
-                <td class="hidden md:table-cell">130,000₫</td>
-                <td>
-                    <div class="quantity"><input type="number" value="1" min="1" step="1"></div>
-                </td>
-                <td>130,000₫</td>
+                <td>{{number_format($cart->price*$cart->qty)}}</td>
+                <td><a href="/cart/delete/{{ $cart->rowId }}"><i class="ti-close btn-delete-row-cart"></i></a></td>
             </tr>
-
-            <tr>
-                <td>
-                    <div class="flex items-center gap-3">
-
-                        <a href="" target="_blank" class="">
-                            <!-- link tới trang sản phẩm -->
-                            <img src="/front/images/product/ghe1.webp" alt="" class="product-img">
-                        </a>
-                        <div>
-                            <a href="" target="_blank" class="font-semibold text-lg">Bàn sắt</a>
-                            <!-- link tới trang sản phẩm -->
-                            <div class="text-gray-700">Màu sắc: đen</div>
-                            <div class="md:hidden">130,000₫</div>
-                        </div>
-
-                    </div>
-
-                </td>
-                <td class="hidden md:table-cell">130,000₫</td>
-                <td>
-                    <div class="quantity"><input type="number" value="1" min="1" step="1"></div>
-                </td>
-                <td>130,000₫</td>
-            </tr>
+            @endforeach
         </table>
 
         <div class="flex flex-row-reverse">
@@ -260,10 +245,10 @@
                 <h3 class="text-center text-2xl font-semibold mb-3">Thông tin đơn hàng</h3>
                 <div class="border-y py-2 mb-3">
                     <p class="flex justify-between items-center">Tổng tiền: <span
-                            class="text-2xl font-bold text-yellow-500">390,000₫</span></p>
+                            class="text-2xl font-bold text-yellow-500">{{ $total }}</span></p>
                 </div>
                 <div class="text-sm text-gray-400 mb-3">
-                    Phí vận chuyển sẽ được tính ở trang thanh toán
+                    Phí vận chuyển: Freeship
                 </div>
                 <button class="uppercase w-full h-10 bg-yellow-400 text-black mb-3">Thanh toán</button>
                 <p class="flex justify-center gap-3 text-blue-500"><a href="#" class="text-">Tiếp tục mua hàng</a><i
@@ -272,7 +257,9 @@
         </div>
 
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    @endif
+
+    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
         jQuery('.quantity').each(function () {
@@ -306,7 +293,7 @@
             });
 
         });
-    </script>
+    </script> --}}
     <!-- footer -->
     <div id="footer" class=" footer h-fit pb-46">
         <div class="w-[1200px] m-auto grid grid-cols-3">
@@ -343,5 +330,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/front/javascript/cart.js"></script>
 </body>
 <!-- @endsection -->

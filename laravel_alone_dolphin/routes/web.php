@@ -20,7 +20,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [front\HomeController::class, 'index']);
 
 Route::prefix('admin')->middleware('admin')->group(function () {
-    Route::get('/adminpage', [AdminController::class, 'admin']);
+    Route::get('/add', [AdminController::class, 'add']);
+    Route::post('/add', [AdminController::class, 'store']);
+
+    Route::get('/', [AdminController::class, 'admin']);
+
+
 });
 
 
@@ -47,9 +52,16 @@ Route::get('/checkout', [front\HomeController::class, 'checkout']);
 
 Route::get('/sign_in', [front\HomeController::class, 'signin']);
 
-// Route::get('/sign_up', [front\HomeController::class, 'signup']);
 
-// Route::post('/sign_upp', [front\HomeController::class, 'post_signup']);
+//Cart
+Route::prefix('cart')->group(function () {
+    Route::get('/add/{id}', [front\CartController::class, 'add']);
+    Route::get('/', [front\CartController::class, 'index']);
+    Route::get('delete/{rowId}', [front\CartController::class, 'delete']);
+    Route::get('destroy', [front\CartController::class, 'destroy']);
+    Route::get('update', [front\CartController::class, 'update']);
+
+});
 
 Route::get('/{room}', [front\DisProController::class, 'index']);
 
