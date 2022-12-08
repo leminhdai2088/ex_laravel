@@ -184,7 +184,7 @@
 
     <h1 class="text-3xl md:text-4xl text-center font-semibold mb-5 md:mb-10 mt-2">Giỏ hàng</h1>
     
-    @if(count($carts) == 0)
+    @if(count($carts) <= 0)
     <div class="w-full m-auto md:flex flex-col md:text-center items-center gap-6 mb-20">
         <p>Giỏ hàng của bạn đang trống</p>
         <img class="hidden md:block" src="/front/images/empty.png" alt="">
@@ -250,7 +250,8 @@
                 <div class="text-sm text-gray-400 mb-3">
                     Phí vận chuyển: Freeship
                 </div>
-                <button class="uppercase w-full h-10 bg-yellow-400 text-black mb-3">Thanh toán</button>
+                {{-- <button class="uppercase w-full h-10 bg-yellow-400 text-black mb-3">Thanh toán</button> --}}
+                <a class="uppercase w-full h-10 bg-yellow-400 text-black mb-3" href="/checkout">Thanh toán</a>
                 <p class="flex justify-center gap-3 text-blue-500"><a href="#" class="text-">Tiếp tục mua hàng</a><i
                         class="fi fi-rr-redo"></i></p>
             </div>

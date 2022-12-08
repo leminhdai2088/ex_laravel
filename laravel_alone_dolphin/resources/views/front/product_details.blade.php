@@ -28,6 +28,10 @@
         .main-detail{
             margin-top: 104px;
         }
+
+        .product-description{
+            margin-bottom: 40px;
+        }
     </style>
 </head>
     <div class="grid grid-cols-2 gap-10 main-detail">
@@ -53,6 +57,9 @@
             <div class="product-description">
                 <p><strong>Kích thước: </strong><span>{{ $product->product_details->size }}</span></p>
                 <p><strong>Chất liệu: </strong><span>{{ $product->material }}</span></p>
+                @if($product->weight)
+                <p><strong>Cân nặng: </strong><span>{{ $product->weight }}</span></p>
+                @endif
             </div>
             <!-- <form action="/gio-hang" method="GET">
                 <div>

@@ -28,6 +28,10 @@ Route::prefix('admin')->middleware('admin')->group(function () {
 
 });
 
+Route::prefix('checkout')->group(function () {
+Route::get('/', [front\CheckOutController::class, 'index']);
+Route::post('/', [front\CheckOutController::class, 'add_order']);
+});
 
 
 Route::get('/home', [front\HomeController::class, 'index']);
@@ -48,7 +52,7 @@ Route::get('/profile', [front\HomeController::class, 'profile'])->middleware('au
 
 Route::get('/cart', [front\HomeController::class, 'cart']);
 
-Route::get('/checkout', [front\HomeController::class, 'checkout']);
+
 
 Route::get('/sign_in', [front\HomeController::class, 'signin']);
 

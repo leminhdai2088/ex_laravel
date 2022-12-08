@@ -35,12 +35,20 @@
     <link rel="stylesheet" href="/dashboard/css/pro_modifier.css">
 
     <style>
+        form{
+            margin-top: 46px;
+        }
+
+        .don-vi{
+            justify-content: space-between
+        }
     </style>
 </head>
 
 
   
 <form action="/admin/add" method="POST">
+    @csrf
     <input type="hidden" name="_token" value="{{csrf_token()}}">
 
     <div class="container">
@@ -52,19 +60,15 @@
               
                     <div class="row mb-3">
                         <div class="col-8">
-                            <input name="product-name" type="text" class="product-name form-control" placeholder="Tên sản phẩm" required>
+                            <input name="name" type="text" class="product-name form-control" placeholder="Tên sản phẩm" required>
                         </div>
                         <div class="col-4">
                             <div class="input-group">
-                                <select name="category_name" class="custom-select custom-select-lg" id="inputGroupSelect01">
+                                <select name="product_category_id" class="custom-select custom-select-lg" id="inputGroupSelect01">
                                     <option selected></option>
                                   @foreach($categories as $cate)
-                                  <option  value="{{ $cate->id }}">{{ $cate->name }} </option>
-                                    
+                                  <option  value="{{ $cate->id }}">{{ $cate->name }} </option>  
                                   @endforeach
-
-                                 
-
                                 </select>
                                 <div class="input-group-append">
                                     <label class="input-group-text" for="inputGroupSelect01">Loại</label>
@@ -76,10 +80,10 @@
                     <textarea name="size" class="form-control mb-3" aria-label="With textarea" placeholder="Kích thước"
                         style="height: 50px; resize: none;" required></textarea>
 
-                    <textarea name="mateial" class="form-control mb-3" aria-label="With textarea" placeholder="Chất liệu"
+                    <textarea name="material" class="form-control mb-3" aria-label="With textarea" placeholder="Chất liệu"
                         style="height: 50px; resize: none;" required></textarea>
-                        <textarea name="room_id" class="form-control mb-3" aria-label="With textarea" placeholder="Mã phòng"
-                        style="height: 50px; resize: none;" required></textarea>
+                        <input type="number" step="1" min="1" max="5" name="room_id" class="form-control mb-3" aria-label="With textarea" placeholder="Mã phòng"
+                        style="height: 50px; resize: none;width: 150px;" required>
 
                     <h4 class="font-weight-bold mb-3">Phòng</h4>
                     <div class="product-btn mb-3">
@@ -96,20 +100,20 @@
                         </div>
                     </div>
 
-                    <h4 class="font-weight-bold mb-3">Đơn vị</h4>
+                    <h4 class="font-weight-bold mb-3 ">Đơn vị</h4>
 
-                    {{-- <div class="unit mb-3">
-                        <div class="row mb-3">
-                            <div class="col-2">
-                                <input type="text" class="form-control" placeholder="Giá">
+                    <div class="unit mb-3 ">
+                        <div class="row mb-3 don-vi">
+                            <div class="col-2" style="width: 150px;">
+                                <input style="width: 150px;" type="number" name="price" min="0"class="form-control" placeholder="Giá">
                             </div>
 
                             <div class="col-3">
-                                <input type="text" class="form-control" placeholder="Số lượng">
+                                <input name="qty" type="number" min="1" class="form-control" placeholder="Số lượng">
                             </div>
 
                             <div class="col-3">
-                                <input type="text" class="form-control" placeholder="Cân nặng">
+                                <input name="weight" type="text" class="form-control" placeholder="Cân nặng">
                             </div>
 
                             <div class="col-1">
@@ -118,7 +122,7 @@
                                 </button>
                             </div>
                         </div>
-                    </div> --}}
+                    </div> 
                
                 
             </div>
@@ -127,24 +131,23 @@
             <div class="col-5">
                 <div class="array-item" id="load-img">
                     <div class="add-image-btn">
-                        <input type="file" class="input-file" id="choose" onchange="changed(this)" multiple
+                        {{-- <input name="path" type="file" class="input-file" id="choose" onchange="changed(this)" multiple
+                            accept="image/jpeg,image/jpg,image/png,image/gif,application/zip,application/x-zip-compressed,multipart/x-zip,.cbz"> --}}
+                            <input name="path" type="file" class="input-file" id="choose" onchange="changed(this)"
                             accept="image/jpeg,image/jpg,image/png,image/gif,application/zip,application/x-zip-compressed,multipart/x-zip,.cbz">
                         <label for="choose">
                             <i class="fa fa-plus" style="font-size: 50px; display: flex; justify-content: center;
                             background-position: 50%;
                             background-size: contain;
                             background-repeat: no-repeat;"></i>
-                            Add Image
+                            Thêm hình ảnh
                         </label>
                     </div>
                 </div>
 
                 <div class="row mt-3">
                     <div class="col-6">
-                        <button type="submit" class="btn btn-lg btn-block btn-save" onclick="renderItem()">SAVE</button>
-                    </div>
-                    <div class="col-6">
-                        <button type="button" class="btn btn-lg btn-block btn-preview">PREVIEW</button>
+                        <button type="submit" class="btn btn-lg btn-block btn-save" onclick="renderItem()">Thêm sản phẩm</button>
                     </div>
                 </div>
 

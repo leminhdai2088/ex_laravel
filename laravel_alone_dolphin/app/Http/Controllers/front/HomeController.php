@@ -65,12 +65,6 @@ class HomeController extends Controller
         return view('front.cart', compact('categories_header', 'rooms_header'));
     }
 
-    public function checkout()
-    {
-        $categories_header = product_category::all();
-        $rooms_header = rooms::all();
-        return view('front.checkout', compact('categories_header', 'rooms_header'));
-    }
     public function pro_detail()
     {
         $categories_header = product_category::all();

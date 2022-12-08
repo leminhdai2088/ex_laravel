@@ -16,6 +16,16 @@ class AdminController extends Controller
     }
 
     public function store(Request $request){
+        $data = [
+            'name' => $request->input('name'),
+            'product_category_id' => $request->input('product_category_id'),
+            'material' => $request->input('material'),
+            'room_id' => $request->input('room_id'),
+            'qty' => $request->input('qty'),
+            'weight' => $request->input('weight'),
+            'price' => $request->input('price'),
+        ];
+
         $form_field = $request->validate([
             'product-name' => '',
             'category_name' => '',
@@ -25,7 +35,7 @@ class AdminController extends Controller
             'room_id' => '',
         ]);
       
-        dd( $request->fullUrl());
+        dd($request->all());
     }
     
 }

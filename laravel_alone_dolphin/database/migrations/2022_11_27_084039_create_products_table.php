@@ -24,7 +24,7 @@ return new class extends Migration
             $table->integer('qty');
             $table->string('weight')->nullable();
             $table->float('sku')->nullable();
-            $table->boolean('featured')->nullable();
+            $table->boolean('featured')->nullable()->default(true);
 
             $table->timestamps();
         });
