@@ -49,13 +49,30 @@ class AdminController extends Controller
                 'product_id' => $product->id,
                 'path' => strval($file)
                 ];
-                // $file->move(public_path($upload_path),$path);
+                $file->move(public_path($upload_path),$path);
                 product_images::create($data_image);
             }
         }  
+            return "Thêm sản phẩm thành công!!!";
+      
 
-
-        return "Thêm sản phẩm thành công!!!";
     }
+
+
+    public function edit($id){
+        $product = products::find($id);
+        $images = product_images::where('product_id',$id)->get();
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        return view('dashboard.edit_product',compact('product','categories_header', 'rooms_header','images'));
+    }
+
+    public function editpost(Request $request, $id){
+        $input = $request->all();
+        $product = products::find($id);
+        $product->update($input);
+        return "Chỉnh sửa thành công!!!";
+    }
+
     
 }

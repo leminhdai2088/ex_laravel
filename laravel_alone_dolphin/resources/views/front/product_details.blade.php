@@ -69,7 +69,12 @@
                 
                 <input type="submit" value="Thêm vào giỏ" class="cursor-pointer px-5 py-2 bg-yellow-400 my-5">
             </form> -->
+            @if(auth()->user()->level == 0)
             <a class="cursor-pointer px-5 py-2 bg-yellow-400 my-5" href="/cart/add/{{ $product->id }}">Thêm vào giỏ</a>
+            @else
+            <a class="cursor-pointer px-5 py-2 bg-blue-400 my-5" href="/admin/{{ $product->id }}/edit">Sửa thông tin</a>
+            <a class="cursor-pointer px-5 py-2 bg-red-400 my-5" href="#">Xóa sản phẩm</a>
+            @endif
         </div>
     </div>
 
