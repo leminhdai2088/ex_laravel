@@ -48,8 +48,6 @@
     <div class="px-5 w-full md:w-1/2 m-auto">
             @if(Session::has('thanhcong'))
             <div>{{Session::get('thanhcong')}}</div>
-            @else
-            <div>123</div>
             @endif
         <h1 class="text-2xl md:text-4xl text-center font-semibold my-5">Đăng ký</h1>
         <form action="/sign_up" method="POST" id="sign-up">

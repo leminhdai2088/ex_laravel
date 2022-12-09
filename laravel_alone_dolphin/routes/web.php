@@ -23,7 +23,7 @@ Route::prefix('admin')->middleware('admin')->group(function () {
     Route::get('/add', [AdminController::class, 'add']);
     Route::post('/add', [AdminController::class, 'store']);
     Route::get('/{id}/edit', [AdminController::class, 'edit']);
-    Route::put('/{id}/edit', [AdminController::class, 'editpost']);
+    Route::post('/{id}/edit', [AdminController::class, 'editpost']);
 
 });
 

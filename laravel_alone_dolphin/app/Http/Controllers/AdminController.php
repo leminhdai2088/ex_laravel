@@ -40,24 +40,24 @@ class AdminController extends Controller
         // thêm product_images
 
         // $image = array();
-        $files = $request->input('image');
-        $upload_path = '/front/images/image_products/';
+
+        $files = $request->image;
+        $upload_path = public_path('front/images/image_products');
         if($files){
             foreach($files as $file){
-                $path = strval($file);
                 $data_image = [
                 'product_id' => $product->id,
-                'path' => strval($file)
+                'path' => $file->getClientOriginalName()
                 ];
-                $file->move(public_path($upload_path),$path);
                 product_images::create($data_image);
+                $file->move($upload_path, $file->getClientOriginalName());
             }
         }  
-            return "Thêm sản phẩm thành công!!!";
-      
+        return redirect()->back()->with('thanhcong','Thêm sản phẩm thành công!!!');
+
+
 
     }
-
 
     public function edit($id){
         $product = products::find($id);
@@ -67,10 +67,16 @@ class AdminController extends Controller
         return view('dashboard.edit_product',compact('product','categories_header', 'rooms_header','images'));
     }
 
-    public function editpost(Request $request, $id){
-        $input = $request->all();
+    public function editpost($id){
         $product = products::find($id);
-        $product->update($input);
+        // $product->name = $request->name;
+        // $product->size = $request->size;
+        // $product->material = $request->material;
+        // $product->price = $request->price;
+        // $product->qty = $request->qty;
+        // $product->weight = $request->weight;
+        // $product->save();
+        dd($product);
         return "Chỉnh sửa thành công!!!";
     }
 

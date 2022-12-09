@@ -28,7 +28,7 @@ class UserController extends Controller
 
         $user = User::create($form_field);
         auth()->login($user);
-        return redirect()->back()->with('thanhcong','thành công cmnr');
+        return redirect()->back()->with('thanhcong','Bạn đã đăng ký thành công!!!');
     }
 
 

@@ -50,9 +50,9 @@
 
 
   
-<form action="/admin/{id}/edit" method="POST">
+<form action="/admin/{id}/edit" method="POST">\
+    {{-- @method('PATCH') --}}
     @csrf
-    @method('PUT')
     <input type="hidden" name="_token" value="{{csrf_token()}}">
 
     <div class="container">
@@ -80,14 +80,17 @@
                     <div class="unit mb-3 ">
                         <div class="row mb-3 don-vi">
                             <div class="col-2" style="width: 150px;">
+                                <label style="font-size: 20px; font-weight: bold;"> Giá</label>
                                 <input style="width: 150px;" type="number" name="price" min="0"class="form-control" placeholder="Giá" value="{{ $product->price }}"> 
                             </div>
-
+                            
                             <div class="col-3">
+                                <label style="font-size: 20px; font-weight: bold;"> Số lượng</label>
                                 <input name="qty" type="number" min="1" class="form-control" placeholder="Số lượng"   value="{{ $product->qty }}">
                             </div>
-
+                            
                             <div class="col-3">
+                                <label style="font-size: 20px; font-weight: bold;">Cân nặng</label>
                                 <input name="weight" type="text" class="form-control" placeholder="Cân nặng" value="{{ $product->weight }}">
                             </div>
                         </div>

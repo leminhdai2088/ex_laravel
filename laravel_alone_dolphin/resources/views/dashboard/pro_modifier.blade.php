@@ -47,13 +47,15 @@
 
 
   
-<form action="/admin/add" method="POST">
+<form action="/admin/add" method="POST" enctype="multipart/form-data">
     @csrf
     <input type="hidden" name="_token" value="{{csrf_token()}}">
 
     <div class="container">
         <h2 class="text-center font-weight-bold mt-4 mb-4">Thêm sản phẩm</h2>
-
+        @if(Session::has('thanhcong'))
+        <div>{{Session::get('thanhcong')}}</div>
+        @endif
         <div class="row">
             <!-- Phần nội dung bên trái -->
             <div class="col-7">
