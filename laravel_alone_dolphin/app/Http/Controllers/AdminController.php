@@ -67,17 +67,16 @@ class AdminController extends Controller
         return view('dashboard.edit_product',compact('product','categories_header', 'rooms_header','images'));
     }
 
-    public function editpost($id){
-        $product = products::find($id);
-        // $product->name = $request->name;
-        // $product->size = $request->size;
-        // $product->material = $request->material;
-        // $product->price = $request->price;
-        // $product->qty = $request->qty;
-        // $product->weight = $request->weight;
-        // $product->save();
-        dd($product);
-        return "Chỉnh sửa thành công!!!";
+    public function editpost($id, Request $request){
+        $pro = products::find($id);
+        $pro->name = $request->name;
+        $pro->product_details->size = $request->size;
+        $pro->material = $request->material;
+        $pro->price = $request->price;
+        $pro->qty = $request->qty;
+        $pro->weight = $request->weight;
+        $pro->save();
+        return redirect()->back()->with('thanhcong','Sửa sản phẩm thành công!!!');
     }
 
     
