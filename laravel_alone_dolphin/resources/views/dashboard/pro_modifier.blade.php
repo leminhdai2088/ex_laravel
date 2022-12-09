@@ -133,7 +133,7 @@
                     <div class="add-image-btn">
                         {{-- <input name="path" type="file" class="input-file" id="choose" onchange="changed(this)" multiple
                             accept="image/jpeg,image/jpg,image/png,image/gif,application/zip,application/x-zip-compressed,multipart/x-zip,.cbz"> --}}
-                            <input name="path" type="file" class="input-file" id="choose" onchange="changed(this)"
+                            <input name="image[]" type="file" class="input-file" id="choose" onchange="changed(this)" multiple
                             accept="image/jpeg,image/jpg,image/png,image/gif,application/zip,application/x-zip-compressed,multipart/x-zip,.cbz">
                         <label for="choose">
                             <i class="fa fa-plus" style="font-size: 50px; display: flex; justify-content: center;

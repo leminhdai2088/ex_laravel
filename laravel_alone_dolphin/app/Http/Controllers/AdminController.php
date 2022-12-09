@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\product_category;
+use App\Models\product_details;
+use App\Models\product_images;
 use App\Models\rooms;
+use App\Models\products;
 class AdminController extends Controller
 {
     public function add(Request $request){
@@ -16,7 +19,8 @@ class AdminController extends Controller
     }
 
     public function store(Request $request){
-        $data = [
+        // thêm sản phẩm
+        $data_pro = [
             'name' => $request->input('name'),
             'product_category_id' => $request->input('product_category_id'),
             'material' => $request->input('material'),
@@ -25,17 +29,33 @@ class AdminController extends Controller
             'weight' => $request->input('weight'),
             'price' => $request->input('price'),
         ];
+        $product = products::create($data_pro);
+        // thêm chi tiết sản phẩm
+        $data_detail = [
+            'product_id' => $product->id,
+            'size' => $request->input('size'),
+        ];
+        product_details::create($data_detail);
 
-        $form_field = $request->validate([
-            'product-name' => '',
-            'category_name' => '',
-            'room_name' => '',
-            'size' => '',
-            'mateial' => '',
-            'room_id' => '',
-        ]);
-      
-        dd($request->all());
+        // thêm product_images
+
+        // $image = array();
+        $files = $request->input('image');
+        $upload_path = '/front/images/image_products/';
+        if($files){
+            foreach($files as $file){
+                $path = strval($file);
+                $data_image = [
+                'product_id' => $product->id,
+                'path' => strval($file)
+                ];
+                // $file->move(public_path($upload_path),$path);
+                product_images::create($data_image);
+            }
+        }  
+
+
+        return "Thêm sản phẩm thành công!!!";
     }
     
 }
