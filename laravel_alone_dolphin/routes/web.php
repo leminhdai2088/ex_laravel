@@ -24,12 +24,13 @@ Route::prefix('admin')->middleware('admin')->group(function () {
     Route::post('/add', [AdminController::class, 'store']);
     Route::get('/{id}/edit', [AdminController::class, 'edit']);
     Route::patch('/edit/{id}', [AdminController::class, 'editpost']);
+    Route::get('/orders', [AdminController::class, 'orders']);
 
 });
 
 Route::prefix('checkout')->group(function () {
-Route::get('/', [front\CheckOutController::class, 'index']);
-Route::post('/', [front\CheckOutController::class, 'add_order']);
+    Route::get('/', [front\CheckOutController::class, 'index']);
+    Route::post('/', [front\CheckOutController::class, 'add_order']);
 });
 
 

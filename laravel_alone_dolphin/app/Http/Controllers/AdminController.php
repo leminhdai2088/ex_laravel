@@ -8,17 +8,20 @@ use App\Models\product_details;
 use App\Models\product_images;
 use App\Models\rooms;
 use App\Models\products;
+
 class AdminController extends Controller
 {
-    public function add(Request $request){
+    public function add(Request $request)
+    {
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
         $categories = product_category::where('room_id', $request->id_selected)->get();
-        
-        return view('dashboard.pro_modifier',compact('categories_header','rooms_header','categories'));
+
+        return view('dashboard.pro_modifier', compact('categories_header', 'rooms_header', 'categories'));
     }
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         // thêm sản phẩm
         $data_pro = [
             'name' => $request->input('name'),
@@ -43,31 +46,33 @@ class AdminController extends Controller
 
         $files = $request->image;
         $upload_path = public_path('front/images/image_products');
-        if($files){
-            foreach($files as $file){
+        if ($files) {
+            foreach ($files as $file) {
                 $data_image = [
-                'product_id' => $product->id,
-                'path' => $file->getClientOriginalName()
+                    'product_id' => $product->id,
+                    'path' => $file->getClientOriginalName()
                 ];
                 product_images::create($data_image);
                 $file->move($upload_path, $file->getClientOriginalName());
             }
-        }  
-        return redirect()->back()->with('thanhcong','Thêm sản phẩm thành công!!!');
+        }
+        return redirect()->back()->with('thanhcong', 'Thêm sản phẩm thành công!!!');
 
 
 
     }
 
-    public function edit($id){
+    public function edit($id)
+    {
         $product = products::find($id);
-        $images = product_images::where('product_id',$id)->get();
+        $images = product_images::where('product_id', $id)->get();
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        return view('dashboard.edit_product',compact('product','categories_header', 'rooms_header','images'));
+        return view('dashboard.edit_product', compact('product', 'categories_header', 'rooms_header', 'images'));
     }
 
-    public function editpost($id, Request $request){
+    public function editpost($id, Request $request)
+    {
         $pro = products::find($id);
         $pro->name = $request->name;
         $pro->product_details->size = $request->size;
@@ -76,8 +81,14 @@ class AdminController extends Controller
         $pro->qty = $request->qty;
         $pro->weight = $request->weight;
         $pro->save();
-        return redirect()->back()->with('thanhcong','Sửa sản phẩm thành công!!!');
+        return redirect()->back()->with('thanhcong', 'Sửa sản phẩm thành công!!!');
     }
 
-    
+    public function orders()
+    {
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+
+        return view('dashboard.list_order', compact('categories_header', 'rooms_header'));
+    }
 }
