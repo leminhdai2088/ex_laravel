@@ -20,23 +20,35 @@ use Illuminate\Auth\Middleware\Authenticate as Middleware;
 */
 
 
-
+// home
 Route::get('/', [front\HomeController::class, 'index']);
+Route::get('/home', [front\HomeController::class, 'index']);
 
+
+// trang admin
 Route::prefix('admin')->middleware('admin')->group(function () {
     Route::get('/add', [AdminController::class, 'add']);
     Route::post('/add', [AdminController::class, 'store']);
-    Route::get('/{id}/edit', [AdminController::class, 'edit']);
+    Route::get('/edit/{id}', [AdminController::class, 'edit']);
     Route::patch('/edit/{id}', [AdminController::class, 'editpost']);
 });
 
+
+
+// trang thanh toán
 Route::prefix('checkout')->middleware('auth')->group(function () {
 Route::get('/', [front\CheckOutController::class, 'index']);
 Route::post('/', [front\CheckOutController::class, 'add_order']);
 });
 
 
-Route::get('/home', [front\HomeController::class, 'index']);
+// chỉnh sửa thông tin user
+Route::prefix('edit_user')->middleware('auth')->group(function () {
+    Route::get('/', [UserController::class, 'edit']);
+    Route::patch('/1', [UserController::class, 'editpost']);
+    });
+
+
 
 Route::get('/sign_up', [UserController::class, 'create']);
 

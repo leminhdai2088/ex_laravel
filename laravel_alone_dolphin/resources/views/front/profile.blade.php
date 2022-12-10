@@ -97,6 +97,9 @@
             {{-- <input type="hidden" name="_token" value="{{csrf_token()}}"> --}}
                 <button type="submit" class="px-4 py-1 rounded-md border my-3">Đăng xuất</button>
             </form>
+            {{-- <input type="hidden" name="_token" value="{{csrf_token()}}"> --}}
+                <a href="/edit_user" class="px-4 py-1 bg-blue-400 rounded-md border my-3">Chỉnh sửa thông tin cá nhân</a>
+
         </div>
         <div class="col-span-3 mt-5 md:mt-0">
 

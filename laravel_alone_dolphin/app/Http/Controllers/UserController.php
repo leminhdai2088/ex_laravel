@@ -7,6 +7,7 @@ use App\Models\rooms;
 use Illuminate\Validation\Rule;
 use Illuminate\Foundation\Auth\User as users;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 class UserController extends Controller
 
 {
@@ -57,5 +58,20 @@ class UserController extends Controller
         $req->session()->invalidate();
         $req->session()->regenerateToken();
         return redirect('/');
+    }
+
+
+    public function edit(){
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        return view('front.edit_user',compact('categories_header', 'rooms_header'));
+    }
+
+    public function editpost(Request $request){
+        $user = users::find(Auth::user()->id);
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->save();
+        return redirect()->back()->with('thanhcong','Sửa thông tin thành công!!!');
     }
 }
