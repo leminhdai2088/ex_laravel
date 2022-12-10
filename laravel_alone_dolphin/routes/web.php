@@ -4,7 +4,9 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\front;
 use App\Http\Controllers\front\HomeController;
 use App\Http\Controllers\UserController;
+use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Auth\Middleware\Authenticate as Middleware;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', [front\HomeController::class, 'index']);
 
 Route::prefix('admin')->middleware('admin')->group(function () {
@@ -24,10 +28,9 @@ Route::prefix('admin')->middleware('admin')->group(function () {
     Route::post('/add', [AdminController::class, 'store']);
     Route::get('/{id}/edit', [AdminController::class, 'edit']);
     Route::patch('/edit/{id}', [AdminController::class, 'editpost']);
-
 });
 
-Route::prefix('checkout')->group(function () {
+Route::prefix('checkout')->middleware('auth')->group(function () {
 Route::get('/', [front\CheckOutController::class, 'index']);
 Route::post('/', [front\CheckOutController::class, 'add_order']);
 });
@@ -50,10 +53,6 @@ Route::get('/about_us', [front\HomeController::class, 'about']);
 Route::get('/profile', [front\HomeController::class, 'profile'])->middleware('auth');
 
 Route::get('/cart', [front\HomeController::class, 'cart']);
-
-
-
-Route::get('/sign_in', [front\HomeController::class, 'signin']);
 
 
 //Cart

@@ -90,8 +90,8 @@
     <div class="md:grid grid-cols-4 my-5 border-t pt-5">
         <div class="md:border-r">
             <h2 class="text-lg md:text-2xl font-semibold mb-3 md:mb-6">Tài khoản của bạn</h2>
-            <p><b>Username: </b>{{ Auth::user()->name }}</p>
-            <p><b>Email: </b>{{ Auth::user()->name }}</p>
+            <div><b>Username: </b>{{ Auth::user()->name }}</div>
+            <p><b>Email: </b>{{ Auth::user()->email }}</p>
             <form action="/log_out" method="POST">
                 @csrf
             {{-- <input type="hidden" name="_token" value="{{csrf_token()}}"> --}}
