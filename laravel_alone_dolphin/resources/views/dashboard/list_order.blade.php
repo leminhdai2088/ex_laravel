@@ -78,6 +78,32 @@
 
     <div class="w-full md:w-[80%] mx-auto mt-10 md:mt-16">
         <h1 class="text-center text-3xl font-bold my-3">Danh sách đơn hàng</h1>
+        <div class="flex gap-4 my-4">
+            <div>
+                <label for="startTime" class="font-bold mb-1 text-gray-700 block">Từ:</label>
+                <input type="date" id="startTime" name="startTime"
+                    class="px-4 py-3 leading-none rounded-lg shadow-md focus:outline-none focus:shadow-outline text-gray-600 font-medium">
+
+            </div>
+            <div>
+                <label for="endTime" class="font-bold mb-1 text-gray-700 block">Đến:</label>
+                <input type="date" id="endTime" name="endTime"
+                    class="px-4 py-3 leading-none rounded-lg shadow-md focus:outline-none focus:shadow-outline text-gray-600 font-medium">
+
+            </div>
+            <div class="ml-10">
+                <label for="stages" class="font-bold mb-1 text-gray-700 block">Trạng thái:</label>
+                <select id="stages"
+                    class="px-4 py-3 leading-none rounded-lg shadow-md focus:outline-none focus:shadow-outline text-gray-600 font-medium">
+                    <option value="All">Tất cả</option>
+                    @for ($i = 0; $i <count($stages); $i++) <option value="{{ $stages[$i] }}">{{ $stages[$i] }}</option>
+                        @endfor
+                </select>
+            </div>
+        </div>
+
+
+
         <table class="w-full">
             <tr>
                 <th>Mã đơn hàng</th>
