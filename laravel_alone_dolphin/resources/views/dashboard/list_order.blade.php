@@ -43,7 +43,7 @@
 
 <body class="">
 
-     <?php
+    <?php
         // class Order{
         //     public $id;
         //     public $name;
@@ -73,7 +73,7 @@
 
         $stages = array("Chưa xử lý", "Đã gửi hàng đi", "Đã giao hàng", "Đã thanh toán", "Đã hoàn tất");
         // đây là list các stage
-    ?> 
+    ?>
 
 
     <div class="w-full md:w-[80%] mx-auto mt-10 md:mt-16">
@@ -107,7 +107,7 @@
         <table class="w-full">
             <tr>
                 <th>Mã đơn hàng</th>
-                <th class="hidden md:block">Tên khách hàng</th>
+                <th>Tên khách hàng</th>
                 <th>Số điện thoại</th>
                 <th>Thời gian đặt hàng</th>
                 <th>Tổng tiền</th>
@@ -129,32 +129,33 @@
                 for($i = 0; $i < count($order->order_details); $i++){
                     $sum += $order->order_details[$i]->total;
                     if($i == count($order->order_details) - 1)
-                        echo '<td>'.number_format($sum).'đ'.'</td>';
-                }
-                @endphp
-                <td>
-                    <?php
+                    echo '<td>'.number_format($sum).'đ'.'</td>';
+                    }
+                    @endphp
+                    <td>
+                        <?php
                         $stage_name= "Đã giao hàng";
                         for ($x = 0; $x < count($stages); $x++) {
                             if ($stages[$x]===$order->status)
                                 $stage_index=$x+1;
                           }
                     ?>
-                    <div class="flex justify-center stages">
-                        @for ($i = 0; $i <count($stages); $i++) <div
-                            onclick="changeStage(`{{$order->id}}`,`{{$stages[$i]}}`)" @class([ 'stage' , 'bg-blue-300'=>
-                            ($stage_index>=$i+1)])>
-                    </div>
-                    @endfor
+                        <div class="flex justify-center stages">
+                            @for ($i = 0; $i <count($stages); $i++) <div
+                                onclick="changeStage(`{{$order->id}}`,`{{$stages[$i]}}`)" @class([ 'stage'
+                                , 'bg-blue-300'=>
+                                ($stage_index>=$i+1)])>
+                        </div>
+                        @endfor
 
-        <p class="text-xs">{{$order->status}}</p>
+                        <p class="text-xs">{{$order->status}}</p>
 
-                </td>
+                    </td>
             </tr>
-        @endforeach
-    </table>
+            @endforeach
+        </table>
 
-    <!-- <select>
+        <!-- <select>
         {{-- @for ($i = 0; $i <count($stages); $i++) <option value="{{ $stages[$i] }}">{{ $stages[$i] }}</option>
             @endfor --}}
     </select> -->
