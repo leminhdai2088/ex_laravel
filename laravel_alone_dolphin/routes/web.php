@@ -63,7 +63,11 @@ Route::post('/log_out', [UserController::class, 'log_out']);
 
 Route::get('/about_us', [front\HomeController::class, 'about']);
 
-Route::get('/profile', [front\HomeController::class, 'profile'])->middleware('auth');
+// Route::get('/profile', [front\HomeController::class, 'profile'])->middleware('auth');
+Route::prefix('/profile')->middleware('auth')->group(function () {
+    Route::get('/', [HomeController::class, 'profile']);
+    Route::get('/orders/{id}', [HomeController::class, 'order_detail']);
+});
 
 Route::get('/cart', [front\HomeController::class, 'cart']);
 

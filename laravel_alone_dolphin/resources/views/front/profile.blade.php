@@ -83,7 +83,7 @@
 
 
     <div class="">
-        <img src="../assets/background-pattern.jpg" alt="pattern" id="background-pattern">
+        <img src="/front/images/background-pattern.jpg" alt="pattern" id="background-pattern">
     </div>
 
     <h1 class="text-2xl md:text-4xl text-center font-semibold mb-10 mt-2">Tài khoản - Lịch sử mua hàng</h1>
@@ -94,11 +94,11 @@
             <p><b>Email: </b>{{ Auth::user()->email }}</p>
             <form action="/log_out" method="POST">
                 @csrf
-            {{-- <input type="hidden" name="_token" value="{{csrf_token()}}"> --}}
+                {{-- <input type="hidden" name="_token" value="{{csrf_token()}}"> --}}
                 <button type="submit" class="px-4 py-1 rounded-md border my-3">Đăng xuất</button>
             </form>
             {{-- <input type="hidden" name="_token" value="{{csrf_token()}}"> --}}
-                <a href="/edit_user" class="px-4 py-1 bg-blue-400 rounded-md border my-3">Chỉnh sửa thông tin cá nhân</a>
+            <a href="/edit_user" class="px-4 py-1 bg-blue-400 rounded-md border my-3">Chỉnh sửa thông tin cá nhân</a>
 
         </div>
         <div class="col-span-3 mt-5 md:mt-0">
@@ -125,7 +125,8 @@
                         <th>Trạng thái</th>
                     </tr>
                     <tr>
-                        <td><a href="" class="text-gray-500 underline">#929u399d9</a></td>
+                        <td><a href="/profile/orders/929u399d9" class="text-gray-500 underline">#929u399d9</a></td>
+                        <!-- link tới chi tiết đơn hàng -->
                         <td>2/12/2022</td>
                         <td>130,000₫</td>
                         <td>Đã hoàn tất</td>
