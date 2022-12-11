@@ -16,11 +16,13 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
 
+            $table->integer('user_id')->unsigned();
             $table->string('name');
             $table->string('address');
             $table->string('email');
             $table->string('phone');
             $table->string('pay_method')->nullable();
+            $table->string('status')->nullable()->default('Chưa xử lý');
             $table->timestamps();
         });
     }

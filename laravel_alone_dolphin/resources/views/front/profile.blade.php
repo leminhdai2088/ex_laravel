@@ -87,6 +87,11 @@
     </div>
 
     <h1 class="text-2xl md:text-4xl text-center font-semibold mb-10 mt-2">Tài khoản - Lịch sử mua hàng</h1>
+    @if(Session::has('thanhcong'))
+        <script>
+         alert("Bạn đã đặt hàng thành công!!!");
+        </script>
+    @endif
     <div class="md:grid grid-cols-4 my-5 border-t pt-5">
         <div class="md:border-r">
             <h2 class="text-lg md:text-2xl font-semibold mb-3 md:mb-6">Tài khoản của bạn</h2>
@@ -115,7 +120,10 @@
                     <i class="fi fi-rr-arrow-small-right"></i></a>
 
             </div>
-            <div id="with-orders" class="px-5">
+            @if($count_order == 0)
+                <h2>Hiện tại bạn chưa có đơn hàng nào!!!</h2>
+            @else
+                <div id="with-orders" class="px-5">
                 <h2 class="text-lg md:text-2xl font-semibold mb-3 md:mb-5">Đơn hàng</h2>
                 <table>
                     <tr>
@@ -124,14 +132,24 @@
                         <th>Thành tiền</th>
                         <th>Trạng thái</th>
                     </tr>
+                    @foreach( $orders as  $order)
                     <tr>
-                        <td><a href="" class="text-gray-500 underline">#929u399d9</a></td>
-                        <td>2/12/2022</td>
-                        <td>130,000₫</td>
-                        <td>Đã hoàn tất</td>
+                        <td><a href="" class="text-gray-500 underline">#{{ $order->id }}  </a></td>
+                        <td>{{ $order->created_at }}</td>
+                        @php
+                        $sum = 0;
+                        for($i = 0; $i < count($order->order_details); $i++){
+                            $sum += $order->order_details[$i]->total;
+                            if($i == count($order->order_details) - 1)
+                                echo '<td>'.$sum.'</td>';
+                        }
+                        @endphp
+                        <td>{{ $order->status }}</td>
                     </tr>
+                    @endforeach
                 </table>
-            </div>
+                </div>
+            @endif
         </div>
 
 
