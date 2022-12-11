@@ -32,6 +32,7 @@ Route::prefix('admin')->middleware('admin')->group(function () {
     Route::get('/edit/{id}', [AdminController::class, 'edit']);
     Route::patch('/edit/{id}', [AdminController::class, 'editpost']);
     Route::get('/orders', [AdminController::class, 'orders']);
+    Route::get('/orders/1', [AdminController::class, 'order_detail']);
 
 });
 

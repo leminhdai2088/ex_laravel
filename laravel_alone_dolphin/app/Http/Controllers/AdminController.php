@@ -91,4 +91,12 @@ class AdminController extends Controller
 
         return view('dashboard.list_order', compact('categories_header', 'rooms_header'));
     }
+
+    public function order_detail()
+    {
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+
+        return view('dashboard.order_detail', compact('categories_header', 'rooms_header'));
+    }
 }
