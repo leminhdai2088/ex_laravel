@@ -26,7 +26,7 @@ Route::get('/home', [front\HomeController::class, 'index']);
 
 
 // trang admin
-Route::prefix('admin')->middleware('admin')->group(function () {
+Route::prefix('admin')->middleware('admin')->middleware('auth')->group(function () {
     Route::get('/add', [AdminController::class, 'add']);
     Route::post('/add', [AdminController::class, 'store']);
     Route::get('/edit/{id}', [AdminController::class, 'edit']);

@@ -43,37 +43,37 @@
 
 <body class="">
 
-    <?php
-        class Order{
-            public $id;
-            public $name;
-            public $phone;
-            public $created_at;
-            public $total;
-            public $stage;
-        }
-        $order1 = new Order();
-        $order1->id = "12";
-        $order1->name = "Dong PHuong";
-        $order1->phone = "0962306647";
-        $order1->created_at = "12:23:50 10/12/2022";
-        $order1->total = "590,000";
-        $order1->stage = "Đã giao hàng";
+     <?php
+        // class Order{
+        //     public $id;
+        //     public $name;
+        //     public $phone;
+        //     public $created_at;
+        //     public $total;
+        //     public $stage;
+        // }
+        // $order1 = new Order();
+        // $order1->id = "12";
+        // $order1->name = "Dong PHuong";
+        // $order1->phone = "0962306647";
+        // $order1->created_at = "12:23:50 10/12/2022";
+        // $order1->total = "590,000";
+        // $order1->stage = "Đã giao hàng";
 
-        $order2 = new Order();
-        $order2->id = "13";
-        $order2->name = "Phuong Dong";
-        $order2->phone = "0934933822";
-        $order2->created_at = "03:20:10 8/11/2022";
-        $order2->total = "230,000";
-        $order2->stage = "Đã hoàn tất";
+        // $order2 = new Order();
+        // $order2->id = "13";
+        // $order2->name = "Phuong Dong";
+        // $order2->phone = "0934933822";
+        // $order2->created_at = "03:20:10 8/11/2022";
+        // $order2->total = "230,000";
+        // $order2->stage = "Đã hoàn tất";
 
-        $orders = array($order1, $order2);
-        // phía trên là dữ liệu giả để hiện lên
+        // $orders = array($order1, $order2);
+        // // phía trên là dữ liệu giả để hiện lên
 
         $stages = array("Chưa xử lý", "Đã gửi hàng đi", "Đã giao hàng", "Đã thanh toán", "Đã hoàn tất");
         // đây là list các stage
-    ?>
+    ?> 
 
 
     <div class="w-full md:w-[80%] mx-auto mt-10 md:mt-16">
@@ -124,14 +124,19 @@
                     {{$order->phone}}
                 </td>
                 <td>{{$order->created_at}}</td>
-                <td>
-                    {{$order->total}}
-                </td>
+                @php
+                $sum = 0;
+                for($i = 0; $i < count($order->order_details); $i++){
+                    $sum += $order->order_details[$i]->total;
+                    if($i == count($order->order_details) - 1)
+                        echo '<td>'.number_format($sum).'đ'.'</td>';
+                }
+                @endphp
                 <td>
                     <?php
                         $stage_name= "Đã giao hàng";
                         for ($x = 0; $x < count($stages); $x++) {
-                            if ($stages[$x]===$order->stage)
+                            if ($stages[$x]===$order->status)
                                 $stage_index=$x+1;
                           }
                     ?>
@@ -141,18 +146,17 @@
                             ($stage_index>=$i+1)])>
                     </div>
                     @endfor
-    </div>
-    <p class="text-xs">{{$order->stage}}</p>
 
-    </td>
-    </tr>
-    @endforeach
+        <p class="text-xs">{{$order->status}}</p>
 
+                </td>
+            </tr>
+        @endforeach
     </table>
 
     <!-- <select>
-        @for ($i = 0; $i <count($stages); $i++) <option value="{{ $stages[$i] }}">{{ $stages[$i] }}</option>
-            @endfor
+        {{-- @for ($i = 0; $i <count($stages); $i++) <option value="{{ $stages[$i] }}">{{ $stages[$i] }}</option>
+            @endfor --}}
     </select> -->
 
     </div>

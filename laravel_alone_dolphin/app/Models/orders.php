@@ -15,4 +15,8 @@ class orders extends Model
     public function order_details(){
         return $this->hasMany(order_details::class,'order_id','id');
     }
+
+    public function user(){
+        return $this->hasOne('App\Models\User','id','user_id');
+    }
 }

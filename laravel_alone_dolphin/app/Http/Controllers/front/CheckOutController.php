@@ -8,6 +8,7 @@ use App\Models\order_details;
 use App\Models\orders;
 use Illuminate\Http\Request;
 use Gloudemans\Shoppingcart\Facades\Cart;
+use Illuminate\Support\Facades\Auth;
 
 class CheckOutController extends Controller
 {
@@ -15,7 +16,6 @@ class CheckOutController extends Controller
     {
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-
         $carts = Cart::content();
         $total = Cart::total();
         return view('front.checkout', compact('categories_header', 'rooms_header','carts','total'));
@@ -23,7 +23,10 @@ class CheckOutController extends Controller
 
     public function add_order(Request $request){
         //thêm giỏ hàng
-        $order = orders::create($request->all());
+        $data_order = $request->all();
+        $user = ['user_id'=>Auth::user()->id];
+        $data_order+=$user;
+        $order = orders::create($data_order);
 
         //thêm chi tiết giỏ hàng
         $carts = Cart::content();
@@ -42,6 +45,6 @@ class CheckOutController extends Controller
         Cart::destroy();
 
         //trả về kq
-        return "Đặt hàng thành công!!!";
+        return redirect('/profile')->with('thanhcong','Sửa thông tin thành công!!!');
     }
 }

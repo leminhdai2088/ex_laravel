@@ -98,7 +98,7 @@
             
             @if(count($carts) <= 0)
             <div class="w-full m-auto md:flex flex-col md:text-center items-center gap-6 mb-20">
-                <p>Giỏ hàng của bạn đang trống</p>
+                <p>Đơn hàng của bạn hiện tại chưa có sản phẩm nào!!!</p>
                 <img class="hidden md:block" src="/front/images/empty.png" alt="">
                 <p>Bắt đầu mua sắm thôi nào!</p>
                 <a class="bg-yellow-400 px-1 text-black text-lg flex gap-3 w-fit" href="/home_office"><span class="underline">Xem
@@ -128,6 +128,19 @@
                 <div class="mt-4 form-group">
                     <label for="address">Địa chỉ</label><span><sup class="text-red-500">*</sup></span><br>
                     <input class="form-control" type="text" id="address" name="address">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="mt-4 form-group">
+                    <label>Phương thức thanh toán</label><span><sup class="text-red-500">*</sup></span><br>
+                    <input class="form-control" type="radio" id="pay1" name="pay_method" value="Thanh toán khi nhận hàng" checked>
+                    <label for="pay1">Thanh toán khi nhận hàng</label><br>
+
+                    <input class="form-control" type="radio" id="pay2" name="pay_method" value="Ví điện tử MoMo">
+                    <label for="pay2">Ví điện tử MoMo</label><br>
+
+                    <input class="form-control" type="radio" id="pay3" name="pay_method" value="Ngân hàng điện tử - Thẻ tín dụng">
+                    <label for="pay3">Ngân hàng điện tử - Thẻ tín dụng</label>
                     <span class="form-message"></span>
                 </div>
 

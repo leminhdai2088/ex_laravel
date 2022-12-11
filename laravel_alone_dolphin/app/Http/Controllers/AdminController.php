@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\orders;
 use Illuminate\Http\Request;
 use App\Models\product_category;
 use App\Models\product_details;
@@ -88,8 +89,8 @@ class AdminController extends Controller
     {
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-
-        return view('dashboard.list_order', compact('categories_header', 'rooms_header'));
+        $orders = orders::all();
+        return view('dashboard.list_order', compact('categories_header', 'rooms_header','orders'));
     }
 
     public function order_detail()

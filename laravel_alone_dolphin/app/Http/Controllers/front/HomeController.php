@@ -3,10 +3,13 @@
 namespace App\Http\Controllers\front;
 
 use App\Http\Controllers\Controller;
+use App\Models\order_details;
 use App\Models\products;
 use Illuminate\Http\Request;
 use App\Models\product_category;
 use App\Models\rooms;
+use App\Models\orders;
+use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Hash;
 use Illuminate\Support\Facades\Hash as FacadesHash;
@@ -37,10 +40,11 @@ class HomeController extends Controller
 
     public function profile()
     {
-
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        return view('front.profile', compact('categories_header', 'rooms_header'));
+        $orders = orders::where('user_id',Auth::user()->id)->get();
+        $count_order = $orders->count('*');
+        return view('front.profile', compact('categories_header', 'rooms_header','orders','count_order'));
     }
     public function order_detail()
     {
