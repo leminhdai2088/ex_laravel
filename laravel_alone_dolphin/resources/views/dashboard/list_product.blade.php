@@ -1,6 +1,9 @@
 @extends('components.layout')
 @section('head')
 <title>Quản lý sản phẩm</title>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+</head>
 <style>
     th {
         background-color: rgb(254 240 138);
@@ -134,7 +137,7 @@
                 {{ $product->weight }}
             </td>
             <td>
-                {{ number_format($product->price) }}
+                {{ number_format($product->price) }}đ
             </td>
             <td>
                 {{ $product->qty }}
@@ -158,8 +161,9 @@
 </div>
 <div class="shop-content-bottom">
     <div class="pages">
-        {{-- {{$products->links()}} --}}
+        {{ $products->links() }}
     </div>
+    
 </div>
 
 @endsection

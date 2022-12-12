@@ -49,26 +49,31 @@
             <h2 class="text-2xl font-semibold">Đơn hàng #12</h2>
             <a href="/admin/orders" class="text-gray-500">Quay về danh sách đơn hàng</a>
         </div>
-        <p>Đặt lúc - 12:23:20 10/12/2022</p>
+        <p>Đặt lúc - {{ $order_detail[0]->created_at }}</p>
         <div class="grid grid-cols-2">
             <div>
                 <h3 class="text-xl font-semibold mt-4 mb-2">Thông tin khách hàng</h3>
                 <ul class="list-disc list-inside">
-                    <li>Tên: Dong PHuong</li>
-                    <li>Email: dongphuong@gmail.com</li>
-                    <li>SĐT: 0962305647</li>
-                    <li>Địa chỉ nhận hàng: ktx khu A, Thủ Đức, HCM</li>
+                    <li>Tên: {{ $order_detail[0]->order->name }}</li>
+                    <li>Email: {{ $order_detail[0]->order->email }}</li>
+                    <li>SĐT: {{ $order_detail[0]->order->phone }}</li>
+                    <li>Địa chỉ: {{ $order_detail[0]->order->address }}</li>
                 </ul>
             </div>
             <div>
                 <h3 class="text-xl font-semibold mt-4 mb-2">Thông tin đơn hàng</h3>
                 <ul class="list-disc list-inside">
-                    <li>Phương thức giao hàng: COD</li>
-                    <li>Phương thức thanh toán: COD</li>
-                    <li>Mã giảm giá: fejij3</li>
+                    <li>Phương thức thanh toán: {{ $order_detail[0]->order->pay_method }}</li>
                     <li>Phí vận chuyển: Freeship</li>
-                    <li>Tổng cộng: 8,400,000</li>
-                    <li>Trạng thái: Đã hoàn tất</li>
+                    @php
+                    $sum = 0;
+                    for($i = 0; $i < count($order_detail); $i++){
+                        $sum += $order_detail[$i]->total;
+                        if($i == count($order_detail) - 1)
+                            echo '<li>'.'Tổng cộng: '.number_format($sum).'đ'.'</li>';
+                        }
+                    @endphp
+                    <li>Trạng thái: {{ $order_detail[0]->order->status }}</li>
                 </ul>
             </div>
         </div>

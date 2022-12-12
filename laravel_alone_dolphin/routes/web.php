@@ -34,7 +34,7 @@ Route::prefix('admin')->middleware('admin')->middleware('auth')->group(function 
     Route::delete('/delete_product/{id}', [AdminController::class, 'delete_pro']);
     Route::get('/orders', [AdminController::class, 'orders']);
     Route::get('/products', [AdminController::class, 'products']);
-    Route::get('/orders/1', [AdminController::class, 'order_detail']);
+    Route::get('/order/{id}', [AdminController::class, 'order_detail']);
 
 });
 

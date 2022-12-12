@@ -12,4 +12,7 @@ class order_details extends Model
     protected $primaryKey = 'id';
     protected $guarded = [];
 
+    public function order(){
+        return $this->hasOne('App\Models\orders','id','order_id');
+    }
 }

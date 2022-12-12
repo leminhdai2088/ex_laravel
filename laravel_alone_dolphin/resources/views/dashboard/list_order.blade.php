@@ -110,32 +110,7 @@
 <body class="">
 
     <?php
-            class Order{
-                public $id;
-                public $name;
-                public $phone;
-                public $created_at;
-                public $total;
-                public $status;
-            }
-            $order1 = new Order();
-            $order1->id = "12";
-            $order1->name = "Dong PHuong";
-            $order1->phone = "0962306647";
-            $order1->created_at = "12:23:50 10/12/2022";
-            $order1->total = "590,000";
-            $order1->status = "Đã giao hàng";
-
-            $order2 = new Order();
-            $order2->id = "13";
-            $order2->name = "Phuong Dong";
-            $order2->phone = "0934933822";
-            $order2->created_at = "03:20:10 8/11/2022";
-            $order2->total = "230,000";
-            $order2->status = "Đã hoàn tất";
-
-            $orders = array($order1, $order2);
-            // phía trên là dữ liệu giả để hiện lên
+           
 
         $stages = array("Chưa xử lý", "Đã gửi hàng đi", "Đã giao hàng", "Đã thanh toán", "Đã hoàn tất");
         // đây là list các stage
@@ -182,7 +157,7 @@
             @foreach($orders as $order)
             <tr id="{{$order->id}}">
                 <td>
-                    <a href="">#{{$order->id}}</a>
+                    <a href="/admin/order/{{$order->id}}">#{{$order->id}}</a>
                     <!-- tới trang chi tiết đơn hàng -->
                 </td>
                 <td>{{$order->name}}</td>
@@ -195,7 +170,7 @@
                 for($i = 0; $i < count($order->order_details); $i++){
                     $sum += $order->order_details[$i]->total;
                     if($i == count($order->order_details) - 1)
-                    echo '<td>'.number_format($sum).'đ'.'</td>';
+                        echo '<td>'.number_format($sum).'đ'.'</td>';
                     }
                     @endphp
                     <td>

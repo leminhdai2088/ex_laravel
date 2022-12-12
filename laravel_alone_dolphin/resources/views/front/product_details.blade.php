@@ -58,7 +58,7 @@
                 <p><strong>Kích thước: </strong><span>{{ $product->product_details->size }}</span></p>
                 <p><strong>Chất liệu: </strong><span>{{ $product->material }}</span></p>
                 @if($product->weight)
-                <p><strong>Cân nặng: </strong><span>{{ $product->weight }}</span></p>
+                <p><strong>Cân nặng: </strong><span>{{ $product->weight }}kg</span></p>
                 @endif
             </div>
             <!-- <form action="/gio-hang" method="GET">
