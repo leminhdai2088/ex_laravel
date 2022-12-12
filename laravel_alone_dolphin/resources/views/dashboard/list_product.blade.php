@@ -40,26 +40,72 @@
             background-color: blue;
         }
 
-        [data-c-tooltip]:after {
-            z-index: 1000;
-            padding: 8px;
+        /* Add this attribute to the element that needs a tooltip */
+
+        [data-tooltip] {
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        /* Hide the tooltip content by default */
+
+        [data-tooltip]:before,
+        [data-tooltip]:after {
+            visibility: hidden;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* Position tooltip above the element */
+
+        [data-tooltip]:before {
+            position: absolute;
+            bottom: 150%;
+            left: 50%;
+            margin-bottom: 5px;
+            margin-left: -80px;
+            padding: 7px;
             width: 160px;
+            border-radius: 3px;
+            border: 1px outset #C0C0C0;
             background-color: #000;
-            background-color: rgba(51, 51, 51, 0.9);
-            color: #fff;
-            content: attr(data-c-tooltip);
-            font-size: 14px;
+            background-color: hsla(0, 0%, 20%, 0.9);
+            color: #FFFFFF;
+            content: attr(data-tooltip);
+            text-align: center;
+            font-size: 11px;
+            font-weight: bold;
             line-height: 1.2;
         }
 
-        [data-c-tooltip]:before {
-            z-index: 1001;
-            border: 6px solid transparent;
-            background: transparent;
-            content: "";
-            margin-left: -6px;
-            margin-bottom: -12px;
-            border-top-color: rgba(51, 51, 51, 0.9)
+        /* Triangle hack to make tooltip look like a speech bubble */
+
+        [data-tooltip]:after {
+            position: absolute;
+            bottom: 150%;
+            left: 50%;
+            margin-left: -5px;
+            width: 0;
+            border-top: 5px solid #000;
+            border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+            border-right: 5px solid transparent;
+            border-left: 5px solid transparent;
+            content: " ";
+            font-size: 0;
+            line-height: 0;
+        }
+
+        /* Show tooltip content on hover */
+
+        [data-tooltip]:hover:before,
+        [data-tooltip]:hover:after {
+            visibility: visible;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+            opacity: 1;
         }
     </style>
 </head>
@@ -113,12 +159,14 @@
 
                 <td>
                     <div class="flex justify-center gap-5">
-                        <a href="/admin/edit/{{ $product->id }}" data-c-tooltip="Chỉnh sửa"><i class="fi fi-rr-edit"></i></a>
-                        
+                        <a href="/admin/edit/{{ $product->id }}" data-tooltip="Chỉnh sửa"><i
+                                class="fi fi-rr-edit"></i></a>
+
                         <form action="/admin/delete_product/{{ $product->id }}" method="POST">
                             @method('DELETE')
                             <input type="hidden" name="_token" value="{{csrf_token()}}">
-                            <button type="submit"  onclick="return confirm('Xác nhận xóa sản phẩm?')" data-c-tooltip="Xóa"><i class="fi fi-rr-trash"></i></button>
+                            <button type="submit" onclick="return confirm('Xác nhận xóa sản phẩm?')"
+                                data-tooltip="Xóa"><i class="fi fi-rr-trash"></i></button>
                         </form>
                     </div>
                 </td>
