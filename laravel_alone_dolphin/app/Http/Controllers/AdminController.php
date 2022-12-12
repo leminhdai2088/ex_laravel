@@ -85,6 +85,13 @@ class AdminController extends Controller
         return redirect()->back()->with('thanhcong', 'Sửa sản phẩm thành công!!!');
     }
 
+    public function delete_pro($id){
+        product_details::destroy(product_details::where('product_id',$id)->get());
+        product_images::destroy(product_images::where('product_id',$id)->get());
+        products::destroy($id);
+        return ('xóa thành công');
+    }
+
     public function orders()
     {
         $categories_header = product_category::all();
@@ -96,7 +103,9 @@ class AdminController extends Controller
     {
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        return view('dashboard.list_product', compact('categories_header', 'rooms_header'));
+        $products = products::all();
+        // $products = $products->paginate(20);
+        return view('dashboard.list_product', compact('categories_header', 'rooms_header','products'));
     }
 
     public function order_detail()

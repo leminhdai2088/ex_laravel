@@ -73,8 +73,12 @@
             @if(auth()->user()->level == 0)
             <a class="cursor-pointer px-5 py-2 bg-yellow-400 my-5" href="/cart/add/{{ $product->id }}">Thêm vào giỏ</a>
             @else
-            <a class="cursor-pointer px-5 py-2 bg-blue-400 my-5" href="/admin/{{ $product->id }}/edit">Sửa thông tin</a>
-            <a class="cursor-pointer px-5 py-2 bg-red-400 my-5" href="#">Xóa sản phẩm</a>
+            <a class="cursor-pointer px-5 py-2 bg-blue-400 my-5" href="/admin/edit/{{ $product->id }}">Sửa thông tin</a>
+            <form action="/admin/delete_product/{{ $product->id }}" method="POST">
+                @method('DELETE')
+                <input type="hidden" name="_token" value="{{csrf_token()}}">
+                <button type="submit" class="cursor-pointer px-5 py-2 bg-red-400 my-5" onclick="return confirm('Xác nhận xóa sản phẩm?')">Xóa sản phẩm</button>
+            </form>
             @endif
             @else
             <a class="cursor-pointer px-5 py-2 bg-yellow-400 my-5" href="/cart/add/{{ $product->id }}">Thêm vào giỏ</a>

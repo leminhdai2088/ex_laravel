@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="/front/css/header.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
     @vite('resources/css/app.css')
     <style>
         th {
@@ -81,47 +82,54 @@
                 <th>Tên sản phẩm</th>
                 <th>Phân loại</th>
                 <th>Phòng</th>
-                <th>Chất liệu</th>
                 <th>Khối lượng (kg)</th>
                 <th>Giá</th>
                 <th>Số lượng</th>
                 <th>Hành động</th>
             </tr>
-            <tr id="">
+            @foreach($products as $product)
+            <tr id="{{ $product->id }}">
                 <td>
-                    #133
+                    #{{ $product->id }}
                 </td>
                 <td>
-                    JASMIN
+                    {{ $product->name }}
                 </td>
                 <td>
-                    SOFA
+                    {{ $product->product_category->name }}
                 </td>
                 <td>
-                    Phòng khách
+                    {{ $product->room->name }}
                 </td>
                 <td>
-                    Vải polyester, khung gỗ sồi
+                    {{ $product->weight }}
                 </td>
                 <td>
-                    5
+                    {{ number_format($product->price) }}
                 </td>
                 <td>
-                    1,050,000
-                </td>
-                <td>
-                    13
+                    {{ $product->qty }}
                 </td>
 
                 <td>
                     <div class="flex justify-center gap-5">
-                        <button data-c-tooltip="Chỉnh sửa"><i class="fi fi-rr-edit"></i></button>
-                        <button data-c-tooltip="Xóa"><i class="fi fi-rr-trash"></i></button>
+                        <a href="/admin/edit/{{ $product->id }}" data-c-tooltip="Chỉnh sửa"><i class="fi fi-rr-edit"></i></a>
+                        
+                        <form action="/admin/delete_product/{{ $product->id }}" method="POST">
+                            @method('DELETE')
+                            <input type="hidden" name="_token" value="{{csrf_token()}}">
+                            <button type="submit"  onclick="return confirm('Xác nhận xóa sản phẩm?')" data-c-tooltip="Xóa"><i class="fi fi-rr-trash"></i></button>
+                        </form>
                     </div>
                 </td>
             </tr>
+            @endforeach
         </table>
-
+        <div class="shop-content-bottom">
+            <div class="pages">
+                {{-- {{$products->links()}} --}}
+            </div>
+        </div>
 
     </div>
 

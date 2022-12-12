@@ -31,6 +31,7 @@ Route::prefix('admin')->middleware('admin')->middleware('auth')->group(function 
     Route::post('/add', [AdminController::class, 'store']);
     Route::get('/edit/{id}', [AdminController::class, 'edit']);
     Route::patch('/edit/{id}', [AdminController::class, 'editpost']);
+    Route::delete('/delete_product/{id}', [AdminController::class, 'delete_pro']);
     Route::get('/orders', [AdminController::class, 'orders']);
     Route::get('/products', [AdminController::class, 'products']);
     Route::get('/orders/1', [AdminController::class, 'order_detail']);
