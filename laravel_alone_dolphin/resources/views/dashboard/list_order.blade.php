@@ -142,7 +142,7 @@
     ?>
 
 
-    <div class="w-full md:w-[80%] mx-auto mt-10 md:mt-16">
+    <div class="w-full md:w-[80%] mx-auto mt-16">
         <h1 class="text-center text-3xl font-bold my-3">Danh sách đơn hàng</h1>
         <div class="flex gap-4 my-4">
             <div>

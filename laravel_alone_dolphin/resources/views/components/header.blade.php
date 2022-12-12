@@ -83,23 +83,7 @@
                     <div class="content-sub-menu">
                         <div class="container-sub-menu w-[1200px] m-auto">
                             <div class="sub-menu">
-                                <ul>
-                                    @foreach($rooms_header as $room)
-                                    <li>
-                                        <a href="/{{ $room->link }}">{{ $room->name }}</a>
-                                        <ul class="details-menu details-{{ $room->link }}">
 
-                                            @foreach($categories_header as $cate)
-                                            @if($cate->room_id == $room->id)
-                                            <li>
-                                                <a href="/{{ $room->link }}/{{ $cate->id }}">{{ $cate->name }}</a>
-                                            </li>
-                                            @endif
-                                            @endforeach
-                                        </ul>
-                                    </li>
-                                    @endforeach
-                                </ul>
                             </div>
                             <div class="img-sub-menu">
                                 <a href="#"><img src="/front/images/img-menu/image_menu_products.webp"
@@ -168,27 +152,7 @@
                     <a>Sản phẩm</a>
                     <i class="fi fi-rr-angle-small-down"></i>
                 </div>
-                <div class="px-5 collapse-section">
 
-                    @foreach($rooms_header as $room)
-                    <div class="py-1 border-b border-b-yellow-500 text-lg">
-                        <div class="flex justify-between pr-6 content-center">
-                            <a href="/{{ $room->link }}">{{ $room->name }}</a>
-                            <i class="fi fi-rr-angle-small-down" onclick="handleExpandChild(event)"></i>
-                        </div>
-                        <div class="pl-5 collapse-section">
-                            @foreach($categories_header as $cate)
-                            <div class="flex justify-start gap-4 content-center">
-                                @if($cate->room_id == $room->id)
-                                <a href="/{{ $room->link }}/{{ $cate->id }}">{{ $cate->name }}</a>
-                                @endif
-                            </div>
-                            @endforeach
-                        </div>
-                    </div>
-                    @endforeach
-
-                </div>
             </div>
             <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="#footer">Liên hệ</a></div>
         </div>
@@ -207,7 +171,6 @@
                     <div class="content-sub-menu">
                         <div class="container-sub-menu w-[1200px] m-auto">
                             <div class="sub-menu">
-                                <ul>
 
                             </div>
                             <div class="img-sub-menu">
@@ -266,27 +229,7 @@
                     <a>Sản phẩm</a>
                     <i class="fi fi-rr-angle-small-down"></i>
                 </div>
-                <div class="px-5 collapse-section">
 
-                    @foreach($rooms_header as $room)
-                    <div class="py-1 border-b border-b-yellow-500 text-lg">
-                        <div class="flex justify-between pr-6 content-center">
-                            <a href="/{{ $room->link }}">{{ $room->name }}</a>
-                            <i class="fi fi-rr-angle-small-down" onclick="handleExpandChild(event)"></i>
-                        </div>
-                        <div class="pl-5 collapse-section">
-                            @foreach($categories_header as $cate)
-                            <div class="flex justify-start gap-4 content-center">
-                                @if($cate->room_id == $room->id)
-                                <a href="/{{ $room->link }}/{{ $cate->id }}">{{ $cate->name }}</a>
-                                @endif
-                            </div>
-                            @endforeach
-                        </div>
-                    </div>
-                    @endforeach
-
-                </div>
             </div>
             <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="#footer">Liên hệ</a></div>
         </div>

@@ -1,188 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('components.layout')
+@section('head')
+<title>Quản lý sản phẩm</title>
+<style>
+    th {
+        background-color: rgb(254 240 138);
+    }
 
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/front/css/main.css" />
-    <link href="/front/css/output.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel="stylesheet" href="/front/css/header.css">
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
-    <title>Quản lý sản phẩm</title>
-    @vite('resources/css/app.css')
-    <style>
-        th {
-            background-color: rgb(254 240 138);
-        }
+    td {
+        text-align: center;
+    }
 
-        td {
-            text-align: center;
-        }
+    .stage {
+        border: 1px solid black;
+        height: 12px;
+        width: 30px;
+        cursor: pointer;
+        background-color: none;
+    }
 
-        .stage {
-            border: 1px solid black;
-            height: 12px;
-            width: 30px;
-            cursor: pointer;
-            background-color: none;
-        }
+    .stages:hover>.stage {
+        background-color: aqua;
+    }
 
-        .stages:hover>.stage {
-            background-color: aqua;
-        }
+    .stage:hover~.stage {
+        background-color: white;
+    }
 
-        .stage:hover~.stage {
-            background-color: white;
-        }
+    .active {
+        background-color: blue;
+    }
 
-        .active {
-            background-color: blue;
-        }
+    /* Add this attribute to the element that needs a tooltip */
 
-        /* Add this attribute to the element that needs a tooltip */
+    [data-tooltip] {
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+    }
 
-        [data-tooltip] {
-            position: relative;
-            z-index: 2;
-            cursor: pointer;
-        }
+    /* Hide the tooltip content by default */
 
-        /* Hide the tooltip content by default */
+    [data-tooltip]:before,
+    [data-tooltip]:after {
+        visibility: hidden;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+        pointer-events: none;
+    }
 
-        [data-tooltip]:before,
-        [data-tooltip]:after {
-            visibility: hidden;
-            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-            filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
-            opacity: 0;
-            pointer-events: none;
-        }
+    /* Position tooltip above the element */
 
-        /* Position tooltip above the element */
+    [data-tooltip]:before {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-bottom: 5px;
+        margin-left: -120px;
+        padding: 7px;
+        width: 130px;
+        border-radius: 3px;
+        border: 1px outset #C0C0C0;
+        background-color: #000;
+        background-color: hsla(0, 0%, 20%, 0.9);
+        color: #FFFFFF;
+        content: attr(data-tooltip);
+        text-align: center;
+        font-size: 11px;
+        font-weight: bold;
+        line-height: 1.2;
+    }
 
-        [data-tooltip]:before {
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            margin-bottom: 5px;
-            margin-left: -120px;
-            padding: 7px;
-            width: 130px;
-            border-radius: 3px;
-            border: 1px outset #C0C0C0;
-            background-color: #000;
-            background-color: hsla(0, 0%, 20%, 0.9);
-            color: #FFFFFF;
-            content: attr(data-tooltip);
-            text-align: center;
-            font-size: 11px;
-            font-weight: bold;
-            line-height: 1.2;
-        }
+    /* Triangle hack to make tooltip look like a speech bubble */
 
-        /* Triangle hack to make tooltip look like a speech bubble */
+    [data-tooltip]:after {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        width: 0;
+        border-top: 5px solid #000;
+        border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        content: " ";
+        font-size: 0;
+        line-height: 0;
+    }
 
-        [data-tooltip]:after {
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            margin-left: -5px;
-            width: 0;
-            border-top: 5px solid #000;
-            border-top: 5px solid hsla(0, 0%, 20%, 0.9);
-            border-right: 5px solid transparent;
-            border-left: 5px solid transparent;
-            content: " ";
-            font-size: 0;
-            line-height: 0;
-        }
+    /* Show tooltip content on hover */
 
-        /* Show tooltip content on hover */
+    [data-tooltip]:hover:before,
+    [data-tooltip]:hover:after {
+        visibility: visible;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity: 1;
+    }
+</style>
+@endsection
+@section('content')
 
-        [data-tooltip]:hover:before,
-        [data-tooltip]:hover:after {
-            visibility: visible;
-            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-            filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
-            opacity: 1;
-        }
-    </style>
-</head>
+<h1 class="text-center text-3xl font-bold my-3">Danh sách đơn hàng</h1>
 
-<body>
+<div class="overflow-x-auto">
 
-    <?php
+    <table class="w-full">
+        <tr>
+            <th>Mã sản phẩm</th>
+            <th>Tên sản phẩm</th>
+            <th>Phân loại</th>
+            <th>Phòng</th>
+            <th>Khối lượng (kg)</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Hành động</th>
+        </tr>
+        @foreach($products as $product)
+        <tr id="{{ $product->id }}">
+            <td>
+                #{{ $product->id }}
+            </td>
+            <td>
+                {{ $product->name }}
+            </td>
+            <td>
+                {{ $product->product_category->name }}
+            </td>
+            <td>
+                {{ $product->room->name }}
+            </td>
+            <td>
+                {{ $product->weight }}
+            </td>
+            <td>
+                {{ number_format($product->price) }}
+            </td>
+            <td>
+                {{ $product->qty }}
+            </td>
 
-    ?>
-    <x-header :rooms_header="$rooms_header" :categories_header="$categories_header" />
+            <td>
+                <div class="flex justify-center gap-5">
+                    <a href="/admin/edit/{{ $product->id }}" data-tooltip="Chỉnh sửa"><i class="fi fi-rr-edit"></i></a>
 
-    <div class="w-full md:w-[80%] mx-auto mt-16 md:mt-20 mb-10 ">
-        <h1 class="text-center text-3xl font-bold my-3">Danh sách đơn hàng</h1>
-
-        <div class="overflow-x-auto">
-
-            <table class="w-full">
-                <tr>
-                    <th>Mã sản phẩm</th>
-                    <th>Tên sản phẩm</th>
-                    <th>Phân loại</th>
-                    <th>Phòng</th>
-                    <th>Khối lượng (kg)</th>
-                    <th>Giá</th>
-                    <th>Số lượng</th>
-                    <th>Hành động</th>
-                </tr>
-                @foreach($products as $product)
-                <tr id="{{ $product->id }}">
-                    <td>
-                        #{{ $product->id }}
-                    </td>
-                    <td>
-                        {{ $product->name }}
-                    </td>
-                    <td>
-                        {{ $product->product_category->name }}
-                    </td>
-                    <td>
-                        {{ $product->room->name }}
-                    </td>
-                    <td>
-                        {{ $product->weight }}
-                    </td>
-                    <td>
-                        {{ number_format($product->price) }}
-                    </td>
-                    <td>
-                        {{ $product->qty }}
-                    </td>
-
-                    <td>
-                        <div class="flex justify-center gap-5">
-                            <a href="/admin/edit/{{ $product->id }}" data-tooltip="Chỉnh sửa"><i
-                                    class="fi fi-rr-edit"></i></a>
-
-                            <form action="/admin/delete_product/{{ $product->id }}" method="POST">
-                                @method('DELETE')
-                                <input type="hidden" name="_token" value="{{csrf_token()}}">
-                                <button type="submit" onclick="return confirm('Xác nhận xóa sản phẩm?')"
-                                    data-tooltip="Xóa"><i class="fi fi-rr-trash"></i></button>
-                            </form>
-                        </div>
-                    </td>
-                </tr>
-                @endforeach
-            </table>
-        </div>
-        <div class="shop-content-bottom">
-            <div class="pages">
-                {{-- {{$products->links()}} --}}
-            </div>
-        </div>
-
+                    <form action="/admin/delete_product/{{ $product->id }}" method="POST">
+                        @method('DELETE')
+                        <input type="hidden" name="_token" value="{{csrf_token()}}">
+                        <button type="submit" onclick="return confirm('Xác nhận xóa sản phẩm?')" data-tooltip="Xóa"><i
+                                class="fi fi-rr-trash"></i></button>
+                    </form>
+                </div>
+            </td>
+        </tr>
+        @endforeach
+    </table>
+</div>
+<div class="shop-content-bottom">
+    <div class="pages">
+        {{-- {{$products->links()}} --}}
     </div>
-    <x-footer />
-    <script>
-    </script>
-</body>
+</div>
+
+@endsection
