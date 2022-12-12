@@ -10,6 +10,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="/front/css/header.css">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <title>Quản lý sản phẩm</title>
     @vite('resources/css/app.css')
     <style>
         th {
@@ -63,12 +64,12 @@
 
         [data-tooltip]:before {
             position: absolute;
-            bottom: 150%;
+            bottom: 100%;
             left: 50%;
             margin-bottom: 5px;
-            margin-left: -80px;
+            margin-left: -120px;
             padding: 7px;
-            width: 160px;
+            width: 130px;
             border-radius: 3px;
             border: 1px outset #C0C0C0;
             background-color: #000;
@@ -85,7 +86,7 @@
 
         [data-tooltip]:after {
             position: absolute;
-            bottom: 150%;
+            bottom: 100%;
             left: 50%;
             margin-left: -5px;
             width: 0;
@@ -110,69 +111,70 @@
     </style>
 </head>
 
-<body class="">
+<body>
 
     <?php
 
     ?>
+    <x-header :rooms_header="$rooms_header" :categories_header="$categories_header" />
 
-
-    <div class="w-full md:w-[80%] mx-auto mt-10 md:mt-16">
+    <div class="w-full md:w-[80%] mx-auto mt-16 md:mt-20 mb-10 ">
         <h1 class="text-center text-3xl font-bold my-3">Danh sách đơn hàng</h1>
 
+        <div class="overflow-x-auto">
 
+            <table class="w-full">
+                <tr>
+                    <th>Mã sản phẩm</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Phân loại</th>
+                    <th>Phòng</th>
+                    <th>Khối lượng (kg)</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Hành động</th>
+                </tr>
+                @foreach($products as $product)
+                <tr id="{{ $product->id }}">
+                    <td>
+                        #{{ $product->id }}
+                    </td>
+                    <td>
+                        {{ $product->name }}
+                    </td>
+                    <td>
+                        {{ $product->product_category->name }}
+                    </td>
+                    <td>
+                        {{ $product->room->name }}
+                    </td>
+                    <td>
+                        {{ $product->weight }}
+                    </td>
+                    <td>
+                        {{ number_format($product->price) }}
+                    </td>
+                    <td>
+                        {{ $product->qty }}
+                    </td>
 
-        <table class="w-full">
-            <tr>
-                <th>Mã sản phẩm</th>
-                <th>Tên sản phẩm</th>
-                <th>Phân loại</th>
-                <th>Phòng</th>
-                <th>Khối lượng (kg)</th>
-                <th>Giá</th>
-                <th>Số lượng</th>
-                <th>Hành động</th>
-            </tr>
-            @foreach($products as $product)
-            <tr id="{{ $product->id }}">
-                <td>
-                    #{{ $product->id }}
-                </td>
-                <td>
-                    {{ $product->name }}
-                </td>
-                <td>
-                    {{ $product->product_category->name }}
-                </td>
-                <td>
-                    {{ $product->room->name }}
-                </td>
-                <td>
-                    {{ $product->weight }}
-                </td>
-                <td>
-                    {{ number_format($product->price) }}
-                </td>
-                <td>
-                    {{ $product->qty }}
-                </td>
+                    <td>
+                        <div class="flex justify-center gap-5">
+                            <a href="/admin/edit/{{ $product->id }}" data-tooltip="Chỉnh sửa"><i
+                                    class="fi fi-rr-edit"></i></a>
 
-                <td>
-                    <div class="flex justify-center gap-5">
-                        <a href="/admin/edit/{{ $product->id }}" data-tooltip="Chỉnh sửa"><i
-                                class="fi fi-rr-edit"></i></a>
-
-                        <form action="/admin/delete_product/{{ $product->id }}" method="POST">
-                            @method('DELETE')
-                            <input type="hidden" name="_token" value="{{csrf_token()}}">
-                            <button type="submit" onclick="return confirm('Xác nhận xóa sản phẩm?')"
-                                data-tooltip="Xóa"><i class="fi fi-rr-trash"></i></button>
-                        </form>
-                    </div>
-                </td>
-            </tr>
-            @endforeach
-        </table>
+                            <form action="/admin/delete_product/{{ $product->id }}" method="POST">
+                                @method('DELETE')
+                                <input type="hidden" name="_token" value="{{csrf_token()}}">
+                                <button type="submit" onclick="return confirm('Xác nhận xóa sản phẩm?')"
+                                    data-tooltip="Xóa"><i class="fi fi-rr-trash"></i></button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                @endforeach
+            </table>
+        </div>
         <div class="shop-content-bottom">
             <div class="pages">
                 {{-- {{$products->links()}} --}}
@@ -180,24 +182,7 @@
         </div>
 
     </div>
-
+    <x-footer />
     <script>
-        function handleExpand(event) {
-            const collapsible = event.currentTarget;
-            const parent = collapsible.parentElement;
-            parent.classList.toggle("expanded")
-        }
-
-        function handleExpandChild(event) {
-            const collapsible = event.currentTarget;
-            const parent = collapsible.parentElement.parentElement;
-            parent.classList.toggle("expanded")
-        }
-
-        function toggleSidebar() {
-            const sidebar = document.getElementById("sidebar")
-            le.log(sidebar)
-            sidebar.classList.toggle("hidden")
-        }
     </script>
 </body>
