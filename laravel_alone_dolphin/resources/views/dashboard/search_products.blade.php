@@ -183,11 +183,11 @@
         @endforeach
     </table>
 </div>
-<div class="shop-content-bottom">
+{{-- <div class="shop-content-bottom">
     <div class="pages">
         {{ $products->links() }}
     </div>
     
-</div>
+</div> --}}
 
 @endsection

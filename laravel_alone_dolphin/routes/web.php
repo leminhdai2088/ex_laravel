@@ -35,6 +35,7 @@ Route::prefix('admin')->middleware('admin')->middleware('auth')->group(function 
     Route::get('/orders', [AdminController::class, 'orders']);
     Route::get('/products', [AdminController::class, 'products']);
     Route::get('/order/{id}', [AdminController::class, 'order_detail']);
+    Route::get('/search_products', [AdminController::class, 'search_products']);
 
 });
 

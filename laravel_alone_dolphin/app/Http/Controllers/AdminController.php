@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 use App\Models\order_details;
 use App\Models\orders;
@@ -114,5 +115,19 @@ class AdminController extends Controller
         $rooms_header = rooms::all();
         $order_detail = order_details::where('order_id',$id)->get();
         return view('dashboard.order_detail', compact('categories_header', 'rooms_header','order_detail'));
+    }
+
+    public function search_products(){
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        $search_text = $_GET['query'];
+        // $products = DB::table('products','rooms','product_categor')
+        // ->join('rooms', 'products.room_id', '=', 'rooms.id')
+        // ->join('product_category', 'products.product_category_id', '=', 'product_category.id')
+        // ->where('products.name', 'LIKE', '%'.$search_text.'%')
+        // ->orWhere('rooms.name', 'LIKE', '%'.$search_text.'%')
+        // ->orWhere('product_category.name', 'LIKE', '%'.$search_text.'%')->get();
+        $products = products::where('name', 'LIKE', '%'.$search_text.'%')->get();
+        return view('dashboard.search_products',compact('products','categories_header','rooms_header'));
     }
 }
