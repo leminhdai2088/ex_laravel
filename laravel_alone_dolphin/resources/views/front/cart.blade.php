@@ -191,7 +191,7 @@
 
     @else
 
-    <div id="with-orders" class="px-5 mb-10">
+    <div id="with-orders" class="mb-10">
         <p class="text-right mb-3">Có x sản phẩm trong giỏ hàng của bạn</p>
         <table>
             <tr>
@@ -245,8 +245,8 @@
                 <div class="text-sm text-gray-400 mb-3">
                     Phí vận chuyển: Freeship
                 </div>
-                {{-- <button class="uppercase w-full h-10 bg-yellow-400 text-black mb-3">Thanh toán</button> --}}
-                <a class="uppercase w-full h-10 bg-yellow-400 text-black mb-3" href="/checkout">Thanh toán</a>
+                <button class="uppercase w-full h-10 bg-yellow-400 text-black mb-3"
+                    onclick="window.location='/checkout'">Thanh toán</button>
                 <p class="flex justify-center gap-3 text-blue-500"><a href="#" class="text-">Tiếp tục mua hàng</a><i
                         class="fi fi-rr-redo"></i></p>
             </div>

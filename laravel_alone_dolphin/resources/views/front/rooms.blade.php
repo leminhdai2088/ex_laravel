@@ -1,193 +1,156 @@
-
-
-
-@extends('front.header')
+@extends('components.layout')
+@section('head')
+<link rel="stylesheet" href="/front/css/footer.css">
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<link href="/front/css/page_rooms.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+@endsection
 @section('content')
-    <head>
-        <link rel="stylesheet" href="/front/css/footer.css">
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <link href="/front/css/page_rooms.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
-    </head>
-    <!-- main -->
+<!-- main -->
 <div class="main">
-        <div class="nav-room">
-            <p class="direction">
-                <a href="/home"><i>Trang chủ</i></a> / <i>{{ $name_cate_room[0]->room->name }}</i>
-            </p>    
+  <div class="nav-room">
+    <p class="direction">
+      <a href="/home"><i>Trang chủ</i></a> / <i>{{ $name_cate_room[0]->room->name }}</i>
+    </p>
+  </div>
+  <div class="slider">
+    <h1 class="text-center">{{ $name_cate_room[0]->room->name }}</h1>
+    <img src="/front/images/image_products/{{ $name_cate_room[0]->room->image }}" alt="">
+  </div>
+
+  <div class="filter">
+    <div class="main-filter">
+      <div class="filter-block price-js">
+        <div class="filter-item lim-ch price-filter">
+          <span class="title-filter">
+            Giá
+            <i class="ti-plus"></i>
+          </span>
+          <ul class="price-choice choice">
+            <li>
+              <a href="{{ request()->fullUrlWithQuery(['price'=>0]) }}">All</a>
+            </li>
+            <li>
+              <a href="{{ request()->fullUrlWithQuery(['price'=>1]) }}">Dưới 1 triệu</a>
+            </li>
+            <li>
+              <a href="{{ request()->fullUrlWithQuery(['price'=>2]) }}">Từ 1 - 2 triệu</a>
+            </li>
+            <li>
+              <a href="{{ request()->fullUrlWithQuery(['price'=>3]) }}">Từ 2 - 3 triệu</a>
+            </li>
+            <li>
+              <a href="{{ request()->fullUrlWithQuery(['price'=>4]) }}">Từ 3 - 5 triệu</a>
+            </li>
+            <li>
+              <a href="{{ request()->fullUrlWithQuery(['price'=>5]) }}">Lớn hơn 5 triệu</a>
+            </li>
+          </ul>
         </div>
-        <div class="slider">
-            <h1 class="text-center">{{ $name_cate_room[0]->room->name }}</h1>
-            <img src="/front/images/image_products/{{ $name_cate_room[0]->room->image }}" alt="">
-        </div>
-        
-            <div class="filter">
-                <div class="main-filter">
-                    <div class="filter-block price-js">
-                         <div class="filter-item lim-ch price-filter">
-                             <span class="title-filter">
-                                Giá
-                                 <i class="ti-plus"></i>
-                             </span>
-                             <ul class="price-choice choice">
-                                 <li>
-                                    <a href="{{ request()->fullUrlWithQuery(['price'=>0]) }}">All</a>
-                                </li>
-                                <li>
-                                    <a href="{{ request()->fullUrlWithQuery(['price'=>1]) }}">Dưới 1 triệu</a>
-                                </li>
-                                <li>
-                                   <a href="{{ request()->fullUrlWithQuery(['price'=>2]) }}">Từ 1 - 2 triệu</a>
-                                </li>
-                                <li>
-                                    <a href="{{ request()->fullUrlWithQuery(['price'=>3]) }}">Từ 2 - 3 triệu</a>
-                                </li>
-                                <li>
-                                    <a href="{{ request()->fullUrlWithQuery(['price'=>4]) }}">Từ 3 - 5 triệu</a>
-                                </li>
-                                <li>
-                                    <a href="{{ request()->fullUrlWithQuery(['price'=>5]) }}">Lớn hơn 5 triệu</a>
-                                </li>
-                             </ul>
-                         </div>
-                    </div>
-                </div>
-            </div>
-
-            
-<!-- grid items -->  
-            <div class="grid-container">
-                @foreach($products as $product)
-                   
-                    <div class="grid-item">
-                        <a href="/{{ $room }}/{{ $product->product_category_id }}/{{ $product->id }}"><img style="width:270px; height:270px;" src="/front/images/image_products/{{ $product->product_images[0]->path }}" alt="img"></a>
-                        <div class="text-items">
-                            <a href="#"><h3 class="name-item">{{ $product->name }}</h3></a>
-                            <p class="desc-item">{{ $product->product_category->name }}</p>
-                            <p class="price-item">{{ $product->price }}</p>
-                        </div>
-                    </div>
-                @endforeach
-
-              
-
-
-            </div>
-</div>
-    <div class="shop-content-bottom">
-        <div class="pages">
-            {{$products->links()}}
-        </div>
-        
-    </div>
-<!-- chia sẻ khoảnh khắc -->
-  <div class="container-fluid chiasekhoanhkhac">
-    <div class="row">
-      
-      <div class="main-share scol-xs-12 col-sm-9 col-md-9 col-lg-9">
-        <div class="image-slider-2">
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh1.png" alt="">
-            </div>
-          </div><!--end anh-->
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh2.png" alt="">
-            </div>
-          </div>
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh3.png" alt="">
-            </div>
-          </div>
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh4.png" alt="">
-            </div>
-          </div>
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh5.png" alt="">
-            </div>
-          </div>
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh6.png" alt="">
-            </div>
-          </div>
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh7.png" alt="">
-            </div>
-          </div>
-          <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div class="image-2">
-              <img src="/front/images/img_home/chiasekhoanhkhac/anh8.png" alt="">
-            </div>
-          </div>
-      </div> 
-      </div> <!-- END 9 COT -->
-      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 share-title">
-        <h3>Chia sẻ khoảnh khắc</h3>
       </div>
     </div>
   </div>
 
-    <!-- footer -->
-    <div id="footer" class=" footer h-fit pb-46">
-        <div class="w-[1200px] m-auto grid grid-cols-3">
-            <div class="footer-item">
-                <div class="head-footer font-medium my-2">Về chúng tôi</div>
-                <div class="text-gray-700 text-sm">
-                    <div class="footer-text"><a href="#">Project này</a></div>
-                    <div class="footer-text"><a href="#">Thành viên</a></div>
-                </div>
-    
-            </div>
-            <div class="footer-item">
-                <div class="head-footer font-medium my-2">Sản phẩm</div>
-                <div class="text-gray-700 text-sm">
-                    <div class="footer-text"><a href="#">Giường</a></div>
-                    <div class="footer-text"><a href="#">Bàn</a></div>
-                    <div class="footer-text"><a href="#">Ghế</a></div>
-                    <div class="footer-text"><a href="#">Chăn ga gối</a></div>
-                </div>
-            </div>
-            <div class="footer-item">
-                <div class="head-footer font-medium my-2">Liên hệ</div>
-                <div class="text-gray-700 text-sm">
-                    <div class="footer-text">Sđt: 090292xxxx</div>
-                    <div class="footer-text">Email: 2052xxxx@gm.uit.edu.vn</div>
-                    <div class="footer-text">Địa chỉ: trường đại học Công nghệ Thông tin</div>
-                    <div class="link flex gap-5 mt-2">
-                        <a href="#"><img src="/front/images/icon/facebook.svg" alt="" height="30" width="30"></a>
-                        <a href="#"><img src="/front/images/icon/youtube.svg" alt="" height="30" width="30"></a>
-                        <a href="#"><img src="/front/images/icon/behance.svg" alt="" height="30" width="30"></a>
-                        <a href="#"><img src="/front/images/icon/wordpress.svg" alt="" height="30" width="30"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+  <!-- grid items -->
+  <div class="grid-container">
+    @foreach($products as $product)
+
+    <div class="grid-item">
+      <a href="/{{ $room }}/{{ $product->product_category_id }}/{{ $product->id }}"><img
+          style="width:270px; height:270px;" src="/front/images/image_products/{{ $product->product_images[0]->path }}"
+          alt="img"></a>
+      <div class="text-items">
+        <a href="#">
+          <h3 class="name-item">{{ $product->name }}</h3>
+        </a>
+        <p class="desc-item">{{ $product->product_category->name }}</p>
+        <p class="price-item">{{ $product->price }}</p>
+      </div>
     </div>
-
-
-    <!-- modal -->
-    
+    @endforeach
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer">
-</script>
-        
+
+  </div>
+</div>
+<div class="shop-content-bottom">
+  <div class="pages">
+    {{$products->links()}}
+  </div>
+
+</div>
+<!-- chia sẻ khoảnh khắc -->
+<div class="container-fluid chiasekhoanhkhac">
+  <div class="row">
+
+    <div class="main-share scol-xs-12 col-sm-9 col-md-9 col-lg-9">
+      <div class="image-slider-2">
+        <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="image-2">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh1.png" alt="">
+          </div>
+        </div><!--end anh-->
+        <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="image-2">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh2.png" alt="">
+          </div>
+        </div>
+        <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="image-2">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh3.png" alt="">
+          </div>
+        </div>
+        <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="image-2">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh4.png" alt="">
+          </div>
+        </div>
+        <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="image-2">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh5.png" alt="">
+          </div>
+        </div>
+        <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="image-2">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh6.png" alt="">
+          </div>
+        </div>
+        <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="image-2">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh7.png" alt="">
+          </div>
+        </div>
+        <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="image-2">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh8.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div> <!-- END 9 COT -->
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 share-title">
+      <h3>Chia sẻ khoảnh khắc</h3>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- modal -->
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script src="/front/javascript/page_rooms.js"></script>
 
 @endsection
-
