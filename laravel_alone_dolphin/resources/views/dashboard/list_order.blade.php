@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/front/css/main.css" />
-    <link href="/front/css/output.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel="stylesheet" href="/front/css/header.css">
-    @vite('resources/css/app.css')
-    <style>
+@extends('components.layout')
+@section('head')
+<title>Danh sách đơn hàng</title>
+<style>
         th {
             background-color: rgb(254 240 138);
         }
@@ -105,20 +96,15 @@
             opacity: 1;
         }
     </style>
-</head>
+@endsection
+@section('content')
+<?php
 
-<body class="">
-
-    <?php
-           
 
         $stages = array("Chưa xử lý", "Đã gửi hàng đi", "Đã giao hàng", "Đã thanh toán", "Đã hoàn tất");
         // đây là list các stage
     ?>
-
-
-    <div class="w-full md:w-[80%] mx-auto mt-16">
-        <h1 class="text-center text-3xl font-bold my-3">Danh sách đơn hàng</h1>
+    <h1 class="text-center text-3xl font-bold my-3">Danh sách đơn hàng</h1>
         <div class="flex gap-4 my-4">
             <div>
                 <label for="startTime" class="font-bold mb-1 text-gray-700 block">Từ:</label>
@@ -193,32 +179,11 @@
     </tr>
     @endforeach
     </table>
-
-    </div>
-
     <script>
-        function handleExpand(event) {
-            const collapsible = event.currentTarget;
-            const parent = collapsible.parentElement;
-            parent.classList.toggle("expanded")
-        }
-
-        function handleExpandChild(event) {
-            const collapsible = event.currentTarget;
-            const parent = collapsible.parentElement.parentElement;
-            parent.classList.toggle("expanded")
-        }
-
-        function toggleSidebar() {
-            const sidebar = document.getElementById("sidebar")
-            le.log(sidebar)
-            sidebar.classList.toggle("hidden")
-        }
-
         function changeStage(orderId, stageName) {
             // đổi stage của đơn hàng có id = orderId thành stageName
             console.log(orderId)
             console.log(stageName)
         }
     </script>
-</body>
+@endsection
