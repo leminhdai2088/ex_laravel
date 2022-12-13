@@ -1,141 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('components.layout')
+@section('head')
+<title>Chi tiết sản phẩm</title>
+<style>
+    th {
+        background-color: rgb(254 240 138);
+    }
 
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/front/css/main.css" />
-    <link href="/front/css/output.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel="stylesheet" href="/front/css/header.css">
-    @vite('resources/css/app.css')
-    <style>
-        th {
-            background-color: rgb(254 240 138);
-        }
+    td {
+        text-align: center;
+    }
 
-        td {
-            text-align: center;
-        }
+    .stage {
+        border: 1px solid black;
+        height: 12px;
+        width: 30px;
+        cursor: pointer;
+        background-color: none;
+    }
 
-        .stage {
-            border: 1px solid black;
-            height: 12px;
-            width: 30px;
-            cursor: pointer;
-            background-color: none;
-        }
+    .stages:hover>.stage {
+        background-color: aqua;
+    }
 
-        .stages:hover>.stage {
-            background-color: aqua;
-        }
+    .stage:hover~.stage {
+        background-color: white;
+    }
 
-        .stage:hover~.stage {
-            background-color: white;
-        }
+    .active {
+        background-color: blue;
+    }
+</style>
+@endsection
+@section('content')
+<h1 class="text-center text-3xl font-bold my-3">Chi tiết đơn hàng</h1>
+<div class="flex gap-10 items-end">
+    <h2 class="text-2xl font-semibold">Đơn hàng #12</h2>
+    <a href="/admin/orders" class="text-gray-500">Quay về danh sách đơn hàng</a>
+</div>
 
-        .active {
-            background-color: blue;
-        }
-    </style>
-</head>
-
-<body class="">
-
-    <div class="w-full md:w-[80%] mx-auto mt-10 md:mt-16">
-        <h1 class="text-center text-3xl font-bold my-3">Chi tiết đơn hàng</h1>
-        <div class="flex gap-10 items-end">
-            <h2 class="text-2xl font-semibold">Đơn hàng #12</h2>
-            <a href="/admin/orders" class="text-gray-500">Quay về danh sách đơn hàng</a>
-        </div>
-        <p>Đặt lúc - {{ $order_detail[0]->created_at }}</p>
-        <div class="grid grid-cols-2">
-            <div>
-                <h3 class="text-xl font-semibold mt-4 mb-2">Thông tin khách hàng</h3>
-                <ul class="list-disc list-inside">
-                    <li>Tên: {{ $order_detail[0]->order->name }}</li>
-                    <li>Email: {{ $order_detail[0]->order->email }}</li>
-                    <li>SĐT: {{ $order_detail[0]->order->phone }}</li>
-                    <li>Địa chỉ: {{ $order_detail[0]->order->address }}</li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-xl font-semibold mt-4 mb-2">Thông tin đơn hàng</h3>
-                <ul class="list-disc list-inside">
-                    <li>Phương thức thanh toán: {{ $order_detail[0]->order->pay_method }}</li>
-                    <li>Phí vận chuyển: Freeship</li>
-                    @php
-                    $sum = 0;
-                    for($i = 0; $i < count($order_detail); $i++){
-                        $sum += $order_detail[$i]->total;
-                        if($i == count($order_detail) - 1)
-                            echo '<li>'.'Tổng cộng: '.number_format($sum).'đ'.'</li>';
-                        }
-                    @endphp
-                    <li>Trạng thái: {{ $order_detail[0]->order->status }}</li>
-                </ul>
-            </div>
-        </div>
-
-
-        <h3 class="text-xl font-semibold mt-4 mb-2">Chi tiết đơn hàng</h3>
-        <table class="w-full">
-            <tr>
-                <th>Sản phẩm</th>
-                <th class="hidden md:block">Giá</th>
-                <th>Số lượng</th>
-                <th>Số tiền</th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="flex items-center gap-3">
-
-                        <a href="" target="_blank" class="">
-                            <!-- link tới trang sản phẩm -->
-
-                            <img src="/front/images/product/ghe6.webp" alt="" height="200" width="200">
-                        </a>
-                        <div>
-                            <a href="" target="_blank" class="font-semibold text-lg">JASMIN</a>
-                            <!-- link tới trang sản phẩm -->
-                            <div class="text-gray-700">SOFA</div>
-                        </div>
-
-                    </div>
-
-                </td>
-                <td>8,400,000</td>
-                <td>
-                    <div class="quantity pro-qty">
-                        1
-                    </div>
-                </td>
-                <td>8,400,000</td>
-            </tr>
-        </table>
-
+<p>Đặt lúc - {{ $order_detail[0]->created_at }}</p>
+<div class="grid grid-cols-2">
+    <div>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Thông tin khách hàng</h3>
+        <ul class="list-disc list-inside">
+            <li>Tên: {{ $order_detail[0]->order->name }}</li>
+            <li>Email: {{ $order_detail[0]->order->email }}</li>
+            <li>SĐT: {{ $order_detail[0]->order->phone }}</li>
+            <li>Địa chỉ: {{ $order_detail[0]->order->address }}</li>
+        </ul>
     </div>
+    <div>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Thông tin đơn hàng</h3>
+        <ul class="list-disc list-inside">
+            <li>Phương thức thanh toán: {{ $order_detail[0]->order->pay_method }}</li>
+            <li>Phí vận chuyển: Freeship</li>
+            @php
+            $sum = 0;
+            for($i = 0; $i < count($order_detail); $i++){ $sum +=$order_detail[$i]->total;
+                if($i == count($order_detail) - 1)
+                echo '<li>'.'Tổng cộng: '.number_format($sum).'đ'.'</li>';
+                }
+                @endphp
+                <li>Trạng thái: {{ $order_detail[0]->order->status }}</li>
+        </ul>
+    </div>
+</div>
 
-    <script>
-        function handleExpand(event) {
-            const collapsible = event.currentTarget;
-            const parent = collapsible.parentElement;
-            parent.classList.toggle("expanded")
-        }
+<h3 class="text-xl font-semibold mt-4 mb-2">Chi tiết đơn hàng</h3>
+<table class="w-full">
+    <tr>
+        <th>Sản phẩm</th>
+        <th class="hidden md:block">Giá</th>
+        <th>Số lượng</th>
+        <th>Số tiền</th>
+    </tr>
+    <tr>
+        <td>
+            <div class="flex items-center gap-3">
 
-        function handleExpandChild(event) {
-            const collapsible = event.currentTarget;
-            const parent = collapsible.parentElement.parentElement;
-            parent.classList.toggle("expanded")
-        }
+                <a href="" target="_blank" class="">
+                    <!-- link tới trang sản phẩm -->
 
-        function toggleSidebar() {
-            const sidebar = document.getElementById("sidebar")
-            le.log(sidebar)
-            sidebar.classList.toggle("hidden")
-        }
+                    <img src="/front/images/product/ghe6.webp" alt="" height="200" width="200">
+                </a>
+                <div>
+                    <a href="" target="_blank" class="font-semibold text-lg">JASMIN</a>
+                    <!-- link tới trang sản phẩm -->
+                    <div class="text-gray-700">SOFA</div>
+                </div>
 
+            </div>
 
-    </script>
-</body>
+        </td>
+        <td>8,400,000</td>
+        <td>
+            <div class="quantity pro-qty">
+                1
+            </div>
+        </td>
+        <td>8,400,000</td>
+    </tr>
+</table>
+@endsection
