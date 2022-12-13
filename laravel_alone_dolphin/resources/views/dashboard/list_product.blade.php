@@ -1,6 +1,7 @@
 @extends('components.layout')
 @section('head')
 <title>Quản lý sản phẩm</title>
+
 <head>
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
 </head>
@@ -100,22 +101,32 @@
         filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
+
+    [class^="flaticon"]:before,
+    [class*=" flaticon"]:before,
+    [class^="flaticon"]:after,
+    [class*=" flaticon"]:after {
+
+        font-size: 30px;
+
+    }
 </style>
 @endsection
 @section('content')
 
 <h1 class="text-center text-3xl font-bold my-3">Danh sách sản phẩm</h1>
-<form action="/admin/search_products" method="GET">
-    <div class="text-gray-700 relative my-auto min-w-[100px] md:min-w-[250px]">
-        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-            <button type="submit" class="p-1 text-gray-400 focus:outline-none focus:shadow-outline">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 text-[#6B7280]">
-                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-            </button>
-        </span>
-        <input name="query" type="search" class="
+<div class="flex justify-between items-center">
+    <form action="/admin/search_products" method="GET">
+        <div class="text-gray-700 relative my-auto min-w-[100px] md:min-w-[250px]">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                <button type="submit" class="p-1 text-gray-400 focus:outline-none focus:shadow-outline">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 text-[#6B7280]">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+            </span>
+            <input name="query" type="search" class="
         text-sm
         font-normal
         border
@@ -127,9 +138,10 @@
         text-gray-500
         focus:text-gray-900 focus:outline-none
       " placeholder="Tìm kiếm sản phẩm..." />
-    </div>
-</form>
-
+        </div>
+    </form>
+    <a class="mr-10" data-tooltip="Thêm sản phẩm" href="/admin/add"><i class="flaticon fi fi-rr-add"></i></a>
+</div>
 <div class="overflow-x-auto">
 
     <table class="w-full">
@@ -187,7 +199,7 @@
     <div class="pages">
         {{ $products->links() }}
     </div>
-    
+
 </div>
 
 @endsection
