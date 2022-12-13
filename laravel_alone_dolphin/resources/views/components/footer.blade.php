@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div id="footer" class="footer fixed left-0 right-0 bottom-0 h-fit">
+    <div id="footer" class="footer h-fit">
         <div class="w-full md:w-[1200px] p-5 m-auto md:grid md:grid-cols-3">
             <div class="footer-item">
                 <div class="head-footer font-medium my-2">Về chúng tôi</div>

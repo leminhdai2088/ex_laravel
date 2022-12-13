@@ -14,7 +14,7 @@
 
 <body>
     <x-header :rooms_header="$rooms_header" :categories_header="$categories_header" />
-    <div class="w-full md:w-[1200px] mx-auto mt-16 md:mt-20 mb-10">
+    <div class="w-full md:w-[1200px] mx-auto mt-16 md:mt-20 mb-10 min-h-[80vh]">
         @yield('content')
     </div>
     <x-footer />
