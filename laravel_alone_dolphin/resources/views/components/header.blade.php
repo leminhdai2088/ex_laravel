@@ -54,7 +54,7 @@
         }
 
         .res-width {
-            width: 100%;
+            width: 100vw;
         }
 
         @media (min-width:740px) {
@@ -71,7 +71,7 @@
     @props(['rooms_header', 'categories_header'])
     @auth
     <div class="header fixed left-0 right-0 top-0 z-20 h-16">
-        <div class="res-width flex m-auto items-center px-3 gap-5 md:gap-0 md:justify-between">
+        <div class="res-width h-full flex m-auto items-center justify-between">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
             <a class="logo" href="#"><img height="64" width="64" src="/front/images/Alone Dolphin.png"
                     alt="alone dolphin"></a>
@@ -111,8 +111,8 @@
 
                 <div class="h-fit"><a href="#footer">Liên hệ</a></div>
             </div>
-            <div class="right-header flex content-center gap-6">
-                <div class="text-gray-700 relative my-auto min-w-[100px] md:min-w-[250px]">
+            <div class="right-header flex content-center items-center gap-3 md:gap-6">
+                <div class="text-gray-700 relative my-auto max-w-[120px] md:max-w-[250px]">
                     <span class="absolute inset-y-0 left-0 flex items-center pl-2">
                         <button class="p-1 text-gray-400 focus:outline-none focus:shadow-outline">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -133,7 +133,7 @@
                     bg-white
                     text-gray-500
                     focus:text-gray-900 focus:outline-none
-                  " placeholder="Tìm kiếm sản phẩm..." />
+                  " placeholder="Tìm kiếm..." />
                 </div>
                 <a href="/profile" class="flex items-center"><i class="fi fi-rr-user"></i></a>
                 <a href="/cart" class="flex items-center">
