@@ -1,78 +1,74 @@
-@extends('front.header')
-@section('content')
+@extends('components.layout')
+@section('head')
+<link rel="stylesheet" href="/front/css/form_validate.css">
+<link href="/front/css/page_rooms.css" rel="stylesheet">
+<style>
+    .dec.qtybtn {
+        position: relative;
+        left: -20px;
+        top: 19px;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+    }
 
-{{--
-<link href="/front/css/page_rooms.css" rel="stylesheet"> --}}
+    .inc.qtybtn {
+        position: relative;
+        font-size: 24px;
+        right: 36px;
+        cursor: pointer;
+    }
 
-<head>
-    <link rel="stylesheet" href="/front/css/footer.css">
-    <link rel="stylesheet" href="/front/css/form_validate.css">
+    .btn-delete-row-cart {
+        cursor: pointer;
 
-    <style>
-        .dec.qtybtn{
-            position: relative;
-            left: -20px;
-            top: 19px;
-            font-size: 20px;
-            font-weight: 700;
-            cursor: pointer;
-        }
-        .inc.qtybtn{
-            position: relative;
-            font-size: 24px;
-            right: 36px;
-            cursor: pointer;
-        }
-        .btn-delete-row-cart{
-            cursor: pointer;
-            
-        }
+    }
 
-        .btn-delete-row-cart:hover{
-            opacity: 0.6;
-        }
+    .btn-delete-row-cart:hover {
+        opacity: 0.6;
+    }
 
-        #background-pattern {
-            height: 15vh;
-            width: 100%;
-            object-fit: cover;
-            opacity: 0.3;
-        }
+    #background-pattern {
+        height: 5vh;
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.3;
+    }
 
-        #empty {
-            display: none;
-        }
+    #empty {
+        display: none;
+    }
 
-        /* table,
+    /* table,
         tr,
         td,
         th {
             border: solid 1px black;
         } */
 
-        th {
-            background-color: rgb(254 240 138);
-        }
+    th {
+        background-color: rgb(254 240 138);
+    }
 
-        td {
-            padding: 8px 0;
-        }
+    td {
+        padding: 8px 0;
+    }
 
-        th {
-            text-align: left;
-            padding: 0 4px;
-        }
+    th {
+        text-align: left;
+        padding: 0 4px;
+    }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
 
-        table tr:not(tr:first-of-type) {
-            border-top: 1px solid rgb(229 231 235);
-        }
+    table tr:not(tr:first-of-type) {
+        border-top: 1px solid rgb(229 231 235);
+    }
 
-        /* table td:nth-child(1),
+    /* table td:nth-child(1),
         table td:nth-child(2),
         table td:nth-child(4) {
             text-align: center;
@@ -82,117 +78,114 @@
             text-align: right;
         } */
 
-        .product-img {
+    .product-img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .quantity {
+        position: relative;
+        overflow: hidden;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    .quantity input {
+        width: 73px;
+        height: 50px;
+        line-height: 1.65;
+        float: left;
+        display: block;
+        padding: 0;
+        margin: 0;
+        padding-left: 15px;
+        border: 1px solid rgb(156 163 175);
+        ;
+    }
+
+    .quantity input:focus {
+        outline: 0;
+    }
+
+    .quantity-nav {
+        float: left;
+        position: relative;
+        height: 42px;
+    }
+
+    .quantity-button {
+        position: relative;
+        cursor: pointer;
+        border-left: 1px solid rgb(156 163 175);
+        ;
+        width: 20px;
+        text-align: center;
+        color: #333;
+        font-size: 13px;
+        font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+        line-height: 1.7;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    .quantity-button.quantity-up {
+        position: absolute;
+        height: 50%;
+        top: 0;
+        border-bottom: 1px solid rgb(156 163 175);
+        ;
+    }
+
+    .quantity-button.quantity-down {
+        position: absolute;
+        bottom: -1px;
+        height: 50%;
+    }
+
+    @media (min-width: 740px) {
+        #background-pattern {
             height: 100px;
-            width: 100px;
+            width: 1200px;
+            object-fit: cover;
+            opacity: 0.3;
         }
 
-        .quantity {
-            position: relative;
-            overflow: hidden;
+        .product-img {
+            height: 200px;
+            width: 200px;
         }
+    }
+</style>
+@endsection
+@section('content')
 
-        input[type=number]::-webkit-inner-spin-button,
-        input[type=number]::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
+<div class="">
+    <img src="/front/images/background-pattern.jpg" alt="pattern" id="background-pattern">
+</div>
 
-        input[type=number] {
-            -moz-appearance: textfield;
-        }
+<h1 class="text-3xl md:text-4xl text-center font-semibold mb-5 md:mb-10 mt-2">Giỏ hàng</h1>
 
-        .quantity input {
-            width: 73px;
-            height: 50px;
-            line-height: 1.65;
-            float: left;
-            display: block;
-            padding: 0;
-            margin: 0;
-            padding-left: 15px;
-            border: 1px solid rgb(156 163 175);
-            ;
-        }
-
-        .quantity input:focus {
-            outline: 0;
-        }
-
-        .quantity-nav {
-            float: left;
-            position: relative;
-            height: 42px;
-        }
-
-        .quantity-button {
-            position: relative;
-            cursor: pointer;
-            border-left: 1px solid rgb(156 163 175);
-            ;
-            width: 20px;
-            text-align: center;
-            color: #333;
-            font-size: 13px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif !important;
-            line-height: 1.7;
-            -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            -o-user-select: none;
-            user-select: none;
-        }
-
-        .quantity-button.quantity-up {
-            position: absolute;
-            height: 50%;
-            top: 0;
-            border-bottom: 1px solid rgb(156 163 175);
-            ;
-        }
-
-        .quantity-button.quantity-down {
-            position: absolute;
-            bottom: -1px;
-            height: 50%;
-        }
-
-        @media (min-width: 740px) {
-            #background-pattern {
-                height: 150px;
-                width: 1200px;
-                object-fit: cover;
-                opacity: 0.3;
-            }
-
-            .product-img {
-                height: 200px;
-                width: 200px;
-            }
-        }
-    </style>
-</head>
-
-
-<body class="w-full md:w-[1200px] m-auto text-gray-700">
-
-    <div class="">
-        <img src="/front/images/background-pattern.jpg" alt="pattern" id="background-pattern">
-    </div>
-
-    <h1 class="text-3xl md:text-4xl text-center font-semibold mb-5 md:mb-10 mt-2">Giỏ hàng</h1>
-    
-    @if(count($carts) <= 0)
-    <div class="w-full m-auto md:flex flex-col md:text-center items-center gap-6 mb-20">
-        <p>Giỏ hàng của bạn đang trống</p>
-        <img class="hidden md:block" src="/front/images/empty.png" alt="">
-        <p>Bắt đầu mua sắm thôi nào!</p>
-        <a class="bg-yellow-400 px-1 text-black text-lg flex gap-3 w-fit" href="/home_office"><span class="underline">Xem
-                thêm nhiều
-                sản phẩm mới</span>
-            <i class="fi fi-rr-arrow-small-right"></i></a>
+@if(count($carts) <= 0) <div class="w-full m-auto flex flex-col text-center items-center gap-6 mb-20">
+    <p>Giỏ hàng của bạn đang trống</p>
+    <img class="" src="/front/images/empty.png" alt="">
+    <p>Bắt đầu mua sắm thôi nào!</p>
+    <a class="bg-yellow-400 px-1 text-black text-lg flex gap-3 w-fit" href="/home_office"><span class="underline">Xem
+            thêm nhiều
+            sản phẩm mới</span>
+        <i class="fi fi-rr-arrow-small-right"></i></a>
 
     </div>
 
@@ -206,7 +199,8 @@
                 <th class="hidden md:block">Giá</th>
                 <th>Số lượng</th>
                 <th>Số tiền</th>
-                <th><i onclick="confirm('Bạn có muốn xóa toàn bộ sản phẩm trong giỏ hàng?') === true ? window.location = '/cart/destroy' : ''" class="ti-close ti-close btn-delete-row-cart"></i></th>
+                <th><i onclick="confirm('Bạn có muốn xóa toàn bộ sản phẩm trong giỏ hàng?') === true ? window.location = '/cart/destroy' : ''"
+                        class="ti-close ti-close btn-delete-row-cart"></i></th>
                 <th>&nbsp;</th>
             </tr>
             @foreach($carts as $cart)
@@ -216,8 +210,9 @@
 
                         <a href="" target="_blank" class="">
                             <!-- link tới trang sản phẩm -->
-                            
-                            <img src="/front/images/image_products/{{ $cart->options->images[0]->path }}" alt="" height="200" width="200">
+
+                            <img src="/front/images/image_products/{{ $cart->options->images[0]->path }}" alt=""
+                                height="200" width="200">
                         </a>
                         <div>
                             <a href="" target="_blank" class="font-semibold text-lg">{{$cart->name}}</a>
@@ -260,7 +255,8 @@
     </div>
     @endif
 
-    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    {{--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
         jQuery('.quantity').each(function () {
@@ -295,43 +291,7 @@
 
         });
     </script> --}}
-    <!-- footer -->
-    <div id="footer" class=" footer h-fit pb-46">
-        <div class="w-[1200px] m-auto grid grid-cols-3">
-            <div class="footer-item">
-                <div class="head-footer font-medium my-2">Về chúng tôi</div>
-                <div class="text-gray-700 text-sm">
-                    <div class="footer-text"><a href="#">Project này</a></div>
-                    <div class="footer-text"><a href="#">Thành viên</a></div>
-                </div>
 
-            </div>
-            <div class="footer-item">
-                <div class="head-footer font-medium my-2">Sản phẩm</div>
-                <div class="text-gray-700 text-sm">
-                    <div class="footer-text"><a href="#">Giường</a></div>
-                    <div class="footer-text"><a href="#">Bàn</a></div>
-                    <div class="footer-text"><a href="#">Ghế</a></div>
-                    <div class="footer-text"><a href="#">Chăn ga gối</a></div>
-                </div>
-            </div>
-            <div class="footer-item">
-                <div class="head-footer font-medium my-2">Liên hệ</div>
-                <div class="text-gray-700 text-sm">
-                    <div class="footer-text">Sđt: 090292xxxx</div>
-                    <div class="footer-text">Email: 2052xxxx@gm.uit.edu.vn</div>
-                    <div class="footer-text">Địa chỉ: trường đại học Công nghệ Thông tin</div>
-                    <div class="link flex gap-5 mt-2">
-                        <a href="#"><img src="/front/images/icon/facebook.svg" alt="" height="30" width="30"></a>
-                        <a href="#"><img src="/front/images/icon/youtube.svg" alt="" height="30" width="30"></a>
-                        <a href="#"><img src="/front/images/icon/behance.svg" alt="" height="30" width="30"></a>
-                        <a href="#"><img src="/front/images/icon/wordpress.svg" alt="" height="30" width="30"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="/front/javascript/cart.js"></script>
-</body>
-<!-- @endsection -->
+    @endsection

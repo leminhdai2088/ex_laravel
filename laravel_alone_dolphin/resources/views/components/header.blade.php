@@ -71,7 +71,7 @@
     @props(['rooms_header', 'categories_header'])
     @auth
     <div class="header fixed left-0 right-0 top-0 z-20 h-16">
-        <div class="res-width h-full flex m-auto items-center justify-between">
+        <div class="res-width h-full flex px-3 md:px-0 m-auto items-center justify-between">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
             <a class="logo" href="#"><img height="64" width="64" src="/front/images/Alone Dolphin.png"
                     alt="alone dolphin"></a>
