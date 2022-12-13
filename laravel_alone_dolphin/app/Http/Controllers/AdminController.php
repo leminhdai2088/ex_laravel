@@ -127,7 +127,7 @@ class AdminController extends Controller
         // ->where('products.name', 'LIKE', '%'.$search_text.'%')
         // ->orWhere('rooms.name', 'LIKE', '%'.$search_text.'%')
         // ->orWhere('product_category.name', 'LIKE', '%'.$search_text.'%')->get();
-        $products = products::where('name', 'LIKE', '%'.$search_text.'%')->get();
-        return view('dashboard.search_products',compact('products','categories_header','rooms_header'));
+        $products = products::where('name', 'LIKE', '%'.$search_text.'%')->paginate(20);
+        return view('dashboard.list_product',compact('products','categories_header','rooms_header'));
     }
 }
