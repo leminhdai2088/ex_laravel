@@ -36,6 +36,8 @@ Route::prefix('admin')->middleware('admin')->middleware('auth')->group(function 
     Route::get('/products', [AdminController::class, 'products']);
     Route::get('/order/{id}', [AdminController::class, 'order_detail']);
     Route::get('/search_products', [AdminController::class, 'search_products']);
+    Route::patch('/orders/change_status', [AdminController::class, 'change_status']);
+    Route::get('/orders/filter', [AdminController::class, 'filter_order']);
 
 });
 

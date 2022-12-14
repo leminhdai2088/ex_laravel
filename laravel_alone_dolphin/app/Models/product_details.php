@@ -12,4 +12,9 @@ class product_details extends Model
     protected $primaryKey = 'id';
     protected $guarded = [];
 
+    
+    public function product(){
+        return $this->hasOne('App\Models\products','id','product_id');
+    }
+
 }

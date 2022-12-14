@@ -86,6 +86,15 @@
             line-height: 0;
         }
 
+        #filter-order{
+            margin-top: 40px;
+            margin-left: 15px;
+            border: 1px solid yellow;
+            padding: 4px 24px;
+            border-radius: 12px;
+            background-color: pink;
+        }
+
         /* Show tooltip content on hover */
 
         [data-tooltip]:hover:before,
@@ -105,6 +114,7 @@
         // đây là list các stage
     ?>
     <h1 class="text-center text-3xl font-bold my-3">Danh sách đơn hàng</h1>
+    <form action="/admin/orders/filter" method="GET">   
         <div class="flex gap-4 my-4">
             <div>
                 <label for="startTime" class="font-bold mb-1 text-gray-700 block">Từ:</label>
@@ -120,14 +130,18 @@
             </div>
             <div class="ml-10">
                 <label for="stages" class="font-bold mb-1 text-gray-700 block">Trạng thái:</label>
-                <select id="stages"
+                <select id="stages" name="status"
                     class="px-4 py-3 leading-none rounded-lg shadow-md focus:outline-none focus:shadow-outline text-gray-600 font-medium">
                     <option value="All">Tất cả</option>
                     @for ($i = 0; $i <count($stages); $i++) <option value="{{ $stages[$i] }}">{{ $stages[$i] }}</option>
                         @endfor
                 </select>
             </div>
+            <div>
+                <button id="filter-order" type="submit">Lọc phụ hồ</button>
+            </div>
         </div>
+    </form>
 
 
 
@@ -160,30 +174,37 @@
                     }
                     @endphp
                     <td>
-                        <?php
+                    <?php
                         for ($x = 0; $x < count($stages); $x++) {
                             if ($stages[$x]===$order->status)
                                 $stage_index=$x+1;
                           }
                     ?>
+                <form action="/admin/orders/change_status" method="POST">
+                    <input type="hidden" name="_token" value="{{csrf_token()}}">
+                    @method('PATCH')
                         <div class="flex justify-center stages">
-                            @for ($i = 0; $i < count($stages); $i++) <div data-tooltip="{{$stages[$i]}}"
-                                onclick="changeStage(`{{$order->id}}`,`{{$stages[$i]}}`)" @class([ 'stage'
-                                , 'bg-blue-300'=>
-                                ($stage_index>=$i+1)]) ></div>
-                        @endfor
-    </div>
+
+                                @for ($i = 0; $i < count($stages); $i++)
+                                    <label for="status{{ $i.$order->id }}" data-tooltip="{{$stages[$i]}}"
+                                        @class([ 'stage'
+                                        , 'bg-blue-300'=>
+                                        ($stage_index>=$i+1)])>
+                                    </label>
+                                    <div>
+                                        <input name="id" type="hidden" value="{{ $order->id }}">
+                                       <div style="display: none;">
+                                        <input id="status{{ $i.$order->id }}" name="status" type="submit" value="{{ $stages[$i] }}">
+                                       </div>
+                                    </div>
+                                @endfor
+                           
+                        </div>
+                    </form>
     <p class="text-xs">{{$order->status}}</p>
 
-    </td>
-    </tr>
+        </td>
+        </tr>
     @endforeach
     </table>
-    <script>
-        function changeStage(orderId, stageName) {
-            // đổi stage của đơn hàng có id = orderId thành stageName
-            console.log(orderId)
-            console.log(stageName)
-        }
-    </script>
 @endsection
