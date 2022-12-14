@@ -133,6 +133,14 @@ class AdminController extends Controller
     }
 
     public function change_status(Request $request){
-        dd($request->all());
+        $order = orders::find($request->id);
+        $order->status = $request->status;
+        $order->save();
+        return  redirect()->back();
+    }
+
+    public function filter_order(Request $request){
+        
+
     }
 }
