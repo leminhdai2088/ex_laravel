@@ -7,7 +7,7 @@
 
 <style>
     #background-pattern {
-        height: 15vh;
+        height: 5vh;
         width: 100%;
         object-fit: cover;
         opacity: 0.3;
@@ -27,10 +27,6 @@
         border-radius: 0;
         outline: none;
         border: 2px solid black;
-    }
-
-    #empty {
-        display: none;
     }
 
     table,
@@ -65,7 +61,7 @@
 
     @media (min-width: 740px) {
         #background-pattern {
-            height: 150px;
+            height: 100px;
             width: 1200px;
             object-fit: cover;
             opacity: 0.3;
@@ -100,6 +96,7 @@
     </div>
     <div class="col-span-3 mt-5 md:mt-0">
 
+        @if($count_order == 0)
         <div id="empty" class="w-full m-auto md:flex flex-col md:text-center items-center gap-6 mb-20">
             <h2 class="text-lg md:text-2xl md:text-center font-semibold mb-3 md:mb-0">Đơn hàng</h2>
             <p>Bạn chưa đặt bất kỳ đơn hàng nào cả</p>
@@ -111,8 +108,6 @@
                 <i class="fi fi-rr-arrow-small-right"></i></a>
 
         </div>
-        @if($count_order == 0)
-        <h2>Hiện tại bạn chưa có đơn hàng nào!!!</h2>
         @else
         <div id="with-orders" class="px-5">
             <h2 class="text-lg md:text-2xl font-semibold mb-3 md:mb-5">Đơn hàng</h2>
