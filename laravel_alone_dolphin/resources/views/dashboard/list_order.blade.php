@@ -160,23 +160,40 @@
                     }
                     @endphp
                     <td>
-                        <?php
+                    <?php
                         for ($x = 0; $x < count($stages); $x++) {
                             if ($stages[$x]===$order->status)
                                 $stage_index=$x+1;
                           }
                     ?>
                         <div class="flex justify-center stages">
-                            @for ($i = 0; $i < count($stages); $i++) <div data-tooltip="{{$stages[$i]}}"
-                                onclick="changeStage(`{{$order->id}}`,`{{$stages[$i]}}`)" @class([ 'stage'
-                                , 'bg-blue-300'=>
-                                ($stage_index>=$i+1)]) ></div>
-                        @endfor
-    </div>
+                            <?php
+                                $id = 0;
+                                $status = '';
+                            ?>
+                            @for ($i = 0; $i < count($stages); $i++)
+                                <div data-tooltip="{{$stages[$i]}}"
+                                    onclick="changeStage(`{{$id = $order->id}}`,`{{ $status = $stages[$i]}}`)" 
+                                    @class([ 'stage'
+                                    , 'bg-blue-300'=>
+                                    ($stage_index>=$i+1)])>
+                                </div>
+                            @endfor
+                                <form action="/admin/orders/change_status" method="POST">
+                                   
+                                    <input type="hidden" name="_token" value="{{csrf_token()}}">
+                                    @method('PATCH')
+                                    <div>
+                                        <input name="id" type="hidden" value="{{ $id }}">
+                                        <input name="status" type="hidden" value="{{ $status }}">
+                                        <button style="margin-left: 25px; font-size: 14px; border: 1px solid pink; background-color:bisque" type="submit">Change status</button>
+                                    </div>
+                                </form>
+                        </div>
     <p class="text-xs">{{$order->status}}</p>
 
-    </td>
-    </tr>
+        </td>
+        </tr>
     @endforeach
     </table>
     <script>
@@ -184,6 +201,8 @@
             // đổi stage của đơn hàng có id = orderId thành stageName
             console.log(orderId)
             console.log(stageName)
+
+         
         }
     </script>
 @endsection

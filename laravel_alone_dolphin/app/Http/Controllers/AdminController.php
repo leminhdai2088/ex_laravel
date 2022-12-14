@@ -114,6 +114,7 @@ class AdminController extends Controller
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
         $order_detail = order_details::where('order_id',$id)->get();
+
         return view('dashboard.order_detail', compact('categories_header', 'rooms_header','order_detail'));
     }
 
@@ -129,5 +130,9 @@ class AdminController extends Controller
         // ->orWhere('product_category.name', 'LIKE', '%'.$search_text.'%')->get();
         $products = products::where('name', 'LIKE', '%'.$search_text.'%')->paginate(20);
         return view('dashboard.list_product',compact('products','categories_header','rooms_header'));
+    }
+
+    public function change_status(Request $request){
+        dd($request->all());
     }
 }

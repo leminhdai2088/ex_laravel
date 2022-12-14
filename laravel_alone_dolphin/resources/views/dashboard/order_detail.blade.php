@@ -74,31 +74,31 @@
         <th>Số lượng</th>
         <th>Số tiền</th>
     </tr>
+    @foreach($order_detail as $detail)
     <tr>
         <td>
             <div class="flex items-center gap-3">
-
-                <a href="" target="_blank" class="">
+                <a href="/{{ $detail->product->room->link }}/{{ $detail->product->product_category->id }}/{{ $detail->product->id }}" target="_blank" class="">
                     <!-- link tới trang sản phẩm -->
-
-                    <img src="/front/images/product/ghe6.webp" alt="" height="200" width="200">
+                    <img src="/front/images/image_products/{{ $detail->product->product_images[0]->path }}" alt="" height="200" width="200">
                 </a>
                 <div>
-                    <a href="" target="_blank" class="font-semibold text-lg">JASMIN</a>
+                    <a href="" target="_blank" class="font-semibold text-lg">{{ $detail->product->name }}</a>
                     <!-- link tới trang sản phẩm -->
-                    <div class="text-gray-700">SOFA</div>
+                    <div class="text-gray-700">{{ $detail->product->product_category->name }}</div>
                 </div>
 
             </div>
 
         </td>
-        <td>8,400,000</td>
+        <td>{{ number_format($detail->amount) }}đ</td>
         <td>
             <div class="quantity pro-qty">
-                1
+                {{ $detail->qty }}
             </div>
         </td>
-        <td>8,400,000</td>
+        <td>{{ number_format($detail->total) }}đ</td>
     </tr>
+    @endforeach
 </table>
 @endsection
