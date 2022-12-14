@@ -11,6 +11,7 @@ use App\Models\product_details;
 use App\Models\product_images;
 use App\Models\rooms;
 use App\Models\products;
+use App\Models\User;
 
 class AdminController extends Controller
 {
@@ -140,7 +141,28 @@ class AdminController extends Controller
     }
 
     public function filter_order(Request $request){
-        
+        $orders = orders::all();
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        if($request->startTime != null){
+            $orders = $orders->where('created_at', '>=',$request->startTime);
+        }
+        if($request->endTime != null){
+            $orders = $orders->where('created_at', '<=',$request->endTime);
+        }
+        if($request->status != 'All'){
+            $orders = $orders->where('status',$request->status);
+        }
+        return view('dashboard.list_order',compact('orders','categories_header','rooms_header'));
 
+    }
+
+
+    public function users()
+    {
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        $users = User::where('level',0)->paginate(20);
+        return view('dashboard.list_user', compact('categories_header', 'rooms_header', 'users'));
     }
 }

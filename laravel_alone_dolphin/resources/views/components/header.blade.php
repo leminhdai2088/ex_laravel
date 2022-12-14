@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- <link rel="stylesheet" href="/front/css/header.css"> -->
     @vite('resources/css/app.css')
     <style>
@@ -140,11 +141,11 @@
                     <i class="fi fi-rr-shopping-cart"></i>
                 </a>
                 @if(auth()->user()->level == 1)
-                <div class="nav-item">Admin Page
+                <div class="nav-item"><i style="padding: 0 10px 10px 0;margin-top: 10px" class="fa-solid fa-user-secret"></i>
                     <ul class="subnav">
                         <li class="subnav-item" onclick="window.location = '/admin/products'">Quản lý sản phẩm</li>
                         <li class="subnav-item" onclick="window.location = '/admin/orders'">Quản lý đơn hàng</li>
-                        <li class="subnav-item" onclick="window.location = '/admin'">Quản lý user</li>
+                        <li class="subnav-item" onclick="window.location = '/admin/users'">Quản lý user</li>
                     </ul>
                 </div>
 
