@@ -29,23 +29,52 @@
     .product-description {
         margin-bottom: 40px;
     }
+
+    .gallery,
+    .gallery-slide {
+        width: 400px;
+    }
+
+
+    .gallery img {
+        width: 400px;
+        height: 400px;
+
+        object-fit: cover;
+    }
+
+    .gallery-slide img {
+        width: 100px;
+        height: 100px;
+        padding: 8px;
+    }
+
+    [class^="fi"]:before,
+    [class*=" fi"]:before,
+    [class^="fi"]:after,
+    [class*=" fi"]:after {
+
+        font-size: 30px;
+    }
 </style>
 @endsection
 @section('content')
-<div class="grid grid-cols-2 gap-10 main-detail">
+<div class="grid grid-cols-2 gap-10 mb-5">
     <div>
-        <div class="gallery">
+        <div class="gallery mb-2">
             @for($i = 0; $i < count($product->product_images); $i++)
-                <img src="/front/images/image_products/{{ $product->product_images[$i]->path }}" alt="" width="300"
-                    height="300">
+                <img src="/front/images/image_products/{{ $product->product_images[$i]->path }}" alt="">
                 @endfor
         </div>
-        <div class="gallery-slide">
-            @for($i = 0; $i < count($product->product_images); $i++)
-                <img src="/front/images/image_products/{{ $product->product_images[$i]->path }}" alt="" width="300"
-                    height="300">
-                @endfor
+        <div class="relative w-[400px]">
+            <div class="gallery-slide">
+                @for($i = 0; $i < count($product->product_images); $i++)
+                    <img src="/front/images/image_products/{{ $product->product_images[$i]->path }}" alt="">
+                    @endfor
 
+            </div>
+            <i class="fi fi-rr-angle-left prev absolute -left-3 top-10"></i>
+            <i class="fi fi-rr-angle-right next absolute -right-3 top-10"></i>
         </div>
     </div>
     <div>
@@ -61,17 +90,9 @@
             <p><strong>Cân nặng: </strong><span>{{ $product->weight }}kg</span></p>
             @endif
         </div>
-        <!-- <form action="/gio-hang" method="GET">
-                <div>
-                    <strong>Số lượng:</strong>
-                    <input type="number" value="1" min="1">
-                </div>
-
-                <input type="submit" value="Thêm vào giỏ" class="cursor-pointer px-5 py-2 bg-yellow-400 my-5">
-            </form> -->
         @if(auth()->user())
         @if(auth()->user()->level == 0)
-        <a class="cursor-pointer px-5 py-2 bg-yellow-400 my-5" href="/cart/add/{{ $product->id }}">Thêm vào giỏ</a>
+        <a class="cursor-pointer px-5 py-2 bg-yellow-400" href="/cart/add/{{ $product->id }}">Thêm vào giỏ</a>
         @else
         <a class="cursor-pointer px-5 py-2 bg-blue-400 my-5" href="/admin/edit/{{ $product->id }}">Sửa thông tin</a>
         <form action="/admin/delete_product/{{ $product->id }}" method="POST">
@@ -84,10 +105,11 @@
         @else
         <a class="cursor-pointer px-5 py-2 bg-yellow-400 my-5" href="/cart/add/{{ $product->id }}">Thêm vào giỏ</a>
         @endif
+
     </div>
 </div>
 
-<div class="flex gap-5 border-t">
+<!-- <div class="flex gap-5 border-t">
     <div class="tab-button active" onclick="openTab('tab1', event)">Mô tả sản phẩm</div>
     <div class="tab-button " onclick="openTab('tab2', event)">Hướng dẫn bảo quản</div>
     <div class="tab-button " onclick="openTab('tab3', event)">Phí giao hàng và lắp đặt</div>
@@ -101,7 +123,7 @@
 </div>
 <div class="tab-content" id="tab3">
     this is tab3
-</div>
+</div> -->
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -126,16 +148,21 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
-            fade: true,
-            asNavFor: '.gallery-slide'
+            fade: false,
+            asNavFor: '.gallery-slide',
+            infinite: false,
         });
         $('.gallery-slide').slick({
             slidesToShow: 4,
             slidesToScroll: 1,
             asNavFor: '.gallery',
             dots: false,
-            centerMode: false,
-            focusOnSelect: true
+            // centerMode: true,
+            focusOnSelect: true,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            draggable: true,
+            infinite: false,
         });
     });
 
