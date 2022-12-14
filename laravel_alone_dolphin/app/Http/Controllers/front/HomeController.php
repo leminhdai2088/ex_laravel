@@ -42,9 +42,9 @@ class HomeController extends Controller
     {
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        $orders = orders::where('user_id',Auth::user()->id)->get();
+        $orders = orders::where('id', Auth::user()->id)->get();
         $count_order = $orders->count('*');
-        return view('front.profile', compact('categories_header', 'rooms_header','orders','count_order'));
+        return view('front.profile', compact('categories_header', 'rooms_header', 'orders', 'count_order'));
     }
     public function order_detail()
     {
