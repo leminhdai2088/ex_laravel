@@ -39,9 +39,19 @@
 <div class="">
     <img src="/front/images/background-pattern.jpg" alt="pattern" id="background-pattern">
 </div>
+
+@if(session()->has('message'))
+    <div class="alert alert-success">
+        {!! session()->get('message') !!}
+    </div>
+@elseif(session()->has('error'))
+    <div class="alert alert-danger">
+        {!! session()->get('error') !!}
+    </div>
+@endif
 <div class="px-5 w-full md:w-1/2 m-auto">
-    <h1 class=" text-2xl md:text-4xl text-center font-semibold my-5">Đăng nhập</h1>
-    <form action="/sign_in" method="POST" id="sign-in">
+    <h1 class=" text-2xl md:text-4xl text-center font-semibold my-5">Quên mật khẩu</h1>
+    <form action="/recover_pass" method="POST" id="forgot-pass">
         <input type="hidden" name="_token" value="{{csrf_token()}}">
 
         <div class="mt-4 form-group">
@@ -49,22 +59,13 @@
             <input class="form-control" type="text" id="email" name="email">
             <span class="form-message"></span>
         </div>
-        <div class="mt-4 form-group">
-            <label for="password">Mật khẩu</label><span><sup class="text-red-500">*</sup></span><br>
-            <input class="form-control" type="password" id="password" name="password">
-            <span class="form-message"></span>
-        </div>
 
-        <div class="mt-8 flex justify-between">
-            <a href="/sign_up">Chưa có tài khoản? Đăng ký tại đây</a>
-            <a href="/forgot_password">Quên mật khẩu</a>
-        </div>
         <div class="flex justify-center mt-8">
             <!-- <input type="submit" value="Tạo tài khoản"
                 class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto"> -->
 
             <input type="submit" class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto"
-                value="Đăng nhập">
+                value="Gửi">
         </div>
     </form>
 </div>
@@ -77,7 +78,7 @@
 <script src="/front/javascript/form_validate.js"></script>
 <script>
     Validator({
-        form: '#sign-in',
+        form: '#forgot-pass',
 
         formGroup: '.form-group',
 
@@ -89,9 +90,6 @@
 
             Validator.isEmail('#email'),
 
-            Validator.isRequired('#password'),
-
-            Validator.minLength('#password', 6),
 
         ],
 

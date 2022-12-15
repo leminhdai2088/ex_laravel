@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\Models\product_category;
 use App\Models\rooms;
 use Illuminate\Validation\Rule;
 use Illuminate\Foundation\Auth\User as users;
 use App\Models\User;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
 class UserController extends Controller
 
 {
@@ -74,4 +77,52 @@ class UserController extends Controller
         $user->save();
         return redirect()->back()->with('thanhcong','Sửa thông tin thành công!!!');
     }
+
+    public function forgot_pass(Request $request){
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        return view('front.forgot_pass',compact('categories_header','rooms_header'));
+    }
+
+
+    public function recover_pass(Request $request){
+        $data = $request->all();
+        $now = Carbon::now('Asia/Ho_Chi_Minh')->format('d-m-Y');
+        $title_mail = "Alone Dolphin - Lấy lại mật khẩu ".$data['email']." ".$now;
+        $user = User::where('email',$data['email'])->get();
+        foreach($user as $key => $value){
+            $id = $value->id;
+        }
+
+        if($user){
+            $count_user = $user->count();
+            if($count_user == 0)
+            {
+                return redirect()->back()->with('error','Email chưa được đăng ký để khôi phục mật khẩu');
+            }
+            else
+            {
+                $token_random = Str::random();
+                $user = User::find($id);
+                $user->customer_token = $token_random;
+                $user->save();  
+                $to_email = $data['email'];
+                $link_reset_pass = url('udate-new-password?email='.$to_email.'&token='.$token_random);
+                $data = array(
+                    'name' =>  $title_mail,
+                    'body' => $link_reset_pass,
+                    'email' => $data['email']);
+                
+                Mail::send('front.forgot_pass_notify',['data' => $data], function($message) use ($title_mail,$data)
+                {
+                    $message->to($data['email'])->subject($title_mail);
+                    $message->from($data['email'],$title_mail);
+                });
+                return redirect()->back()->with('message','Gửi mail thành công, vui lòng vào email để xác nhận thay đổi mật khẩu');
+            }
+        }
+
+    }
+
+    
 }
