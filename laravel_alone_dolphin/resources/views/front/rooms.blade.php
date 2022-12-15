@@ -66,7 +66,7 @@
           <h3 class="name-item">{{ $product->name }}</h3>
         </a>
         <p class="desc-item">{{ $product->product_category->name }}</p>
-        <p class="price-item">{{ $product->price }}</p>
+        <p class="price-item">{{ number_format($product->price) }}đ</p>
       </div>
     </div>
     @endforeach

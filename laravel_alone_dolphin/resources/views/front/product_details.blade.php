@@ -81,7 +81,7 @@
         <h1 class="uppercase text-gray-700 text-2xl font-bold">{{ $product->name }}</h1>
         <div>{{ $product->product_category->name }}</div>
         <div class="text-3xl">
-            {{ $product->price }}
+            {{ number_format($product->price)}}đ
         </div>
         <div class="product-description">
             <p><strong>Kích thước: </strong><span>{{ $product->product_details->size }}</span></p>

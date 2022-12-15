@@ -223,13 +223,13 @@
                     </div>
 
                 </td>
-                <td>{{ number_format($cart->price) }}</td>
+                <td>{{ number_format($cart->price) }}đ</td>
                 <td>
                     <div class="quantity pro-qty">
                         <input type="text" value="{{$cart->qty}}" data-rowid="{{ $cart->rowId }}" min="1" step="1">
                     </div>
                 </td>
-                <td>{{number_format($cart->price*$cart->qty)}}</td>
+                <td>{{number_format($cart->price*$cart->qty)}}đ</td>
                 <td><a href="/cart/delete/{{ $cart->rowId }}"><i class="ti-close btn-delete-row-cart"></i></a></td>
             </tr>
             @endforeach
@@ -240,7 +240,7 @@
                 <h3 class="text-center text-2xl font-semibold mb-3">Thông tin đơn hàng</h3>
                 <div class="border-y py-2 mb-3">
                     <p class="flex justify-between items-center">Tổng tiền: <span
-                            class="text-2xl font-bold text-yellow-500">{{ $total }}</span></p>
+                            class="text-2xl font-bold text-yellow-500">{{ $total }}đ</span></p>
                 </div>
                 <div class="text-sm text-gray-400 mb-3">
                     Phí vận chuyển: Freeship
