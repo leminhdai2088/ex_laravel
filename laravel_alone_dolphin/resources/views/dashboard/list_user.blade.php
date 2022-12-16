@@ -150,7 +150,6 @@
             <th>Tên khách hàng</th>
             <th>Email</th>
             <th>Ngày đăng ký tài khoản</th>
-            <th>Xóa người dùng</th>
         </tr>
         @foreach($users as $user)
         <tr id="{{ $user->id }}">
@@ -167,7 +166,7 @@
                 {{ $user->created_at }}
             </td>
 
-            <td>
+            {{-- <td>
                 <div class="flex justify-center gap-5">
 
                     <form action="/admin/delete_user/{{ $user->id }}" method="POST">
@@ -177,7 +176,7 @@
                                 class="fi fi-rr-trash"></i></button>
                     </form>
                 </div>
-            </td>
+            </td> --}}
         </tr>
         @endforeach
     </table>

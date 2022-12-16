@@ -1,5 +1,8 @@
 @extends('components.layout')
 @section('head')
+<head>
+<link rel="stylesheet" href="/front/css/form_validate.css">
+</head>
 <style>
     input[type=text],
     input[type=password] {
@@ -91,23 +94,23 @@
 
 </div>
 @else
-<form action="/checkout" method="post">
+<form action="/checkout" method="post" id="checkout">
     @csrf
-    <div class="form-group">
+    {{-- <div class="form-group">
         <label for="fullname">Họ và tên</label><span><sup class="text-red-500">*</sup></span><br>
         <input class="form-control" type="text" id="name" name="name">
         <span class="form-message"></span>
-    </div>
+    </div> --}}
     <div class="mt-4 form-group">
         <label for="phoneNumber">Số điện thoại</label><span><sup class="text-red-500">*</sup></span><br>
         <input class="form-control" type="text" id="phone" name="phone">
         <span class="form-message"></span>
     </div>
-    <div class="mt-4 form-group">
+    {{-- <div class="mt-4 form-group">
         <label for="email">Email</label><span><sup class="text-red-500">*</sup></span><br>
         <input class="form-control" type="text" id="email" name="email">
         <span class="form-message"></span>
-    </div>
+    </div> --}}
     <div class="mt-4 form-group">
         <label for="address">Địa chỉ</label><span><sup class="text-red-500">*</sup></span><br>
         <input class="form-control" type="text" id="address" name="address">
@@ -140,8 +143,27 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/front/javascript/form_validate.js"></script>
 <script>
+    Validator({
+        form: '#checkout',
 
+        formGroup: '.form-group',
+
+        errorSelector: '.form-message',
+
+        rules: [
+            Validator.isRequired('#phone'),
+
+            Validator.isPhone('#phone'),
+
+            Validator.isRequired('#address'),
+
+            
+        ]
+           
+
+    })
 </script>
 
 @endsection

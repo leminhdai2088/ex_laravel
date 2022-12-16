@@ -51,8 +51,8 @@
 <div class="md:grid md:grid-cols-4 my-5 md:border-t md:pt-5">
     <div class="md:border-r px-5">
         <h2 class="text-lg md:text-2xl font-semibold mb-3 md:mb-6">Tài khoản của bạn</h2>
-        <div><b>Username: </b>Dong Phuong</div>
-        <p><b>Email: </b>dongphuong@gmail.com</p>
+        <div><b>Username: </b>{{ Auth()->user()->name }}</div>
+        <p><b>Email: </b>{{ Auth()->user()->email }}</p>
         <form action="/log_out" method="POST">
             @csrf
             {{-- <input type="hidden" name="_token" value="{{csrf_token()}}"> --}}
@@ -63,28 +63,34 @@
     </div>
     <div class="col-span-3 mt-5 md:mt-0 px-5">
 
-        <h2 class="text-2xl font-semibold">Đơn hàng #12</h2>
-        <p>Đặt lúc - 12:23:20 10/12/2022</p>
+        <h2 class="text-2xl font-semibold">Đơn hàng #{{ $order->id }}</h2>
+        <p>Đặt lúc : {{ $order->created_at }}</p>
         <a href="/profile" class="text-gray-500">Quay về danh sách đơn hàng</a>
         <div class="md:grid md:grid-cols-2">
             <div>
                 <h3 class="text-xl font-semibold mt-4 mb-2">Thông tin cá nhân</h3>
                 <ul class="list-disc list-inside">
-                    <li>Tên: Dong PHuong</li>
-                    <li>Email: dongphuong@gmail.com</li>
-                    <li>SĐT: 0962305647</li>
-                    <li>Địa chỉ nhận hàng: ktx khu A, Thủ Đức, HCM</li>
+                    <li>Tên: {{ Auth()->user()->name }}</li>
+                    <li>Email: {{ Auth()->user()->email }}</li>
+                    <li>SĐT: {{ $order->phone }}</li>
+                    <li>Địa chỉ nhận hàng: {{ $order->address }}</li>
                 </ul>
             </div>
             <div>
                 <h3 class="text-xl font-semibold mt-4 mb-2">Thông tin đơn hàng</h3>
                 <ul class="list-disc list-inside">
-                    <li>Phương thức giao hàng: COD</li>
-                    <li>Phương thức thanh toán: COD</li>
-                    <li>Mã giảm giá: fejij3</li>
+                    <li>Phương thức thanh toán: {{ $order->pay_method }}</li>
                     <li>Phí vận chuyển: Freeship</li>
-                    <li>Tổng cộng: 8,400,000</li>
-                    <li>Trạng thái: Đã hoàn tất</li>
+                    <?php
+                        $sum = 0;
+                        for($i = 0; $i < count($details); $i++){
+                            $sum += $details[$i]->total;
+                            if($i == count($details) - 1)
+                                echo '<li>Tổng cộng: '.number_format($sum).'đ</li>';
+                        }
+                     
+                    ?>
+                    <li>Trạng thái: {{ $order->status }}</li>
                 </ul>
             </div>
         </div>
@@ -96,32 +102,34 @@
                 <th>Số lượng</th>
                 <th>Số tiền</th>
             </tr>
+            @foreach($details as $detail)
             <tr>
                 <td>
                     <div class="flex items-center gap-3">
 
-                        <a href="" target="_blank" class="">
+                        <a href="/{{ $detail->product->room->link }}/{{ $detail->product->product_category->id }}/{{ $detail->product->id }}" target="_blank" class="">
                             <!-- link tới trang sản phẩm -->
 
-                            <img src="/front/images/product/ghe6.webp" alt="" height="150" width="150">
+                            <img src="/front/images/image_products/{{ $detail->product->product_images[0]->path }}" alt="" height="150" width="150">
                         </a>
                         <div>
-                            <a href="" target="_blank" class="font-semibold text-lg">JASMIN</a>
+                            <a href="/{{ $detail->product->room->link }}/{{ $detail->product->product_category->id }}/{{ $detail->product->id }}" target="_blank" class="font-semibold text-lg">{{ $detail->product->name }}</a>
                             <!-- link tới trang sản phẩm -->
-                            <div class="text-gray-700">SOFA</div>
+                            <div class="text-gray-700">{{ $detail->product->product_category->name }}</div>
                         </div>
 
                     </div>
 
                 </td>
-                <td>8,400,000</td>
+                <td>{{ number_format($detail->amount) }}đ</td>
                 <td>
                     <div class="quantity pro-qty">
-                        1
+                        {{ $detail->qty }}
                     </div>
                 </td>
-                <td>8,400,000</td>
+                <td>{{ number_format($detail->total) }}đ</td>
             </tr>
+            @endforeach
         </table>
     </div>
 

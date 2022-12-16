@@ -42,16 +42,19 @@ class HomeController extends Controller
     {
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        $orders = orders::where('id', Auth::user()->id)->get();
+        $orders = orders::where('user_id', Auth::user()->id)->get();
         $count_order = $orders->count('*');
         return view('front.profile', compact('categories_header', 'rooms_header', 'orders', 'count_order'));
     }
-    public function order_detail()
+    public function order_detail($id)
     {
 
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        return view('front.order_detail', compact('categories_header', 'rooms_header'));
+
+        $order= orders::find($id);
+        $details = order_details::where('order_id',$order->id)->get();
+        return view('front.order_detail', compact('categories_header', 'rooms_header','order','details'));
     }
 
 

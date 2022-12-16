@@ -24,8 +24,12 @@ class CheckOutController extends Controller
     public function add_order(Request $request){
         //thêm giỏ hàng
         $data_order = $request->all();
-        $user = ['user_id'=>Auth::user()->id];
-        $data_order+=$user;
+        $user_id = ['user_id'=>Auth::user()->id];
+        $user_name = ['name'=>Auth::user()->name];
+        $user_email = ['email'=>Auth::user()->email];
+        $data_order+=$user_id;
+        $data_order+=$user_name;
+        $data_order+=$user_email;
         $order = orders::create($data_order);
 
         //thêm chi tiết giỏ hàng

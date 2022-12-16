@@ -128,7 +128,7 @@
                     for($i = 0; $i < count($order->order_details); $i++){
                         $sum += $order->order_details[$i]->total;
                         if($i == count($order->order_details) - 1)
-                        echo '<td>'.$sum.'</td>';
+                        echo '<td>'.number_format($sum).'đ</td>';
                         }
                         @endphp
                         <td>{{ $order->status }}</td>

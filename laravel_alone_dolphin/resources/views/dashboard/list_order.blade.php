@@ -139,7 +139,7 @@
             </select>
         </div>
         <div>
-            <button id="filter-order" type="submit">Lọc phụ hồ</button>
+            <button id="filter-order" type="submit">Tìm kiếm</button>
         </div>
     </div>
 </form>
