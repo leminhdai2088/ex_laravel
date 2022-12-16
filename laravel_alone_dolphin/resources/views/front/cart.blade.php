@@ -208,14 +208,14 @@
                 <td>
                     <div class="flex items-center gap-3">
 
-                        <a href="" target="_blank" class="">
+                        <a href="/{{ $cart->options->link }}/{{ $cart->options->id_cate }}/{{ $cart->id }}" target="_blank" class="">
                             <!-- link tới trang sản phẩm -->
 
                             <img src="/front/images/image_products/{{ $cart->options->images[0]->path }}" alt=""
                                 height="200" width="200">
                         </a>
                         <div>
-                            <a href="" target="_blank" class="font-semibold text-lg">{{$cart->name}}</a>
+                            <a href="/{{ $cart->options->link }}/{{ $cart->options->id_cate }}/{{ $cart->id }}" target="_blank" class="font-semibold text-lg">{{$cart->name}}</a>
                             <!-- link tới trang sản phẩm -->
                             <div class="text-gray-700">{{$cart->category_name}}</div>
                         </div>

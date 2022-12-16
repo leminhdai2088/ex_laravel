@@ -107,7 +107,7 @@ class UserController extends Controller
                 $user->customer_token = $token_random;
                 $user->save();  
                 $to_email = $data['email'];
-                $link_reset_pass = url('udate-new-password?email='.$to_email.'&token='.$token_random);
+                $link_reset_pass = url('update-new-password?email='.$to_email.'&token='.$token_random);
                 $data = array(
                     'name' =>  $title_mail,
                     'body' => $link_reset_pass,
@@ -124,5 +124,41 @@ class UserController extends Controller
 
     }
 
-    
+    public function test_mail(){
+        $mail_title = 'Title';
+        Mail::send('front.test_mail',compact('mail_title'), function($message){
+           $message->from('louistart0ggy@gmail.com','Coder');
+           $message->to('20521153@gm.uit.edu.vn');
+           $message->subject('Testmail'); 
+        });
+    }
+
+    public function change_password(Request $request){
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        return view('front.change_pass',compact('categories_header','rooms_header'));
+    }
+
+
+
+    public function change_passpost(Request $request){
+        $data = $request->all();
+        $token_random = Str::random();
+        $user = User::where('email',$data['email'])
+                ->where('customer_token',$data['token'])->get();
+        $count = $user->count();
+        if($count > 0)
+        {
+            foreach($user as $key => $value){
+                $id = $value->id;
+            }
+            $reset = User::find($id);
+            $reset->password = bcrypt($data['password']);
+            $reset->customer_token = $token_random;
+            $reset->save();
+            return redirect('/sign_in')->with('success','Đã thay đổi mật khẩu thành công. Quay lại trang đăng nhập');
+        }
+        else
+            return redirect()->back()->with('error','Vui lòng nhập lại Email vì link xác thực đã quá hạn!');
+    }
 }

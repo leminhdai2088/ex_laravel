@@ -22,6 +22,8 @@ class CartController extends Controller
             'options' => [
                 'images' => $product->product_images,
                 'category_name' => $product->product_category->name,
+                'link' => $product->room->link,
+                'id_cate' => $product->product_category->id
             ],
         ]);
         return back();
@@ -30,8 +32,7 @@ class CartController extends Controller
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
         $carts = Cart::content();
-        $total = Cart::total();
-
+        $total = Cart::total();        
         return view('front.cart',compact('categories_header','rooms_header', 'carts', 'total'));
     }
 

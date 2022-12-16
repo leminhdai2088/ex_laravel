@@ -18,6 +18,7 @@ use Illuminate\Auth\Middleware\Authenticate as Middleware;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/test_mail', [UserController::class, 'test_mail']);
 
 
 // home
@@ -75,6 +76,9 @@ Route::get('/forgot_password', [UserController::class, 'forgot_pass']);
 
 Route::post('/recover_pass', [UserController::class, 'recover_pass']);
 
+Route::get('/update-new-password', [UserController::class, 'change_password']);
+
+Route::post('/update-new-password', [UserController::class, 'change_passpost']);
 
 
 // Route::get('/profile', [front\HomeController::class, 'profile'])->middleware('auth');

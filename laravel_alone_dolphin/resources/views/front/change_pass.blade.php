@@ -39,9 +39,8 @@
 <div class="">
     <img src="/front/images/background-pattern.jpg" alt="pattern" id="background-pattern">
 </div>
-<div class="px-5 w-full md:w-1/2 m-auto">
-    <h1 class=" text-2xl md:text-4xl text-center font-semibold my-5">Đăng nhập</h1>
-    @if(session()->has('message'))
+
+{{-- @if(session()->has('message'))
     <div class="alert alert-success">
         {!! session()->get('message') !!}
     </div>
@@ -49,31 +48,35 @@
     <div class="alert alert-danger">
         {!! session()->get('error') !!}
     </div>
-@endif
-    <form action="/sign_in" method="POST" id="sign-in">
+@endif --}}
+<div class="px-5 w-full md:w-1/2 m-auto">
+    <h1 class=" text-2xl md:text-4xl text-center font-semibold my-5">Đổi mật khẩu</h1>
+    @php
+        $token = $_GET['token'];
+        $email = $_GET['email'];
+
+    @endphp
+    <form action="/update-new-password" method="POST" id="change_pass">
         <input type="hidden" name="_token" value="{{csrf_token()}}">
+        <input type="hidden" name="email" value="{{ $email }}">
+        <input type="hidden" name="token" value="{{ $token }}">
 
         <div class="mt-4 form-group">
-            <label for="email">Email</label><span><sup class="text-red-500">*</sup></span><br>
-            <input class="form-control" type="text" id="email" name="email">
-            <span class="form-message"></span>
-        </div>
-        <div class="mt-4 form-group">
-            <label for="password">Mật khẩu</label><span><sup class="text-red-500">*</sup></span><br>
+            <label for="password">Mật khẩu mới</label><span><sup class="text-red-500">*</sup></span><br>
             <input class="form-control" type="password" id="password" name="password">
             <span class="form-message"></span>
         </div>
-
-        <div class="mt-8 flex justify-between">
-            <a href="/sign_up">Chưa có tài khoản? Đăng ký tại đây</a>
-            <a href="/forgot_password">Quên mật khẩu</a>
+        <div class="mt-4 form-group">
+            <label for="confirm-password">Xác nhận mật khẩu</label><span><sup class="text-red-500">*</sup></span><br>
+            <input class="form-control" type="password" id="confirm-password" name="confirm-password">
+            <span class="form-message"></span>
         </div>
+
         <div class="flex justify-center mt-8">
             <!-- <input type="submit" value="Tạo tài khoản"
                 class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto"> -->
-
             <input type="submit" class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto"
-                value="Đăng nhập">
+                value="Đổi mật khẩu">
         </div>
     </form>
 </div>
@@ -86,27 +89,23 @@
 <script src="/front/javascript/form_validate.js"></script>
 <script>
     Validator({
-        form: '#sign-in',
+        form: '#change_pass',
 
         formGroup: '.form-group',
 
         errorSelector: '.form-message',
 
         rules: [
+        Validator.isRequired('#password'),
 
-            Validator.isRequired('#email'),
+        Validator.minLength('#password', 6),
 
-            Validator.isEmail('#email'),
+        Validator.isRequired('#confirm-password'),
 
-            Validator.isRequired('#password'),
-
-            Validator.minLength('#password', 6),
-
-        ],
-
-        onSubmit: function (data) {
-            console.log(data);
-        }
+        Validator.isConfirmed('#confirm-password', function () {
+                return document.querySelector('#change_pass #password').value
+            }, 'Mật khẩu nhập lại không chính xác!')
+        ]
     })
 </script>
 
