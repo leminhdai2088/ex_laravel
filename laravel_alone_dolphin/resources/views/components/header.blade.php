@@ -137,11 +137,13 @@
                   " placeholder="Tìm kiếm..." />
                 </div>
                 <a href="/profile" class="flex items-center"><i class="fi fi-rr-user"></i></a>
-                <a href="/cart" class="flex items-center">
+                <a href="/cart" class="flex items-center relative">
+                    <span class="absolute -top-3 -right-3 text-[10px] rounded-full bg-gray-300 px-1">10</span>
                     <i class="fi fi-rr-shopping-cart"></i>
                 </a>
                 @if(auth()->user()->level == 1)
-                <div class="nav-item"><i style="padding: 0 10px 10px 0;margin-top: 10px" class="fa-solid fa-user-secret"></i>
+                <div class="nav-item"><i style="padding: 0 10px 10px 0;margin-top: 10px"
+                        class="fa-solid fa-user-secret"></i>
                     <ul class="subnav">
                         <li class="subnav-item" onclick="window.location = '/admin/products'">Quản lý sản phẩm</li>
                         <li class="subnav-item" onclick="window.location = '/admin/orders'">Quản lý đơn hàng</li>
@@ -261,7 +263,8 @@
                   " placeholder="Tìm kiếm sản phẩm..." />
                 </div>
                 <a href="/sign_in" class="flex items-center"><i class="fi fi-rr-user"></i></a>
-                <a href="/cart" class="flex items-center">
+                <a href="/cart" class="flex items-center relative">
+                    <span class="absolute -top-3 -right-3 text-[10px] rounded-full bg-gray-300 px-1">10</span>
                     <i class="fi fi-rr-shopping-cart"></i>
                 </a>
             </div>
