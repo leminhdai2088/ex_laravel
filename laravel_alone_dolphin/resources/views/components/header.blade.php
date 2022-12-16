@@ -138,7 +138,7 @@
                 </div>
                 <a href="/profile" class="flex items-center"><i class="fi fi-rr-user"></i></a>
                 <a href="/cart" class="flex items-center relative">
-                    <span class="absolute -top-3 -right-3 text-[10px] rounded-full bg-gray-300 px-1">10</span>
+                    {{-- <span class="absolute -top-3 -right-3 text-[10px] rounded-full bg-gray-300 px-1">10</span> --}}
                     <i class="fi fi-rr-shopping-cart"></i>
                 </a>
                 @if(auth()->user()->level == 1)
