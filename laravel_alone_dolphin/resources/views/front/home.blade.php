@@ -19,6 +19,10 @@
     
     height: auto !important;
 }
+  .w-\[1200px\]{
+    width: auto !important;
+    padding: 0 10rem !important;
+  }
   </style>
 </head>
 @endsection
