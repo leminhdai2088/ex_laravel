@@ -1,7 +1,8 @@
 @extends('components.layout')
 @section('head')
+
 <head>
-<link rel="stylesheet" href="/front/css/form_validate.css">
+    <link rel="stylesheet" href="/front/css/form_validate.css">
 </head>
 <style>
     input[type=text],
@@ -39,8 +40,8 @@
 </style>
 @endsection
 @section('content')
-<div class="md:w-[40%] md:float-right px-5 md:px-0 md:pl-10">
-    <h1 class="md:hidden text-2xl text-center mb-5">Alone Dolphin</h1>
+<div class="md:w-[80%] m-auto laptop:w-[40%] laptop:float-right px-5 laptop:px-0 laptop:pl-10">
+    <h1 class="laptop:hidden text-2xl text-center mb-5">Alone Dolphin</h1>
     <table class="w-full">
         @foreach($carts as $cart)
         <tr>
@@ -76,10 +77,11 @@
     </div>
 
 </div>
-<div class="px-5 py-8 border md:border-0 mt-5 md:py-0 md:mt-0 md:w-[60%] md:float-left md:px-0 md:pr-20 md:border-r">
-    <h1 class="hidden md:block text-3xl text-center">Alone Dolphin</h1>
+<div
+    class="md:w-[80%] m-auto px-5 py-8 border laptop:border-0 mt-5 laptop:py-0 laptop:mt-0 laptop:w-[60%] laptop:float-left laptop:px-0 laptop:pr-20 laptop:border-r">
+    <h1 class="hidden laptop:block text-3xl text-center">Alone Dolphin</h1>
 
-    @if(count($carts) <0 ) <h2 class="text-xl">Thông tin giao hàng</h2>
+    @if(count($carts) < 0) <h2 class="text-xl">Thông tin giao hàng</h2>
         @endif
 
         @if(count($carts) <= 0) <div class="w-full m-auto md:flex flex-col md:text-center items-center gap-6 mb-20">
@@ -159,9 +161,9 @@
 
             Validator.isRequired('#address'),
 
-            
+
         ]
-           
+
 
     })
 </script>

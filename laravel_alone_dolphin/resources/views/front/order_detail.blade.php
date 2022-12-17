@@ -64,7 +64,7 @@
 </div>
 
 <h1 class="text-2xl md:text-4xl text-center font-semibold mb-3 md:mb-10 mt-2">Chi tiết đơn hàng</h1>
-<div class="md:grid md:grid-cols-4 my-5 md:border-t md:pt-5">
+<div class="laptop:grid laptop:grid-cols-4 my-5 laptop:border-t laptop:pt-5">
     <div class="md:border-r px-5">
         <h2 class="text-lg md:text-2xl font-semibold mb-3 md:mb-6">Tài khoản của bạn</h2>
         <div><b>Username: </b>{{ Auth()->user()->name }}</div>

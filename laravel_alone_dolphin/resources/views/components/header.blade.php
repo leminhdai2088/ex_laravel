@@ -60,6 +60,12 @@
 
         @media (min-width:740px) {
             .res-width {
+                width: 95vw;
+            }
+        }
+
+        @media (min-width:1280px) {
+            .res-width {
                 width: 1200px;
             }
         }

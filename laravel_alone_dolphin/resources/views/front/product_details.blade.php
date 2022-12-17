@@ -31,20 +31,20 @@
 
     .gallery,
     .gallery-slide {
-        width: 100vw;
+        width: 95vw;
     }
 
 
     .gallery img {
-        width: 100vw;
-        height: 100vw;
+        width: 95vw;
+        height: 95vw;
 
         object-fit: cover;
     }
 
     .gallery-slide img {
-        width: 25vw;
-        height: 25vw;
+        width: 23vw;
+        height: 23vw;
         padding: 8px;
         object-fit: cover;
     }
@@ -54,10 +54,10 @@
     [class^="fi"]:after,
     [class*=" fi"]:after {
 
-        font-size: 30px;
+        font-size: 20px;
     }
 
-    @media (min-width: 740px) {
+    /* @media (min-width: 740px) {
 
         .gallery,
         .gallery-slide {
@@ -77,26 +77,56 @@
             height: 125px;
             padding: 8px;
         }
+    } */
+
+    @media (min-width: 1024px) {
+
+        .gallery,
+        .gallery-slide {
+            width: 500px;
+        }
+
+
+        .gallery img {
+            width: 500px;
+            height: 500px;
+
+            object-fit: cover;
+        }
+
+        .gallery-slide img {
+            width: 125px;
+            height: 125px;
+            padding: 8px;
+        }
+
+        [class^="fi"]:before,
+        [class*=" fi"]:before,
+        [class^="fi"]:after,
+        [class*=" fi"]:after {
+
+            font-size: 30px;
+        }
     }
 </style>
 @endsection
 @section('content')
-<div class="px-5 md:px-0 grid md:grid-cols-2 gap-10 mb-10">
+<div class="px-5 laptop:px-0 grid laptop:grid-cols-2 gap-10 mb-10">
     <div>
         <div class="gallery mb-2">
             @for($i = 0; $i < count($product->product_images); $i++)
                 <img src="/front/images/image_products/{{ $product->product_images[$i]->path }}" alt="">
                 @endfor
         </div>
-        <div class="relative w-screen md:w-[500px]">
+        <div class="relative w-[95vw] laptop:w-[500px]">
             <div class="gallery-slide">
                 @for($i = 0; $i < count($product->product_images); $i++)
                     <img src="/front/images/image_products/{{ $product->product_images[$i]->path }}" alt="">
                     @endfor
 
             </div>
-            <i class="fi fi-rr-angle-left prev absolute -left-3 top-10 cursor-pointer"></i>
-            <i class="fi fi-rr-angle-right next absolute -right-3 top-10 cursor-pointer"></i>
+            <i class="fi fi-rr-angle-left prev absolute -left-3 top-10 md:top-16 laptop:top-10 cursor-pointer"></i>
+            <i class="fi fi-rr-angle-right next absolute -right-3 top-10 md:top-16 laptop:top-10 cursor-pointer"></i>
         </div>
     </div>
     <div class="md:mt-5">

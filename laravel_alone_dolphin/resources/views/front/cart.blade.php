@@ -78,11 +78,6 @@
             text-align: right;
         } */
 
-    .product-img {
-        height: 80px;
-        width: 80px;
-        object-fit: cover;
-    }
 
     .quantity {
         position: relative;
@@ -156,6 +151,12 @@
         height: 50%;
     }
 
+    .product-img {
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+    }
+
     @media (min-width: 740px) {
         #background-pattern {
             height: 100px;
@@ -163,6 +164,14 @@
             object-fit: cover;
             opacity: 0.3;
         }
+
+        .product-img {
+            height: 120px;
+            width: 120px;
+        }
+    }
+
+    @media (min-width: 1280px) {
 
         .product-img {
             height: 200px;
@@ -240,7 +249,7 @@
         </table>
 
         <div class="flex flex-row-reverse">
-            <div class="p-5 border border-gray-200 w-full md:w-1/3">
+            <div class="p-5 border border-gray-200 w-full md:w-1/2 laptop:w-1/3">
                 <h3 class="text-center text-2xl font-semibold mb-3">Thông tin đơn hàng</h3>
                 <div class="border-y py-2 mb-3">
                     <p class="flex justify-between items-center">Tổng tiền: <span

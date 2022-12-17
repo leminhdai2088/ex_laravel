@@ -15,7 +15,7 @@
 
 <body>
     <div id="footer" class="footer h-fit">
-        <div class="w-full md:w-[1200px] p-5 m-auto md:grid md:grid-cols-3">
+        <div class="w-full md:w-[95vw] desktop:w-[1200px] p-5 m-auto md:grid md:grid-cols-3">
             <div class="footer-item">
                 <div class="head-footer font-medium my-2">Về chúng tôi</div>
                 <div class="text-gray-700 text-sm">
