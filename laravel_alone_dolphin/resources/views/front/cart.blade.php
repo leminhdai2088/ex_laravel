@@ -6,7 +6,7 @@
     .dec.qtybtn {
         position: relative;
         left: -20px;
-        top: 19px;
+        top: 20px;
         font-size: 20px;
         font-weight: 700;
         cursor: pointer;
@@ -14,7 +14,7 @@
 
     .inc.qtybtn {
         position: relative;
-        font-size: 24px;
+        font-size: 20px;
         right: 36px;
         cursor: pointer;
     }
@@ -79,8 +79,9 @@
         } */
 
     .product-img {
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
     }
 
     .quantity {
@@ -143,8 +144,8 @@
 
     .quantity-button.quantity-up {
         position: absolute;
-        height: 50%;
-        top: 0;
+        height: 40%;
+        top: 1px;
         border-bottom: 1px solid rgb(156 163 175);
         ;
     }
@@ -206,16 +207,19 @@
             @foreach($carts as $cart)
             <tr>
                 <td>
-                    <div class="flex items-center gap-3">
+                    <div class="flex flex-col md:flex-row items-center gap-3">
 
-                        <a href="/{{ $cart->options->link }}/{{ $cart->options->id_cate }}/{{ $cart->id }}" target="_blank" class="">
+                        <a href="/{{ $cart->options->link }}/{{ $cart->options->id_cate }}/{{ $cart->id }}"
+                            target="_blank" class="">
                             <!-- link tới trang sản phẩm -->
 
-                            <img src="/front/images/image_products/{{ $cart->options->images[0]->path }}" alt=""
-                                height="200" width="200">
+                            <img class="product-img"
+                                src="/front/images/image_products/{{ $cart->options->images[0]->path }}"
+                                alt="{{$cart->name}}">
                         </a>
                         <div>
-                            <a href="/{{ $cart->options->link }}/{{ $cart->options->id_cate }}/{{ $cart->id }}" target="_blank" class="font-semibold text-lg">{{$cart->name}}</a>
+                            <a href="/{{ $cart->options->link }}/{{ $cart->options->id_cate }}/{{ $cart->id }}"
+                                target="_blank" class="font-semibold text-lg">{{$cart->name}}</a>
                             <!-- link tới trang sản phẩm -->
                             <div class="text-gray-700">{{$cart->category_name}}</div>
                         </div>
@@ -223,7 +227,7 @@
                     </div>
 
                 </td>
-                <td>{{ number_format($cart->price) }}đ</td>
+                <td class="hidden md:table-cell">{{ number_format($cart->price) }}đ</td>
                 <td>
                     <div class="quantity pro-qty">
                         <input type="text" value="{{$cart->qty}}" data-rowid="{{ $cart->rowId }}" min="1" step="1">

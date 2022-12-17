@@ -8,6 +8,12 @@
         opacity: 0.3;
     }
 
+    .product-img {
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+    }
+
     /* table,
         tr,
         td,
@@ -20,7 +26,11 @@
     }
 
     td {
-        padding: 4px;
+        padding-top: 8px;
+    }
+
+    td:not(td:first-of-type) {
+        padding-left: 4px;
     }
 
     table {
@@ -38,6 +48,12 @@
             width: 100%;
             object-fit: cover;
             opacity: 0.3;
+        }
+
+        .product-img {
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
         }
     }
 </style>
@@ -88,14 +104,14 @@
                             if($i == count($details) - 1)
                                 echo '<li>Tổng cộng: '.number_format($sum).'đ</li>';
                         }
-                     
+
                     ?>
                     <li>Trạng thái: {{ $order->status }}</li>
                 </ul>
             </div>
         </div>
         <h3 class="text-xl font-semibold mt-4 mb-2">Danh sách sản phẩm</h3>
-        <table class="w-full overflow-x-auto">
+        <table class="w-full overflow-x-auto text-xs md:text-base">
             <tr>
                 <th>Sản phẩm</th>
                 <th>Giá</th>
@@ -105,15 +121,19 @@
             @foreach($details as $detail)
             <tr>
                 <td>
-                    <div class="flex items-center gap-3">
+                    <div class="flex  items-center gap-1 md:gap-3">
 
-                        <a href="/{{ $detail->product->room->link }}/{{ $detail->product->product_category->id }}/{{ $detail->product->id }}" target="_blank" class="">
+                        <a href="/{{ $detail->product->room->link }}/{{ $detail->product->product_category->id }}/{{ $detail->product->id }}"
+                            target="_blank" class="">
                             <!-- link tới trang sản phẩm -->
 
-                            <img src="/front/images/image_products/{{ $detail->product->product_images[0]->path }}" alt="" height="150" width="150">
+                            <img class="product-img"
+                                src="/front/images/image_products/{{ $detail->product->product_images[0]->path }}"
+                                alt="">
                         </a>
                         <div>
-                            <a href="/{{ $detail->product->room->link }}/{{ $detail->product->product_category->id }}/{{ $detail->product->id }}" target="_blank" class="font-semibold text-lg">{{ $detail->product->name }}</a>
+                            <a href="/{{ $detail->product->room->link }}/{{ $detail->product->product_category->id }}/{{ $detail->product->id }}"
+                                target="_blank" class="font-semibold md:text-lg">{{ $detail->product->name }}</a>
                             <!-- link tới trang sản phẩm -->
                             <div class="text-gray-700">{{ $detail->product->product_category->name }}</div>
                         </div>

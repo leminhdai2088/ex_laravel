@@ -1,7 +1,6 @@
 @extends('components.layout')
 @section('head')
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-<link rel="stylesheet" href="/front/css/footer.css">
 <style>
     .tab-button {
         padding: 8px 12px;
@@ -32,21 +31,22 @@
 
     .gallery,
     .gallery-slide {
-        width: 400px;
+        width: 100vw;
     }
 
 
     .gallery img {
-        width: 400px;
-        height: 400px;
+        width: 100vw;
+        height: 100vw;
 
         object-fit: cover;
     }
 
     .gallery-slide img {
-        width: 100px;
-        height: 100px;
+        width: 25vw;
+        height: 25vw;
         padding: 8px;
+        object-fit: cover;
     }
 
     [class^="fi"]:before,
@@ -56,28 +56,50 @@
 
         font-size: 30px;
     }
+
+    @media (min-width: 740px) {
+
+        .gallery,
+        .gallery-slide {
+            width: 500px;
+        }
+
+
+        .gallery img {
+            width: 500px;
+            height: 500px;
+
+            object-fit: cover;
+        }
+
+        .gallery-slide img {
+            width: 125px;
+            height: 125px;
+            padding: 8px;
+        }
+    }
 </style>
 @endsection
 @section('content')
-<div class="grid grid-cols-2 gap-10 mb-5">
+<div class="px-5 md:px-0 grid md:grid-cols-2 gap-10 mb-10">
     <div>
         <div class="gallery mb-2">
             @for($i = 0; $i < count($product->product_images); $i++)
                 <img src="/front/images/image_products/{{ $product->product_images[$i]->path }}" alt="">
                 @endfor
         </div>
-        <div class="relative w-[400px]">
+        <div class="relative w-screen md:w-[500px]">
             <div class="gallery-slide">
                 @for($i = 0; $i < count($product->product_images); $i++)
                     <img src="/front/images/image_products/{{ $product->product_images[$i]->path }}" alt="">
                     @endfor
 
             </div>
-            <i class="fi fi-rr-angle-left prev absolute -left-3 top-10"></i>
-            <i class="fi fi-rr-angle-right next absolute -right-3 top-10"></i>
+            <i class="fi fi-rr-angle-left prev absolute -left-3 top-10 cursor-pointer"></i>
+            <i class="fi fi-rr-angle-right next absolute -right-3 top-10 cursor-pointer"></i>
         </div>
     </div>
-    <div>
+    <div class="md:mt-5">
         <h1 class="uppercase text-gray-700 text-2xl font-bold">{{ $product->name }}</h1>
         <div>{{ $product->product_category->name }}</div>
         <div class="text-3xl">
@@ -103,41 +125,49 @@
         </form>
         @endif
         @else
-        <a class="cursor-pointer px-5 py-2 bg-yellow-400 my-5" href="/cart/add/{{ $product->id }}">Thêm vào giỏ</a>
+        <a class="cursor-pointer px-5 py-2 bg-yellow-400 my-5" href="/cart/add/{{ $product->id }}">Thêm vào
+            giỏ</a>
         @endif
 
+
+        <div class="text-xs p-5 border rounded-md mt-10 text-gray-700">
+            <h2 class="text-lg font-semibold">Bảo quản và bảo hành</h2>
+            <h3 class="text-base font-semibold">Bảo quản:</h3>
+
+            <p>Dùng khăn ẩm với nước sạch hoặc dung dịch tẩy rửa nhẹ để làm sạch sản phẩm. Sau đó, lau khô sản phẩm bằng
+                khăn
+                mềm.</p>
+
+            <p>Không để sản phẩm tiếp xúc với nước hoặc nguồn nhiệt độ cao trong thời gian dài.</p>
+
+            <p>Không dùng các vật sắc nhọn, thô cứng, sần sùi chà xát sản phẩm.</p>
+
+            <h3 class="text-base font-semibold">Bảo hành:</h3>
+
+            <p>Thời hạn bảo hành: Nệm 12 tháng, khung 24 tháng</p>
+
+            <p>Bảo hành cho các sản phẩm có lỗi nguyên vật liệu hay lỗi từ nhà sản xuất (như móp, méo, cong vênh các chi
+                tiết
+                sản phẩm, bong tróc sơn,...). Hoặc các sản phẩm bị bể vỡ/ trầy xước/ biến dạng trong quá trình vận
+                chuyển.</p>
+
+            <p>Không bảo hành cho các sản phẩm hư hỏng trong quá trình quý khách sử dụng do sử dụng không cẩn thận, bảo
+                quản và
+                vệ sinh không đúng cách. Cũng như sản phẩm bị các hao mòn thông thường (như phai mờ, rỉ sét do trầy
+                xước, lỏng
+                ốc vít sau một khoảng thời gian...).</p>
+        </div>
     </div>
 </div>
 
-<div class="flex gap-5 border-t">
+<!-- <div class="flex gap-5 border-t">
     {{-- <div class="tab-button active" onclick="openTab('tab1', event)">Mô tả sản phẩm</div> --}}
     <div style="font-weight: bold;">Hướng dẫn bảo quản</div>
     {{-- <div class="tab-button " onclick="openTab('tab3', event)">Phí giao hàng và lắp đặt</div> --}}
-</div>
+</div> -->
 
-{{-- <div class="tab-content active" id="tab1">
-    Sản phẩm này được làm từ {{ $product->material }}, được chiếc xuất hoàn toàn từ thiên nhiên, không chất hóa học
-</div> --}}
-<div>
-    Bảo quản: <br>
 
-Dùng khăn ẩm với nước sạch hoặc dung dịch tẩy rửa nhẹ để làm sạch sản phẩm. Sau đó, lau khô sản phẩm bằng khăn mềm. 
 
-Không để sản phẩm tiếp xúc với nước hoặc nguồn nhiệt độ cao trong thời gian dài.
-
-Không dùng các vật sắc nhọn, thô cứng, sần sùi chà xát sản phẩm. <br>
-
-Bảo hành: <br>
-
-Thời hạn bảo hành: Nệm 12 tháng, khung 24 tháng
-
-Bảo hành cho các sản phẩm có lỗi nguyên vật liệu hay lỗi từ nhà sản xuất (như móp, méo, cong vênh các chi tiết sản phẩm, bong tróc sơn,...). Hoặc các sản phẩm bị bể vỡ/ trầy xước/ biến dạng trong quá trình vận chuyển.
-
-Không bảo hành cho các sản phẩm hư hỏng trong quá trình quý khách sử dụng do sử dụng không cẩn thận, bảo quản và vệ sinh không đúng cách. Cũng như sản phẩm bị các hao mòn thông thường (như phai mờ, rỉ sét do trầy xước, lỏng ốc vít sau một khoảng thời gian...).
-</div>
-{{-- <div class="tab-content" id="tab3">
-    
-</div>  --}}
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
