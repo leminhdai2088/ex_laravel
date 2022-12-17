@@ -26,6 +26,15 @@
         border: 2px solid black;
     }
 
+    [class^="flaticon"]:before,
+    [class*=" flaticon"]:before,
+    [class^="flaticon"]:after,
+    [class*=" flaticon"]:after {
+
+        font-size: 30px;
+        color: #FACC15;
+    }
+
     @media (min-width: 740px) {
         #background-pattern {
             height: 100px;
@@ -43,59 +52,69 @@
     <img src="/front/images/background-pattern.jpg" alt="pattern" id="background-pattern">
 </div>
 <div class="px-5 w-full md:w-1/2 m-auto">
-    {{-- thông báo đã đk thành công
-         --}}
     @if(Session::has('thanhcong'))
-    <div>{{Session::get('thanhcong')}}</div>
-    @endif
-    <h1 class="text-2xl md:text-4xl text-center font-semibold my-5">Đăng ký</h1>
-    <form action="/sign_up" method="POST" id="sign-up">
-        <input type="hidden" name="_token" value="{{csrf_token()}}">
-        <div class="form-group">
-            <label for="name">Họ và tên</label><span><sup class="text-red-500">*</sup></span><br>
-            <input class="form-control" type="text" id="name" name="name">
-            <span class="form-message"></span>
-        </div>
-        <div class="mt-4 form-group">
-            <label for="email">Email</label><span><sup class="text-red-500">*</sup></span><br>
-            <input class="form-control" type="text" id="email" name="email">
-            <span class="form-message"></span>
-            {{-- thông báo khi mail đã tồn tại --}}
-            @error('email')
-            <span class="form-message">{{ $message }}</span>
-            @enderror
-        </div>
-        <div class="mt-4 form-group">
-            <label for="password">Mật khẩu</label><span><sup class="text-red-500">*</sup></span><br>
-            <input class="form-control" type="password" id="password" name="password">
-            <span class="form-message"></span>
-        </div>
-        <div class="mt-4 form-group">
-            <label for="confirm-password">Xác nhận mật khẩu</label><span><sup class="text-red-500">*</sup></span><br>
-            <input class="form-control" type="password" id="confirm-password" name="confirm-password">
-            <span class="form-message"></span>
-        </div>
 
-        <div class="mt-8">
-            <a href="/sign_in">Đã có tài khoản? Đăng nhập tại đây</a>
+    <div class="fixed z-30 top-0 left-0 h-full w-full bg-black bg-opacity-30 flex items-center justify-center">
+        <div class="p-10 rounded-md shadow flex flex-col gap-3 items-center bg-white">
+            <i class="flaticon fi fi-rr-checkbox"></i>
+            <div>{{Session::get('thanhcong')}}</div>
+            <a href="/sign_in" class="underline">Đăng nhập tại đây</a>
         </div>
-        <div class="flex justify-center mt-8">
-            <!-- <input type="submit" value="Tạo tài khoản"
+    </div>
+    @endif
+    <div>
+        <h1 class="text-2xl md:text-4xl text-center font-semibold my-5">Đăng ký</h1>
+        <form action="/sign_up" method="POST" id="sign-up">
+            <input type="hidden" name="_token" value="{{csrf_token()}}">
+            <div class="form-group">
+                <label for="name">Họ và tên</label><span><sup class="text-red-500">*</sup></span><br>
+                <input class="form-control" type="text" id="name" name="name">
+                <span class="form-message"></span>
+            </div>
+            <div class="mt-4 form-group">
+                <label for="email">Email</label><span><sup class="text-red-500">*</sup></span><br>
+                <input class="form-control" type="text" id="email" name="email">
+                <span class="form-message"></span>
+                {{-- thông báo khi mail đã tồn tại --}}
+                @error('email')
+                <span class="form-message">{{ $message }}</span>
+                @enderror
+            </div>
+            <div class="mt-4 form-group">
+                <label for="password">Mật khẩu</label><span><sup class="text-red-500">*</sup></span><br>
+                <input class="form-control" type="password" id="password" name="password">
+                <span class="form-message"></span>
+            </div>
+            <div class="mt-4 form-group">
+                <label for="confirm-password">Xác nhận mật khẩu</label><span><sup
+                        class="text-red-500">*</sup></span><br>
+                <input class="form-control" type="password" id="confirm-password" name="confirm-password">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="mt-8">
+                <a href="/sign_in">Đã có tài khoản? Đăng nhập tại đây</a>
+            </div>
+            <div class="flex justify-center mt-8">
+                <!-- <input type="submit" value="Tạo tài khoản"
                     class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto"> -->
 
-            {{-- <button type="submit"
-                class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto" Tạo tài khoản> --}}
-
                 {{-- <button type="submit"
-                    class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto">
-                    Tạo tài khoản
-                </button> --}}
-                <input type="submit" class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto"
-                    value="Tạo tài khoản">
+                    class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto" Tạo tài khoản>
+                    --}}
+
+                    {{-- <button type="submit"
+                        class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto">
+                        Tạo tài khoản
+                    </button> --}}
+                    <input type="submit"
+                        class="px-5 py-2 bg-[#ffde59] text-black text-lg md:text-xl cursor-pointer m-auto"
+                        value="Tạo tài khoản">
 
 
-        </div>
-    </form>
+            </div>
+        </form>
+    </div>
 </div>
 
 
