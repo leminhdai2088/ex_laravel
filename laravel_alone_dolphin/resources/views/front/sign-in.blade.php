@@ -45,11 +45,11 @@
     <div class="alert alert-success">
         {!! session()->get('message') !!}
     </div>
-@elseif(session()->has('error'))
+    @elseif(session()->has('error'))
     <div class="alert alert-danger">
         {!! session()->get('error') !!}
     </div>
-@endif
+    @endif
     <form action="/sign_in" method="POST" id="sign-in">
         <input type="hidden" name="_token" value="{{csrf_token()}}">
 

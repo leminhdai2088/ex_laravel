@@ -43,6 +43,8 @@
     <img src="/front/images/background-pattern.jpg" alt="pattern" id="background-pattern">
 </div>
 <div class="px-5 w-full md:w-1/2 m-auto">
+    {{-- thông báo đã đk thành công
+         --}}
     @if(Session::has('thanhcong'))
     <div>{{Session::get('thanhcong')}}</div>
     @endif
@@ -58,9 +60,10 @@
             <label for="email">Email</label><span><sup class="text-red-500">*</sup></span><br>
             <input class="form-control" type="text" id="email" name="email">
             <span class="form-message"></span>
-            {{-- @error('email')
+            {{-- thông báo khi mail đã tồn tại --}}
+            @error('email')
             <span class="form-message">{{ $message }}</span>
-            @enderror --}}
+            @enderror
         </div>
         <div class="mt-4 form-group">
             <label for="password">Mật khẩu</label><span><sup class="text-red-500">*</sup></span><br>

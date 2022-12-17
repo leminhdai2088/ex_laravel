@@ -109,21 +109,35 @@
     </div>
 </div>
 
-<!-- <div class="flex gap-5 border-t">
-    <div class="tab-button active" onclick="openTab('tab1', event)">Mô tả sản phẩm</div>
-    <div class="tab-button " onclick="openTab('tab2', event)">Hướng dẫn bảo quản</div>
-    <div class="tab-button " onclick="openTab('tab3', event)">Phí giao hàng và lắp đặt</div>
+<div class="flex gap-5 border-t">
+    {{-- <div class="tab-button active" onclick="openTab('tab1', event)">Mô tả sản phẩm</div> --}}
+    <div style="font-weight: bold;">Hướng dẫn bảo quản</div>
+    {{-- <div class="tab-button " onclick="openTab('tab3', event)">Phí giao hàng và lắp đặt</div> --}}
 </div>
 
-<div class="tab-content active" id="tab1">
+{{-- <div class="tab-content active" id="tab1">
     Sản phẩm này được làm từ {{ $product->material }}, được chiếc xuất hoàn toàn từ thiên nhiên, không chất hóa học
+</div> --}}
+<div>
+    Bảo quản: <br>
+
+Dùng khăn ẩm với nước sạch hoặc dung dịch tẩy rửa nhẹ để làm sạch sản phẩm. Sau đó, lau khô sản phẩm bằng khăn mềm. 
+
+Không để sản phẩm tiếp xúc với nước hoặc nguồn nhiệt độ cao trong thời gian dài.
+
+Không dùng các vật sắc nhọn, thô cứng, sần sùi chà xát sản phẩm. <br>
+
+Bảo hành: <br>
+
+Thời hạn bảo hành: Nệm 12 tháng, khung 24 tháng
+
+Bảo hành cho các sản phẩm có lỗi nguyên vật liệu hay lỗi từ nhà sản xuất (như móp, méo, cong vênh các chi tiết sản phẩm, bong tróc sơn,...). Hoặc các sản phẩm bị bể vỡ/ trầy xước/ biến dạng trong quá trình vận chuyển.
+
+Không bảo hành cho các sản phẩm hư hỏng trong quá trình quý khách sử dụng do sử dụng không cẩn thận, bảo quản và vệ sinh không đúng cách. Cũng như sản phẩm bị các hao mòn thông thường (như phai mờ, rỉ sét do trầy xước, lỏng ốc vít sau một khoảng thời gian...).
 </div>
-<div class="tab-content" id="tab2">
-    this is tab2
-</div>
-<div class="tab-content" id="tab3">
-    this is tab3
-</div> -->
+{{-- <div class="tab-content" id="tab3">
+    
+</div>  --}}
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
