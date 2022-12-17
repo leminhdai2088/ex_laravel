@@ -45,7 +45,7 @@
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 danhmucsanpham">
 
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-        <h3>Danh mục sản phẩm</h3>
+        <h3 style="font-size: 24px;">Danh mục sản phẩm</h3>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
         <img src="/front/images/img_home/sofa.png" alt="">
@@ -122,7 +122,7 @@
         tạo ra không gian sống tiện nghi, thoải mái và giúp bạn thực sự thư giãn mỗi khi trở về nhà.</p>
     </div>
 
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-pull-1 col-md-push-1 col-lg-pull-1 content-body-3">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-push-1 col-md-push-1 col-lg-push-1 content-body-3">
       <h3>TRẢI NGHIỆM GIẢI PHÁP KHÔNG GIAN SỐNG MỚI CÙNG M-CONCEPT</h3>
       <h4>TIẾT KIỆM THỜI GIAN</h4>
       <h4>TỐI ƯU HOÁ NGÂN SÁCH</h4>
@@ -196,14 +196,14 @@
 <div class="container-fluid about-us">
   <div class="row">
 
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 about-us-content">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-us-content">
       <h3>About Us</h3>
       <br>
-      <div class="about-content">
-        <p>Tại ALONE DOLPHINS, tất cả sản phẩm trang trí nội thất & giải pháp không gian sống không
+      <div class="about-content" style="margin-bottom: 3rem;">
+        <p style="line-height: 34px;">Tại ALONE DOLPHINS, tất cả sản phẩm trang trí nội thất & giải pháp không gian sống không
           chỉ đơn thuần tuân thủ theo ngôn
           ngữ giản lược của Minimalism, mà còn cân bằng được tính năng và độ thẩm mỹ cần có.</p>
-        <p>
+        <p style="line-height: 34px;">
           “Ít tức là nhiều", nhưng mỗi chi tiết xuất hiện trên thiết kế đều là một sự chăm chút kỹ lưỡng
           và hoàn hảo. Và đó cũng chính là tôn chỉ hoạt động của ALONE DOLPHINS. Với tinh thần cầu tiến luôn cố gắng hết
           mình để cung cấp những sản phẩm chất lượng cộng với dịch vụ thân thiện cho khách hàng, chúng tôi hy vọng có
@@ -213,7 +213,7 @@
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 about-us-img">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-us-img">
       <img src="/front/images/img_home/about-us.png" alt="">
     </div>
   </div>
