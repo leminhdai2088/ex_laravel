@@ -23,7 +23,7 @@ class CheckOutController extends Controller
 
     public function add_order(Request $request){
         $request->validate([
-            'phone' => 'required|min:10|numeric',
+            'phone' => 'required|min:10|numeric|phone_number',
             'address' => 'required',
             'pay_method' => 'required',
             
