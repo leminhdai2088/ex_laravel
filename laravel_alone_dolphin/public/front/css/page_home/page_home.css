@@ -225,12 +225,74 @@ button{
     margin-top: 10px;
     display: block;
     font-weight: 500;
+    
     color: #676767;
+}
+@media only screen and (max-width: 1024px) {
+    
+    .nivoSlider{
+        margin-top: 4rem;
+    }
+    .header a{
+        font-size: 13px;
+    }
+    .slideshow-content-1 p{
+        font-size: 16px;
+        margin-top: 10px;
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        color: #676767;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .slideshow-content-1 p{
+        font-size: 15px;
+        margin-top: 10px;
+        display: block;
+        font-weight: 500;
+        font-size: 15px;
+        color: #676767;
+    }
+    .nivoSlider{
+        margin-top: 4rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .slideshow-content-1 p{
+        margin-top: 10px;
+        display: block;
+        font-weight: 500;
+        font-size: xx-small;
+        color: #676767;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .slideshow-content-1 p{
+        font-size: 18px;
+        margin-top: 10px;
+        display: block;
+        font-weight: 500;
+        font-size: 0px;
+        color: #676767;
+    }
+    .danhmucsanpham h3{
+        font-size: 12px !important;
+    }
+    .nivoSlider{
+        margin-top: 4rem;
+    }
+    .slideshow-content-1{
+        display: none;
+    }
 }
 .slideshow-content-1 .danhmuc2 div{
     margin-bottom: 30px;
 }
-
+.fi-rr-menu-burger{
+    position: relative;
+    left: -100px;
+}
 .nivo-controlNav .nivo-control{
     position: relative;
     background-color: #fff;
