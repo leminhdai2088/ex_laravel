@@ -121,13 +121,13 @@
 
     <div class="mt-4 form-group">
         <label>Phương thức thanh toán</label><span><sup class="text-red-500">*</sup></span><br>
-        <input class="form-control" type="radio" id="pay1" name="pay_method" value="Thanh toán khi nhận hàng" checked>
+        <input class="form-control pay" type="radio" id="pay1" name="pay_method" value="Thanh toán khi nhận hàng" checked>
         <label for="pay1">Thanh toán khi nhận hàng</label><br>
 
-        <input class="form-control" type="radio" id="pay2" name="pay_method" value="Ví điện tử MoMo">
+        <input class="form-control pay" type="radio" id="pay2" name="pay_method" value="Ví điện tử MoMo">
         <label for="pay2">Ví điện tử MoMo</label><br>
 
-        <input class="form-control" type="radio" id="pay3" name="pay_method" value="Ngân hàng điện tử - Thẻ tín dụng">
+        <input class="form-control pay" type="radio" id="pay3" name="pay_method" value="Ngân hàng điện tử - Thẻ tín dụng">
         <label for="pay3">Ngân hàng điện tử - Thẻ tín dụng</label>
         <span class="form-message"></span>
     </div>
@@ -160,6 +160,9 @@
             Validator.isPhone('#phone'),
 
             Validator.isRequired('#address'),
+
+            Validator.isRequired('.pay'),
+
 
 
         ]

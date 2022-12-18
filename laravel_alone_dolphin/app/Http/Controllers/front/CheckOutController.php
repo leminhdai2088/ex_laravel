@@ -22,6 +22,12 @@ class CheckOutController extends Controller
     }
 
     public function add_order(Request $request){
+        $request->validate([
+            'phone' => 'required|min:10|numeric',
+            'address' => 'required',
+            'pay_method' => 'required',
+            
+        ]);
         //thêm giỏ hàng
         $data_order = $request->all();
         $user_id = ['user_id'=>Auth::user()->id];

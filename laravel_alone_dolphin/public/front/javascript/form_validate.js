@@ -106,10 +106,10 @@ Validator = function(options){
                             }
                             return values;
                     },{})
-                    options.onSubmit(formValues);
+                    options.onSubmit(formValues);                    
                 } else{
-                    formElement.submit();
                     e.preventDefault();
+                    formElement.submit();
                 }
             }
         }
