@@ -44,6 +44,7 @@
     }
 </style>
 @endsection
+@section('content')
 <form action="/edit_user/1" method="POST">
     @method('PATCH')
     <input type="hidden" name="_token" value="{{csrf_token()}}">

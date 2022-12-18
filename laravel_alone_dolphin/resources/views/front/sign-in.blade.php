@@ -39,7 +39,7 @@
 <div class="">
     <img src="/front/images/background-pattern.jpg" alt="pattern" id="background-pattern">
 </div>
-<div class="px-5 w-full md:w-1/2 m-auto">
+<div class="px-5 w-full md:w-2/3 laptop:w-1/2 m-auto">
     <h1 class=" text-2xl md:text-4xl text-center font-semibold my-5">Đăng nhập</h1>
     {{-- @if(session()->has('message'))
     <div class="alert alert-success">

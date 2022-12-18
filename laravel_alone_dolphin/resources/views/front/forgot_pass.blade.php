@@ -40,17 +40,19 @@
     <img src="/front/images/background-pattern.jpg" alt="pattern" id="background-pattern">
 </div>
 
-@if(session()->has('message'))
+
+<div class="px-5 w-full md:w-1/2 m-auto">
+    <h1 class=" text-2xl md:text-4xl text-center font-semibold my-5">Quên mật khẩu</h1>
+    @if(session()->has('message'))
     <div class="alert alert-success">
         {!! session()->get('message') !!}
     </div>
-@elseif(session()->has('error'))
-    <div class="alert alert-danger">
-        {!! session()->get('error') !!}
+    @elseif(session()->has('error'))
+    <div class="p-2 border rounded-md flex gap-3 text-red-600 border-red-600 bg-red-100">
+        <i class="fi fi-rr-cross-circle mt-1"></i>
+        <div>{!! session()->get('error') !!}</div>
     </div>
-@endif
-<div class="px-5 w-full md:w-1/2 m-auto">
-    <h1 class=" text-2xl md:text-4xl text-center font-semibold my-5">Quên mật khẩu</h1>
+    @endif
     <form action="/recover_pass" method="POST" id="forgot-pass">
         <input type="hidden" name="_token" value="{{csrf_token()}}">
 
