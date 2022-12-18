@@ -41,7 +41,7 @@
 </div>
 <div class="px-5 w-full md:w-1/2 m-auto">
     <h1 class=" text-2xl md:text-4xl text-center font-semibold my-5">Đăng nhập</h1>
-    @if(session()->has('message'))
+    {{-- @if(session()->has('message'))
     <div class="alert alert-success">
         {!! session()->get('message') !!}
     </div>
@@ -49,6 +49,9 @@
     <div class="alert alert-danger">
         {!! session()->get('error') !!}
     </div>
+    @endif --}}
+    @if($errors->any())
+        <h4>{{$errors->first()}}</h4>
     @endif
     <form action="/sign_in" method="POST" id="sign-in">
         <input type="hidden" name="_token" value="{{csrf_token()}}">
