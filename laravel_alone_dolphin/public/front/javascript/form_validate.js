@@ -109,6 +109,7 @@ Validator = function(options){
                     options.onSubmit(formValues);
                 } else{
                     formElement.submit();
+                    e.preventDefault();
                 }
             }
         }
