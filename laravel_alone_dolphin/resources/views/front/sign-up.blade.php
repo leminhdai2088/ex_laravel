@@ -77,7 +77,7 @@
                 <span class="form-message"></span>
                 {{-- thông báo khi mail đã tồn tại --}}
                 @error('email')
-                <span class="form-message">{{ $message }}</span>
+                <span class="form-message text-red-600">Email này đã tồn tại</span>
                 @enderror
             </div>
             <div class="mt-4 form-group">

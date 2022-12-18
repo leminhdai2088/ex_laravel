@@ -50,8 +50,12 @@
         {!! session()->get('error') !!}
     </div>
     @endif --}}
+
     @if($errors->any())
-        <h4>{{$errors->first()}}</h4>
+    <div class="p-2 border rounded-md flex gap-3 text-red-600 border-red-600 bg-red-100">
+        <i class="fi fi-rr-cross-circle mt-1"></i>
+        <div>{{$errors->first()}}. Vui lòng đăng nhập lại</div>
+    </div>
     @endif
     <form action="/sign_in" method="POST" id="sign-in">
         <input type="hidden" name="_token" value="{{csrf_token()}}">
