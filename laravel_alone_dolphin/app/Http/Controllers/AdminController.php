@@ -92,7 +92,7 @@ class AdminController extends Controller
         product_details::destroy(product_details::where('product_id',$id)->get());
         product_images::destroy(product_images::where('product_id',$id)->get());
         products::destroy($id);
-        return ('xóa thành công');
+        return redirect()->back();
     }
 
     public function orders()
