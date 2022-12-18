@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+
 }
 
 
@@ -54,7 +54,7 @@
 
 .main-filter{
     display: flex;
-   
+
 }
 
 
@@ -304,6 +304,15 @@
     .share-title{
         margin-bottom: 20px;
     }
+    .main{
+        margin-top:80px;
+    }
+    .slider {
+        margin-top:30px;
+    }
+    .slider h1 {
+        font-size: 20px;
+    }
 }
   /* SLICK_SLIDER */
 
@@ -339,7 +348,7 @@
     width: 50px;
     height: 50px;
     /* flex-center */
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 35px;

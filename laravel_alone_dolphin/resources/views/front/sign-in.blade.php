@@ -71,7 +71,7 @@
             <span class="form-message"></span>
         </div>
 
-        <div class="mt-8 flex justify-between">
+        <div class="mt-8 flex flex-col md:flex-row justify-between">
             <a href="/sign_up">Chưa có tài khoản? Đăng ký tại đây</a>
             <a href="/forgot_password">Quên mật khẩu</a>
         </div>

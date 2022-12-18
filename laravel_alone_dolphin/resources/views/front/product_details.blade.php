@@ -49,10 +49,10 @@
         object-fit: cover;
     }
 
-    [class^="fi"]:before,
-    [class*=" fi"]:before,
-    [class^="fi"]:after,
-    [class*=" fi"]:after {
+    [class^="arrow"]:before,
+    [class*=" arrow"]:before,
+    [class^="arrow"]:after,
+    [class*=" arrow"]:after {
 
         font-size: 20px;
     }
@@ -100,10 +100,10 @@
             padding: 8px;
         }
 
-        [class^="fi"]:before,
-        [class*=" fi"]:before,
-        [class^="fi"]:after,
-        [class*=" fi"]:after {
+        [class^="arrow"]:before,
+        [class*=" arrow"]:before,
+        [class^="arrow"]:after,
+        [class*=" arrow"]:after {
 
             font-size: 30px;
         }
@@ -125,8 +125,10 @@
                     @endfor
 
             </div>
-            <i class="fi fi-rr-angle-left prev absolute -left-3 top-10 md:top-16 laptop:top-10 cursor-pointer"></i>
-            <i class="fi fi-rr-angle-right next absolute -right-3 top-10 md:top-16 laptop:top-10 cursor-pointer"></i>
+            <i
+                class="arrow fi fi-rr-angle-left prev absolute -left-3 top-10 md:top-16 laptop:top-10 cursor-pointer"></i>
+            <i
+                class="arrow fi fi-rr-angle-right next absolute -right-3 top-10 md:top-16 laptop:top-10 cursor-pointer"></i>
         </div>
     </div>
     <div class="md:mt-5">
