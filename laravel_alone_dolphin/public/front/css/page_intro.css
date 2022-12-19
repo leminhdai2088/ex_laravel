@@ -232,6 +232,11 @@ h4{
     position: relative;
     top: 40%;
 }
+.footer{
+   width: 95vw;
+   margin: auto;
+   padding: 20px;
+}
 
 /* Responsive */
 @media(min-width: 740px) and (max-width: 1023px){

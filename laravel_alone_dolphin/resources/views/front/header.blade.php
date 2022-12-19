@@ -152,7 +152,7 @@
                 <div class="h-fit hover-product">
                     <a href="#" class="btn-product">Sản phẩm</a>
                     <div class="content-sub-menu">
-                        <div class="container-sub-menu w-[1200px] m-auto">
+                        <div class="container-sub-menu m-auto">
                             <div class="sub-menu">
                                 <ul>
                                     @foreach($rooms_header as $room)
