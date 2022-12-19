@@ -13,12 +13,12 @@
 </head>
 
 {{-- <body class="w-full md:w-[1200px] m-auto"> --}}
-<body class="md:w-[1200px] m-auto">
+<body class="m-auto">
 
     <!-- header -->
     @auth
     <div class="header fixed left-0 right-0 top-0 z-20 h-16">
-        <div class="w-[1200px] m-auto flex items-center justify-between px-3">
+        <div class="m-auto flex items-center justify-between px-3">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
             <a class="logo" href="#"><img height="64" width="64" src="/front/images/Alone Dolphin.png"
                     alt="alone dolphin"></a>
@@ -142,7 +142,7 @@
     @else
 
     <div class="header fixed left-0 right-0 top-0 z-20 h-16">
-        <div class="w-[1200px] m-auto flex items-center justify-between px-3">
+        <div class="m-auto flex items-center justify-between px-3">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
             <a class="logo" href="#"><img height="64" width="64" src="/front/images/Alone Dolphin.png"
                     alt="alone dolphin"></a>
