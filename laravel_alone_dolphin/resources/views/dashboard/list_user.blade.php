@@ -119,28 +119,10 @@
     <form action="/admin/search_users" method="GET">
         <div class="text-gray-700 relative my-auto min-w-[100px] md:min-w-[250px]">
             <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                <button type="submit" class="p-1 text-gray-400 focus:outline-none focus:shadow-outline">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 text-[#6B7280]">
-                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </button>
+                
             </span>
-            <input name="query" type="search" class="
-        text-sm
-        font-normal
-        border
-        pl-8
-        pr-2
-        h-8
-        rounded-md
-        bg-white
-        text-gray-500
-        focus:text-gray-900 focus:outline-none
-      " placeholder="Tìm kiếm khách hàng..." />
         </div>
     </form>
-    <a class="mr-10" data-tooltip="Thêm sản phẩm" href="/admin/add"><i class="flaticon fi fi-rr-add"></i></a>
 </div>
 <div class="overflow-x-auto">
 

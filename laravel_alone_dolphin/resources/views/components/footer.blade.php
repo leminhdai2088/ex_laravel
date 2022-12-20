@@ -19,8 +19,8 @@
             <div class="footer-item">
                 <div class="head-footer font-medium my-2">Về chúng tôi</div>
                 <div class="text-gray-700 text-sm">
-                    <div class="footer-text"><a href="#">Project này</a></div>
-                    <div class="footer-text"><a href="#">Thành viên</a></div>
+                    <div class="footer-text"><a href="https://nguyentuankha.wordpress.com/">Project này</a></div>
+                    <div class="footer-text"><a href="https://nguyentuankha.wordpress.com/">Thành viên</a></div>
                 </div>
 
             </div>
