@@ -26,7 +26,7 @@ class CartController extends Controller
                 'id_cate' => $product->product_category->id
             ],
         ]);
-        return back();
+        return back()->with('thanhcong','Thêm vào giỏ hàng thành công!!!');
     }
     public function index(){
         $categories_header = product_category::all();

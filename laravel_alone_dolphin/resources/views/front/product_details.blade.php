@@ -140,10 +140,18 @@
         <div class="product-description">
             <p><strong>Kích thước: </strong><span>{{ $product->product_details->size }}</span></p>
             <p><strong>Chất liệu: </strong><span>{{ $product->material }}</span></p>
+            
             @if($product->weight)
             <p><strong>Cân nặng: </strong><span>{{ $product->weight }}kg</span></p>
             @endif
         </div>
+        @if(Session::has('thanhcong'))
+
+    <div class="p-10 rounded-md shadow flex flex-col gap-3 items-center bg-blue-100 mb-6">
+        <i class="flaticon fi fi-rr-checkbox"></i>
+        <div>{{Session::get('thanhcong')}}</div>
+    </div>
+@endif
         @if(auth()->user())
         @if(auth()->user()->level == 0)
         <a class="cursor-pointer px-5 py-2 bg-yellow-400" href="/cart/add/{{ $product->id }}">Thêm vào giỏ</a>
