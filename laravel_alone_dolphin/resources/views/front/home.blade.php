@@ -10,6 +10,8 @@
   <!-- nivo slider -->
   <link rel="stylesheet" href="/front/css/page_home/nivo-slider/themes/default/default.css" type="text/css"
     media="screen" />
+  <title>Nội thất Fudo</title>
+  <meta description="Mua đồ nội thất tại uit"/>
   <link rel="stylesheet" href="/front/css/page_home/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
   <style>
     .w-full {
