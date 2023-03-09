@@ -116,7 +116,7 @@
 
 <h1 class="text-center text-3xl font-bold my-3">Danh sách sản phẩm</h1>
 <div class="flex justify-between items-center">
-    <form action="/admin/search_products" method="GET">
+    <form action="/admin/products" method="GET">
         <div class="text-gray-700 relative my-auto min-w-[100px] md:min-w-[250px]">
             <span class="absolute inset-y-0 left-0 flex items-center pl-2">
                 <button type="submit" class="p-1 text-gray-400 focus:outline-none focus:shadow-outline">
@@ -126,7 +126,7 @@
                     </svg>
                 </button>
             </span>
-            <input name="query" type="search" class="
+            <input name="name" type="search" class="
         text-sm
         font-normal
         border

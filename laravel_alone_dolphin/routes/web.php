@@ -18,7 +18,6 @@ use Illuminate\Auth\Middleware\Authenticate as Middleware;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/test_mail', [UserController::class, 'test_mail']);
 
 
 // home
@@ -36,7 +35,6 @@ Route::prefix('admin')->middleware('admin')->middleware('auth')->group(function 
     Route::get('/orders', [AdminController::class, 'orders']);
     Route::get('/products', [AdminController::class, 'products']);
     Route::get('/order/{id}', [AdminController::class, 'order_detail']);
-    Route::get('/search_products', [AdminController::class, 'search_products']);
     Route::patch('/orders/change_status', [AdminController::class, 'change_status']);
     Route::get('/orders/filter', [AdminController::class, 'filter_order']);
     Route::get('/users', [AdminController::class, 'users']);

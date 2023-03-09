@@ -106,7 +106,8 @@ class AdminController extends Controller
     {
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        $products = products::paginate(20);
+        $search_text = $_GET['name'];
+        $products = products::where('name', 'LIKE', '%'.$search_text.'%')->paginate(20);
         return view('dashboard.list_product', compact('categories_header', 'rooms_header','products'));
     }
 
@@ -119,19 +120,6 @@ class AdminController extends Controller
         return view('dashboard.order_detail', compact('categories_header', 'rooms_header','order_detail'));
     }
 
-    public function search_products(){
-        $categories_header = product_category::all();
-        $rooms_header = rooms::all();
-        $search_text = $_GET['query'];
-        // $products = DB::table('products','rooms','product_categor')
-        // ->join('rooms', 'products.room_id', '=', 'rooms.id')
-        // ->join('product_category', 'products.product_category_id', '=', 'product_category.id')
-        // ->where('products.name', 'LIKE', '%'.$search_text.'%')
-        // ->orWhere('rooms.name', 'LIKE', '%'.$search_text.'%')
-        // ->orWhere('product_category.name', 'LIKE', '%'.$search_text.'%')->get();
-        $products = products::where('name', 'LIKE', '%'.$search_text.'%')->paginate(20);
-        return view('dashboard.list_product',compact('products','categories_header','rooms_header'));
-    }
 
     public function change_status(Request $request){
         $order = orders::find($request->id);
