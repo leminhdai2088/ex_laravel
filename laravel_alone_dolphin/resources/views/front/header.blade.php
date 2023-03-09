@@ -137,6 +137,7 @@
                 </div>
             </div>
             <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="#footer">Liên hệ</a></div>
+            <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="/blog">Blog</a></div>
         </div>
     </div>
     @else
@@ -259,6 +260,8 @@
                 </div>
             </div>
             <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="#footer">Liên hệ</a></div>
+            <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="/blog">Blog</a></div>
+
         </div>
     </div>
 

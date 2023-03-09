@@ -37,3 +37,18 @@ body{
     text-transform: none;
     letter-spacing: 0;
 }
+
+.blog-breadcrumb{
+    background: #f5f5f5;
+    border-bottom: 1px solid #e7e7e7;
+}
+.blog-breadcrumb ol{
+    display: flex;
+}
+.blog-breadcrumb ol li::before{
+    color: #ccc;
+    content: "/\00a0";
+}
+.blog-breadcrumb ol li{
+    margin-left: 10px;
+}

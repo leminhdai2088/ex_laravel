@@ -4,7 +4,7 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="Cửa hàng nội thất · Trang trí nhà cửa · Studio thiết kế nội thất">
-        <title>Giới thiệu - Make My Home</title>
+        <title>Giới thiệu - Nội thất Fudo</title>
         <link rel="stylesheet" href="/front/css/footer.css">
         <link rel="stylesheet" href="/front/css/page_intro.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />

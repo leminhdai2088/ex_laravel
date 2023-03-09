@@ -1,22 +1,49 @@
 @extends('components.layout')
 @section('head')
+    <meta name="description" content="Cập nhật những xu hướng mới nhất về thiết kế nội thất và chia sẻ kinh nghiệm trong việc trang trí không gian sống tại Blog của chúng tôi. Khám phá ngay!">
+    <meta name="keywords" content="nội thất, thiết kế nội thất, trang trí nội thất, blog nội thất">
+    <meta name="author" content="Nội thất Fudo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="/front/css/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
     <link rel="stylesheet" href="/front/css/page_blog.css">
     <link rel="stylesheet" href="/front/css/page_home/vendor/bootstrap.css">
     <script src="/front/css/page_home/vendor/bootstrap.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Blog</title>
     <style>
         img{
             width: 100%;
         }
-        
+        .logo img{
+            height: 64;
+        }
+        .h-16{
+            height: 4rem !important;
+        }
+        .link img{
+            height: 50px !important;
+        }
+        .header {
+            padding: 0 0 !important;
+        }
     </style>
 @endsection
 @section('content')
 <div>
+    <div class="container-fluid">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5 blog-breadcrumb " style="padding-left: 10rem;">
+                <ol>
+                    <li itemprop="itemListElement"><a href="/">Trang chủ</a></li>
+                    <li itemprop="itemListElement"><a href="/blog">Blog</a></li>
+                </ol>
+            </div>
+        </div>
     <div class="container khung">
         <div class="row">
             <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 khung news-lastest">
