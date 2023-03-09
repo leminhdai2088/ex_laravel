@@ -38,7 +38,6 @@ Route::prefix('admin')->middleware('admin')->middleware('auth')->group(function 
     Route::patch('/orders/change_status', [AdminController::class, 'change_status']);
     Route::get('/orders/filter', [AdminController::class, 'filter_order']);
     Route::get('/users', [AdminController::class, 'users']);
-
 });
 
 // trang thanh toán
@@ -51,7 +50,7 @@ Route::prefix('checkout')->middleware('auth')->group(function () {
 // chỉnh sửa thông tin user
 Route::prefix('edit_user')->middleware('auth')->group(function () {
     Route::get('/', [UserController::class, 'edit']);
-    Route::patch('/1', [UserController::class, 'editpost']);
+    Route::patch('/', [UserController::class, 'editpost']);
 });
 
 
@@ -70,7 +69,7 @@ Route::get('/about_us', [front\HomeController::class, 'about']);
 
 Route::get('/blog', [front\HomeController::class, 'blog']);
 
-// forgot passwork
+// forgot password
 
 Route::get('/forgot_password', [UserController::class, 'forgot_pass']);
 
