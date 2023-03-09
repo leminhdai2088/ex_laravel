@@ -181,6 +181,7 @@
                 </div>
 
                 <div class="h-fit"><a href="#footer">Liên hệ</a></div>
+                <div class="h-fit"><a href="#">Blog</a></div>
             </div>
             <div class="right-header flex content-center gap-6">
                 <div class="text-gray-700 relative my-auto min-w-[100px] md:min-w-[250px]">

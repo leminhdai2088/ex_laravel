@@ -99,4 +99,9 @@ class HomeController extends Controller
         // $user->save();
         // return redirect()->back()->with('thanhcong','Tạo tài khoản thành công');
     }
+    public function blog(){
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        return view('front.blog', compact('categories_header', 'rooms_header'));
+    }
 }

@@ -1,0 +1,39 @@
+body{
+    color: #676767 !important;
+}
+.item-article{
+    border-bottom: 1px #efefef dotted;
+    padding: 15px 0;
+    margin: 0
+}
+.item-article h3{
+    margin: 0 0 5px;
+    font-size: 15px;
+}
+.news-lastest h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+.news-lastest{
+    margin: 0 0 30px;
+    position: relative;
+    padding: 20px;
+    border: 1px solid #e3e5ec;
+}
+.content-container h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.blog-post{
+    margin: 1rem 0;
+}
+.blog-post a{
+    font-size: 16px;
+    text-transform: none;
+    letter-spacing: 0;
+}

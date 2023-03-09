@@ -70,6 +70,8 @@ Route::post('/log_out', [UserController::class, 'log_out']);
 
 Route::get('/about_us', [front\HomeController::class, 'about']);
 
+Route::get('/blog', [front\HomeController::class, 'blog']);
+
 // forgot passwork
 
 Route::get('/forgot_password', [UserController::class, 'forgot_pass']);

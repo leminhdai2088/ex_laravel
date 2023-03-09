@@ -243,6 +243,7 @@
                 </div>
 
                 <div class="h-fit"><a href="#footer">Liên hệ</a></div>
+                <div class="h-fit"><a href="/blog">Blog</a></div>
             </div>
             <div class="right-header flex content-center items-center gap-3 md:gap-6">
                 <div class="text-gray-700 relative my-auto max-w-[120px] md:max-w-[250px]">
