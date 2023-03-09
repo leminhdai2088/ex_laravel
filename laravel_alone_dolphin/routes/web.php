@@ -69,6 +69,8 @@ Route::get('/about_us', [front\HomeController::class, 'about']);
 
 Route::get('/blog', [front\HomeController::class, 'blog']);
 
+Route::get('/blog_detail', [front\HomeController::class, 'blog_detail']);
+
 // forgot password
 
 Route::get('/forgot_password', [UserController::class, 'forgot_pass']);

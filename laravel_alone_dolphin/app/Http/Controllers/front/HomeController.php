@@ -104,4 +104,9 @@ class HomeController extends Controller
         $rooms_header = rooms::all();
         return view('front.blog', compact('categories_header', 'rooms_header'));
     }
+    public function blog_detail(){
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        return view('front.blog_detail', compact('categories_header', 'rooms_header'));
+    }
 }

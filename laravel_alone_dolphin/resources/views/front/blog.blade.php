@@ -37,11 +37,13 @@
 @section('content')
 <div>
     <div class="container-fluid">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5 blog-breadcrumb " style="padding-left: 10rem;">
-                <ol>
-                    <li itemprop="itemListElement"><a href="/">Trang chủ</a></li>
-                    <li itemprop="itemListElement"><a href="/blog">Blog</a></li>
-                </ol>
+            <div class="container">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5 blog-breadcrumb ">
+                    <ol>
+                        <li itemprop="itemListElement"><a href="/">Trang chủ</a></li>
+                        <li itemprop="itemListElement"><a href="/blog">Blog</a></li>
+                    </ol>
+                </div>
             </div>
         </div>
     <div class="container khung">
