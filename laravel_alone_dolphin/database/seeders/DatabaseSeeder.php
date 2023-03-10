@@ -24,6 +24,17 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
+        DB::table('blog')->insert([
+            [
+                'title' => 'title 1',
+                'short_description' => 'short_description 1',
+                'image' => 'imageblog1.png',
+                'keywords' => 'keywords 1',
+                'content' => 'contentcontentcontentcontentcontentcontentcontentcontentcontentcontent1',
+                'author' => 'author 1',
+                'status' => 'status 1', 
+            ],
+        ]);
         DB::table('users')->insert([
             [
                 'id' => 111,
