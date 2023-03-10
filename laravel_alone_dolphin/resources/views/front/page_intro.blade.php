@@ -3,7 +3,9 @@
 
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Cửa hàng nội thất · Trang trí nhà cửa · Studio thiết kế nội thất">
+        <meta name="description" content="Chào mừng đến với trang giới thiệu của chúng tôi! Chúng tôi là một cửa hàng bán nội thất chất lượng cao với đầy đủ các sản phẩm từ sofa, bàn ăn, giường ngủ, tủ quần áo, đèn, tấm trang trí và rất nhiều sản phẩm nội thất khác. Với chất lượng hàng đầu và giá cả hợp lý, chúng tôi cam kết mang đến cho khách hàng trải nghiệm mua sắm nội thất tốt nhất." />
+<meta name="keywords" content="nội thất, nội thất Fudo, nội thất giá rẻ, sofa, bàn ăn, giường ngủ, tủ quần áo, đèn, trang trí, mua sắm" />
+<meta name="author" content="Fudo" />
         <title>Giới thiệu - Nội thất Fudo</title>
         <link rel="stylesheet" href="/front/css/footer.css">
         <link rel="stylesheet" href="/front/css/page_intro.css">

@@ -5,6 +5,26 @@
 <link href="/front/css/page_rooms.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+@if ($name_cate_room[0]->room->id == 1)
+<title>Nội thất phòng khách hiện đại - Nội thất Fudo</title>
+<meta name="description" content="Nội Thất Fudo cung cấp các sản phẩm nội thất phòng khách như sofa, bàn cafe, kệ tủ giày, tủ rượu, đèn sàn, đồng hồ cho nhà ống, chung cư, nhà phố, đạt chuẩn quốc tế">
+@endif
+@if ($name_cate_room[0]->room->id == 2)
+<title>Nội thất ngủ đẹp - Nội thất Fudo</title>
+<meta name="description" content="Nội Thất Fudo cung cấp các sản phẩm nội thất phòng ngủ như giường ngủ, bàn ghế phòng ngủ, tủ kệ tivi, tủ đầu giường, bàn trang điểm,... với thiết kế đẹp và hiện đại">
+@endif
+@if ($name_cate_room[0]->room->id == 3)
+<title>Nội thất bếp và phòng ăn - Nội thất Fudo</title>
+<meta name="description" content="Nội Thất Fudo cung cấp các sản phẩm nội thất bếp và phòng ăn như bộ bàn ăn, ghế ăn, thảm bếp, kệ bếp, khăn bếp với phong cách hiện đại cho nhà bếp, nhà hàng, chung cư">
+@endif
+@if ($name_cate_room[0]->room->id == 4)
+<title>Nội thất phòng làm việc - Nội thất Fudo</title>
+<meta name="description" content="Nội Thất Fudo cung cấp các sản phẩm nội thất phòng làm việc như bàn làm việc, bàn máy tính, tủ sách, với thiết kế hiện đại">
+@endif
+@if ($name_cate_room[0]->room->id == 5)
+<title>Nội thất phòng tắm - Nội thất Fudo</title>
+<meta name="description" content="Nội Thất Fudo cung cấp các sản phẩm nội thất phòng tắm như rèm, khăn tắm, gương, thảm chân đẹp và chất lượng cao">
+@endif
 <style>
     .product-img {
         width: 100%;
