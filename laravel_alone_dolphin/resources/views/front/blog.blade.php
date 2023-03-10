@@ -1,7 +1,7 @@
 @extends('components.layout')
 @section('head')
-    <meta name="description" content="Cập nhật những xu hướng mới nhất về thiết kế nội thất và chia sẻ kinh nghiệm trong việc trang trí không gian sống tại Blog của chúng tôi. Khám phá ngay!">
-    <meta name="keywords" content="nội thất, thiết kế nội thất, trang trí nội thất, blog nội thất">
+    <meta name="description" content="Cập nhật những xu hướng mới nhất về thiết kế nội thất và chia sẻ kinh nghiệm trong việc trang trí không gian sống tại Blog của chúng tôi. Tổng hợp thông tin mới nhất về Nội thất Fudo như Concept phòng thịnh hành, khuyến mãi, triểm lãm, bộ sưu tập nội thất. Khám phá ngay!">
+    <meta name="keywords" content="nội thất, thiết kế nội thất, trang trí nội thất, blog nội thất, nội thất thông minh, nội thất fudo">
     <meta name="author" content="Nội thất Fudo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
