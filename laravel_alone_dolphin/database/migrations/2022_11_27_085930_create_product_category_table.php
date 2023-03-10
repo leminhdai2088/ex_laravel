@@ -18,6 +18,7 @@ return new class extends Migration
 
             $table->string('name');
             $table->integer('room_id');
+            $table->text('meta_description')->nullable();
             $table->timestamps();
         });
     }

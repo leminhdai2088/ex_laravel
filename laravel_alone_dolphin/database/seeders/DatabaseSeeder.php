@@ -327,182 +327,219 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 1,
                 'name' => 'SOFA',
-                'room_id' => 1
+                'room_id' => 1,
+                'meta_description' =>'Fudo cung cấp đa dạng sản phẩm sofa cao cấp, chất lượng tốt, thiết kế đẹp mắt, phù hợp với nhiều phong cách nội thất. Mua sắm online và nhận nhiều ưu đãi hấp dẫn.'
             ],
 		    [
                 'id' => 2,
                 'name' => 'GHẾ',
-                'room_id' => 1
+                'room_id' => 1,
+                'meta_description' =>'Fudo cung cấp đa dạng sản phẩm ghế chất lượng cao, giá cả hợp lý, phù hợp với nhiều phong cách nội thất. Các sản phẩm ghế của chúng tôi được thiết kế đẹp mắt, tiện dụng và dễ dàng lắp đặt. Mua sắm online và nhận nhiều ưu đãi hấp dẫn.'
             ],
 		    [
                 'id' => 3,
                 'name' => 'KỆ, TỦ TV',
-                'room_id' => 1
+                'room_id' => 1,
+                'meta_description' =>'Mua tủ kệ tivi gỗ phòng khách, phòng ngủ, thiết kế đơn giản hiện đại, nhiều mẫu đẹp, tinh tế, giao hàng tận nhà và lắp đặt miễn phí chỉ có Nội Thất Fudo'
             ],
             [
                 'id' => 4,
                 'name' => 'ĐỒNG HỒ',
-                'room_id' => 1
+                'room_id' => 1,
+                'meta_description' =>'Nội Thất Fudo cung cấp đồng hồ cao cấp từ các thương hiệu nổi tiếng với giá cả hợp lý. Sản phẩm đảm bảo chất lượng và độ chính xác cao. Hãy mua ngay để tăng thêm phần sang trọng cho không gian sống của bạn.'
             ],
 		    [
                 'id' => 5,
                 'name' => 'TRANH ẢNH',
-                'room_id' => 1
+                'room_id' => 1,
+                'meta_description' =>'Nội Fudo cung cấp tranh ảnh treo tường đa dạng về chủ đề từ phong cảnh, trừu tượng đến tranh nghệ thuật. Sản phẩm được in trên chất liệu cao cấp, đảm bảo chất lượng và độ sắc nét tốt nhất. Hãy tạo điểm nhấn cho không gian sống của bạn với tranh ảnh tại Nội Thất Fudo.'
             ],
 		    [
                 'id' => 6,
                 'name' => 'GỐI TRANG TRÍ',
-                'room_id' => 1
+                'room_id' => 1,
+                'meta_description' =>'Nội thất Fudo có các mẫu gối trang trí đa dạng kiểu dáng và kích thước đem lại cho không gian nội thất phòng khách, phòng ngủ với giá hợp lý và chất lượng tốt'
             ],
 		    [
                 'id' => 7,
                 'name' => 'ĐÈN SÀN',
-                'room_id' => 1
+                'room_id' => 1,
+                'meta_description' =>'Nội thất Fudo cung cấp đèn sàn đa dạng kiểu dáng và màu sắc phù hợp với mọi phong cách nội thất. Sản phẩm được làm từ chất liệu an toàn và đảm bảo độ bền cao. Hãy tạo điểm nhấn cho không gian sống của bạn với đèn sàn đẹp tại Nội Thất Fudo.'
             ],
 		    [
                 'id' => 8,
                 'name' => 'KỆ, TỦ GIÀY',
-                'room_id' => 1
+                'room_id' => 1,
+                'meta_description' =>'Mua kệ tủ, giày dùng trong chung cư, văn phòng kiểu dáng thiết kế hiện đại. Nội Thất Fudo cung cấp kệ tủ, giày gỗ đẹp, miễn phí lắp đặt'
             ],
             [
                 'id' => 9,
                 'name' => 'GIƯỜNG',
-                'room_id' => 2
+                'room_id' => 2,
+                'meta_description' =>'Tại Nội Thất Fudo, chúng tôi cung cấp các mẫu giường ngủ đẹp, sang trọng với nhiều kiểu dáng và màu sắc để lựa chọn. Mua giường ngủ gỗ, phong cách tối giản, hiện đại và tân cổ điển. Tất cả sản phẩm đều được làm từ chất liệu cao cấp, đảm bảo sức khỏe cho người dùng. Mua ngay để có giấc ngủ ngon và sảng khoái.'
             ],
 		    [
                 'id' => 10,
                 'name' => 'KỆ/TỦ QUẦN ÁO',
-                'room_id' => 2
+                'room_id' => 2,
+                'meta_description' =>'Nội thất Fudo cung cấp tủ quần áo và kệ đa năng chất lượng, đa dạng mẫu mã, giá tốt nhất thị trường. Tư vấn thiết kế miễn phí, giao hàng và lắp đặt tận nơi. Đặt hàng ngay hôm nay!'
             ],
 		    [
                 'id' => 11,
                 'name' => 'ĐÈN SÀN',
-                'room_id' => 2
+                'room_id' => 2,
+                'meta_description' =>'Nội thất Fudo có mẫu đèn sàn trang trí nội thất phòng ngủ với phong cách hiện đại decor phòng khách, phòng ngủ giúp không gian sinh động và ấm áp với giá hợp lý và chất lượng tốt'
             ],
 		    [
                 'id' => 12,
                 'name' => 'BÀN TRANG ĐIỂM',
-                'room_id' => 2
+                'room_id' => 2,
+                'meta_description' =>'Nhiều mẫu bàn trang điểm đẹp tại Nội Thất Fudo, thiết kế phong cách hiện đại, nhỏ gọn, treo tường, đèn led, giấu gương. Mua bàn trang điểm gỗ mới tại nội thất Fudo'
             ],
 		    [
                 'id' => 13,
                 'name' => 'ĐÈN BÀN',
-                'room_id' => 2
+                'room_id' => 2,
+                'meta_description' =>'Nội thất Fudo có mẫu đèn trang trí nội thất phòng khách, đèn bàn với phong cách hiện đại decor phòng khách, phòng ngủ giúp không gian sinh động và ấm áp với giá hợp lý và chất lượng tốt'
             ],
 		    [
                 'id' => 14,
                 'name' => 'ĐÈN TRANG TRÍ',
-                'room_id' => 2
+                'room_id' => 2,
+                'meta_description' =>'Nội thất Fudo có mẫu đèn trang trí nội thất phòng khách với phong cách hiện đại decor phòng khách, phòng ngủ giúp không gian sinh động và ấm áp với giá hợp lý và chất lượng tốt'
             ],
 		    [
                 'id' => 15,
                 'name' => 'TỦ LƯU TRỮ',
-                'room_id' => 2
+                'room_id' => 2,
+                'meta_description' =>'Mua ngay tủ lưu trữ nội thất cao cấp giá rẻ tại Nội thất Fudo, trang trí nội thất phòng khách, phòng ngủ, phòng làm việc. Chất lượng đảm bảo, đa dạng mẫu mã và kích thước. Giao hàng nhanh chóng toàn quốc'
             ],
 		    [
                 'id' => 16,
                 'name' => 'KỆ/TỦ GIÀY',
-                'room_id' => 2
+                'room_id' => 2,
+                'meta_description' =>'Mua kệ, tủ giày đa năng, tiết kiệm diện tích tại Nội thất Fudo, đa dạng mẫu mã phù hợp trang trí nội thất phòng ngủ. Nội Thất Fudo cung cấp kệ, tủ giày gỗ đẹp, miễn phí lắp đặt'
             ],
 		    [
                 'id' => 17,
                 'name' => 'GIÁ/KỆ TREO TRANG TRÍ',
-                'room_id' => 2
+                'room_id' => 2,
+                'meta_description' =>'Mua giá, kệ trang trí giá rẻ tại Nội Thất Fudo, đa dạng mẫu mã, chất liệu đẹp, giao hàng toàn quốc, phù hợp trang trí nội thất phòng khách, phòng ngủ hiện đại. Tận hưởng không gian sống đẹp hơn với kệ trang trí Nội Thất Fudo'
             ],
 		    [
                 'id' => 18,
                 'name' => 'GƯƠNG',
-                'room_id' => 2
+                'room_id' => 2,
+                'meta_description' =>'Nội thất Fudo có các mẫu gương treo tường, gương trang điểm, gương đứng, gương đèn led, với nhiều kiểu dáng và kích thước cho nội thất phòng ngủ, phòng khách hiện đại'
             ],
 		    [
                 'id' => 19,
                 'name' => 'BỘ BÀN ĂN',
-                'room_id' => 3
+                'room_id' => 3,
+                'meta_description' =>'Mua sắm bộ bàn ăn đẹp và chất lượng với giá cả phải chăng tại nội thất Fudo. Bộ bàn ăn 4 ghế, 6 ghế, 8 ghế phù hợp cho các không gian ăn gia đình, phòng ăn nhà hàng, khách sạn với chất liệu gỗ tự nhiên đẹp, thiết kế hiện đại, lắp đặt miễn phí và giao hàng tận nơi tại Nội Thất Fudo'
             ],
 		    [
                 'id' => 20,
                 'name' => 'BÀN ĂN',
-                'room_id' => 3
+                'room_id' => 3,
+                'meta_description' =>'Fudo cung cấp mẫu bàn ăn có thiết kế đẹp phong cách hiện đại, dễ dùng cho thiết kế nội thất phòng bếp hiện đại, thông minh. Mua nội thất online nhận ưu đãi, giao hàng ngay và miễn phí lắp đặt'
             ],
 		    [
                 'id' => 21,
                 'name' => 'GHẾ ĂN',
-                'room_id' => 3
+                'room_id' => 3,
+                'meta_description' =>'Mua ghế ăn, ghế gỗ với nhiều mẫu đẹp và sang trọng, phù hợp trang trí nội thất phòng bếp hiện đại, thông minh tại Nội Thất Fudo. Giá rẻ, giao hàng nhanh chóng và nhiều chương trình ưu đãi hấp dẫn'
             ],
 		    [
                 'id' => 22,
                 'name' => 'THẢM BẾP',
-                'room_id' => 3
+                'room_id' => 3,
+                'meta_description' =>'Nội thất Fudo cung cấp nhiều mẫu thảm bếp chất lượng cao cho nội thất phòng bếp cao cấp, hiện đại. Tư vấn thiết kế miễn phí, giao hàng và lắp đặt tận nơi. Đặt hàng ngay hôm nay!'
             ],
 		    [
                 'id' => 23,
                 'name' => 'KỆ BẾP',
-                'room_id' => 3
+                'room_id' => 3,
+                'meta_description' =>'Nội thất Fudo cung cấp nhiều mẫu kệ bếp chất lượng cao cho nội thất phòng bếp cao cấp, hiện đại. Giúp tiết kiệm không gian và tạo điểm nhấn cho căn bếp của bạn. Tư vấn thiết kế miễn phí, giao hàng và lắp đặt tận nơi. Đặt hàng ngay hôm nay!'
             ],
 		    [
                 'id' => 24,
                 'name' => 'KHĂN BẾP',
-                'room_id' => 3
+                'room_id' => 3,
+                'meta_description' =>'Nội thất Fudo cung cấp nhiều mẫu khăn bếp chất lượng cao cho nội thất phòng bếp cao cấp, hiện đại. Giúp tiết kiệm không gian và tạo điểm nhấn cho căn bếp của bạn. Tư vấn thiết kế miễn phí, giao hàng và lắp đặt tận nơi. Đặt hàng ngay hôm nay!'
             ],
 		    [
                 'id' => 25,
                 'name' => 'BÀN',
-                'room_id' => 4
+                'room_id' => 4,
+                'meta_description' =>'Fudo cung cấp đa dạng sản phẩm bàn chất lượng cao, giá cả hợp lý, phù hợp với nhiều phong cách nội thất. Các sản phẩm ghế của chúng tôi được thiết kế đẹp mắt, tiện dụng và dễ dàng lắp đặt. Mua sắm online và nhận nhiều ưu đãi hấp dẫn.
+                '
             ],
 		    [
                 'id' => 26,
                 'name' => 'GHẾ',
-                'room_id' => 4
+                'room_id' => 4,
+                'meta_description' =>'Fudo cung cấp đa dạng sản phẩm ghế chất lượng cao, giá cả hợp lý, phù hợp với nhiều phong cách nội thất. Các sản phẩm ghế của chúng tôi được thiết kế đẹp mắt, tiện dụng và dễ dàng lắp đặt. Mua sắm online và nhận nhiều ưu đãi hấp dẫn.'
             ],
 		    [
                 'id' => 27,
                 'name' => 'ĐÈN BÀN',
-                'room_id' => 4
+                'room_id' => 4,
+                'meta_description' =>'Nội thất Fudo có mẫu đèn trang trí phòng làm việc, phòng khách, đèn bàn, đèn ngủ, với phong cách nội thất hiện đại giúp không gian sinh động và ấm áp với giá hợp lý và chất lượng tốt'
             ],
 		    [
                 'id' => 28,
                 'name' => 'ĐỒNG HỒ',
-                'room_id' => 4
+                'room_id' => 4,
+                'meta_description' =>'Nội Thất Fudo cung cấp đồng hồ cao cấp từ các thương hiệu nổi tiếng với giá cả hợp lý. Sản phẩm đảm bảo chất lượng và độ chính xác cao. Hãy mua ngay để tăng thêm phần sang trọng cho không gian sống của bạn.'
             ],
 		    [
                 'id' => 29,
                 'name' => 'VĂN PHÒNG PHẨM',
-                'room_id' => 4
+                'room_id' => 4,
+                'meta_description' =>'Mua văn phòng phẩm chất lượng với giá cả phải chăng. Nội thất Fudo cung cấp các sản phẩm văn phòng phẩm đa dạng và chất lượng cao như ghế văn phòng, tủ hồ sơ, bàn làm việc, và nhiều sản phẩm khác của nội thất phòng làm việc. Hãy đến với chúng tôi để có trải nghiệm mua sắm tốt nhất.'
             ],
 		    [
                 'id' => 30,
                 'name' => 'BẢNG TRANG TRÍ',
-                'room_id' => 4
+                'room_id' => 4,
+                'meta_description' =>'Mua bảng trang trí nội thất đẹp, chất lượng cao với giá cả hợp lý để trang trí nội thất phòng khách, phòng làm việc hiện đại'
             ],
 		    [
                 'id' => 31,
                 'name' => 'KỆ/TỦ LƯU TRỮ',
-                'room_id' => 4
+                'room_id' => 4,
+                'meta_description' =>'Mua ngay kệ, tủ lưu trữ nội thất cao cấp giá rẻ tại Nội thất Fudo, trang trí nội thất phòng khách, phòng ngủ, phòng làm việc. Chất lượng đảm bảo, đa dạng mẫu mã và kích thước. Giao hàng nhanh chóng toàn quốc'
             ],
 		    [
                 'id' => 32,
                 'name' => 'RÈM',
-                'room_id' => 5
+                'room_id' => 5,
+                'meta_description' =>'Mua rèm, rèm phòng tắm chất lượng cao tại Nội thất Fudo. Bảo vệ sự riêng tư của bạn với các loại rèm phòng tắm chất lượng cao, đẹp, chuẩn nội thất phòng tắm cao cấp, hiện đại'
             ],
 		    [
                 'id' => 33,
                 'name' => 'KHĂN TẮM',
-                'room_id' => 5
+                'room_id' => 5,
+                'meta_description' =>'Mua ngay khăn tắm chất lượng cao tại nội thất Fudo với giá cả phải chăng. Chúng tôi cung cấp các loại khăn tắm với nhiều màu sắc và kiểu dáng khác nhau, đảm bảo sẽ làm hài lòng khách hàng khó tính nhất'
             ],
 		    [
                 'id' => 34,
                 'name' => 'GƯƠNG',
-                'room_id' => 5
+                'room_id' => 5,
+                'meta_description' =>'Nội thất Fudo có các mẫu gương treo tường, gương trang điểm, gương đứng, gương đèn led, với nhiều kiểu dáng và kích thước cho nội thất phòng ngủ, phòng khách hiện đại'
             ],
 		    [
                 'id' => 35,
                 'name' => 'THẢM CHÂN',
-                'room_id' => 5
+                'room_id' => 5,
+                'meta_description' =>'Nội thất Fudo có các mẫu thảm chân, thảm lông cho nội thất phòng khách, phòng ngủ, phòng tắm đa dạng với giá hợp lý và chất lượng tốt'
             ],
 		    [
                 'id' => 36,
                 'name' => 'GIÁ, KỆ, TỦ TREO',
-                'room_id' => 5
+                'room_id' => 5,
+                'meta_description' =>'Mua kệ, tủ treo nội thất giá rẻ tại Nội thất Fudo. Chúng tôi cung cấp đa dạng sản phẩm với chất lượng tốt nhất để thiết kế nội thất phòng tắm, phòng ngủ hiện đại, thông minh.'
             ]
         ]);
 

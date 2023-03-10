@@ -53,10 +53,10 @@
                 @foreach($blogs as $blog)
                 <div class="item-article row">
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <img src="/front/images/image_blog/{{ $blog->image }}" alt="">
+                    <a href="/blog/{{$blog->id}}"><img src="/front/images/image_blog/{{ $blog->image }}" alt="{{$blog->title}}"></a>
                     </div>
                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                        <h3>{{$blog->title}}</h3> 
+                    <a href="/blog/{{$blog->id}}"><h3>{{$blog->title}}</h3></a>
                     </div>
                 </div>
                 @endforeach

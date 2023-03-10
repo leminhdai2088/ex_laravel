@@ -35,7 +35,7 @@
                     <ol>
                         <li itemprop="itemListElement"><a href="/">Trang chủ</a></li>
                         <li itemprop="itemListElement"><a href="/blog">Blog</a></li>
-                        <li itemprop="itemListElement">{{$blog_detail->title}}</li>
+                        <li itemprop="itemListElement">{{$blog_detail[0]->title}}</li>
                     </ol>
                 </div>
             </div>
@@ -47,21 +47,27 @@
                 @foreach($blog_news as $blog_new)
                 <div class="item-article row">
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <img src="/front/images/image_blog/{{ $blog_new->image }}" alt="">
+                        <a href="/blog_new/{{$blog_new->id}}"><img src="/front/images/image_blog/{{ $blog_new->image }}" alt=""></a>
                     </div>
                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                        <h3>{{$blog_new->title}}</h3> 
+                        <a href="/blog_new/{{$blog_new->id}}">
+                            <h3>{{$blog_new->title}}</h3>
+                        </a> 
                     </div>
                 </div>
                 @endforeach
             </div>
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 content-container khung">
                 <img src="/front/images/image_blog/{{ $blog_detail[0]->image }}" alt="">
-                <h1>{{ $blog_detail[0]->title }}</h1>
-                <p>{{ $blog_detail[0]->created_at }} by {{ $blog_detail[0]->author }}</p>
-                <p>{{ $blog_detail[0]->keywords }}</p>
-                <p>{{ $blog_detail[0]->short_description }}</p>
-                <p>{{ $blog_detail[0]->content }}</p>
+                <div class="content-header">
+                    <h1>{{ $blog_detail[0]->title }}</h1>
+                    <p>Được đăng ngày {{ $blog_detail[0]->created_at }} by {{ $blog_detail[0]->author }}</p>
+                    <p>Từ khóa: {{ $blog_detail[0]->keywords }}</p>
+                </div>
+                <div class="content-main">
+                    <p>{{ $blog_detail[0]->short_description }}</p>
+                    <p>{{ $blog_detail[0]->content }}</p>
+                </div>
 
             </div>
         </div>

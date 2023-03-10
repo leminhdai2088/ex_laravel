@@ -25,7 +25,7 @@ class ShopController extends Controller
 
 
 
-
+        $product_cate = product_category::where('id', $loai)->get();
 
         $room_id = rooms::where('link',$room)->value('id');
         $products = products::where('featured', true)->
@@ -59,6 +59,6 @@ class ShopController extends Controller
             $categories_header = product_category::all();
             $rooms_header = rooms::all();
             $products=$products->paginate(8);
-            return view('front.list_product',compact('products','room','loai','name_cate_room','categories_header','rooms_header'));
+            return view('front.list_product',compact('products','room','loai','name_cate_room','categories_header','rooms_header','product_cate'));
     }
 }

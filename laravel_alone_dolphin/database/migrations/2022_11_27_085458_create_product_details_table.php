@@ -18,7 +18,7 @@ return new class extends Migration
 
             $table->integer('product_id')->unsigned();
             $table->string('size')->nullable();
-
+            
             $table->timestamps();
         });
     }
