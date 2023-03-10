@@ -35,7 +35,7 @@
                     <ol>
                         <li itemprop="itemListElement"><a href="/">Trang chủ</a></li>
                         <li itemprop="itemListElement"><a href="/blog">Blog</a></li>
-                        <li itemprop="itemListElement">Tên bài Blog</li>
+                        <li itemprop="itemListElement">{{$blog_detail->title}}</li>
                     </ol>
                 </div>
             </div>
@@ -44,38 +44,24 @@
         <div class="row">
             <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 khung news-lastest">
                 <h2>BÀI VIẾT MỚI NHẤT</h2>
+                @foreach($blog_news as $blog_new)
                 <div class="item-article row">
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <img src="https://i.pinimg.com/736x/40/2e/fb/402efb447e81660e3973a6af5d3a9e87.jpg" alt="">
+                        <img src="/front/images/image_blog/{{ $blog_new->image }}" alt="">
                     </div>
                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3> 
+                        <h3>{{$blog_new->title}}</h3> 
                     </div>
                 </div>
-                <div class="item-article row">
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <img src="https://i.pinimg.com/736x/40/2e/fb/402efb447e81660e3973a6af5d3a9e87.jpg" alt="">
-                    </div>
-                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3> 
-                    </div>
-                </div>
-                <div class="item-article row">
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <img src="https://i.pinimg.com/736x/40/2e/fb/402efb447e81660e3973a6af5d3a9e87.jpg" alt="">
-                    </div>
-                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3> 
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 content-container khung">
-                <img src="https://file.hstatic.net/200000065946/article/noi-that-moho-tham-du-trien-lam-vifa-expo-2023_95dd80a26a324776b967737e4deac9ee_1024x1024.jpg" alt="">
-                <h1>Nội Thất MOHO tham gia triển lãm đồ gỗ VIFA EXPO 2023</h1>
-                <p>Ngày đăng: 12/12/2022</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam fugiat facilis, reiciendis inventore fugit praesentium eius magnam porro aspernatur similique pariatur eaque sapiente aut mollitia nesciunt ad cum rerum perferendis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam fugiat facilis, reiciendis inventore fugit praesentium eius magnam porro aspernatur similique pariatur eaque sapiente aut mollitia nesciunt ad cum rerum perferendis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam fugiat facilis, reiciendis inventore fugit praesentium eius magnam porro aspernatur similique pariatur eaque sapiente aut mollitia nesciunt ad cum rerum perferendis.</p>
+                <img src="/front/images/image_blog/{{ $blog_detail[0]->image }}" alt="">
+                <h1>{{ $blog_detail[0]->title }}</h1>
+                <p>{{ $blog_detail[0]->created_at }} by {{ $blog_detail[0]->author }}</p>
+                <p>{{ $blog_detail[0]->keywords }}</p>
+                <p>{{ $blog_detail[0]->short_description }}</p>
+                <p>{{ $blog_detail[0]->content }}</p>
 
             </div>
         </div>

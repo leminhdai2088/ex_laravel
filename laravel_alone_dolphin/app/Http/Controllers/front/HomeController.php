@@ -106,10 +106,11 @@ class HomeController extends Controller
         $blogs = blog::all();
         return view('front.blog', compact('categories_header', 'rooms_header','blogs'));
     }
-    public function blog_detail(){
+    public function blog_detail($id){
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        $blogs = blog::all();
-        return view('front.blog_detail', compact('categories_header', 'rooms_header','blogs'));
+        $blog_news = blog::all();
+        $blog_detail = blog::where('id', $id)->get();
+        return view('front.blog_detail', compact('categories_header', 'rooms_header','blog_news', 'blog_detail'));
     }
 }

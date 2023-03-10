@@ -69,7 +69,7 @@ Route::get('/about_us', [front\HomeController::class, 'about']);
 
 Route::get('/blog', [front\HomeController::class, 'blog']);
 
-Route::get('/blog_detail', [front\HomeController::class, 'blog_detail']);
+Route::get('/blog/{id}', [front\HomeController::class, 'blog_detail']);
 
 // forgot password
 
