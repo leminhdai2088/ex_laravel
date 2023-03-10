@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\front;
 
 use App\Http\Controllers\Controller;
+use App\Models\blog;
 use App\Models\order_details;
 use App\Models\products;
 use Illuminate\Http\Request;
@@ -102,11 +103,13 @@ class HomeController extends Controller
     public function blog(){
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        return view('front.blog', compact('categories_header', 'rooms_header'));
+        $blogs = blog::all();
+        return view('front.blog', compact('categories_header', 'rooms_header','blogs'));
     }
     public function blog_detail(){
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
-        return view('front.blog_detail', compact('categories_header', 'rooms_header'));
+        $blogs = blog::all();
+        return view('front.blog_detail', compact('categories_header', 'rooms_header','blogs'));
     }
 }

@@ -26,13 +26,31 @@ class DatabaseSeeder extends Seeder
 
         DB::table('blog')->insert([
             [
-                'title' => 'title 1',
-                'short_description' => 'short_description 1',
-                'image' => 'imageblog1.png',
-                'keywords' => 'keywords 1',
-                'content' => 'contentcontentcontentcontentcontentcontentcontentcontentcontentcontent1',
-                'author' => 'author 1',
-                'status' => 'status 1', 
+                'title' => 'Bí quyết chọn sofa phù hợp với không gian',
+                'short_description' => 'Các gợi ý về cách lựa chọn sofa để phù hợp với không gian sống và phong cách thiết kế nội thất của bạn.',
+                'image' => 'bi-quyet-chon-sofa-phu-hop-voi-khong-gian.png',
+                'keywords' => 'sofa, thiết kế nội thất, không gian sống',
+                'content' => 'Đây là nội dung của bài viết về cách chọn sofa phù hợp.',
+                'author' => 'Nguyễn Tuấn Kha',
+                'status' => '1', 
+            ],
+            [
+                'title' => '5 cách sắp xếp phòng khách thông minh',
+                'short_description' => 'Các gợi ý về cách sắp xếp phòng khách để tối ưu hóa không gian và tạo cảm giác thoải mái và dễ chịu cho người dùng.',
+                'image' => 'tai-sao-phai-tim-cach-sap-xep-phong-khach-nho.jpg',
+                'keywords' => 'phòng khách, không gian sống, thiết kế nội thất',
+                'content' => 'Đây là nội dung của bài viết về cách sắp xếp phòng khách thông minh.',
+                'author' => 'Nguyễn Tuấn Kha',
+                'status' => '1', 
+            ],
+            [
+                'title' => 'Top 7 xu hướng thiết kế nội thất năm 2022',
+                'short_description' => 'Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2022 và cách áp dụng chúng vào không gian sống của bạn',
+                'image' => 'Top 7 xu hướng thiết kế nội thất năm 2022.jfif',
+                'keywords' => 'sofa, thiết kế nội thất, không gian sống',
+                'content' => 'Đây là nội dung của bài viết về xu hướng thiết kế nội thất năm 2023.',
+                'author' => 'Nguyễn Tuấn Kha',
+                'status' => '1', 
             ],
         ]);
         DB::table('users')->insert([
