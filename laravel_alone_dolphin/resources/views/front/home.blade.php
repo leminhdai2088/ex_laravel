@@ -12,7 +12,7 @@
     media="screen" />
   <title>Nội thất Fudo</title>
   <meta name="description" content="Nội thất Fudo cung cấp đa dạng các sản phẩm nội thất cao cấp từ ghế sofa, giường ngủ đến bàn ăn, tủ quần áo với giá cả cạnh tranh. Hãy truy cập ngay để chọn lựa sản phẩm phù hợp cho không gian sống của bạn. Miễn phí vận chuyển và lắp ráp nhanh chóng.">
-  <meta name="keywords" content="nội thất, nội thất Fudo, nội thất giá rẻ, nội thất hiện đại, sofa, bàn ăn, giường ngủ, tủ quần áo, đèn, trang trí, mua sắm" />
+  <meta name="keywords" content="nội thất, nội thất Fudo, nội thất giá rẻ, nội thất hiện đại, sofa, bàn ăn, giường ngủ, tủ quần áo, đèn, trang trí, mua sắm nội thất, nội thất thông minh" />
   <link rel="stylesheet" href="/front/css/page_home/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
   <style>
     .w-full {
@@ -120,17 +120,16 @@
   <div class="row">
 
     <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 content-body-2">
-      <h3 class="first">M-Concept - Giải pháp nội thất toàn diện</h3>
-      <p>Concept là gói sản phẩm nội thất và cải tạo không gian toàn diện theo thiết kế có sẵn từ thương hiệu Make My
-        Home</p>
+      <h3 class="first">F-Concept - Giải pháp nội thất toàn diện</h3>
+      <p>Concept là gói sản phẩm nội thất và cải tạo không gian toàn diện theo thiết kế có sẵn từ thương hiệu Fudo</p>
 
-      <p>Concept by Make My Home sẽ mang đến những giải pháp nội thất tối giản với độ ứng dụng cao, phù hợp với nhiều
+      <p>Concept by Fudo sẽ mang đến những giải pháp nội thất tối giản với độ ứng dụng cao, phù hợp với nhiều
         phong cách khác nhau,
         tạo ra không gian sống tiện nghi, thoải mái và giúp bạn thực sự thư giãn mỗi khi trở về nhà.</p>
     </div>
 
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-push-1 col-md-push-1 col-lg-push-1 content-body-3">
-      <h3>TRẢI NGHIỆM GIẢI PHÁP KHÔNG GIAN SỐNG MỚI CÙNG M-CONCEPT</h3>
+      <h3>TRẢI NGHIỆM GIẢI PHÁP KHÔNG GIAN SỐNG MỚI CÙNG F-CONCEPT</h3>
       <h4>TIẾT KIỆM THỜI GIAN</h4>
       <h4>TỐI ƯU HOÁ NGÂN SÁCH</h4>
       <h4>ĐỊNH HÌNH THẨM MỸ CAO</h4>
@@ -207,12 +206,12 @@
       <h3>About Us</h3>
       <br>
       <div class="about-content" style="margin-bottom: 3rem;">
-        <p style="line-height: 34px;">Tại ALONE DOLPHINS, tất cả sản phẩm trang trí nội thất & giải pháp không gian sống không
+        <p style="line-height: 34px;">Tại Fudo, tất cả sản phẩm trang trí nội thất & giải pháp không gian sống không
           chỉ đơn thuần tuân thủ theo ngôn
           ngữ giản lược của Minimalism, mà còn cân bằng được tính năng và độ thẩm mỹ cần có.</p>
         <p style="line-height: 34px;">
           “Ít tức là nhiều", nhưng mỗi chi tiết xuất hiện trên thiết kế đều là một sự chăm chút kỹ lưỡng
-          và hoàn hảo. Và đó cũng chính là tôn chỉ hoạt động của ALONE DOLPHINS. Với tinh thần cầu tiến luôn cố gắng hết
+          và hoàn hảo. Và đó cũng chính là tôn chỉ hoạt động của Fudo. Với tinh thần cầu tiến luôn cố gắng hết
           mình để cung cấp những sản phẩm chất lượng cộng với dịch vụ thân thiện cho khách hàng, chúng tôi hy vọng có
           thể chia sẻ một niềm tin cố hữu với tất cả mọi người:
           “Cuộc sống sẽ trở nên tốt đẹp hơn khi không gian sống được quan tâm và đầu tư đúng mực.

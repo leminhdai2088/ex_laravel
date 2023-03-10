@@ -25,6 +25,8 @@
 <title>Nội thất phòng tắm - Nội thất Fudo</title>
 <meta name="description" content="Nội Thất Fudo cung cấp các sản phẩm nội thất phòng tắm như rèm, khăn tắm, gương, thảm chân đẹp và chất lượng cao">
 @endif
+
+<meta name="keywords" content="fudo, nội thất, nội thất fudo, nội thất giá rẻ, nội thất phòng ngủ, nội thất phòng khách, nội thất phòng bếp, nội thất phòng làm việc, nội thất phòng tắm"> 
 <style>
     .product-img {
         width: 100%;
