@@ -115,12 +115,16 @@ class AdminController extends Controller
         }
         return view('dashboard.list_product', compact('categories_header', 'rooms_header','products'));
     }
+
+
+
+    // blog
     public function blogs()
     {
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
         $blogs = blog::all();
-        return view('dashboard.list_blog', compact('categories_header', 'rooms_header','blogs'));
+        return view('dashboard.blog.list_blog', compact('categories_header', 'rooms_header','blogs'));
     }
 
     public function add_blog()
@@ -129,7 +133,7 @@ class AdminController extends Controller
         $rooms_header = rooms::all();
         $categories = product_category::all();
 
-        return view('dashboard.blog_modifier', compact('categories_header', 'rooms_header', 'categories'));
+        return view('dashboard.blog.blog_modifier', compact('categories_header', 'rooms_header', 'categories'));
     }
 
     public function store_blog(Request $request)
@@ -161,6 +165,33 @@ class AdminController extends Controller
 
 
     }
+
+    public function edit_blog($id){
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        $categories = product_category::all();
+        $blog = blog::find($id);
+        return view('dashboard.blog.edit_blog', compact('blog','categories_header', 'rooms_header', 'categories'));
+    }
+
+    public function edit_blog_post($id, Request $request){
+        $blog = blog::find($id);
+        $blog->title = $request->title;
+        $blog->short_description = $request->short_description;
+        $blog->keywords = $request->keywords;
+        $blog->content = $request->content;
+        $blog->author = $request->author;
+        $blog->status = $request->status;
+        $blog->save();
+        return redirect()->back()->with('thanhcong', 'Sửa sản phẩm thành công!!!');
+    }
+
+    public function delete_blog($id){
+        blog::destroy($id);
+        return redirect()->back();
+    }
+
+
 
     public function order_detail($id)
     {

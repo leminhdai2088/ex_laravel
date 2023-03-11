@@ -154,6 +154,8 @@
                         <li class="subnav-item" onclick="window.location = '/admin/products'">Quản lý sản phẩm</li>
                         <li class="subnav-item" onclick="window.location = '/admin/orders'">Quản lý đơn hàng</li>
                         <li class="subnav-item" onclick="window.location = '/admin/users'">Quản lý user</li>
+                        <li class="subnav-item" onclick="window.location = '/admin/blogs'">Quản lý blog</li>
+
                     </ul>
                 </div>
 

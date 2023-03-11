@@ -38,9 +38,16 @@ Route::prefix('admin')->middleware('admin')->middleware('auth')->group(function 
     Route::patch('/orders/change_status', [AdminController::class, 'change_status']);
     Route::get('/orders/filter', [AdminController::class, 'filter_order']);
     Route::get('/users', [AdminController::class, 'users']);
+
+
+    // BLOG
     Route::get('/blogs', [AdminController::class, 'blogs']);
     Route::get('/add_blog', [AdminController::class, 'add_blog']);
     Route::post('/add_blog', [AdminController::class, 'store_blog']);
+    Route::get('/edit_blog/{id}', [AdminController::class, 'edit_blog']);
+    Route::patch('/edit_blog/{id}', [AdminController::class, 'edit_blog_post']);
+    Route::delete('/delete_blog/{id}', [AdminController::class, 'delete_blog']);
+
 });
 
 // trang thanh toán

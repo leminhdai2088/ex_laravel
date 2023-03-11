@@ -148,10 +148,8 @@
         <tr>
             <th>ID</th>
             <th>Tiêu đề</th>
-            <th>Mô tả ngắn</th>
             <th>Hình ảnh</th>
             <th>Từ khóa</th>
-            <th>Nội dung</th>
             <th>Tác giả</th>
             <th>Trạng thái</th>
             <th>Hành động</th>
@@ -165,9 +163,6 @@
                 {{ $blog->title }}
             </td>
             <td>
-                {{ $blog->short_description }}
-            </td>
-            <td>
                 <img src="/front/images/image_blog/{{ $blog->image }}" style="
                             width:170px;
                             height:auto;
@@ -176,9 +171,7 @@
             <td>
                 {{ $blog->keywords }}
             </td>
-            <td>
-                {{ $blog->content }}
-            </td>
+
             <td>
                 {{ $blog->author }}
             </td>
@@ -188,7 +181,7 @@
 
             <td>
                 <div class="flex justify-center gap-5">
-                    <a href="/admin/edit/{{ $blog->id }}" data-tooltip="Chỉnh sửa"><i class="fi fi-rr-edit"></i></a>
+                    <a href="/admin/edit_blog/{{ $blog->id }}" data-tooltip="Chỉnh sửa"><i class="fi fi-rr-edit"></i></a>
 
                     <form action="/admin/delete_blog/{{ $blog->id }}" method="POST">
                         @method('DELETE')
