@@ -44,7 +44,7 @@
 
 
 
-<form action="/admin/add" method="POST" enctype="multipart/form-data">
+<form action="/admin/add_blog" method="POST" enctype="multipart/form-data">
     @csrf
     <input type="hidden" name="_token" value="{{csrf_token()}}">
 
@@ -59,7 +59,7 @@
 
                 <div class="row mb-3">
                     <div class="col-12">
-                        <input name="name" type="text" class="product-name form-control" placeholder="Tiêu đề"
+                        <input name="title" type="text" class="product-name form-control" placeholder="Tiêu đề"
                             required>
                     </div>
                     
@@ -81,33 +81,6 @@
                     </div>
                     
                 </div>
-                
-
-                <h4 class="font-weight-bold mb-3 ">Đơn vị</h4>
-
-                <div class="unit mb-3 ">
-                    <div class="row mb-3 don-vi">
-                        <div class="col-2" style="width: 150px;">
-                            <input style="width: 150px;" type="number" name="price" min="0" class="form-control"
-                                placeholder="Giá">
-                        </div>
-
-                        <div class="col-3">
-                            <input name="qty" type="number" min="1" class="form-control" placeholder="Số lượng">
-                        </div>
-
-                        <div class="col-3">
-                            <input name="weight" type="text" class="form-control" placeholder="Cân nặng">
-                        </div>
-
-                        <div class="col-1">
-                            <button class="removeProduct-btn">
-                                <i class="fa fa-dumpster"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
 
             </div>
 
@@ -115,12 +88,7 @@
             <div class="col-5">
                 <div class="array-item" id="load-img">
                     <div class="add-image-btn">
-                        {{-- <input name="path" type="file" class="input-file" id="choose" onchange="changed(this)"
-                            multiple
-                            accept="image/jpeg,image/jpg,image/png,image/gif,application/zip,application/x-zip-compressed,multipart/x-zip,.cbz">
-                        --}}
-                        <input name="image[]" type="file" class="input-file" id="choose" onchange="changed(this)"
-                            multiple
+                        <input name="image" type="file" class="input-file" id="choose" onchange="changed(this)"
                             accept="image/jpeg,image/jpg,image/png,image/gif,application/zip,application/x-zip-compressed,multipart/x-zip,.cbz">
                         <label for="choose">
                             <i class="fa fa-plus" style="font-size: 50px; display: flex; justify-content: center;

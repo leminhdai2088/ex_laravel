@@ -135,40 +135,28 @@ class AdminController extends Controller
     public function store_blog(Request $request)
     {
         // thêm sản phẩm
-        $data_pro = [
-            'name' => $request->input('name'),
-            'product_category_id' => $request->input('product_category_id'),
-            'material' => $request->input('material'),
-            'room_id' => $request->input('room_id'),
-            'qty' => $request->input('qty'),
-            'weight' => $request->input('weight'),
-            'price' => $request->input('price'),
+        $file = $request->image;
+        $upload_path = public_path('front/images/image_blog');
+        if ($file) {
+                $file->move($upload_path, $file->getClientOriginalName());
+        }
+        $data_blog = [
+            'title' => $request->input('title'),
+            'short_description' => $request->input('short_description'),
+            'image' => $file->getClientOriginalName(),
+            'keywords' => $request->input('keywords'),
+            'content' => $request->input('content'),
+            'author' => $request->input('author'),
         ];
-        $product = products::create($data_pro);
-        // thêm chi tiết sản phẩm
-        $data_detail = [
-            'product_id' => $product->id,
-            'size' => $request->input('size'),
-        ];
-        product_details::create($data_detail);
+        blog::create($data_blog);
+        
 
         // thêm product_images
 
         // $image = array();
 
-        $files = $request->image;
-        $upload_path = public_path('front/images/image_products');
-        if ($files) {
-            foreach ($files as $file) {
-                $data_image = [
-                    'product_id' => $product->id,
-                    'path' => $file->getClientOriginalName()
-                ];
-                product_images::create($data_image);
-                $file->move($upload_path, $file->getClientOriginalName());
-            }
-        }
-        return redirect()->back()->with('thanhcong', 'Thêm sản phẩm thành công!!!');
+        
+        return redirect()->back()->with('thanhcong', 'Thêm blog thành công!!!');
 
 
 

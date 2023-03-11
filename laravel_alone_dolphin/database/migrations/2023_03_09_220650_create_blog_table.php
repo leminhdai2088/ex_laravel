@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('keywords');
             $table->text('content');
             $table->string('author');
-            $table->string('status');
+            $table->string('status')->default('1');
             $table->timestamps();
         });
     }
