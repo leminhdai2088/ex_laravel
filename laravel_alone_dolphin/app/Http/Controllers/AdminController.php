@@ -124,6 +124,10 @@ class AdminController extends Controller
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
         $blogs = blog::all();
+        if(isset($_GET['name_title'])){
+            $search_text = $_GET['name_title'];
+            $blogs = blog::where('title', 'LIKE', '%'.$search_text.'%')->get();
+        }
         return view('dashboard.blog.list_blog', compact('categories_header', 'rooms_header','blogs'));
     }
 
