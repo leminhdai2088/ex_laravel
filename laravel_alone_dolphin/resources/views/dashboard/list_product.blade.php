@@ -126,7 +126,7 @@
                     </svg>
                 </button>
             </span>
-            <input name="query" type="search" class="
+            <input name="name" type="search" class="
         text-sm
         font-normal
         border

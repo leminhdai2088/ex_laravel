@@ -109,8 +109,8 @@ class AdminController extends Controller
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
         $products = products::paginate(20);
-        if(isset($_GET['query'])){
-            $search_text = $_GET['query'];
+        if(isset($_GET['name'])){
+            $search_text = $_GET['name'];
             $products = products::where('name', 'LIKE', '%'.$search_text.'%')->paginate(20);
         }
         return view('dashboard.list_product', compact('categories_header', 'rooms_header','products'));
