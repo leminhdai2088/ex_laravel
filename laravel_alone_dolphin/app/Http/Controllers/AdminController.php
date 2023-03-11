@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\blog;
 use Illuminate\Support\Facades\DB;
 
 use App\Models\order_details;
@@ -109,6 +111,64 @@ class AdminController extends Controller
         $search_text = $_GET['name'];
         $products = products::where('name', 'LIKE', '%'.$search_text.'%')->paginate(20);
         return view('dashboard.list_product', compact('categories_header', 'rooms_header','products'));
+    }
+    public function blogs()
+    {
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        $blogs = blog::all();
+        return view('dashboard.list_blog', compact('categories_header', 'rooms_header','blogs'));
+    }
+
+    public function add_blog()
+    {
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+        $categories = product_category::all();
+
+        return view('dashboard.blog_modifier', compact('categories_header', 'rooms_header', 'categories'));
+    }
+
+    public function store_blog(Request $request)
+    {
+        // thêm sản phẩm
+        $data_pro = [
+            'name' => $request->input('name'),
+            'product_category_id' => $request->input('product_category_id'),
+            'material' => $request->input('material'),
+            'room_id' => $request->input('room_id'),
+            'qty' => $request->input('qty'),
+            'weight' => $request->input('weight'),
+            'price' => $request->input('price'),
+        ];
+        $product = products::create($data_pro);
+        // thêm chi tiết sản phẩm
+        $data_detail = [
+            'product_id' => $product->id,
+            'size' => $request->input('size'),
+        ];
+        product_details::create($data_detail);
+
+        // thêm product_images
+
+        // $image = array();
+
+        $files = $request->image;
+        $upload_path = public_path('front/images/image_products');
+        if ($files) {
+            foreach ($files as $file) {
+                $data_image = [
+                    'product_id' => $product->id,
+                    'path' => $file->getClientOriginalName()
+                ];
+                product_images::create($data_image);
+                $file->move($upload_path, $file->getClientOriginalName());
+            }
+        }
+        return redirect()->back()->with('thanhcong', 'Thêm sản phẩm thành công!!!');
+
+
+
     }
 
     public function order_detail($id)

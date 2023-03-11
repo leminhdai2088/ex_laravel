@@ -38,6 +38,10 @@ Route::prefix('admin')->middleware('admin')->middleware('auth')->group(function 
     Route::patch('/orders/change_status', [AdminController::class, 'change_status']);
     Route::get('/orders/filter', [AdminController::class, 'filter_order']);
     Route::get('/users', [AdminController::class, 'users']);
+    Route::get('/blogs', [AdminController::class, 'blogs']);
+    Route::get('/add_blog', [AdminController::class, 'add_blog']);
+    Route::post('/add_blog', [AdminController::class, 'store_blog']);
+
 });
 
 // trang thanh toán
