@@ -50,13 +50,13 @@
         <div class="row">
             <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 khung news-lastest">
                 <h2>BÀI VIẾT MỚI NHẤT</h2>
-                @foreach($blogs as $blog)
+                @foreach($blog_news as $blog_new)
                 <div class="item-article row">
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="/blog/{{$blog->id}}"><img src="/front/images/image_blog/{{ $blog->image }}" alt="{{$blog->title}}"></a>
+                    <a href="/blog/{{$blog_new->id}}"><img src="/front/images/image_blog/{{ $blog_new->image }}" alt="{{$blog_new->title}}"></a>
                     </div>
                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                    <a href="/blog/{{$blog->id}}"><h3>{{$blog->title}}</h3></a>
+                    <a href="/blog/{{$blog_new->id}}"><h3>{{$blog_new->title}}</h3></a>
                     </div>
                 </div>
                 @endforeach

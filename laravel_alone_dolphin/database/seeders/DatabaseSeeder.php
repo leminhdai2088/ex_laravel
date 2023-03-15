@@ -29,8 +29,23 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Bí quyết chọn sofa phù hợp với không gian',
                 'short_description' => 'Các gợi ý về cách lựa chọn sofa để phù hợp với không gian sống và phong cách thiết kế nội thất của bạn.',
                 'image' => 'bi-quyet-chon-sofa-phu-hop-voi-khong-gian.png',
-                'keywords' => 'sofa, thiết kế nội thất, không gian sống',
-                'content' => 'Đây là nội dung của bài viết về cách chọn sofa phù hợp.',
+                'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
+                'content' => 'Khi bắt đầu chọn sofa cho không gian sống của bạn, bạn cần đưa ra quyết định chính xác về phong cách và chức năng của sofa. Sofa phải phù hợp với phong cách thiết kế nội thất của căn nhà của bạn và phải đáp ứng các yêu cầu về không gian sống của bạn.
+
+                1.	Đánh giá không gian phòng khách
+                Trước khi chọn sofa, bạn cần đánh giá không gian phòng khách của mình. Bạn cần xác định kích thước, hình dạng và chiều cao của sofa phù hợp với không gian sống của bạn. Nếu phòng khách của bạn có diện tích nhỏ, bạn nên chọn sofa có kích thước nhỏ và không quá nặng nề.
+                
+                2.	Chọn phong cách thiết kế nội thất
+                Phong cách thiết kế nội thất cũng là một yếu tố quan trọng trong việc chọn sofa. Nếu phòng khách của bạn có phong cách trang trí cổ điển, bạn nên chọn sofa có kiểu dáng cổ điển và sang trọng. Nếu phòng khách của bạn có phong cách hiện đại, bạn có thể chọn sofa có kiểu dáng đơn giản và gọn nhẹ.
+                
+                3.	Chọn chất liệu và màu sắc
+                Chất liệu và màu sắc của sofa cũng rất quan trọng. Chất liệu bao gồm da, nỉ, vải, da giả và nhựa. Màu sắc của sofa cũng cần phải phù hợp với không gian sống của bạn. Nếu phòng khách của bạn có màu sáng, bạn có thể chọn sofa có màu sáng hoặc tối để tạo ra sự cân đối.
+                
+                4.	Chọn các tính năng đặc biệt
+                Nếu bạn muốn thêm một số tính năng đặc biệt vào sofa của mình, bạn có thể chọn các tính năng như thảm chân, gối tựa đầu, giá đỡ chân và bàn để đồ. Những tính năng này sẽ giúp tăng tính tiện dụng và thoải mái khi sử dụng sofa.
+                
+                Với các bí quyết trên, bạn sẽ có thể chọn được sofa phù hợp với không gian sống của mình. Nếu bạn đang tìm kiếm các sản phẩm nội thất chất lượng và đẹp mắt, hãy truy cập vào website của Fudo để tìm kiếm các sản phẩm nội thất phòng khách phù hợp với phong cách thiết kế của bạn.
+                ',
                 'author' => 'Nguyễn Tuấn Kha',
                 'status' => '1',
             ],
@@ -38,17 +53,64 @@ class DatabaseSeeder extends Seeder
                 'title' => '5 cách sắp xếp phòng khách thông minh',
                 'short_description' => 'Các gợi ý về cách sắp xếp phòng khách để tối ưu hóa không gian và tạo cảm giác thoải mái và dễ chịu cho người dùng.',
                 'image' => 'tai-sao-phai-tim-cach-sap-xep-phong-khach-nho.jpg',
-                'keywords' => 'phòng khách, không gian sống, thiết kế nội thất',
-                'content' => 'Đây là nội dung của bài viết về cách sắp xếp phòng khách thông minh.',
+                'keywords' => 'phòng khách, không gian sống, thiết kế nội thất, nội thất fudo, noithatfudo',
+                'content' => 'Phòng khách là không gian quan trọng trong mỗi căn nhà, nơi mà gia đình và bạn bè có thể tụ họp, trò chuyện và thư giãn. Tuy nhiên, nếu không sắp xếp thông minh, phòng khách có thể trở nên rất rối mắt và khó chịu. Dưới đây là 5 cách để sắp xếp phòng khách thông minh giúp cho căn phòng của bạn trở nên đẹp hơn và tiện nghi hơn.
+
+                Bố trí bộ bàn ghế: Đây là bước đầu tiên và quan trọng nhất khi bố trí phòng khách. Bạn cần phải chọn bộ bàn ghế phù hợp với diện tích phòng khách cũng như với phong cách thiết kế của căn nhà. Nếu không có đủ không gian cho một bộ bàn ghế đầy đủ, bạn có thể sử dụng những chiếc ghế đơn lẻ để tạo nên không gian thoải mái hơn.
+                
+                Sử dụng đèn chiếu sáng: Nếu phòng khách của bạn không có đủ ánh sáng tự nhiên, hãy sử dụng đèn chiếu sáng để tạo ra không gian sáng hơn. Ngoài ánh sáng chính, bạn có thể sử dụng những chiếc đèn bàn để tạo ra những điểm nhấn trang trí thú vị.
+                
+                Sử dụng nội thất thông minh: Sử dụng nội thất thông minh như bàn ghế gấp, giá đỡ tivi có thể xoay, giúp bạn tiết kiệm không gian và đa dạng hóa sự sắp xếp phòng khách của bạn.
+                
+                Đa dạng hoá vật dụng trang trí: Sử dụng những chiếc đồ trang trí như tranh ảnh, đồ thủ công, hoa tươi để tạo ra sự tươi mới và phong phú cho phòng khách của bạn. Hãy lựa chọn những vật dụng có màu sắc tương phản để tạo nên một không gian sống động và hấp dẫn.
+                
+                Sắp xếp hợp lý: Hãy sắp xếp nội thất sao cho phù hợp với diện tích phòng khách, tránh sự chen chúc và tạo ra khoảng trống thoáng mát. Bạn cần phải sắp xếp đồ đạc một cách hợp lý để không gian trở nên gọn gàng và dễ chịu hơn.
+                ',
                 'author' => 'Nguyễn Tuấn Kha',
                 'status' => '1',
             ],
             [
-                'title' => 'Top 7 xu hướng thiết kế nội thất năm 2022',
+                'title' => 'Top 7 xu hướng thiết kế nội thất năm 2023',
                 'short_description' => 'Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2022 và cách áp dụng chúng vào không gian sống của bạn',
                 'image' => 'Top 7 xu hướng thiết kế nội thất năm 2022.png',
-                'keywords' => 'sofa, thiết kế nội thất, không gian sống',
-                'content' => 'Đây là nội dung của bài viết về xu hướng thiết kế nội thất năm 2023.',
+                'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
+                'content' => 'Năm 2023, thiết kế nội thất đang phát triển rất nhanh chóng và các xu hướng mới đang được đưa ra để đáp ứng nhu cầu ngày càng tăng của khách hàng. Để giúp quý khách hàng cập nhật những xu hướng thiết kế nội thất mới nhất trong năm 2023, chúng tôi sẽ chia sẻ với bạn top 7 xu hướng thiết kế nội thất năm 2023 dưới đây:
+
+                Thiết kế phòng ăn: Phòng ăn sẽ trở thành trung tâm của ngôi nhà, với thiết kế đơn giản và hiện đại. Bộ bàn ăn và ghế sẽ được thiết kế đơn giản, nhưng không kém phần sang trọng và tinh tế.
+                
+                Thiết kế phòng ngủ: Giường ngủ sẽ là điểm nhấn chính của phòng ngủ. Bộ giường ngủ đẹp sẽ được thiết kế với kiểu dáng đơn giản nhưng tinh tế, phù hợp với phong cách hiện đại.
+                
+                Thiết kế phòng khách: Phòng khách sẽ được thiết kế với phong cách hiện đại, tối giản và tinh tế. Nội thất phòng khách được đầu tư bằng các sản phẩm chất lượng cao như nội thất phòng khách Fudo.
+                
+                Thiết kế phòng làm việc: Phòng làm việc sẽ được thiết kế thông minh, giúp nâng cao năng suất làm việc. Bộ bàn ghế làm việc sẽ được thiết kế đơn giản, nhưng không kém phần tiện nghi và chất lượng.
+                
+                Nội thất phòng khách hiện đại: Thiết kế nội thất phòng khách hiện đại sẽ được ưa chuộng trong năm 2023. Các sản phẩm nội thất phòng khách đẹp và đơn giản như ghế sofa, bàn kính, tủ kệ sẽ được thiết kế tinh tế và tiện dụng.
+                
+                Nội thất phòng khách đẹp: Thiết kế nội thất phòng khách đẹp sẽ là một xu hướng không thể bỏ qua trong năm 2023. Các sản phẩm nội thất phòng khách đẹp và sang trọng sẽ được ưa chuộng.
+                
+                Phòng ăn thông minh: Với sự phát triển của công nghệ, phòng ăn thông minh trở nên rất phổ biến. Bộ bàn ăn, ghế và tủ lạnh được tích hợp các cảm biến và màn hình hiển thị, cho phép bạn điều chỉnh ánh sáng, âm thanh và nhiệt độ theo ý muốn.
+                ',
+                'author' => 'Nguyễn Tuấn Kha',
+                'status' => '1',
+            ],
+            [
+                'title' => 'Cách sắp xếp nội thất phòng ăn đẹp và thông thoáng',
+                'short_description' => 'Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2022 và cách áp dụng chúng vào không gian sống của bạn',
+                'image' => 'thiet-ke-phong-an-va-bep.png',
+                'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
+                'content' => 'Phòng ăn là nơi tập trung của mọi gia đình, nơi mọi người quây quần bên nhau và thưởng thức những bữa ăn ngon miệng. Vì vậy, việc sắp xếp nội thất phòng ăn đẹp và thông thoáng là rất quan trọng để tạo ra không gian ấm cúng, thoải mái và thuận tiện cho việc sử dụng. Bài viết này sẽ cung cấp cho bạn một số gợi ý để sắp xếp nội thất phòng ăn sao cho hợp lý và đẹp mắt.
+
+                Lựa chọn bộ bàn ghế phù hợp: Bàn ăn và ghế là hai món đồ nội thất quan trọng nhất trong phòng ăn. Bạn nên lựa chọn bộ bàn ghế phù hợp với diện tích phòng ăn và phong cách thiết kế của căn nhà. Nếu phòng ăn nhỏ, bạn nên chọn bàn ăn nhỏ và ghế có kích thước nhỏ gọn để tiết kiệm không gian.
+                
+                Chọn nội thất phù hợp với phong cách thiết kế của căn nhà: Để tạo ra một không gian phòng ăn đẹp mắt và đồng nhất, bạn nên chọn các món đồ nội thất phù hợp với phong cách thiết kế của căn nhà. Nếu căn nhà có phong cách hiện đại, bạn nên chọn bộ bàn ghế hiện đại và nội thất phòng ăn tối giản. Nếu căn nhà có phong cách cổ điển, bạn nên chọn bộ bàn ghế cổ điển và nội thất phòng ăn sang trọng.
+                
+                Lưu trữ đồ dùng ăn uống: Trong phòng ăn, ngoài bộ bàn ghế, tủ kệ chứa đồ dùng ăn uống cũng là một món đồ nội thất quan trọng. Bạn nên chọn tủ kệ có nhiều ngăn để tiện lợi cho việc lưu trữ và sắp xếp các đồ dùng ăn uống như bát đĩa, chén đũa, ly tách và các thiết bị phục vụ khác.
+                
+                Sử dụng nội thất thông minh: Nội thất thông minh là một giải pháp tối ưu cho phòng ăn nhỏ. Bạn có thể chọn bộ bàn ghế có thể gấp gọn lại hoặc chọn bàn ăn được tích hợp với tủ kệ để tiết kiệm diện tích. Bạn cũng có thể sử dụng tủ kệ treo để tận dụng không gian trống trên tường.
+                Bố trí bàn ăn và ghế sao cho hợp lý: Bố trí bàn ăn và ghế là một yếu tố quan trọng trong sự thoải mái của phòng ăn. Để phòng ăn đẹp và thông thoáng hơn, bạn có thể chọn một bộ bàn ghế phù hợp với không gian phòng ăn. Bàn ăn có thể là bàn vuông, bàn tròn hoặc oval tùy theo sở thích và diện tích phòng. Ghế có thể là ghế bọc da, ghế gỗ hoặc ghế thảm tùy thuộc vào phong cách thiết kế nội thất.
+                
+                Tận dụng không gian trống: Nếu phòng ăn của bạn có diện tích nhỏ hoặc hẹp, bạn nên tận dụng tối đa không gian trống bằng cách chọn bộ bàn ghế nhỏ, hình vuông hoặc tròn. Bạn cũng có thể chọn bàn ăn gấp để tiết kiệm diện tích. Nếu phòng ăn của bạn có đủ không gian, bạn có thể bố trí thêm tủ kệ để tận dụng không gian trống.
+                ',
                 'author' => 'Nguyễn Tuấn Kha',
                 'status' => '1',
             ],
