@@ -24,7 +24,6 @@ use Illuminate\Auth\Middleware\Authenticate as Middleware;
 // home
 Route::get('/', [front\HomeController::class, 'index']);
 Route::get('/home', [front\HomeController::class, 'index']);
-Route::get('/cc', [front\HomeController::class, 'index']);
 
 
 
