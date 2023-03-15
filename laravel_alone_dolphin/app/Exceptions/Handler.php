@@ -1,9 +1,13 @@
 <?php
 
 namespace App\Exceptions;
-
+use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
+use Illuminate\Http\Response;
+use Illuminate\Http\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+
 
 class Handler extends ExceptionHandler
 {

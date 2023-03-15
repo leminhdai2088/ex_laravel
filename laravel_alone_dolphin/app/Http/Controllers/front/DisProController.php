@@ -12,6 +12,8 @@ class DisProController extends Controller
 {
     public function index($room, Request $request){
         $room_id = rooms::where('link',$room)->value('id');
+        if(!$room_id)
+            return view('errors.404');
         $products = products::where('featured', true)->
                     where('room_id',$room_id);
             

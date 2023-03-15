@@ -71,6 +71,10 @@ class AdminController extends Controller
     public function edit($id)
     {
         $product = products::find($id);
+
+        if(!$product)
+            return view('errors.404');
+
         $images = product_images::where('product_id', $id)->get();
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
@@ -175,6 +179,10 @@ class AdminController extends Controller
         $rooms_header = rooms::all();
         $categories = product_category::all();
         $blog = blog::find($id);
+
+        if(!$blog)
+            return view('errors.404');
+            
         return view('dashboard.blog.edit_blog', compact('blog','categories_header', 'rooms_header', 'categories'));
     }
 

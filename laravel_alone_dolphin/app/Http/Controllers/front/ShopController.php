@@ -25,9 +25,13 @@ class ShopController extends Controller
 
 
 
-        $product_cate = product_category::where('id', $loai)->get();
-
+        $product_cate = product_category::where('id', $loai)->value('id');
         $room_id = rooms::where('link',$room)->value('id');
+
+        if(!$product_cate || !$room_id)
+            return view('errors.404');
+
+        $product_cate = product_category::where('id', $loai)->get();
         $products = products::where('featured', true)->
                     where('room_id',$room_id)->where('product_category_id',$loai);
                    

@@ -20,9 +20,13 @@ use Illuminate\Auth\Middleware\Authenticate as Middleware;
 */
 
 
+
 // home
 Route::get('/', [front\HomeController::class, 'index']);
 Route::get('/home', [front\HomeController::class, 'index']);
+Route::get('/cc', [front\HomeController::class, 'index']);
+
+
 
 
 // trang admin
@@ -116,3 +120,11 @@ Route::get('/{room}', [front\DisProController::class, 'index']);
 Route::get('/{room}/{loai}', [front\ShopController::class, 'loai']);
 
 Route::get('/{room}/{loai}/{id}', [front\ShopController::class, 'show']);
+
+
+
+
+Route::fallback(function(){
+    return view('errors.404');
+});
+
