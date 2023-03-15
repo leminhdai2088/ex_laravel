@@ -114,6 +114,26 @@ class DatabaseSeeder extends Seeder
                 'author' => 'Nguyễn Tuấn Kha',
                 'status' => '1',
             ],
+            [
+                'title' => 'Tổng hợp những mẫu giường ngủ thông minh tiết kiệm diện tích cho phòng ngủ nhỏ',
+                'short_description' => 'Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2022 và cách áp dụng chúng vào không gian sống của bạn',
+                'image' => 'giuong-tang-thong-minh-1-min.png',
+                'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
+                'content' => 'Nếu bạn đang sống trong một căn phòng nhỏ và muốn tối đa hóa diện tích sử dụng thì giường ngủ thông minh là một lựa chọn tuyệt vời cho bạn. Những mẫu giường ngủ thông minh không chỉ tiết kiệm diện tích mà còn cung cấp nhiều tính năng tiện ích giúp bạn tận dụng không gian tối đa. Dưới đây là một số mẫu giường ngủ thông minh bạn có thể tham khảo.
+
+                Giường ngủ gấp đôi: Đây là một lựa chọn hoàn hảo cho những ai muốn tiết kiệm diện tích phòng ngủ. Khi không sử dụng, giường có thể được gấp gọn lại để tạo ra không gian trống để bạn sử dụng vào ban ngày.
+                
+                Giường ngủ tầng: Giường ngủ tầng là một giải pháp tuyệt vời cho các phòng ngủ nhỏ. Nó cho phép bạn sử dụng diện tích tối đa của phòng bằng cách sử dụng không gian ở phía trên giường. Ngoài ra, giường tầng còn cung cấp nhiều không gian lưu trữ để bạn có thể lưu trữ quần áo, sách và các vật dụng khác.
+                
+                Giường ngủ có hệ thống tủ kệ: Nếu bạn không muốn sử dụng giường tầng, một giải pháp khác là sử dụng giường ngủ có hệ thống tủ kệ tích hợp. Giường này cung cấp không gian lưu trữ phía dưới và các tủ kệ phía trên giường để bạn có thể sắp xếp các vật dụng của mình một cách tiện lợi.
+                
+                Giường ngủ có bàn và ghế tích hợp: Nếu bạn muốn sử dụng phòng ngủ của mình làm không gian làm việc hoặc học tập, một giải pháp tuyệt vời là sử dụng giường ngủ có bàn và ghế tích hợp. Giường này cho phép bạn có thể làm việc hoặc học tập trong phòng ngủ mà không phải di chuyển đến một không gian khác.
+                
+                Nếu bạn đang tìm kiếm nội thất phòng ngủ thông minh để trang trí phòng ngủ nhỏ của mình, hãy tham khảo các sản phẩm của Fudo. Fudo cung cấp nhiều sản phẩm nội thất phòng ngủ đẹp, thông minh, giá rẻ và chất lượng cao.                
+                ',
+                'author' => 'Nguyễn Tuấn Kha',
+                'status' => '1',
+            ],
         ]);
         DB::table('users')->insert([
             [
