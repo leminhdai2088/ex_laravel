@@ -280,11 +280,11 @@
 @section('content')
 <!-- Slideshow container -->
 <div id="slider" class="nivoSlider">
-  <img src="/front/images/img_home/bg1.png" data-thumb="images/toystory.jpg" alt="" />
-  <img src="/front/images/img_home/bg2.png" data-thumb="images/up.jpg" alt="" />
-  <img src="/front/images/img_home/img_slider_2.jpg" data-thumb="images/walle.jpg" alt=""
+  <img src="/front/images/img_home/bg1.webp" data-thumb="images/toystory.jpg" alt="" />
+  <img src="/front/images/img_home/bg2.webp" data-thumb="images/up.jpg" alt="" />
+  <img src="/front/images/img_home/img_slider_2.webp" data-thumb="images/walle.jpg" alt=""
     data-transition="slideInLeft" />
-  <img src="/front/images/img_home/img_slider_5.jpg" data-thumb="images/nemo.jpg" alt="" />
+  <img src="/front/images/img_home/img_slider_5.webp" data-thumb="images/nemo.jpg" alt="" />
 </div>
 
 
@@ -294,7 +294,7 @@
   <div class="image-slider-0 row">
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
       <div class="image-0">
-        <img src="/front/images/img_home/depkeusa.png" alt="">
+        <img src="/front/images/img_home/depkeusa.webp" alt="">
       </div>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 danhmucsanpham">
@@ -303,37 +303,37 @@
         <h3 style="font-size: 24px;">Danh mục sản phẩm</h3>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/sofa.png" alt="">
+        <img src="/front/images/img_home/sofa.webp" alt="">
         <p>SOFA - sofas</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/bàn.png" alt="">
+        <img src="/front/images/img_home/bàn.webp" alt="">
         <p>BÀN - tables</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/ghế.png" alt="">
+        <img src="/front/images/img_home/ghế.webp" alt="">
         <p>GHẾ - chairs</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/tủ.png" alt="">
+        <img src="/front/images/img_home/tủ.webp" alt="">
         <p>BỘ SƯU TẬP - collections</p>
       </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 danhmuc2">
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/guong.png" alt="">
+        <img src="/front/images/img_home/product/guong.webp" alt="">
         <p>GƯƠNG - mirrors</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/den.png" alt="">
+        <img src="/front/images/img_home/product/den.webp" alt="">
         <p>ĐÈN - lamps</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/giuong.png" alt="">
+        <img src="/front/images/img_home/product/giuong.webp" alt="">
         <p>GIƯỜNG - beds</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/ketu.png" alt="">
+        <img src="/front/images/img_home/product/ketu.webp" alt="">
         <p>KỆ TỦ - shelf units, cabinets</p>
       </div>
     </div>
@@ -341,19 +341,19 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 danhmuc2">
 
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/changagoi.png" alt="">
+        <img src="/front/images/img_home/product/changagoi.webp" alt="">
         <p>CHĂN, GA, GỐI - Bedding</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/trangtri.png" alt="">
+        <img src="/front/images/img_home/product/trangtri.webp" alt="">
         <p>TRANG TRÍ - decorations</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/dogiadung.png" alt="">
+        <img src="/front/images/img_home/product/dogiadung.webp" alt="">
         <p>ĐỒ GIA DỤNG - household goods</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/sanphamdetmay.png" alt="">
+        <img src="/front/images/img_home/product/sanphamdetmay.webp" alt="">
         <p>SẢN PHẨM DỆT MAY - home textile</p>
       </div>
     </div>
@@ -391,31 +391,31 @@
   <div class="image-slider-1">
     <div class="image-item-1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="image-1">
-        <img src="/front/images/img_home/dalat.png" alt="" width="">
+        <img src="/front/images/img_home/dalat.webp" alt="" width="">
       </div>
       <h4>DALAT GRACE Concept</h4>
     </div>
     <div class="image-item-1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="image-1">
-        <img src="/front/images/img_home/EZ.png" alt="" width="">
+        <img src="/front/images/img_home/EZ.webp" alt="" width="">
       </div>
       <h4>EZ Concept</h4>
     </div>
     <div class="image-item-1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="image-1">
-        <img src="/front/images/img_home/EZ-TINY.png" alt="" width="">
+        <img src="/front/images/img_home/EZ-TINY.webp" alt="" width="">
       </div>
       <h4>EZ TINY Concept</h4>
     </div>
     <div class="image-item-1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="image-1">
-        <img src="/front/images/img_home/QUADA.png" alt="" width="">
+        <img src="/front/images/img_home/QUADA.webp" alt="" width="">
       </div>
       <h4>QUADA Concept</h4>
     </div>
     <div class="image-item-1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="image-1">
-        <img src="/front/images/img_home/SAGO.png" alt="" width="">
+        <img src="/front/images/img_home/SAGO.webp" alt="" width="">
       </div>
       <h4>SAGO Concept</h4>
     </div>
@@ -429,18 +429,18 @@
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 image-items-2">
 
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 image-items-2">
-        <img src="/front/images/img_home/canho.png" alt="">
+        <img src="/front/images/img_home/canho.webp" alt="">
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 image-items-2">
-        <img src="/front/images/img_home/nhapho.png" alt="">
+        <img src="/front/images/img_home/nhapho.webp" alt="">
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 image-items-2">
-        <img src="/front/images/img_home/congcong.png" alt="">
+        <img src="/front/images/img_home/congcong.webp" alt="">
       </div>
 
     </div>
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 image-items-2">
-      <img src="/front/images/img_home/inspiration.png" alt="">
+      <img src="/front/images/img_home/inspiration.webp" alt="">
     </div>
   </div>
 </div>
@@ -468,7 +468,7 @@
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-us-img">
-      <img src="/front/images/img_home/about-us.png" alt="">
+      <img src="/front/images/img_home/about-us.webp" alt="">
     </div>
   </div>
 </div>
@@ -482,42 +482,42 @@
       <div class="image-slider-2">
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh1.png" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh1.webp" alt="">
           </div>
         </div><!--end anh-->
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh2.png" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh2.webp" alt="">
           </div>
         </div>
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh3.png" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh3.webp" alt="">
           </div>
         </div>
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh4.png" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh4.webp" alt="">
           </div>
         </div>
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh5.png" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh5.webp" alt="">
           </div>
         </div>
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh6.png" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh6.webp" alt="">
           </div>
         </div>
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh7.png" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh7.webp" alt="">
           </div>
         </div>
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh8.png" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh8.webp" alt="">
           </div>
         </div>
       </div>
