@@ -1,6 +1,6 @@
 @extends('components.layout')
 @section('head')
-<head>
+
   <link rel="stylesheet" href="/front/css/page_home/page_home.css">
   <link rel="stylesheet" href="/front/css/page_home/vendor/bootstrap.css">
   <script src="/front/css/page_home/vendor/bootstrap.js"></script>
@@ -28,7 +28,7 @@
     padding: 0 10rem !important;
   }
   </style>
-</head>
+
 @endsection
 @section('content')
 <!-- Slideshow container -->
