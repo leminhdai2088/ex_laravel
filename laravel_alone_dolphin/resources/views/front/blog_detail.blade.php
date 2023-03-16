@@ -69,9 +69,12 @@
                     
                     <?php
                     $content = $blog_detail[0]->content;
+                    $content .="
+                    Xem thêm tại nội thất Fudo: https://noithatfudo.vn";
                     $content = nl2br($content);
                     
-                    echo '<div>'.$content.'</div>';
+                    $formatted_content = preg_replace("/(https?:\/\/[^\s]+)/", '<a href="$1">$1</a>', $content);
+                    echo '<div>'.$formatted_content.'</div>';
                     ?>
                 </div>
 
