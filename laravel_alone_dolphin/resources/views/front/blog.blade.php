@@ -17,9 +17,9 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Blog - Nội thất Fudo</title>
     <style>
-        img{
+        /* img{
             width: 100%;
-        }
+        } */
         .logo img{
             height: 64;
         }

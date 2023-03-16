@@ -14,6 +14,253 @@
   <meta name="description" content="Nội thất Fudo cung cấp đa dạng các sản phẩm nội thất cao cấp từ ghế sofa, giường ngủ đến bàn ăn, tủ quần áo với giá cả cạnh tranh. Hãy truy cập ngay để chọn lựa sản phẩm phù hợp cho không gian sống của bạn. Miễn phí vận chuyển và lắp ráp nhanh chóng.">
   <meta name="keywords" content="nội thất, nội thất Fudo, nội thất giá rẻ, nội thất hiện đại, sofa, bàn ăn, giường ngủ, tủ quần áo, đèn, trang trí, mua sắm nội thất, nội thất thông minh" />
   <link rel="stylesheet" href="/front/css/page_home/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://noithatfudo.vn/",
+      "logo": "https://noithatfudo.vn/front/images/Alone%20Dolphin.png"
+    }
+    </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FurnitureStore",
+  "name": "Nội thất Fudo",
+  "image": "https://noithatfudo.vn/",
+  "@id": "",
+  "url": "https://noithatfudo.vn/",
+  "telephone": "0972389257",
+  "priceRange": "300.000đ - 20.000.000đ",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Trường đại học Công nghệ Thông tin, Phường Linh Trung, Quận Thủ Đức",
+    "addressLocality": "Hồ Chí Minh",
+    "postalCode": "720400",
+    "addressCountry": "VN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 10.8700089,
+    "longitude": 106.8030541
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  }
+}
+</script>
+<script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"ItemList",
+      "itemListElement":[
+        {
+          "@type":"ListItem",
+          "position":1,
+          "url":"https://noithatfudo.vn/living_room"
+        },
+        {
+          "@type":"ListItem",
+          "position":2,
+          "url":"https://noithatfudo.vn/bed_room"
+        },
+        {
+          "@type":"ListItem",
+          "position":3,
+          "url":"https://noithatfudo.vn/kitchen_room"
+        },
+        {
+          "@type":"ListItem",
+          "position":4,
+          "url":"https://noithatfudo.vn/home_office"
+        },
+        {
+          "@type":"ListItem",
+          "position":5,
+          "url":"https://noithatfudo.vn/bath_room"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng khách",
+        "item": "https://noithatfudo.vn/living_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Sofa"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng khách",
+        "item": "https://noithatfudo.vn/living_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Ghế"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng khách",
+        "item": "https://noithatfudo.vn/living_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Kệ, tủ tivi"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng khách",
+        "item": "https://noithatfudo.vn/living_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Đồng hồ"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng khách",
+        "item": "https://noithatfudo.vn/living_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Tranh ảnh"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng khách",
+        "item": "https://noithatfudo.vn/living_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Gối trang trí"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng khách",
+        "item": "https://noithatfudo.vn/living_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Đèn sàn"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng khách",
+        "item": "https://noithatfudo.vn/living_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Kệ, tủ giày"
+      }]
+    }
+    </script>
   <link rel="canonical" href="https://noithatfudo.vn/"/>
   <style>
     .w-full {

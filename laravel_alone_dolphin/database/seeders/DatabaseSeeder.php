@@ -71,8 +71,8 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'title' => 'Top 7 xu hướng thiết kế nội thất năm 2023',
-                'short_description' => 'Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2022 và cách áp dụng chúng vào không gian sống của bạn',
-                'image' => 'Top 7 xu hướng thiết kế nội thất năm 2022.png',
+                'short_description' => 'Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2023 và cách áp dụng chúng vào không gian sống của bạn',
+                'image' => 'top-7-xu-huong-thiet-ke-noi-that-nam-2023.png',
                 'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
                 'content' => 'Năm 2023, thiết kế nội thất đang phát triển rất nhanh chóng và các xu hướng mới đang được đưa ra để đáp ứng nhu cầu ngày càng tăng của khách hàng. Để giúp quý khách hàng cập nhật những xu hướng thiết kế nội thất mới nhất trong năm 2023, chúng tôi sẽ chia sẻ với bạn top 7 xu hướng thiết kế nội thất năm 2023 dưới đây:
 
@@ -95,7 +95,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'title' => 'Cách sắp xếp nội thất phòng ăn đẹp và thông thoáng',
-                'short_description' => 'Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2022 và cách áp dụng chúng vào không gian sống của bạn',
+                'short_description' => 'Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2023 và cách áp dụng chúng vào không gian sống của bạn',
                 'image' => 'thiet-ke-phong-an-va-bep.png',
                 'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
                 'content' => 'Phòng ăn là nơi tập trung của mọi gia đình, nơi mọi người quây quần bên nhau và thưởng thức những bữa ăn ngon miệng. Vì vậy, việc sắp xếp nội thất phòng ăn đẹp và thông thoáng là rất quan trọng để tạo ra không gian ấm cúng, thoải mái và thuận tiện cho việc sử dụng. Bài viết này sẽ cung cấp cho bạn một số gợi ý để sắp xếp nội thất phòng ăn sao cho hợp lý và đẹp mắt.
@@ -116,7 +116,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'title' => 'Tổng hợp những mẫu giường ngủ thông minh tiết kiệm diện tích cho phòng ngủ nhỏ',
-                'short_description' => 'Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2022 và cách áp dụng chúng vào không gian sống của bạn',
+                'short_description' => 'Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2023 và cách áp dụng chúng vào không gian sống của bạn',
                 'image' => 'giuong-tang-thong-minh-1-min.png',
                 'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
                 'content' => 'Nếu bạn đang sống trong một căn phòng nhỏ và muốn tối đa hóa diện tích sử dụng thì giường ngủ thông minh là một lựa chọn tuyệt vời cho bạn. Những mẫu giường ngủ thông minh không chỉ tiết kiệm diện tích mà còn cung cấp nhiều tính năng tiện ích giúp bạn tận dụng không gian tối đa. Dưới đây là một số mẫu giường ngủ thông minh bạn có thể tham khảo.
