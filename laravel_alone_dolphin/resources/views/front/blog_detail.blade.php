@@ -14,7 +14,7 @@
             width: 100%;
         }
         .logo img{
-            height: 64;
+            height: 64 !important;
         }
         .h-16{
             height: 4rem !important;
@@ -66,7 +66,13 @@
                 </div>
                 <div class="content-main">
                     <p>{{ $blog_detail[0]->short_description }}</p>
-                    <p>{{ $blog_detail[0]->content }}</p>
+                    
+                    <?php
+                    $content = $blog_detail[0]->content;
+                    $content = nl2br($content);
+                    
+                    echo '<div>'.$content.'</div>';
+                    ?>
                 </div>
 
             </div>

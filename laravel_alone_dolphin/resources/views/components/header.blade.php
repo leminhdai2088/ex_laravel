@@ -32,9 +32,7 @@
             padding-left: 5px; */
         }
 
-        .nav-item:hover {
-            /* background-color: #ADFF2F; */
-        }
+        
 
         .subnav-item {
             /* padding-top: 12px;
