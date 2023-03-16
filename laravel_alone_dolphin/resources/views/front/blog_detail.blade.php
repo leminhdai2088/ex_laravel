@@ -14,7 +14,7 @@
             width: 100%;
         }
         .logo img{
-            height: 64 !important;
+            height: 64px !important;
         }
         .h-16{
             height: 4rem !important;
