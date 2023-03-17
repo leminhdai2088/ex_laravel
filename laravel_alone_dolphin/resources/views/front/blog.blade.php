@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="/front/css/footer.css">
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@<sup>1.0</sup>/dist/tailwind.min.css">
     <link rel="stylesheet" href="/front/css/page_blog.css">
     <link rel="stylesheet" href="/front/css/page_home/vendor/bootstrap.css">
     <script src="/front/css/page_home/vendor/bootstrap.js"></script>
@@ -296,7 +296,7 @@
             width: 100%;
         } */
         .logo img{
-            height: 64;
+            height: 64px;
         }
         .h-16{
             height: 4rem !important;
