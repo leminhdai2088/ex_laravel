@@ -3,7 +3,6 @@
 
   <link rel="stylesheet" href="/front/css/page_home/page_home.css">
   <link rel="stylesheet" href="/front/css/page_home/vendor/bootstrap.css">
-  <script src="/front/css/page_home/vendor/bootstrap.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
