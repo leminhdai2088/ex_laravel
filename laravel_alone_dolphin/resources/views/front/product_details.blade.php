@@ -1,6 +1,8 @@
 @extends('components.layout')
 @section('head')
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="canonical" href="https://noithatfudo.vn/living_room/1/1"/>
+
 <style>
     .tab-button {
         padding: 8px 12px;

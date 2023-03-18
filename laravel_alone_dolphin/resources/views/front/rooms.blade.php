@@ -27,6 +27,8 @@
 @endif
 
 <meta name="keywords" content="fudo, nội thất, nội thất fudo, nội thất giá rẻ, nội thất phòng ngủ, nội thất phòng khách, nội thất phòng bếp, nội thất phòng làm việc, nội thất phòng tắm"> 
+<link rel="canonical" href="https://noithatfudo.vn/living_room"/>
+
 <style>
     .product-img {
         width: 100%;
