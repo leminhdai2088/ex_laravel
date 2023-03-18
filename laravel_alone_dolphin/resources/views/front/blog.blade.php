@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/front/css/page_blog.css">
     <link rel="stylesheet" href="/front/css/page_home/vendor/bootstrap.css">
     <script src="/front/css/page_home/vendor/bootstrap.js"></script>
-    
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

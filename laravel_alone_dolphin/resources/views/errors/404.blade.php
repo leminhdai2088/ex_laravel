@@ -21,7 +21,7 @@
                     <p class="lead">
                         Trang bạn đang tìm kiếm hiện không tồn tại :<
                     </p>
-                    <a href="/" class="btn btn-primary">Về trang chủ</a>
+                    <a href="https://noithatfudo.vn/" class="btn btn-primary">Về trang chủ</a>
                 </div>
 
             </div>

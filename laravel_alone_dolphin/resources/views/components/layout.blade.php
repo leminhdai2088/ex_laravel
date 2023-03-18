@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="/front/css/header.css">
+    <link rel="icon" href="/front/images/Alone Dolphin.png" type="image/x-icon" >
+
     @vite('resources/css/app.css')
     @yield('head')
 </head>

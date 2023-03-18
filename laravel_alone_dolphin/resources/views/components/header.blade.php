@@ -73,7 +73,7 @@
     <div class="header fixed left-0 right-0 top-0 z-20 h-16">
         <div class="res-width h-full flex px-3 md:px-0 m-auto items-center justify-between">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
-            <a class="logo" href="/"><img height="64" width="64" src="/front/images/AloneDolphin.png"
+            <a class="logo" href="/"><img height="64" width="64" src="/front/images/Alone Dolphin.png"
                     alt="alone dolphin"></a>
             <div class="hidden md:flex items-center gap-10 cursor-pointer">
                 <div class="h-fit"><a href="/">Trang chủ</a> </div>
