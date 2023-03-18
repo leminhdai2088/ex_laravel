@@ -1,2 +1,7 @@
-User-agent: *
-Disallow:
+User-Agent: *
+
+
+
+User-Agent: *
+
+Disallow: /storage/logs/
