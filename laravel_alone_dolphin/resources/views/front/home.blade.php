@@ -5,14 +5,14 @@
   <link rel="stylesheet" href="/front/css/page_home/vendor/bootstrap.css">
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <!-- nivo slider -->
   <link rel="stylesheet" href="/front/css/page_home/nivo-slider/themes/default/default.css" type="text/css"
-    media="screen" />
+    media="screen">
   <title>Nội thất Fudo</title>
   <meta name="description" content="Nội thất Fudo cung cấp đa dạng các sản phẩm nội thất cao cấp từ ghế sofa, giường ngủ đến bàn ăn, tủ quần áo với giá cả cạnh tranh. Hãy truy cập ngay để chọn lựa sản phẩm phù hợp cho không gian sống của bạn. Miễn phí vận chuyển và lắp ráp nhanh chóng.">
-  <meta name="keywords" content="nội thất, nội thất Fudo, nội thất giá rẻ, nội thất hiện đại, sofa, bàn ăn, giường ngủ, tủ quần áo, đèn, trang trí, mua sắm nội thất, nội thất thông minh" />
-  <link rel="stylesheet" href="/front/css/page_home/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+  <meta name="keywords" content="nội thất, nội thất Fudo, nội thất giá rẻ, nội thất hiện đại, sofa, bàn ăn, giường ngủ, tủ quần áo, đèn, trang trí, mua sắm nội thất, nội thất thông minh">
+  <link rel="stylesheet" href="/front/css/page_home/nivo-slider/nivo-slider.css" type="text/css" media="screen">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -306,15 +306,15 @@
         <p>SOFA - sofas</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/bàn.webp" alt="">
+        <img src="/front/images/img_home/ban.webp" alt="">
         <p>BÀN - tables</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/ghế.webp" alt="">
+        <img src="/front/images/img_home/ghe.webp" alt="">
         <p>GHẾ - chairs</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/tủ.webp" alt="">
+        <img src="/front/images/img_home/tu.webp" alt="">
         <p>BỘ SƯU TẬP - collections</p>
       </div>
     </div>
@@ -528,12 +528,12 @@
   </div>
 </div>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script  src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="/front/css/page_home/nivo-slider/jquery.nivo.slider.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script  src="/front/css/page_home/nivo-slider/jquery.nivo.slider.js"></script>
+<script  src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script src="/front/javascript/page_home.js"></script>
 @endsection

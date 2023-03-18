@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/front/css/main.css" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/front/css/main.css">
     <link href="/front/css/output.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">
@@ -20,7 +20,7 @@
     <div class="header fixed left-0 right-0 top-0 z-20 h-16">
         <div class="m-auto flex items-center justify-between px-3">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
-            <a class="logo" href="#"><img height="64" width="64" src="/front/images/Alone Dolphin.png"
+            <a class="logo" href="#"><img height="64" width="64" src="/front/images/AloneDolphin.png"
                     alt="alone dolphin"></a>
             <div class="hidden md:flex items-center gap-10 cursor-pointer">
                 <div class="h-fit"><a href="/">Trang chủ</a> </div>
@@ -80,7 +80,7 @@
                     bg-white
                     text-gray-500
                     focus:text-gray-900 focus:outline-none
-                  " placeholder="Tìm kiếm sản phẩm..." />
+                  " placeholder="Tìm kiếm sản phẩm...">
                 </div>
                 <!-- <a href="/profile" class="h-8 w-8">
                     <img src="/icon/user-solid.svg" alt="" class="h-8 w-8">
@@ -145,7 +145,7 @@
     <div class="header fixed left-0 right-0 top-0 z-20 h-16">
         <div class="m-auto flex items-center justify-between px-3">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
-            <a class="logo" href="#"><img height="64" width="64" src="/front/images/Alone Dolphin.png"
+            <a class="logo" href="#"><img height="64" width="64" src="/front/images/AloneDolphin.png"
                     alt="alone dolphin"></a>
             <div class="hidden md:flex items-center gap-10 cursor-pointer">
                 <div class="h-fit"><a href="/">Trang chủ</a> </div>
@@ -206,7 +206,7 @@
                     bg-white
                     text-gray-500
                     focus:text-gray-900 focus:outline-none
-                  " placeholder="Tìm kiếm sản phẩm..." />
+                  " placeholder="Tìm kiếm sản phẩm...">
                 </div>
                 <!-- <a href="/profile" class="h-8 w-8">
                     <img src="/icon/user-solid.svg" alt="" class="h-8 w-8">
@@ -290,3 +290,5 @@
         }
     </script>
 </body>
+</html>
+

@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="/front/css/main.css" />
+    <link rel="stylesheet" href="/front/css/main.css">
     <link href="/front/css/output.css" rel="stylesheet">
     <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -73,7 +73,7 @@
     <div class="header fixed left-0 right-0 top-0 z-20 h-16">
         <div class="res-width h-full flex px-3 md:px-0 m-auto items-center justify-between">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
-            <a class="logo" href="/"><img height="64" width="64" src="/front/images/Alone Dolphin.png"
+            <a class="logo" href="/"><img height="64" width="64" src="/front/images/AloneDolphin.png"
                     alt="alone dolphin"></a>
             <div class="hidden md:flex items-center gap-10 cursor-pointer">
                 <div class="h-fit"><a href="/">Trang chủ</a> </div>
@@ -133,7 +133,7 @@
                     bg-white
                     text-gray-500
                     focus:text-gray-900 focus:outline-none
-                  " placeholder="Tìm kiếm..." />
+                  " placeholder="Tìm kiếm...">
                 </div>
                 <a href="/profile" class="flex items-center"><i class="fi fi-rr-user"></i></a>
                 <a href="/cart" class="flex items-center relative">
@@ -263,7 +263,7 @@
                     bg-white
                     text-gray-500
                     focus:text-gray-900 focus:outline-none
-                  " placeholder="Tìm kiếm..." />
+                  " placeholder="Tìm kiếm...">
                 </div>
                 <a href="/sign_in" class="flex items-center"><i class="fi fi-rr-user"></i></a>
                 <a href="/cart" class="flex items-center relative">
