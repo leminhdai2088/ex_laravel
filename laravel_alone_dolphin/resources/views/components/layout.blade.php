@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/front/css/main.css" />
+    <meta charset="UTF-8" >
+    <link rel="stylesheet" href="/front/css/main.css" >
     <link href="/front/css/output.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">

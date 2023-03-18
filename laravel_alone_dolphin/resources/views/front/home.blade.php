@@ -260,7 +260,7 @@
       }]
     }
     </script>
-  <link rel="canonical" href="https://noithatfudo.vn/"/>
+  <link rel="canonical" href="https://noithatfudo.vn/">
   <style>
     .w-full {
     width: 100% !important;

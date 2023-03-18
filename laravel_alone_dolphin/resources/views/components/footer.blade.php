@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="/front/css/main.css" />
+    <link rel="stylesheet" href="/front/css/main.css" >
     <link href="/front/css/output.css" rel="stylesheet">
     <link rel="stylesheet" href="/front/images/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
