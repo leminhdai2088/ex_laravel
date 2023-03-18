@@ -1,17 +1,18 @@
-@extends('front.header')
-@section('content')
+{{-- @extends('front.header') --}}
+@extends('components.layout')
+@section('head')
 
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Chào mừng đến với trang giới thiệu của chúng tôi! Chúng tôi là một cửa hàng bán nội thất chất lượng cao với đầy đủ các sản phẩm từ sofa, bàn ăn, giường ngủ, tủ quần áo, đèn, tấm trang trí và rất nhiều sản phẩm nội thất khác. Với chất lượng hàng đầu và giá cả hợp lý, chúng tôi cam kết mang đến cho khách hàng trải nghiệm mua sắm nội thất tốt nhất." />
-<meta name="keywords" content="nội thất, nội thất Fudo, nội thất giá rẻ, sofa, bàn ăn, giường ngủ, tủ quần áo, đèn, trang trí, mua sắm" />
-<meta name="author" content="Fudo" />
-        <title>Giới thiệu - Nội thất Fudo</title>
-        <link rel="stylesheet" href="/front/css/footer.css">
-        <link rel="stylesheet" href="/front/css/page_intro.css">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-        <script src="https://kit.fontawesome.com/fb8327464e.js" crossorigin="anonymous"></script>
-    </head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Chào mừng đến với trang giới thiệu của chúng tôi! Chúng tôi là một cửa hàng bán nội thất chất lượng cao với đầy đủ các sản phẩm từ sofa, bàn ăn, giường ngủ, tủ quần áo, đèn, tấm trang trí và rất nhiều sản phẩm nội thất khác. Với chất lượng hàng đầu và giá cả hợp lý, chúng tôi cam kết mang đến cho khách hàng trải nghiệm mua sắm nội thất tốt nhất." />
+    <meta name="keywords" content="nội thất, nội thất Fudo, nội thất giá rẻ, sofa, bàn ăn, giường ngủ, tủ quần áo, đèn, trang trí, mua sắm" />
+    <meta name="author" content="Fudo" />
+    <title>Giới thiệu - Nội thất Fudo</title>
+    {{-- <link rel="stylesheet" href="/front/css/footer.css"> --}}
+    <link rel="stylesheet" href="/front/css/page_intro.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://kit.fontawesome.com/fb8327464e.js" crossorigin="anonymous"></script>
+@endsection
+@section('content')
     <!-- main -->
     <main class="main-content">
         <div class="background-image-heading">
@@ -31,14 +32,14 @@
                     </p>
                     <p>&nbsp;</p>
                     <p>Kế thừa tư duy đó và một mong muốn tạo dựng những không gian sống mang tính chuẩn mực và hiện đại,
-                        những người trẻ chúng tôi đã cùng nhau cho ra đời MAKE MY HOME. Câu chuyện được bắt đầu từ cuối năm
-                        2016 bởi một kiến trúc sư trẻ tuổi, MAKE MY HOME bước đầu nhận được khá nhiều sự ủng hộ của các bạn
-                        trẻ và vẫn đang tiếp tục những chương mới. Tại MAKE MY HOME, tất cả sản phẩm trang trí nội thất &
+                        những người trẻ chúng tôi đã cùng nhau cho ra đời NỘI THẤT FUDO. Câu chuyện được bắt đầu từ cuối năm
+                        2022 bởi một kiến trúc sư trẻ tuổi, NỘI THẤT FUDO bước đầu nhận được khá nhiều sự ủng hộ của các bạn
+                        trẻ và vẫn đang tiếp tục những chương mới. Tại NỘI THẤT FUDO, tất cả sản phẩm trang trí nội thất &
                         giải pháp không gian sống không chỉ đơn thuần tuân thủ theo ngôn ngữ giản lược của Minimalism, mà
                         còn cân bằng được tính năng và độ thẩm mỹ cần có.</p>
                     <p>&nbsp;</p>
                     <p>“Ít tức là nhiều", nhưng mỗi chi tiết xuất hiện trên thiết kế đều là một sự chăm chút kỹ lưỡng và
-                        hoàn hảo. Và đó cũng chính là tôn chỉ hoạt động của MAKE MY HOME. Với tinh thần cầu tiến luôn cố
+                        hoàn hảo. Và đó cũng chính là tôn chỉ hoạt động của NỘI THẤT FUDO. Với tinh thần cầu tiến luôn cố
                         gắng hết mình để cung cấp những sản phẩm chất lượng cộng với dịch vụ thân thiện cho khách hàng,
                         chúng tôi hy vọng có thể chia sẻ một niềm tin cố hữu với tất cả mọi người: “Cuộc sống sẽ trở nên tốt
                         đẹp hơn khi không gian sống được quan tâm và đầu tư đúng mực.”</p>
@@ -83,7 +84,7 @@
                 </figure>
                 <div class="ourteams-text">
                     <h4>KẾT NỐI</h4>
-                    <p>Mọi hoạt động sẽ chỉ diễn ra khi có sự kết nối. MAKE MY HOME luôn cố gắng vun đắp cho những mối quan
+                    <p>Mọi hoạt động sẽ chỉ diễn ra khi có sự kết nối. NỘI THẤT FUDO luôn cố gắng vun đắp cho những mối quan
                         hệ thiết yếu: Người tiêu dùng - Thương hiệu; Nhân viên - Thương hiệu; Người tiêu dùng - Nhân viên.
                     </p>
                 </div>
@@ -95,7 +96,7 @@
                 <div class="img_overlay"></div>
                 <div class="ourteams-text">
                     <h4>THÂN THIỆN</h4>
-                    <p>Make My Home xây dựng một thương hiệu thân thiện thông qua cách chúng tôi làm sản phẩm và đem sản
+                    <p>NỘI THẤT FUDO xây dựng một thương hiệu thân thiện thông qua cách chúng tôi làm sản phẩm và đem sản
                         phẩm đó đến tay của bạn. Một sản phẩm thân thiện được cung cấp bởi một dịch vụ thân thiện chính là
                         Kim chỉ nam để thành công của chúng tôi.</p>
                 </div>
@@ -106,7 +107,7 @@
                 </figure>
                 <div class="ourteams-text">
                     <h4>CHỦ ĐỘNG</h4>
-                    <p>MAKE MY HOME chủ động thay đổi để không ngừng phát triển. Ngoài ra, khách hàng, bằng những sản phẩm
+                    <p>NỘI THẤT FUDO chủ động thay đổi để không ngừng phát triển. Ngoài ra, khách hàng, bằng những sản phẩm
                         của chúng tôi, có thể chủ động trong việc tạo nên phong cách sống riêng biệt trong không gian của
                         mỗi người.</p>
                 </div>
@@ -120,7 +121,7 @@
                     <div class="ts-address">
                         <ul class="list-info">
                             <li>
-                                <strong>Công ty TNHH Kiến trúc và Nội thất Make My Home </strong>
+                                <strong>Công ty TNHH Kiến trúc và Nội thất NỘI THẤT FUDO </strong>
                             </li>
                             <li>
                                 <strong>Số điện thoại: </strong>090292xxxx
@@ -491,8 +492,9 @@
             </div>
         </div>
     </main>
+    
     <!-- footer -->
-    <div class="footer h-fit pb-46">
+    {{-- <div class="footer h-fit pb-46">
         <div class="m-auto grid grid-cols-3">
             <div class="footer-item">
                 <div class="head-footer font-medium my-2">Về chúng tôi</div>
@@ -530,11 +532,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> --}}
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/front/javascript/page_intro.js"></script>
 @endsection

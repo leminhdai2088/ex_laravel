@@ -127,42 +127,42 @@
             <div class="image-slider-2">
                 <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
                     <div class="image-2">
-                        <img src="/front/images/img_home/chiasekhoanhkhac/anh1.png" alt="">
+                        <img src="/front/images/img_home/chiasekhoanhkhac/anh1.webp" alt="">
                     </div>
                 </div><!--end anh-->
                 <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
                     <div class="image-2">
-                        <img src="/front/images/img_home/chiasekhoanhkhac/anh2.png" alt="">
+                        <img src="/front/images/img_home/chiasekhoanhkhac/anh2.webp" alt="">
                     </div>
                 </div>
                 <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
                     <div class="image-2">
-                        <img src="/front/images/img_home/chiasekhoanhkhac/anh3.png" alt="">
+                        <img src="/front/images/img_home/chiasekhoanhkhac/anh3.webp" alt="">
                     </div>
                 </div>
                 <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
                     <div class="image-2">
-                        <img src="/front/images/img_home/chiasekhoanhkhac/anh4.png" alt="">
+                        <img src="/front/images/img_home/chiasekhoanhkhac/anh4.webp" alt="">
                     </div>
                 </div>
                 <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
                     <div class="image-2">
-                        <img src="/front/images/img_home/chiasekhoanhkhac/anh5.png" alt="">
+                        <img src="/front/images/img_home/chiasekhoanhkhac/anh5.webp" alt="">
                     </div>
                 </div>
                 <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
                     <div class="image-2">
-                        <img src="/front/images/img_home/chiasekhoanhkhac/anh6.png" alt="">
+                        <img src="/front/images/img_home/chiasekhoanhkhac/anh6.webp" alt="">
                     </div>
                 </div>
                 <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
                     <div class="image-2">
-                        <img src="/front/images/img_home/chiasekhoanhkhac/anh7.png" alt="">
+                        <img src="/front/images/img_home/chiasekhoanhkhac/anh7.webp" alt="">
                     </div>
                 </div>
                 <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
                     <div class="image-2">
-                        <img src="/front/images/img_home/chiasekhoanhkhac/anh8.png" alt="">
+                        <img src="/front/images/img_home/chiasekhoanhkhac/anh8.webp" alt="">
                     </div>
                 </div>
             </div>

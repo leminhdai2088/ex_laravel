@@ -1,11 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body,html{
-    width: 100%;
+    max-width: 100%;
     height: fit-content;
+    background-color: #ffffff;
+    color: #000;
 }
 /* @font-face {
     font-family: Montserrat;
@@ -44,29 +46,29 @@ img {
     color: #545454;
 }
 h1{
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 50px !important;
+    font-weight: bold !important;
 }
 h2{
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 40px !important;
+    font-weight: bold !important;
 }
 h3{
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 30px !important;
+    font-weight: bold !important;
 }
 h4{
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 25px !important;
+    font-weight: bold !important;
 }
 .background-image-heading{
     position: relative;
-    top: 64px;
+    top: 0px;
     background-image: url(/front/images/img_page_intro/header_bg.webp);
     background-repeat: repeat;
     background-size: auto;
     width: 100%;
-    min-height: 273px;
+    min-height: 337px;
     background-position: center;
     margin-bottom: 64px;
 }
@@ -74,6 +76,8 @@ h4{
     position: absolute;
     bottom: 47px;
     left: 168px;
+    /* font-weight: bold;
+    font-size: 40px; */
 }
 .noidung{
     display: flex;
@@ -81,9 +85,14 @@ h4{
     height: fit-content;
 }
 .col-md-8 {
-    margin-left: 30px;
+    /* margin-left: 30px; */
+    margin-top: -50px;
     flex:2;
 }
+/* .col-md-8 ._about h3{
+    font-size: 30px;
+    font-weight: bold;
+} */
 .col-md-8 ._about p{
     text-align: justify;
     margin: 10px 0;
@@ -232,28 +241,28 @@ h4{
     position: relative;
     top: 40%;
 }
-.footer{
+/* .footer{
    width: 95vw;
    margin: auto;
    padding: 20px;
-}
+} */
 
 /* Responsive */
 @media(min-width: 740px) and (max-width: 1023px){
     h1{
-        font-size: 40px;
+        font-size: 40px !important;
         font-weight: bold;
     }
     h2{
-        font-size: 30px;
+        font-size: 30px !important;
         font-weight: bold;
     }
     h3{
-        font-size: 25px;
+        font-size: 25px !important;
         font-weight: bold;
     }
     h4{
-        font-size: 19px;
+        font-size: 19px !important;
         font-weight: bold;
     }
     iframe {
@@ -266,26 +275,26 @@ h4{
     .col-sm-3 h3{
         top: 20%;
     }
-    .footer{
+    /* .footer{
         width: 90%;
         margin: auto;
-    }
+    } */
 }
 @media(max-width: 740px){
     h1{
-        font-size: 35px;
+        font-size: 35px !important;
         font-weight: bold;
     }
     h2{
-        font-size: 25px;
+        font-size: 25px !important;
         font-weight: bold;
     }
     h3{
-        font-size: 20px;
+        font-size: 20px !important;
         font-weight: bold;
     }
     h4{
-        font-size: 18px;
+        font-size: 18px !important;
         font-weight: bold;
     }
     .background-image-heading{
@@ -341,8 +350,8 @@ h4{
         padding-right: 5px;
         font-size: 18px;
     }
-    .footer{
+    /* .footer{
         width: 80%;
         margin: auto;
-    }
+    } */
 }
