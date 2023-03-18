@@ -290,6 +290,48 @@
   "dateModified": "2023-03-15"
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Bí quyết chọn sofa phù hợp với không gian",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Khi bắt đầu chọn sofa cho không gian sống của bạn, bạn cần đưa ra quyết định chính xác về phong cách và chức năng của sofa. Sofa phải phù hợp với phong cách thiết kế nội thất của căn nhà của bạn và phải đáp ứng các yêu cầu về không gian sống của bạn."
+    }
+  },{
+    "@type": "Question",
+    "name": "5 cách sắp xếp phòng khách thông minh",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Phòng khách là không gian quan trọng trong mỗi căn nhà, nơi mà gia đình và bạn bè có thể tụ họp, trò chuyện và thư giãn. Tuy nhiên, nếu không sắp xếp thông minh, phòng khách có thể trở nên rất rối mắt và khó chịu. Dưới đây là 5 cách để sắp xếp phòng khách thông minh giúp cho căn phòng của bạn trở nên đẹp hơn và tiện nghi hơn."
+    }
+  },{
+    "@type": "Question",
+    "name": "Top 7 xu hướng thiết kế nội thất năm 2023",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Năm 2023, thiết kế nội thất đang phát triển rất nhanh chóng và các xu hướng mới đang được đưa ra để đáp ứng nhu cầu ngày càng tăng của khách hàng. Để giúp quý khách hàng cập nhật những xu hướng thiết kế nội thất mới nhất trong năm 2023, chúng tôi sẽ chia sẻ với bạn top 7 xu hướng thiết kế nội thất năm 2023 dưới đây:"
+    }
+  },{
+    "@type": "Question",
+    "name": "Cách sắp xếp nội thất phòng ăn đẹp và thông thoáng",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Phòng ăn là nơi tập trung của mọi gia đình, nơi mọi người quây quần bên nhau và thưởng thức những bữa ăn ngon miệng. Vì vậy, việc sắp xếp nội thất phòng ăn đẹp và thông thoáng là rất quan trọng để tạo ra không gian ấm cúng, thoải mái và thuận tiện cho việc sử dụng. Bài viết này sẽ cung cấp cho bạn một số gợi ý để sắp xếp nội thất phòng ăn sao cho hợp lý và đẹp mắt."
+    }
+  },{
+    "@type": "Question",
+    "name": "Tổng hợp những mẫu giường ngủ thông minh tiết kiệm diện tích cho phòng ngủ nhỏ",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nếu bạn đang sống trong một căn phòng nhỏ và muốn tối đa hóa diện tích sử dụng thì giường ngủ thông minh là một lựa chọn tuyệt vời cho bạn. Những mẫu giường ngủ thông minh không chỉ tiết kiệm diện tích mà còn cung cấp nhiều tính năng tiện ích giúp bạn tận dụng không gian tối đa. Dưới đây là một số mẫu giường ngủ thông minh bạn có thể tham khảo."
+    }
+  }]
+}
+</script>
     <title>Blog - Nội thất Fudo</title>
     <style>
         /* img{
