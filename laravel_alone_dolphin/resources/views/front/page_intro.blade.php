@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="/front/css/page_intro.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://kit.fontawesome.com/fb8327464e.js" crossorigin="anonymous"></script>
+    <style>
+        .w-full.md\:w-\[95vw\].desktop\:w-\[1200px\].mx-auto.mt-16.md\:mt-16.mb-10.min-h-\[80vh\]{
+            width: 100% !important;
+        }
+    </style>
 @endsection
 @section('content')
     <!-- main -->

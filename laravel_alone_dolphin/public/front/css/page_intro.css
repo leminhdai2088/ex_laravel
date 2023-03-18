@@ -81,7 +81,8 @@ h4{
 }
 .noidung{
     display: flex;
-    max-width: 100%;
+    max-width: 95%;
+    margin: auto;
     height: fit-content;
 }
 .col-md-8 {
