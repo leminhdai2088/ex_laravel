@@ -111,6 +111,7 @@
 
     }
 </style>
+<link rel="canonical" href="https://noithatfudo.vn/admin/products"/>
 @endsection
 @section('content')
 
