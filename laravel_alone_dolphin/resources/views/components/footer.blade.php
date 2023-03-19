@@ -22,17 +22,17 @@
             <div class="footer-item">
                 <div class="head-footer font-medium my-2">Sản phẩm</div>
                 <div class="text-gray-700 text-sm">
-                    <div class="footer-text"><a href="#">Giường</a></div>
-                    <div class="footer-text"><a href="#">Bàn</a></div>
-                    <div class="footer-text"><a href="#">Ghế</a></div>
-                    <div class="footer-text"><a href="#">Chăn ga gối</a></div>
+                    <div class="footer-text"><a href="#">Phòng khách</a></div>
+                    <div class="footer-text"><a href="#">Phòng ngủ</a></div>
+                    <div class="footer-text"><a href="#">Phòng làm việc</a></div>
+                    <div class="footer-text"><a href="#">Bếp</a></div>
                 </div>
             </div>
             <div class="footer-item">
                 <div class="head-footer font-medium my-2">Liên hệ</div>
                 <div class="text-gray-700 text-sm">
-                    <div class="footer-text">Sđt: 090292xxxx</div>
-                    <div class="footer-text">Email: 2052xxxx@gm.uit.edu.vn</div>
+                    <div class="footer-text">Sđt: 0902928426</div>
+                    <div class="footer-text">Email: <a href="mailto: 20521427@gm.uit.edu.vn">noithatfudo@gmail.com</a> </div>
                     <div class="footer-text">Địa chỉ: trường đại học Công nghệ Thông tin</div>
                     <div class="link flex gap-5 mt-2">
                         <a href="https://www.facebook.com/profile.php?id=100047664311320" target="_blank"><img src="/front/images/icon/facebook.svg" alt="Facebook" height="30" width="30" title="Facebook"></a>

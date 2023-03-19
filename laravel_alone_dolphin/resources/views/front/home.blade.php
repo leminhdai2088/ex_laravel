@@ -450,7 +450,7 @@
   <div class="row">
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-us-content">
-      <h3>About Us</h3>
+      <h3>Về chúng tôi</h3>
       <br>
       <div class="about-content" style="margin-bottom: 3rem;">
         <p style="line-height: 34px;">Tại Fudo, tất cả sản phẩm trang trí nội thất & giải pháp không gian sống không

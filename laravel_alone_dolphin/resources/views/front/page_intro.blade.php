@@ -129,10 +129,10 @@
                                 <strong>Công ty TNHH Kiến trúc và Nội thất NỘI THẤT FUDO </strong>
                             </li>
                             <li>
-                                <strong>Số điện thoại: </strong>090292xxxx
+                                <strong>Số điện thoại: </strong>0902928426
                             </li>
                             <li>
-                                <strong>Email: </strong>2052xxxx@gm.uit.edu.vn
+                                <strong>Email: </strong> <a href="mailto: 20521427@gm.uit.edu.vn">noithatfudo@gmail.com</a>
                             </li>
                             <li>
                                 <strong>Địa chỉ: </strong>Trường Đại Học Công Nghệ Thông Tin
