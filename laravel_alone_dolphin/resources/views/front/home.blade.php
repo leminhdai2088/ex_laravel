@@ -453,7 +453,7 @@
       <h3>Về chúng tôi</h3>
       <br>
       <div class="about-content" style="margin-bottom: 3rem;">
-        <p style="line-height: 34px;">Tại Fudo, tất cả sản phẩm trang trí nội thất & giải pháp không gian sống không
+        <p style="line-height: 34px;">Tại nội thất Fudo, tất cả sản phẩm trang trí nội thất & giải pháp không gian sống không
           chỉ đơn thuần tuân thủ theo ngôn
           ngữ giản lược của Minimalism, mà còn cân bằng được tính năng và độ thẩm mỹ cần có.</p>
         <p style="line-height: 34px;">
