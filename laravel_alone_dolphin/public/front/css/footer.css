@@ -42,3 +42,10 @@
       margin: 10px;
   }
  }
+ @media (min-width: 768px){
+   .md\:grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+   }
+ }
