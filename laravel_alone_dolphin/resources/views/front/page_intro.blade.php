@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <img src="/front/images/img_page_intro/logo.png" alt="">
+                <img src="/front/images/noithatfudo.png" alt="Nội thất Fudo">
             </div>
         </div>
         <div class="parallax"></div>
