@@ -157,7 +157,20 @@
                     echo '<div>'.$formatted_content.'</div>';
                     ?>
                 </div>
-
+              <div class="rating-content">
+                <form action="" method="GET">
+                  <div class="container">
+                  
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                      <img src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" alt="">
+                    </div>
+                    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+                      <p>Nguyễn Tuấn Kha</p>
+                      <input type="textarea" class="comment-area" placeholder="Viết bình luận...">
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
         </div>
     </div>
