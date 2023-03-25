@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/front/css/page_blog.css">
     <link rel="stylesheet" href="/front/css/page_home/vendor/bootstrap.css">
     <script src="/front/css/page_home/vendor/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org/", 
@@ -166,7 +168,10 @@
                     </div>
                     <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
                       <p>Nguyễn Tuấn Kha</p>
-                      <input type="textarea" class="comment-area" placeholder="Viết bình luận...">
+                      <input type="textarea" name="comment-rating" class="comment-area" placeholder="Viết bình luận...">
+                      <div id="rateYo"></div>
+                      <input type="hidden" name="star-rating" id="user-comment-rating" value="">
+                      <input type="submit" name="submit" id="submit" value="Gửi">
                     </div>
                   </div>
                 </form>
@@ -175,4 +180,15 @@
         </div>
     </div>
     </div>
+    <script>
+      $(function () {
+          $("#rateYo").rateYo({
+            starWidth: "20px",
+            rating: 3.6
+          }).on("rateyo.set", function (e, data) {
+              $('#user-comment-rating').val(data.rating);
+              alert("The rating is set to " + data.rating + "!");
+            });
+        });
+    </script>
 @endsection
