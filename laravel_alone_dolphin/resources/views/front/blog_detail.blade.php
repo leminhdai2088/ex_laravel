@@ -159,10 +159,23 @@
                     echo '<div>'.$formatted_content.'</div>';
                     ?>
                 </div>
-              <div class="rating-content">
-                <form action="" method="GET">
-                  <div class="container">
+              <div class="danhgiabaiviet">
+                <div class="container">
                   
+                  <div class="col-xs-8 col-sm-9 col-md-10 col-lg-10">
+                    
+                  </div>
+                  
+                  <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2">
+                    <h4>Đánh giá bài viết</h4>
+                    <div class="total-rate" id="total-rate"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="rating-content">
+                <form action="" method="POST">
+                  <div class="container">
+
                     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                       <img src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" alt="">
                     </div>
@@ -171,7 +184,7 @@
                       <input type="textarea" name="comment-rating" class="comment-area" placeholder="Viết bình luận...">
                       <div id="rateYo"></div>
                       <input type="hidden" name="star-rating" id="user-comment-rating" value="">
-                      <input type="submit" name="submit" id="submit" value="Gửi">
+                      <button type="submit" name="submit" class="btn btn-primary" id="submit">Gửi</button>
                     </div>
                   </div>
                 </form>
@@ -190,5 +203,12 @@
               alert("The rating is set to " + data.rating + "!");
             });
         });
+      $(function () {
+        $("#total-rate").rateYo({
+            starWidth: "20px",
+            rating: "{{$blog_star}}",
+            readOnly: true
+          });
+      });
     </script>
 @endsection

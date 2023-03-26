@@ -4,6 +4,7 @@ namespace App\Http\Controllers\front;
 
 use App\Http\Controllers\Controller;
 use App\Models\blog;
+use App\Models\blog_rating;
 use App\Models\order_details;
 use App\Models\products;
 use Illuminate\Http\Request;
@@ -111,6 +112,16 @@ class HomeController extends Controller
     public function blog_detail($id){
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
+        $ids = [1, 2, 3];
+        $blog_news = blog::whereIn('id', $ids)->get();
+        $blog_detail = blog::where('id', $id)->get();
+        $blog_star = blog_rating::where('blog_id', $id)->avg('stars');
+        return view('front.blog_detail', compact('categories_header', 'rooms_header','blog_news', 'blog_detail', 'blog_star'));
+    }
+    public function blog_rating($id){
+        $categories_header = product_category::all();
+        $rooms_header = rooms::all();
+
         $ids = [1, 2, 3];
         $blog_news = blog::whereIn('id', $ids)->get();
         $blog_detail = blog::where('id', $id)->get();

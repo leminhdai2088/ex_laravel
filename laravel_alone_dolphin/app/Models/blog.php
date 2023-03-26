@@ -12,4 +12,10 @@ class blog extends Model
     protected $primaryKey = 'id';
     protected $guarded = [];
 
+    public function blog_rating(){
+        // return $this->hasMany('App\Models\products');
+
+        return $this->hasMany('App\Models\blog_rating','blog_id','id');
+        // related foreignkey locallkey
+    }
 }

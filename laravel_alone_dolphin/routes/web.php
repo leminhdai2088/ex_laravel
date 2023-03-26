@@ -84,6 +84,13 @@ Route::get('/blog', [front\HomeController::class, 'blog']);
 
 Route::get('/blog/{id}', [front\HomeController::class, 'blog_detail']);
 
+// Route::post('/blog/{id}', [front\HomeController::class, 'blog_rating']);
+
+Route::prefix('/blog/{id}')->middleware('auth')->group(function () {
+    Route::post('/rate', [HomeController::class, 'blog_rating']);
+});
+
+
 // forgot password
 
 Route::get('/forgot_password', [UserController::class, 'forgot_pass']);

@@ -61,3 +61,20 @@ body{
 .content-main{
     margin-top: 2rem;
 }
+
+.comment-area{
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    width: 90%;
+    border: solid;
+    padding: 20px 4px;
+    border-radius: 5px;
+}
+.danhgiabaiviet{
+    margin: 2rem 0;
+    padding-right: 0;
+}
