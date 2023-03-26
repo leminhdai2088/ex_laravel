@@ -70,11 +70,16 @@ body{
     color: inherit;
     margin: 0;
     width: 90%;
-    border: solid;
+    border: solid 2px;
     padding: 20px 4px;
     border-radius: 5px;
+    margin-bottom: 6px;
 }
 .danhgiabaiviet{
     margin: 2rem 0;
     padding-right: 0;
+}
+.comment-header{
+    margin: 2rem 0;
+    font-size: 1.5rem;
 }

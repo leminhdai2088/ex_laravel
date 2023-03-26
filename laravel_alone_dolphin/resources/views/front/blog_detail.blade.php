@@ -177,20 +177,38 @@
                 <form action="" method="POST">
                   <div class="container">
 
-                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
                       <img src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" alt="">
                     </div>
-                    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+                    <div class="col-xs-9 col-sm-10 col-md-11 col-lg-11">
                       <p>Nguyễn Tuấn Kha</p>
                       <input type="textarea" name="comment-rating" class="comment-area" placeholder="Viết bình luận...">
                       <div id="rateYo"></div>
                       <input type="hidden" name="star-rating" id="user-comment-rating" value="">
-                      <button type="submit" name="submit" class="btn btn-primary" id="submit">Gửi</button>
+                      <button type="submit" style="background-color: #616bef; margin-top: 6px;" name="submit" class="btn btn-primary" id="submit">Gửi</button>
                     </div>
                   </div>
                 </form>
               </div>
               @endif
+              <div class="blog-comment">
+                <h3 class="comment-header">Bình luận</h3>
+                <div class="container">
+                  <div class="row comment-item">
+                    <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
+                    <img src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" alt="">
+                    </div>
+                    <div class="col-xs-9 col-sm-10 col-md-11 col-lg-11">
+                      <p>Họ và tên</p>
+                      <p>Đây là nội dung comment: Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Et quis explicabo quasi cum. Incidunt nisi, nesciunt 
+                        officiis, sunt itaque, ipsam quasi facilis quia nulla 
+                        repudiandae dolorum aut impedit. Sapiente, nostrum?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
         </div>
     </div>
