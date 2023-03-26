@@ -3,7 +3,6 @@
 
 <head>
     <meta name="google-site-verification" content="QV-_CE_2F8Jd5Ln65UX7PEe57PpOFiZjDEOo_nlHe-o" />
-    <meta name="google-site-verification" content="QV-_CE_2F8Jd5Ln65UX7PEe57PpOFiZjDEOo_nlHe-o" />
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/front/css/main.css">
     <link href="/front/css/output.css" rel="stylesheet">
