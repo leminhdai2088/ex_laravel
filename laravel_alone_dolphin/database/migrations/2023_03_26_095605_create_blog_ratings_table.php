@@ -18,6 +18,9 @@ return new class extends Migration
 
             $table->integer('blog_id')->unsigned();
             $table->integer('user_id')->unsigned();
+            $table->string('email');
+            $table->string('name');
+
             $table->text('messages');
             $table->float('stars');
             $table->timestamps();

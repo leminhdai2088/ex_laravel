@@ -172,6 +172,7 @@
                   </div>
                 </div>
               </div>
+              @if(auth()->user())
               <div class="rating-content">
                 <form action="" method="POST">
                   <div class="container">
@@ -189,6 +190,7 @@
                   </div>
                 </form>
               </div>
+              @endif
             </div>
         </div>
     </div>
