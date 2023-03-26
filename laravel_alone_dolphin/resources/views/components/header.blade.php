@@ -65,11 +65,10 @@
     </style>
 </head>
 
-
-
 <body>
     @props(['rooms_header', 'categories_header'])
     @auth
+    {{-- mobile --}}
     <div class="header fixed left-0 right-0 top-0 z-20 h-16">
         <div class="res-width h-full flex px-3 md:px-0 m-auto items-center justify-between">
             <i class="fi fi-rr-menu-burger md:hidden" onclick="toggleSidebar()"></i>
@@ -110,6 +109,7 @@
                 </div>
 
                 <div class="h-fit"><a href="#footer">Liên hệ</a></div>
+                <div class="h-fit"><a href="/blog">Blog</a></div>
             </div>
             <div class="right-header flex content-center items-center gap-3 md:gap-6">
                 <div class="text-gray-700 relative my-auto max-w-[120px] md:max-w-[250px]">
@@ -156,7 +156,6 @@
             </div>
         </div>
     </div>
-
     <div id="sidebar" class="hidden fixed top-0 right-0 left-0 h-full w-full z-30 bg-white overflow-auto">
         <div class="p-5 border-b-2 border-b-yellow-500 relative">
             <div class="text-center text-2xl">Menu</div>
@@ -278,7 +277,7 @@
             <div class="text-center text-2xl">Menu</div>
             <div class="absolute top-7" onclick="toggleSidebar()">
                 <i class="fi fi-rr-cross"></i>
-            </div>
+            </div>  
         </div>
         <div class="pl-7 pb-10">
             <div class="py-2 border-b-2 border-b-yellow-500 text-lg"><a href="/">Trang chủ</a></div>
