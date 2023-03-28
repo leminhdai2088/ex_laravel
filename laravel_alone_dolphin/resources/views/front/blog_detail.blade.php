@@ -90,6 +90,7 @@
   }]    
 }
 </script>
+
     <title>{{ $blog_detail[0]->title }} - Nội thất Fudo</title>
     <style>
         img{
@@ -106,6 +107,9 @@
         }
         .header {
             padding: 0 0 !important;
+        }
+        .row{
+          margin-bottom: 32px;
         }
     </style>
 @endsection
@@ -174,17 +178,22 @@
               </div>
               @if(auth()->user())
               <div class="rating-content">
-                <form action="" method="POST">
+                <form action="/blog/{{ $blog_detail[0]->id }}" method="POST">
+                  <input type="hidden" name="_token" value="{{csrf_token()}}">
                   <div class="container">
 
                     <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
                       <img src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" alt="">
                     </div>
                     <div class="col-xs-9 col-sm-10 col-md-11 col-lg-11">
-                      <p>Nguyễn Tuấn Kha</p>
-                      <input type="textarea" name="comment-rating" class="comment-area" placeholder="Viết bình luận...">
+                      <p>{{ auth()->user()->name }}</p>
+                      <input type="textarea" name="messages" class="comment-area" placeholder="Viết bình luận..." required>
                       <div id="rateYo"></div>
-                      <input type="hidden" name="star-rating" id="user-comment-rating" value="">
+                      <input type="hidden" name="stars" id="user-comment-rating">
+                      <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
+                      <input type="hidden" name="email" value="{{ auth()->user()->email }}">
+                      <input type="hidden" name="name" value="{{ auth()->user()->name }}">
+                      <input type="hidden" name="blog_id" value="{{ $blog_detail[0]->id }}">
                       <button type="submit" style="background-color: #616bef; margin-top: 6px;" name="submit" class="btn btn-primary" id="submit">Gửi</button>
                     </div>
                   </div>
@@ -194,21 +203,19 @@
               <div class="blog-comment">
                 <h3 class="comment-header">Bình luận</h3>
                 <div class="container">
+                  @foreach($blog_rating as $index)
                   <div class="row comment-item">
                     <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
                     <img src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" alt="">
                     </div>
                     <div class="col-xs-9 col-sm-10 col-md-11 col-lg-11">
-                      <p>Họ và tên</p>
-                      <p>Đây là nội dung comment: Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Et quis explicabo quasi cum. Incidunt nisi, nesciunt 
-                        officiis, sunt itaque, ipsam quasi facilis quia nulla 
-                        repudiandae dolorum aut impedit. Sapiente, nostrum?</p>
+                      <p>{{ $index->name }}</p>
+                      <p>{{ $index->messages }}</p>
                     </div>
                   </div>
+                  @endforeach
                 </div>
               </div>
-
             </div>
         </div>
     </div>
@@ -217,9 +224,13 @@
       $(function () {
           $("#rateYo").rateYo({
             starWidth: "20px",
-            rating: 3.6
+            rating: 0
           }).on("rateyo.set", function (e, data) {
               $('#user-comment-rating').val(data.rating);
+
+              if(!$('#user-comment-rating').val())
+                $('#user-comment-rating').val(0);
+                
               alert("The rating is set to " + data.rating + "!");
             });
         });

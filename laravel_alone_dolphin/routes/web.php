@@ -87,7 +87,7 @@ Route::get('/blog/{id}', [front\HomeController::class, 'blog_detail']);
 // Route::post('/blog/{id}', [front\HomeController::class, 'blog_rating']);
 
 Route::prefix('/blog/{id}')->middleware('auth')->group(function () {
-    Route::post('/rate', [HomeController::class, 'blog_rating']);
+    Route::post('/', [HomeController::class, 'blog_rating']);
 });
 
 

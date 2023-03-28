@@ -116,15 +116,21 @@ class HomeController extends Controller
         $blog_news = blog::whereIn('id', $ids)->get();
         $blog_detail = blog::where('id', $id)->get();
         $blog_star = blog_rating::where('blog_id', $id)->avg('stars');
-        return view('front.blog_detail', compact('categories_header', 'rooms_header','blog_news', 'blog_detail', 'blog_star'));
+        $blog_rating = blog_rating::where('blog_id', $id)->get();
+        return view('front.blog_detail', compact('categories_header', 'rooms_header','blog_news', 'blog_detail', 'blog_star', 'blog_rating'));
     }
-    public function blog_rating($id){
-        $categories_header = product_category::all();
-        $rooms_header = rooms::all();
-
-        $ids = [1, 2, 3];
-        $blog_news = blog::whereIn('id', $ids)->get();
-        $blog_detail = blog::where('id', $id)->get();
-        return view('front.blog_detail', compact('categories_header', 'rooms_header','blog_news', 'blog_detail'));
+    public function blog_rating($id,Request $request){
+       
+        $star = $request->input('stars') ? $request->input('stars') : 0;
+        $formData = [
+            'blog_id' =>$request->input('blog_id'),
+            'user_id' =>$request->input('user_id'),
+            'email' =>$request->input('email'),
+            'name' =>$request->input('name'),
+            'messages' =>$request->input('messages'),
+            'stars' =>$star
+        ];
+        blog_rating::create($formData);
+        return redirect("/blog/{$id}");
     }
 }

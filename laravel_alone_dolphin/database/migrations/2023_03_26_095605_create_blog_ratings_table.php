@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('name');
 
             $table->text('messages');
-            $table->float('stars');
+            $table->float('stars')->default(0.0);
             $table->timestamps();
         });
     }
