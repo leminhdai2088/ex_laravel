@@ -9,7 +9,18 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="/front/css/header.css">
     <link rel="icon" href="/front/images/fudo.png" type="image/x-icon" >
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHYNYQQZFK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LHYNYQQZFK');
+    </script>
     @vite('resources/css/app.css')
     @yield('head')
 </head>
