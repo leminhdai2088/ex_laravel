@@ -35,7 +35,7 @@
                     <div class="footer-text">Email: <a href="mailto: 20521427@gm.uit.edu.vn">noithatfudo@gmail.com</a> </div>
                     <div class="footer-text">Địa chỉ: Khu phố 6, phường Linh Trung, Thành phố Thủ Đức, Thành phố Hồ Chí Minh</div>
                     <div class="link flex gap-5 mt-2">
-                        <a href="https://www.facebook.com/profile.php?id=100047664311320" target="_blank"><img src="/front/images/icon/facebook.svg" alt="Facebook" height="30" width="30" title="Facebook"></a>
+                        <a href="https://www.facebook.com/noithatfudo" target="_blank"><img src="/front/images/icon/facebook.svg" alt="Facebook" height="30" width="30" title="Facebook"></a>
                         <a href="https://www.youtube.com/@NoithatFudo" target="_blank"><img src="/front/images/icon/youtube.svg" alt="Youtube" height="30" width="30" title="Youtube"></a>
                         <a href="https://www.instagram.com/_lmduite/" target="_blank"><img src="/front/images/icon/ins.svg" alt="Instagram" height="30" width="30" title="Instagram"></a>
                         <a href="https://nguyentuankha.wordpress.com/" target="_blank"><img src="/front/images/icon/wordpress.svg" alt="Wordpress" height="30" width="30" title="Wordpress"></a>

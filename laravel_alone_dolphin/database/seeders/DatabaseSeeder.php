@@ -34,7 +34,10 @@ class DatabaseSeeder extends Seeder
 
                 1.	Đánh giá không gian phòng khách
                 Trước khi chọn sofa, bạn cần đánh giá không gian phòng khách của mình. Bạn cần xác định kích thước, hình dạng và chiều cao của sofa phù hợp với không gian sống của bạn. Nếu phòng khách của bạn có diện tích nhỏ, bạn nên chọn sofa có kích thước nhỏ và không quá nặng nề.
+                <img src="https://azco.vn/wp-content/uploads/2019/02/meo-chung-chup-anh-noi-that-ngoai-that.jpg">
+
                 
+                <a href="https://www.google.com.vn/search?tbm=isch&q=%E1%BA%A3nh+n%E1%BB%99i+th%E1%BA%A5t#imgrc=tTBGoy3W9IErxM">đây là 1 liên kết</a>
                 2.	Chọn phong cách thiết kế nội thất
                 Phong cách thiết kế nội thất cũng là một yếu tố quan trọng trong việc chọn sofa. Nếu phòng khách của bạn có phong cách trang trí cổ điển, bạn nên chọn sofa có kiểu dáng cổ điển và sang trọng. Nếu phòng khách của bạn có phong cách hiện đại, bạn có thể chọn sofa có kiểu dáng đơn giản và gọn nhẹ.
                 

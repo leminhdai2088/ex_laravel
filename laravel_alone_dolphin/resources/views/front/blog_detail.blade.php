@@ -156,12 +156,10 @@
                     <?php
                     $content = $blog_detail[0]->content;
                     $content .="
-                    Xem thêm tại nội thất Fudo: https://noithatfudo.vn";
+                    Xem thêm tại nội thất Fudo: <a href='https://noithatfudo.vn'>https://noithatfudo.vn</a>";
                     $content = nl2br($content);
-                    
-                    $formatted_content = preg_replace("/(https?:\/\/[^\s]+)/", '<a href="$1">$1</a>', $content);
-                    echo '<div>'.$formatted_content.'</div>';
                     ?>
+                    <div>{!! $content !!}</div>
                 </div>
               <div class="danhgiabaiviet">
                 <div class="container">
@@ -198,6 +196,16 @@
                     </div>
                   </div>
                 </form>
+              </div>
+              @else 
+              <div class="container forcelogin">
+                <div class="row">
+                  
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <a href="/sign_in">Đăng nhập để viết bình luận</a>
+                  </div>
+                  
+                </div>
               </div>
               @endif
               <div class="blog-comment">
