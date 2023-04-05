@@ -184,7 +184,7 @@
                       <img src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" alt="">
                     </div>
                     <div class="col-xs-9 col-sm-10 col-md-11 col-lg-11">
-                      <p>{{ auth()->user()->name }}</p>
+                      <p class="user_name_comment">{{ auth()->user()->name }}</p>
                       <input type="textarea" name="messages" class="comment-area" placeholder="Viết bình luận..." required>
                       <div id="rateYo"></div>
                       <input type="hidden" name="stars" id="user-comment-rating">
@@ -217,8 +217,18 @@
                     <img src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" alt="">
                     </div>
                     <div class="col-xs-9 col-sm-10 col-md-11 col-lg-11">
-                      <p>{{ $index->name }}</p>
+                      <p class="user_name_comment">{{ $index->name }}</p>
                       <p>{{ $index->messages }}</p>
+                      <div id="rateResult{{ $index->id }}"></div>
+                      <script>
+                        $(function () {
+                          $("#rateResult{{ $index->id }}").rateYo({
+                              starWidth: "20px",
+                              rating: "{{ $index->stars }}",
+                              readOnly: true
+                            });
+                        });
+                      </script>
                     </div>
                   </div>
                   @endforeach
