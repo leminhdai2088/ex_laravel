@@ -137,6 +137,141 @@ class DatabaseSeeder extends Seeder
                 'author' => 'Nguyễn Tuấn Kha',
                 'status' => '1',
             ],
+            [
+                'title' => 'Làm thế nào để phòng luôn sạch đẹp cùng Fudo',
+                'short_description' => 'Bản thân mỗi người chúng ta ai cũng muốn có 1 không gian sạch sẽ và thoáng mát, nó giúp cho chúng ta trở nên dễ chịu hơn.',
+                'image' => 'sap-xep-phong-ngu-gon-gang.png',
+                'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
+                'content' => 'Để cho phòng luôn sạch đẹp cùng với <a href="http://noithatfudo.vn">nội thất Fudo</a>, bản thân mỗi người chúng ta ai cũng muốn có 1 không gian sạch sẽ và thoáng mát, nó giúp cho chúng ta trở nên dễ chịu hơn. Tuy vậy, muốn để căn phòng của chúng ta luôn trong trạng thái sạch đẹp, thoáng mát là một việc không hề dễ dàng. Dưới đây sẽ là 1 vài những gợi ý để bạn có thể giữ cho căn phòng của mình luôn sạch đẹp:
+                1.	Tổ chức và sắp xếp đồ đạc một cách khoa học và hợp lý: Để căn phòng của bạn luôn luôn sạch đẹp, bạn cần sắp xếp đồ đạc một cách hợp lý. Bạn có thể bắt đầu bằng cách tìm một nơi để đặt và lưu trữ đồ đạc của bạn, ví dụ như <a href="http://noithatfudo.vn/bed_room/16">tủ</a>, hộp hoặc <a href="http://noithatfudo.vn/bed_room/16">kệ để giày/dép</a> để giữ cho các đồ đạc của bạn không bị rải rác khắp phòng và không bị bừa bộn. Hãy sắp xếp các vật dụng theo từng loại để dễ tìm kiếm và tránh cho việc gây lộn xộn đồ đạc.
+                
+                2.	Dọn dẹp và vệ sinh phòng thường xuyên: Để giữ cho căn phòng của bạn luôn trong trạng thái sạch đẹp, bạn nên dọn dẹp thường xuyên. Hãy sử dụng một số loại dụng cụ như bàn chải, lau chùi, chổi để làm sạch bụi và rác trong phòng. Bạn nên dọn dẹp những khu vực thường xuyên sử dụng như <a href="http://noithatfudo.vn/home_office/25">bàn làm việc</a>, <a href="http://noithatfudo.vn/bed_room/9">giường ngủ</a>và <a href="http://noithatfudo.vn/kitchen_room">khu vực nấu ăn.</a>
+                <img src="https://toplist.vn/images/800px/nhung-meo-giup-phong-ngu-gon-gang-va-sach-se-hon-cho-nguoi-ban-ron-205545.jpg" alt="phong-ngu">
+                
+                3.	Vệ sinh hàng ngày: Để phòng luôn sạch đẹp, bạn cần vệ sinh hàng ngày bằng cách quét bụi và lau sàn, lau các bề mặt và kính cửa sổ, sử dụng <a href="http://noithatfudo.vn/bath_room/35">thảm lau chân</a> để vệ sinh chân khỏi những bụi bẩn trước khi đi vào phòng. Hãy sử dụng các loại chất tẩy rửa, nhưng hãy đảm bảo rằng bạn đã đọc hướng dẫn sử dụng trên bao bì sản phẩm để tránh gây hại cho sức khỏe.
+                <img src="https://png.pngtree.com/thumb_back/fh260/background/20210907/pngtree-gray-and-tidy-living-room-environment-design-photography-map-with-map-image_795689.jpg" alt="phonhg-khach"/>
+                
+                4.	Loại bỏ rác thải đúng cách: Để phòng luôn sạch đẹp, bạn cần loại bỏ rác thải một cách đúng cách. Hãy sử dụng túi rác để giữ cho rác thải không bị rơi rụng trên sàn nhà. Bạn cũng nên loại bỏ rác thải thường xuyên để tránh gây ô nhiễm và mùi hôi trong phòng.
+                
+                5.	Để giữ <a href="http://noithatfudo.vn/kitchen_room">nhà bếp</a> luôn sạch sẽ: Giữ cho nhà bếp luôn sạch sẽ là rất quan trọng để tránh sự phát triển của vi khuẩn và bệnh tật. Rửa bát đĩa ngay sau khi sử dụng và đảm bảo rằng mọi vật dụng như lò vi sóng, bếp ga, tủ lạnh, chậu rửa đũa, <a href="http://noithatfudo.vn/kitchen_room/19">bộ bàn ăn</a>, <a href="http://noithatfudo.vn/kitchen_room/22">thảm bếp</a>, <a href="http://noithatfudo.vn/kitchen_room/23">kệ bếp</a>, <a href="http://noithatfudo.vn/kitchen_room/24">khăn bếp</a>, …được vệ sinh thường xuyên.
+                ',
+                'author' => 'Nguyễn Tuấn Kha',
+                'status' => '1',
+            ],
+            [
+                'title' => 'Cách Bảo Quản SOFA Luôn Đẹp Cùng Với Fudo',
+                'short_description' => 'Trong bài viết này, chúng tôi sẽ giới thiệu cho bạn một số cách vệ sinh và bảo quản sofa tại nhà để nó luôn đẹp và tiết kiệm chi phí sửa chữa',
+                'image' => 'aaa.png',
+                'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
+                'content' => '<img src=" https://www.bienphong.com.vn/images/media//730/2022/4/18/aaa.png">
+                <a href="http://noithatfudo.vn/">Cửa hàng nội thất Fudo</a> là một trong những thương hiệu nổi tiếng về đồ nội thất tại Việt Nam. Nếu bạn đã đầu tư vào một chiếc <a href="http://noithatfudo.vn/living_room/1">sofa</a> mới từ cửa hàng này, thì chắc chắn bạn muốn giữ cho nó luôn đẹp và bền lâu. Trong bài viết này, chúng tôi sẽ giới thiệu cho bạn một số <a href="http://noithatfudo.vn/blog">cách vệ sinh và bảo quản sofa tại nhà</a> để nó luôn đẹp và tiết kiệm chi phí sửa chữa.
+                
+                1.	Để <a href="http://noithatfudo.vn/living_room/1">sofa</a> luôn sạch sẽ
+                <img src="https://cf.shopee.vn/file/187493550ac86bb93f636444acf150de">
+                Để <a href="http://noithatfudo.vn/living_room/1">sofa</a> luôn sạch sẽ, bạn nên đánh bại bụi bẩn từ bề mặt sofa bằng một cây chổi mềm hoặc một tấm vải sạch mỗi ngày. Bạn cũng nên hút bụi <a href="http://noithatfudo.vn/living_room/1">sofa</a> định kỳ bằng máy hút bụi. Nếu có một vết bẩn nhỏ, bạn có thể lau chùi nó bằng một tấm vải ẩm hoặc một khăn ướt. Tuy nhiên, nếu vết bẩn quá lớn hoặc khó khăn để làm sạch, hãy gọi đến dịch vụ chuyên nghiệp để giúp bạn làm sạch sofa.
+
+                2.	Tránh để sofa dưới ánh nắng trực tiếp và nhiệt độ cao 
+                
+                <img src="https://sofagiagoc.com/wp-content/uploads/2017/04/Bao-ve-sofa-da-khoi-anh-sang-mat-troi-chieu-truc-tiep.jpg">
+                Các chất liệu của <a href="http://noithatfudo.vn/living_room/1">sofa</a> bao gồm da, vải và gỗ đều rất dễ bị phai màu nếu tiếp xúc với ánh nắng nóng hoặc nhiệt độ cao. Vì vậy, bạn nên đặt <a href="http://noithatfudo.vn/living_room/1">sofa</a> của mình ở nơi không tiếp xúc trực tiếp với ánh nắng mặt trời và tránh đặt nó gần các nguồn nhiệt như lò sưởi hoặc tủ lạnh.
+
+                3.	Đảm bảo thoáng khí cho <a href="http://noithatfudo.vn/living_room/1">sofa</a>
+
+                <img src="https://vito.vn/wp-content/uploads/2021/06/bo-sofa.jpg">
+                Để giữ <a href="http://noithatfudo.vn/living_room/1">sofa</a> luôn mới và đẹp, bạn cần đảm bảo cho <a href="http://noithatfudo.vn/living_room/1">sofa</a> được thoáng khí. Nếu <a href="http://noithatfudo.vn/living_room/1">sofa</a> được đặt trong một không gian kín, khí hậu ẩm ướt sẽ làm cho <a href="http://noithatfudo.vn/living_room/1">sofa</a> dễ bị mốc và mùi hôi. Vì vậy, hãy để <a href="http://noithatfudo.vn/living_room/1">sofa</a> ở những nơi có khí hậu thông thoáng để tránh bị ẩm và mốc.
+
+                4.	Sử dụng nước hoa quả để tẩy vết bẩn
+
+                <img src="https://cdn.vuanem.com/blog/wp-content/uploads/2021/10/ve-sinh-goi-sofa-tai-nha.jpg">
+                Trong quá trình sử dụng, <a href="http://noithatfudo.vn/living_room/1">sofa</a> sẽ dễ bị bẩn vì tiếp xúc với bụi, mồ hôi hoặc đồ ăn uống. Nếu để vết bẩn ở trên sofa trong thời gian dài, chúng sẽ trở nên khó tẩy và làm <a href="http://noithatfudo.vn/living_room/1">sofa</a> không còn mới mẻ như trước. Tuy nhiên, bạn không cần phải lo lắng vì <a href="http://noithatfudo.vn/living_room/1">Cửa hàng nội thất Fudo</a> có một bí quyết để tẩy vết bẩn hiệu quả và an toàn cho <a href="http://noithatfudo.vn/living_room/1">sofa</a>. Đó là sử dụng nước hoa quả để tẩy vết bẩn trên sofa. Bạn chỉ cần lau vết bẩn bằng miếng vải ẩm và thêm một ít nước hoa quả vào để tẩy vết bẩn. Sau đó, lau sạch bằng miếng vải khô. Nước hoa quả không chỉ giúp tẩy vết bẩn hiệu quả mà còn mang lại mùi thơm dịu nhẹ cho <a href="http://noithatfudo.vn/living_room/1">sofa</a>.
+
+                5.	Xoay định kỳ để tránh xẹp lún
+
+                <img src="http://lamsach5s.vn/wp-content/uploads/ghe-sofa-bi-lun-anh-dai-dien.jpg">
+Khi sử dụng <a href="http://noithatfudo.vn/living_room/1">sofa</a> thường xuyên, có thể xảy ra hiện tượng xẹp lún trên một số vị trí của sofa. Để tránh hiện tượng này, bạn nên xoay định kỳ <a href="http://noithatfudo.vn/living_room/1">sofa</a> để các phần sử dụng được phân bố đều.
+ 
+6.	Sử dụng bao gối trang trí
+<img src="https://noithatvinaco.com/hoanghung/31/images/huong-dan-trang-tri-ghe-sofa-voi-goi-tua-an-tuong-1.jpg">
+Sử dụng bao gối trang trí là một cách tuyệt vời để bảo vệ sofa của bạn khỏi những vết bẩn và xước. Bạn nên chọn những bao gối trang trí có chất liệu dễ giặt và bền đẹp để dễ dàng thay thế khi cần thiết. Bao gối cũng giúp tạo thêm phong cách và màu sắc cho <a href="http://noithatfudo.vn/living_room/1">sofa</a> của bạn.
+ 
+7.	Bảo quản sofa đúng cách khi không sử dụng
+<img src="https://static.wixstatic.com/media/f0f285_566bf4f0f66f47709ae038fe795fae1b~mv2.jpg/v1/fill/w_640,h_476,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/sofa_cover_%C3%A1%C2%BA%C2%A3nh_co_ver.jpg">
+Khi không sử dụng <a href="http://noithatfudo.vn/living_room/1">sofa</a> trong một thời gian dài, bạn nên bảo quản nó đúng cách để tránh bị ẩm mốc hoặc bị hư hỏng. Bạn có thể dùng bao bọc sofa để bảo vệ sofa khỏi bụi bẩn và ánh sáng mặt trời. Nếu không có bao bọc, bạn nên sử dụng tấm vải lụa hoặc vải bông để bọc <a href="http://noithatfudo.vn/living_room/1">sofa</a> trước khi đặt vào kho.
+ 
+8.	Thường xuyên kiểm tra và bảo trì sofa
+<img src="https://sofadungthinh.com/uploads/details/2021/02/images/sofabuyingadvice-lowres-pattern-2x1.jpg.webp">
+
+Thường xuyên kiểm tra và bảo trì <a href="http://noithatfudo.vn/living_room/1">sofa</a>  của bạn cũng rất quan trọng để giữ cho nó luôn đẹp và bền lâu. Bạn nên kiểm tra các bộ phận của <a href="http://noithatfudo.vn/living_room/1">sofa</a> như chân, tay vịt và phần khung để đảm bảo chúng không bị lỏng hoặc hư hỏng. Nếu phát hiện ra sự cố nào, hãy sửa chữa ngay để tránh tình trạng tồi tệ hơn.
+Như vậy, đó là một số cách bảo quản sofa để giữ cho nó luôn đẹp và bền lâu. Nếu bạn đang tìm kiếm một cửa hàng nội thất chất lượng để mua <a href="http://noithatfudo.vn/living_room/1">sofa</a>, <a href="http://noithatfudo.vn">cửa hàng nội thất Fudo</a>là một lựa chọn tuyệt vời. Với nhiều năm kinh nghiệm trong lĩnh vực này, Fudo cam kết cung cấp cho khách hàng những sản phẩm chất lượng với giá cả hợp lý và dịch vụ mua sắm tốt nhất.
+                ',
+                'author' => 'Nguyễn Tuấn Kha',
+                'status' => '1',
+            ],
+            [
+                'title' => 'Góc nhìn mới về nội thất cho không gian văn phòng cùng Fudo',
+                'short_description' => 'Sau đây, hãy cùng Nội thất Fudo khám phá những góc nhìn mới về nội thất trong môi trường văn phòng, làm việc nhé',
+                'image' => 'gia-cong-noi-that-tai-hai-phong-10.png',
+                'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
+                'content' => 'Từ trước đến nay, chúng ta đã luôn quan niệm rằng: bàn ăn nên được để ở phòng bếp hay là ghế sofa nên được để trong phòng khách. Điều đó vô tình thu hẹp sự sáng tạo, thiết kế thú vị của mỗi văn phòng. Sau đây, hãy cùng <a href="http://noithatfudo.vn/">Nội thất Fudo</a>  khám phá những góc nhìn mới về nội thất trong môi trường văn phòng, làm việc nhé.
+ 
+                <img src="https://gohieuhuong.vn/wp-content/uploads/2020/09/gia-cong-noi-that-tai-hai-phong-10.jpg" alt="Thiết kế nội thất văn phòng - Gỗ Hiếu Hương - 0767.82.8888"> 
+                1. Sự thích hợp của bàn ăn
+                Khi nhắc tới <a href="http://noithatfudo.vn/kitchen_room/20">bàn ăn</a>, chúng ta thường liên tưởng đến những bữa cơm nóng hồi cùng với gia đình tràn ngập bầu không khí ấm cúng và hạnh phúc phải không nào? Đó chính là sự thân thuộc khi nhắc đến một chiếc <a href="http://noithatfudo.vn/kitchen_room/19">bàn ăn gia đình</a>, vậy nếu chúng ta sử dụng nó trong văn phòng làm việc liệu sẽ như thế nào nhỉ. Những kiểu dáng, thiết kế dành cho bàn làm việc thường rất đơn giản, có ít sự lựa chọn hơn so với các mẫu bàn ăn hiện nay. Thật vây, bạn có thể chọn những chiếc bàn làm việc, bàn họp với các mẫu mã khác nhau tại gian hàng dành cho phòng bếp. Với sự sang trọng, các sản phẩm bàn ăn sẽ tạo nên một không gian làm việc hết sức thú vị và sang trọng.
+                 
+                <img src="https://nhaxinh.com/wp-content/uploads/2023/03/GIAI-PHAP-NOI-THAT-CHO-KHONG-GIAN-VAN-PHONG-2.jpg" alt="Sự thích hợp của bàn ăn">
+                Sự thật rằng, bàn ăn và bàn làm việc tại văn phòng thường được làm với cấu trúc và chất liệu giống nhau. Mọi người hay mua bàn làm việc với mục đích có một nơi để các thiết bị như: máy tính, tài liệu,... hoặc tạo không gian tổ chức các cuộc họp để thảo luận về những công việc sắp tới. Với những nhu cầu như vậy, những chiếc bàn ăn sang trọng không chỉ đáp ứng một cách hoàn hảo mà con tạo không gian làm việc mới lạ và thú vị.   
+                 
+                <img src="https://nhaxinh.com/wp-content/uploads/2023/03/GIAI-PHAP-NOI-THAT-CHO-KHONG-GIAN-VAN-PHONG-.jpg" alt="Sự thích hợp của bàn ăn">
+                Với những chiếc bàn ăn được thiết kế với các mẫu mã hiện đại, sang trọng như hiện nay, không gian làm việc chắc hẳn sẽ rất độc đáo và thú vị. Hơn thế nữa, đối với những người làm việc cần sự sáng tạo, tư duy thì những chiếc bàn ăn phá cách này sẽ là nguồn cảm hứng mới lạ, kích thích tư duy giúp nâng cao hiệu suất công việc lên tối đa. Vì vậy, nội thất Fudo sẽ mách bạn một số <a href="http://noithatfudo.vn/kitchen_room/20">mẫu mã bàn ăn</a> được thiết kế sang trọng để bạn tham khảo.  
+                2. Tính đa năng của ghế ăn
+                Nhân viên làm việc tại văn phòng cùng với những mục tiêu, kế hoạch cụ thể và rõ ràng, vì thế sẽ thật tuyệt nếu văn phòng nơi họ làm việc được biến tấu theo góc nhìn mới, vừa tạo cảm giác mới lạ, ấm cúng đồng thời phát huy chất riêng của không gian làm việc. 
+                Dân văn phòng thường sử dụng những chiếc ghế inox, ghế nhựa để làm việc từ sáng đến tối, khiến cơ thể mệt mỏi và không linh hoạt. Những chiếc <a href="http://noithatfudo.vn/kitchen_room/21">ghế ăn tựa lưng, có đế xoay 360 độ</a> là sự thay thế hoàn hảo cho nhân viên văn phòng. 
+                 
+                <img src="https://nhaxinh.com/wp-content/uploads/2023/03/GIAI-PHAP-NOI-THAT-CHO-KHONG-GIAN-VAN-PHONG-3-1.jpg" alt="Tính đa năng của ghế ăn">
+                Với những căn phòng có kích thước nhỏ, những chiếc ghế nhỏ gọn sẽ là một trong những lựa chọn hàng đầu. <a href="http://noithatfudo.vn/kitchen_room/21">Ghế ăn của nội thất Fudo</a> đa dạng, kiểu dáng gọn gàng mang lại vẻ đẹp trang nhã sẽ rất thích hợp để bạn chọn lựa.
+                3. Sofa – sự sang nhã không thể thiểu 
+                Những nơi cần sự trang nghiêm chắc chắn sẽ không thể thiếu một bộ sofa đẹp, đặc biệt ở nơi văn phòng, phòng tiếp đãi đối tác. <a href="http://noithatfudo.vn/living_room/1">Sofa tại Fudo</a> được làm từ chất liệu cao cấp, khiến người ngồi cảm giác thoải mái vì thế rất phù hợp cho không khí của những buổi kí kết hợp đồng quan trọng.
+                 
+                <img src="https://nhaxinh.com/wp-content/uploads/2023/03/GIAI-PHAP-NOI-THAT-CHO-KHONG-GIAN-VAN-PHONG-5.jpg" alt="Sofa – sự sang nhã không thể thiểu">
+                Các sản phẩm nội thất không nên bị " đóng khung " trong một giới hạn quy chuẩn nào cả. Qua những chia sẻ trên, hy vọng Nội thất Fudo đã cho bạn một góc nhìn mới về nội thất cho không gian văn phòng. Hãy liên hệ với <a href="http://noithatfudo.vn/">Nội Thất Fudo</a> ngay khi có bất kỳ câu hỏi nào nhé!
+                ',
+                'author' => 'Nguyễn Tuấn Kha',
+                'status' => '1',
+            ],
+            [
+                'title' => 'Những điều cần biết khi chọn mua bàn ăn',
+                'short_description' => 'Phòng ăn không chỉ đóng vai trò là nơi chúng ta cùng nhau tận hưởng bữa ăn mà còn là trung tâm của không gian phòng ăn',
+                'image' => '9-dieu-can-luu-y-chon-ban-an-phu-hop-how-to-choose-right-dining-table.png',
+                'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
+                'content' => 'Khi trang trí cho không gian ăn uống của gia đình, <a href="http://noithatfudo.vn/kitchen_room/19">bàn ăn</a> là một trong những món đồ nội thất không thể thiếu. Nó không chỉ đóng vai trò là nơi chúng ta cùng nhau tận hưởng bữa ăn mà còn là trung tâm của không gian phòng ăn. Tuy nhiên, chọn mua một bàn ăn phù hợp với không gian phòng ăn và phù hợp với phong cách của bạn không phải là điều dễ dàng. Trong bài viết này, <a href="http://noithatfudo.vn/">nội thất Fudo</a> sẽ chia sẻ với bạn một số điều cần biết khi chọn mua bàn ăn để giúp bạn có được lựa chọn đúng đắn.
+  
+                <img src="https://file.hstatic.net/1000380248/article/9-dieu-can-luu-y-chon-ban-an-phu-hop-how-to-choose-right-dining-table_4c28630631704ed19ad9b9512865a694.jpg" alt="Bàn ăn cho thiết kế nội thất hiện đại">
+                <p style="text-align: center;">Bàn ăn cho thiết kế nội thất hiện đại</p>
+                1.	Kích thước và hình dáng của bàn ăn
+                Khi lựa chọn mua <a href="http://noithatfudo.vn/kitchen_room/20/99">bàn ăn cho gia đình</a>, một trong những yếu tố quan trọng cần phải quan tâm đến là kích thước của bàn ăn. Kích thước này sẽ phải phù hợp với không gian phòng ăn và số lượng người sử dụng bàn.
+                Nếu phòng ăn của bạn khá nhỏ, bạn nên chọn một chiếc bàn nhỏ hơn để tiết kiệm diện tích. Một <a href="http://noithatfudo.vn/kitchen_room/20/96">bàn ăn nhỏ</a> có thể chứa tối đa 4 người, đủ để phục vụ cho một gia đình nhỏ. Tuy nhiên, nếu phòng ăn của bạn rộng hơn, bạn có thể chọn một chiếc bàn lớn hơn để phục vụ cho nhiều người hơn.
+                Một điều quan trọng khác cần lưu ý khi chọn kích thước bàn ăn là độ cao của bàn. Bàn ăn nên có độ cao phù hợp để người sử dụng có thể dễ dàng ngồi và ăn mà không cần phải cúi xuống hoặc nâng cao ghế của mình. Thông thường, độ cao của <a href="http://noithatfudo.vn/kitchen_room/20/98">bàn ăn sẽ dao động từ 28 đến 30 inch</a> (tương đương từ 71 đến 76 cm).
+                Cuối cùng, hãy nhớ rằng kích thước của bàn ăn cần phải phù hợp với số lượng người sử dụng bàn. Nếu bạn có một gia đình lớn hoặc thường xuyên đón khách, hãy chọn một chiếc bàn lớn hơn để đảm bảo đủ chỗ cho mọi người. 
+                Hình dáng của bàn ăn cũng rất quan trọng, nó phải phù hợp với không gian phòng ăn và phong cách của bạn.
+                 
+                <img src="https://noithatbmd.vn/wp-content/uploads/2020/08/Ban-an-omnia.jpg" alt="Mẫu bộ bàn ăn đáng mua cho không gian bếp">
+                <p style="text-align: center;">Mẫu bộ bàn ăn đáng mua cho không gian bếp</p>
+                2.	Chất liệu của bàn ăn
+                Khi chọn mua bàn ăn, chất liệu của bàn là một yếu tố rất quan trọng mà bạn nên lưu ý. Chất liệu của bàn ăn có thể ảnh hưởng đến tính năng, thẩm mỹ và tuổi thọ của bàn.
+                Một trong những chất liệu phổ biến cho bàn ăn là gỗ. Gỗ là chất liệu tự nhiên, có độ bền cao và thường có vẻ đẹp tự nhiên. Tuy nhiên, nếu không được bảo quản tốt, gỗ có thể bị mối mọt hoặc bị biến dạng. Nếu bạn muốn mua <a href="http://noithatfudo.vn/kitchen_room/20/97">bàn ăn bằng gỗ</a>, hãy chọn loại gỗ chất lượng cao như teak, oak hoặc walnut. Hoặc bạn có thể chọn gỗ sồi, gỗ cao su, gỗ thông hoặc gỗ mun cho bàn ăn của mình.
+                Ngoài ra, bàn ăn có thể được làm bằng kim loại hoặc thủy tinh. Bàn ăn kim loại có thể đem lại vẻ hiện đại và sang trọng cho phòng ăn. Tuy nhiên, nó có thể bị trầy xước và dễ bị ăn mòn nếu không được bảo quản
+                 
+                <img src="https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/338388949_755907312757422_1212558671022965658_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=fX3xUNY6O64AX_xq3uW&_nc_ht=scontent.fsgn13-2.fna&oh=00_AfCApw5nYdXTLKWlV6Z-0F2Plv9Ia0fK0MiVk3QPPZMSgQ&oe=6430D85F" alt="Kiểu dáng bàn ăn thông minh">
+                <p style="text-align: center;">Kiểu dáng bàn ăn thông minh</p>
+                3.	Kiểu dáng của bàn ăn
+                Khi chọn mua bàn ăn, không chỉ quan tâm đến chất liệu, kích thước hay tính tiện ích mà còn cần lưu ý đến kiểu dáng của bàn ăn. Kiểu dáng của bàn ăn có thể tạo ra ấn tượng đầu tiên và tác động đến không gian bếp, <a href="http://noithatfudo.vn/kitchen_room">phòng ăn</a>, thậm chí là cả không gian sống của gia đình bạn.
+                Khi lựa chọn kiểu dáng, bạn có thể xem xét đến <a href="http://noithatfudo.vn/blog/4">phong cách trang trí nội thất</a> của căn nhà để đảm bảo rằng bàn ăn phù hợp với không gian tổng thể. Ví dụ, nếu bạn có một căn nhà theo phong cách cổ điển, bạn có thể muốn chọn một bàn ăn mang phong cách cổ điển, với chân bàn và hoa văn cầu kỳ. Nếu nhà bạn có phong cách hiện đại, nội thất Fudo có thể cung cấp cho bạn bàn ăn có thiết kế đơn giản, màu sắc tối giản
+                Ngoài ra, lưu ý đến chất liệu và màu sắc của bàn ăn. Chọn chất liệu và màu sắc phù hợp với phong cách trang trí của căn nhà, cũng như nhu cầu sử dụng. Ví dụ, nếu bạn có trẻ nhỏ trong gia đình, bạn có thể muốn chọn bàn ăn bằng chất liệu chống trầy xước hoặc dễ lau chùi để tiện sử dụng.
+                Hy vọng với những chia sẻ trên, <a href="http://noithatfudo.vn/">Fudo</a> có thể đem đến cho bạn những kinh nghiệm bổ ích về những tiêu chuẩn khi chọn mua bàn ăn, giúp bạn có thể mua được những sản phẩm chất lượng, bền đẹp. Bên cạnh những kinh nghiệm trên thì địa chỉ chọn mua bàn ăn uy tín, chất lượng cũng không kém phần quan trọng. Hãy đến <a href="http://noithatfudo.vn/">nội thất Fudo</a> để kiểm chứng nhé!                
+                ',
+                'author' => 'Nguyễn Tuấn Kha',
+                'status' => '1',
+            ],
         ]);
         DB::table('users')->insert([
             [
@@ -146,6 +281,7 @@ class DatabaseSeeder extends Seeder
                 'password' => Hash::make('123456'),
                 'level' => 1,
             ],
+            
         ]);
 
         // DB::table('product_category')->insert([
