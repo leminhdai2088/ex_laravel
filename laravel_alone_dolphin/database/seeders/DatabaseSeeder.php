@@ -155,14 +155,14 @@ class DatabaseSeeder extends Seeder
                 
                 5.	Để giữ <a href="http://noithatfudo.vn/kitchen_room">nhà bếp</a> luôn sạch sẽ: Giữ cho nhà bếp luôn sạch sẽ là rất quan trọng để tránh sự phát triển của vi khuẩn và bệnh tật. Rửa bát đĩa ngay sau khi sử dụng và đảm bảo rằng mọi vật dụng như lò vi sóng, bếp ga, tủ lạnh, chậu rửa đũa, <a href="http://noithatfudo.vn/kitchen_room/19">bộ bàn ăn</a>, <a href="http://noithatfudo.vn/kitchen_room/22">thảm bếp</a>, <a href="http://noithatfudo.vn/kitchen_room/23">kệ bếp</a>, <a href="http://noithatfudo.vn/kitchen_room/24">khăn bếp</a>, …được vệ sinh thường xuyên.
                 ',
-                'author' => 'Nguyễn Tuấn Kha',
+                'author' => 'Lê Minh Đại',
                 'status' => '1',
             ],
             [
                 'title' => 'Cách Bảo Quản SOFA Luôn Đẹp Cùng Với Fudo',
                 'short_description' => 'Trong bài viết này, chúng tôi sẽ giới thiệu cho bạn một số cách vệ sinh và bảo quản sofa tại nhà để nó luôn đẹp và tiết kiệm chi phí sửa chữa',
                 'image' => 'aaa.png',
-                'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
+                'keywords' => 'sofa, thiết kế nội thất, showroom sofa gỗ, nội thất fudo, nội thất phòng khách',
                 'content' => '<img src=" https://www.bienphong.com.vn/images/media//730/2022/4/18/aaa.png">
                 <a href="http://noithatfudo.vn/">Cửa hàng nội thất Fudo</a> là một trong những thương hiệu nổi tiếng về đồ nội thất tại Việt Nam. Nếu bạn đã đầu tư vào một chiếc <a href="http://noithatfudo.vn/living_room/1">sofa</a> mới từ cửa hàng này, thì chắc chắn bạn muốn giữ cho nó luôn đẹp và bền lâu. Trong bài viết này, chúng tôi sẽ giới thiệu cho bạn một số <a href="http://noithatfudo.vn/blog">cách vệ sinh và bảo quản sofa tại nhà</a> để nó luôn đẹp và tiết kiệm chi phí sửa chữa.
                 
@@ -204,14 +204,14 @@ Khi không sử dụng <a href="http://noithatfudo.vn/living_room/1">sofa</a> tr
 Thường xuyên kiểm tra và bảo trì <a href="http://noithatfudo.vn/living_room/1">sofa</a>  của bạn cũng rất quan trọng để giữ cho nó luôn đẹp và bền lâu. Bạn nên kiểm tra các bộ phận của <a href="http://noithatfudo.vn/living_room/1">sofa</a> như chân, tay vịt và phần khung để đảm bảo chúng không bị lỏng hoặc hư hỏng. Nếu phát hiện ra sự cố nào, hãy sửa chữa ngay để tránh tình trạng tồi tệ hơn.
 Như vậy, đó là một số cách bảo quản sofa để giữ cho nó luôn đẹp và bền lâu. Nếu bạn đang tìm kiếm một cửa hàng nội thất chất lượng để mua <a href="http://noithatfudo.vn/living_room/1">sofa</a>, <a href="http://noithatfudo.vn">cửa hàng nội thất Fudo</a>là một lựa chọn tuyệt vời. Với nhiều năm kinh nghiệm trong lĩnh vực này, Fudo cam kết cung cấp cho khách hàng những sản phẩm chất lượng với giá cả hợp lý và dịch vụ mua sắm tốt nhất.
                 ',
-                'author' => 'Nguyễn Tuấn Kha',
+                'author' => 'Vòng Chanh Khìn',
                 'status' => '1',
             ],
             [
                 'title' => 'Góc nhìn mới về nội thất cho không gian văn phòng cùng Fudo',
                 'short_description' => 'Sau đây, hãy cùng Nội thất Fudo khám phá những góc nhìn mới về nội thất trong môi trường văn phòng, làm việc nhé',
                 'image' => 'gia-cong-noi-that-tai-hai-phong-10.png',
-                'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
+                'keywords' => 'phòng làm việc, thiết kế nội thất, mẫu bàn ghế phòng khách 2023, nội thất văn phòng, nội thất fudo, noithatfudo',
                 'content' => 'Từ trước đến nay, chúng ta đã luôn quan niệm rằng: bàn ăn nên được để ở phòng bếp hay là ghế sofa nên được để trong phòng khách. Điều đó vô tình thu hẹp sự sáng tạo, thiết kế thú vị của mỗi văn phòng. Sau đây, hãy cùng <a href="http://noithatfudo.vn/">Nội thất Fudo</a>  khám phá những góc nhìn mới về nội thất trong môi trường văn phòng, làm việc nhé.
  
                 <img src="https://gohieuhuong.vn/wp-content/uploads/2020/09/gia-cong-noi-that-tai-hai-phong-10.jpg" alt="Thiết kế nội thất văn phòng - Gỗ Hiếu Hương - 0767.82.8888"> 
@@ -235,14 +235,14 @@ Như vậy, đó là một số cách bảo quản sofa để giữ cho nó luô
                 <img src="https://nhaxinh.com/wp-content/uploads/2023/03/GIAI-PHAP-NOI-THAT-CHO-KHONG-GIAN-VAN-PHONG-5.jpg" alt="Sofa – sự sang nhã không thể thiểu">
                 Các sản phẩm nội thất không nên bị " đóng khung " trong một giới hạn quy chuẩn nào cả. Qua những chia sẻ trên, hy vọng Nội thất Fudo đã cho bạn một góc nhìn mới về nội thất cho không gian văn phòng. Hãy liên hệ với <a href="http://noithatfudo.vn/">Nội Thất Fudo</a> ngay khi có bất kỳ câu hỏi nào nhé!
                 ',
-                'author' => 'Nguyễn Tuấn Kha',
+                'author' => 'Nguyễn Quốc Kỳ',
                 'status' => '1',
             ],
             [
                 'title' => 'Những điều cần biết khi chọn mua bàn ăn',
                 'short_description' => 'Phòng ăn không chỉ đóng vai trò là nơi chúng ta cùng nhau tận hưởng bữa ăn mà còn là trung tâm của không gian phòng ăn',
                 'image' => '9-dieu-can-luu-y-chon-ban-an-phu-hop-how-to-choose-right-dining-table.png',
-                'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
+                'keywords' => 'mẫu thiết kế phòng bếp đẹp hiện đại, thiết kế nội thất, nội thất phòng bếp, nội thất fudo, thiết kế nhà bếp',
                 'content' => 'Khi trang trí cho không gian ăn uống của gia đình, <a href="http://noithatfudo.vn/kitchen_room/19">bàn ăn</a> là một trong những món đồ nội thất không thể thiếu. Nó không chỉ đóng vai trò là nơi chúng ta cùng nhau tận hưởng bữa ăn mà còn là trung tâm của không gian phòng ăn. Tuy nhiên, chọn mua một bàn ăn phù hợp với không gian phòng ăn và phù hợp với phong cách của bạn không phải là điều dễ dàng. Trong bài viết này, <a href="http://noithatfudo.vn/">nội thất Fudo</a> sẽ chia sẻ với bạn một số điều cần biết khi chọn mua bàn ăn để giúp bạn có được lựa chọn đúng đắn.
   
                 <img src="https://file.hstatic.net/1000380248/article/9-dieu-can-luu-y-chon-ban-an-phu-hop-how-to-choose-right-dining-table_4c28630631704ed19ad9b9512865a694.jpg" alt="Bàn ăn cho thiết kế nội thất hiện đại">
@@ -270,6 +270,52 @@ Như vậy, đó là một số cách bảo quản sofa để giữ cho nó luô
                 Hy vọng với những chia sẻ trên, <a href="http://noithatfudo.vn/">Fudo</a> có thể đem đến cho bạn những kinh nghiệm bổ ích về những tiêu chuẩn khi chọn mua bàn ăn, giúp bạn có thể mua được những sản phẩm chất lượng, bền đẹp. Bên cạnh những kinh nghiệm trên thì địa chỉ chọn mua bàn ăn uy tín, chất lượng cũng không kém phần quan trọng. Hãy đến <a href="http://noithatfudo.vn/">nội thất Fudo</a> để kiểm chứng nhé!                
                 ',
                 'author' => 'Nguyễn Tuấn Kha',
+                'status' => '1',
+            ],
+            [
+                'title' => 'Thiết kế phòng ngủ đẹp, thông minh cùng với Fudo',
+                'short_description' => 'Trong bài viết dưới đây, Nội thất Fudo sẽ giới thiệu các phong cách thiết kế phòng ngủ thông minh mang đến cho bạn không gian sống hoàn hảo, thoải mái.',
+                'image' => 'Thiet_ke_phong_ngu_dep.png',
+                'keywords' => 'bộ giường ngủ đẹp, thiết kế nội thất, bàn ghế phòng ngủ, bộ nội thất phòng ngủ, giường ngủ đẹp hiện đại, mẫu phòng ngủ đẹp, nội thất Fudo', 
+                'content' => 'Hiện nay, khi không gian ngày càng trở nên chật hẹp hơn thì thiết kế phòng ngủ thông minh là sự lựa chọn tuyệt vời để tối ưu không gian của bạn nhưng vẫn đẹp và tiện nghi. Trong bài viết dưới đây, <a href="http://noithatfudo.vn/">Nội thất Fudo</a> sẽ giới thiệu các phong cách thiết kế phòng ngủ thông minh mang đến cho bạn không gian sống hoàn hảo, thoải mái.
+                1.Thế nào là phòng ngủ thông minh?
+                
+                Thiết kế phòng ngủ thông minh đang là xu hướng thiết kế trong những ngôi nhà hiện đại. Đây là những căn phòng đảm bảo chức năng, tiết kiệm diện tích và đảm bảo sinh hoạt thoải mái. Với những ý tưởng trang trí sáng tạo này, phòng ngủ của bạn sẽ trở nên hoàn hảo.
+                Với thiết kế phòng ngủ thông minh, đồ nội thất cũng có thể có nhiều chức năng. Đặc biệt là chiếc giường ngủ – món đồ nội thất chiếm nhiều diện tích nhất, đa năng và mang lại cảm giác thoải mái cho người sử dụng.
+                
+                2.Phong cách thiết kế phòng ngủ thông minh hoàn hảo cho không gian
+                
+                Phòng ngủ thông mình là sự lựa chọn tuyệt vời để thư giãn, xua tan mệt mỏi sau một ngày làm việc vất vả. Chúng tôi xin giới thiệu những mẫu phòng ngủ thông minh sau đây vừa giúp bạn tối ưu gian phòng nhỏ hẹp vừa tạo không gian sống hoàn hảo nhất.
+                Tủ quần áo gắn liền với bàn trang điểm và giá sách - nội thất phòng ngủ thông minh
+                Sử dụng những đồ nội thất như: <a href="http://noithatfudo.vn/bed_room/17">kệ trang trí</a>, bàn trang điểm, <a href="http://noithatfudo.vn/bed_room/10">tủ quần áo âm tường</a>... không chỉ giúp tạo nhiều khoảng trống để sử dụng mà còn gợi lên vẻ đẹp hiện đại, lôi cuốn cho không gian riêng tư. 
+                  
+                <img src="https://noithatcaco.vn/uploads/news/thumb/zwsu1qkt.jpg" alt="Top 22+ mẫu thiết kế tủ quần áo âm tường hiện đại và sang trọng">
+                <p style="text-align: center;">Thiết kế nội thất phòng ngủ với tủ quần áo âm tường</p>
+                
+                Cách sắp xếp như vậy giúp phòng ngủ trở nên rộng và thoáng hơn. Sử dụng kệ tivi đồng thời làm nơi để sách hoặc đặt chậu cây xanh cho phòng ngủ thoáng mát hơn.
+                Sử dụng giường kết hợp với tủ cho không gian nhỏ hẹp
+                Sự kết hợp của <a href="http://noithatfudo.vn/bed_room/9">giường</a> với tủ quần áo/bàn học làm việc được thiết kế nhỏ gọn giúp phòng ngủ trở nên ngăn nắp hơn và khoa học hơn mà vẫn đáp ứng được sự tiện nghi. Đây là một trong những món đồ được lựa chọn nhiều nhất bởi những gia đình ở trong căn hộ có diện tích không quá rộng rãi. 
+                 
+                <img src="https://noithatcattuong.vn/wp-content/uploads/2020/07/tu-quan-ao-ket-gop-giuong-ngu.jpg" alt="Các mẫu giường kết hợp tủ quần áo thông minh và ấn tượng">
+                <p style="text-align: center;">Phòng ngủ được thết kế giường kết hợp với tủ</p>
+                3.Thiết kế phòng ngủ thông minh với các vật dụng trang trí
+                
+                Thiết kế phòng ngủ thông minh bằng cách sử dụng các đồ vật mang điểm nhấn để thu hút mọi ánh nhìn. <a href="http://noithatfudo.vn/bed_room/13">Đèn bàn, đèn trang trí, gương</a> hay các loại tủ, kệ trang trí,… là những lựa chọn sáng suốt để bạn hiện thực ý tưởng trang trí này.
+                 
+                <img src="https://meon.vn/upload/images/cay-trang-tri-trong-phong-ngu.jpg" alt="Top 23+ đồ trang trí phòng ngủ đẹp đơn giản cần phải mua">
+                <p style="text-align: center;">Phòng ngủ với vật dụng trang trí</p>
+                
+                4.Mẹo sắp xếp phòng ngủ ấn tượng, ấm cúng
+
+                Bạn cũng nên biết một số mẹo dưới đây để thiết kế phòng ngủ thông minh và tiện nghi: 
+                •	Sử dụng kệ treo tường: Những chiếc kệ nhỏ được treo ở góc tường phòng ngủ vừa tăng tính thẩm mỹ, vừa tăng diện tích cho căn phòng. 
+                •	Tranh: Treo tranh trang trí phòng ngủ giúp giải trí cho người xem. Vì vậy, gia chủ có thể chọn những bức tranh hiện nay với nhiều xu hướng khác nhau để treo trong phòng ngủ. 
+                •	Trang trí bằng giấy dán tường: Để tiết kiệm chi phí, hãy sử dụng giấy dán tường trong phòng ngủ đẹp và ấm cúng. 
+                •	Nội thất thông minh: Sử dụng nội thất thông minh giúp phòng ngủ tiện nghi nhưng cũng đầy tinh tế. Chi tiết thêm: giường ngủ đa năng Fudo, tủ quần áo, cửa lùa, sofa thông minh Fudo, bàn học kết hợp giá sách... 
+                
+                Trên đây là những thông tin thiết kế phòng ngủ thông minh mà <a href="http://noithatfudo.vn/">Nội thất Fudo</a> muốn giới thiệu đến mọi người. Tùy vào diện tích căn phòng mà bạn có những ý tưởng thiết kế khác nhau. Tham khảo bài viết trên để thiết kế phòng ngủ của bạn trở nên hoàn hảo.             
+                ',
+                'author' => 'Lê Quang Lâm',
                 'status' => '1',
             ],
         ]);
