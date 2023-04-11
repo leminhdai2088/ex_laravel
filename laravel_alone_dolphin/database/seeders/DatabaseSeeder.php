@@ -318,6 +318,103 @@ Như vậy, đó là một số cách bảo quản sofa để giữ cho nó luô
                 'author' => 'Lê Quang Lâm',
                 'status' => '1',
             ],
+            [
+                'title' => 'Làm sao để trang trí phòng ngủ đẹp vào thoải mái?',
+                'short_description' => 'Phòng ngủ là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc.',
+                'image' => 'thiet-ke-noi-that-phong-ngu-20.png',
+                'keywords' => 'bộ giường ngủ đẹp, thiết kế nội thất, bàn ghế phòng ngủ, bộ nội thất phòng ngủ, giường ngủ đẹp hiện đại, mẫu phòng ngủ đẹp, nội thất Fudo', 
+                'content' => '<img src="https://abig.vn/wp-content/uploads/2022/01/thiet-ke-noi-that-phong-ngu-20.jpg" alt="Mẫu phòng ngủ đẹp và thoải mái">
+                <p style="text-align: center;"> Mẫu phòng ngủ đẹp và thoải mái </p>
+                1.	<a href="http://noithatfudo.vn/bed_room"> Phòng ngủ </a> là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc. Vì vậy, việc trang trí <a href=" http://noithatfudo.vn/bed_room"> Phòng ngủ </a>  đúng cách là vô cùng quan trọng để tạo ra một không gian thoải mái và thư giãn.
+                
+                2.	<a href="http://noithatfudo.vn/">Nội thất Fudo</a> là một thương hiệu nội thất hàng đầu với những sản phẩm nội thất thông minh, hiện đại và tiện ích. Nếu bạn đang tìm kiếm những sản phẩm nội thất <a href="http://noithatfudo.vn/bed_room"> Phòng ngủ </a>  chất lượng và đẳng cấp, thì <a href="http://noithatfudo.vn/">Fudo</a>  là sự lựa chọn tuyệt vời cho bạn.
+                
+                3.	<a href="http://noithatfudo.vn/bed_room/9">Giường ngủ</a> là một trong những yếu tố quan trọng nhất trong <a href="http://noithatfudo.vn/bed_room"> Phòng ngủ </a>. Nó không chỉ đóng vai trò chính trong việc tạo ra một không gian nghỉ ngơi thoải mái, mà còn góp phần vào việc trang trí <a href="http://noithatfudo.vn/bed_room"> Phòng ngủ </a> đẹp mắt. Bạn có thể chọn một chiếc <a href="http://noithatfudo.vn/bed_room/9">Giường ngủ</a> sang trọng với chất liệu cao cấp và thiết kế đẹp mắt để tăng thêm sự sang trọng cho <a href="http://noithatfudo.vn/bed_room"> Phòng ngủ </a> của mình.
+                
+                4.	<a href="http://noithatfudo.vn/bed_room/11"> Đèn ngủ </a> là một trong những phụ kiện trang trí không thể thiếu trong <a href="http://noithatfudo.vn/bed_room"> Phòng ngủ </a>. Nó không chỉ tạo ra ánh sáng dịu nhẹ để giúp bạn có một giấc ngủ ngon hơn, mà còn góp phần vào việc tạo ra một không gian thư giãn và ấm cúng.
+                
+                5.	<a href="http://noithatfudo.vn/home_office/25">Bàn làm việc</a> là một trong những yếu tố quan trọng giúp bạn tăng năng suất trong công việc. Với một chiếc bàn làm việc đẹp mắt và tiện ích, bạn có thể dễ dàng làm việc và thư giãn tại <a href="http://noithatfudo.vn/bed_room"> Phòng ngủ </a> của mình.
+                
+                6.	<a href="http://noithatfudo.vn/bed_room/13"> Đèn bàn </a> là một trong những phụ kiện trang trí <a href="http://noithatfudo.vn/bed_room"> Phòng ngủ </a> đẹp mắt và tiện ích. Với một chiếc đèn bàn đẹp, bạn có thể tạo ra ánh sáng tối ưu để làm việc hoặc đọc sách tại <a href="http://noithatfudo.vn/bed_room"> Phòng ngủ </a> của mình.
+                
+                7.	<a href="http://noithatfudo.vn/"> Nội thất hiện đại </a> và thông minh là xu hướng mới trong trang trí <a href="http://noithatfudo.vn/bed_room"> Phòng ngủ </a> hiện nay. Với những sản phẩm <a href="http://noithatfudo.vn/"> Nội thất thông minh </a> và tiện ích, bạn có thể tạo ra một không gian <a href="http://noithatfudo.vn/bed_room"> Phòng ngủ </a> hiện đại và tiện nghi.
+                
+                8.	Tóm lại, <a href="http://noithatfudo.vn/bed_room">Trang trí phòng ngủ </a> với sự kết hợp thông minh giữa các yếu tố <a href="http://noithatfudo.vn/"> Nội thất Fudo </a>, <a href="http://noithatfudo.vn/bed_room/9"> Giường ngủ </a>, <a href="http://noithatfudo.vn/bed_room/11"> Đèn ngủ </a>, <a href="http://noithatfudo.vn/home_office/25"> Bàn làm việc </a>và <a href="http://noithatfudo.vn/bed_room/13"> Đèn bàn </a>, bạn có thể tạo ra một không gian phòng ngủ đẹp mắt, tiện nghi và thoải mái.
+                
+                9.	Không chỉ là các sản phẩm nội thất, mà còn cần đến sự sáng tạo và tinh tế trong việc bố trí và trang trí phòng ngủ của bạn. Nếu bạn muốn tạo ra một không gian phòng ngủ đẹp mắt và đầy cảm hứng, hãy thử sử dụng các màu sắc phù hợp, trang trí bức tường hoặc đặt các vật dụng trang trí nhỏ để tạo điểm nhấn cho phòng ngủ của mình.
+                
+                    10.	Với sự kết hợp đầy tinh tế và sáng tạo, phòng ngủ của bạn sẽ trở thành một không gian thư giãn tuyệt vời, giúp bạn tận hưởng giấc ngủ ngon và tái tạo năng lượng mỗi ngày.
+
+                11.	Vậy hãy cùng tham khảo những sản phẩm nội thất Fudo để trang trí phòng ngủ của bạn trở nên hoàn hảo và đẳng cấp nhé!
+                         
+                ',
+                'author' => 'Lê Minh Đại',
+                'status' => '1',
+            ],
+            [
+                'title' => 'Bí mật chọn thảm trang trí cho phòng khách hiện đại',
+                'short_description' => 'Phòng ngủ là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc.',
+                'image' => 'chon-tham-trai-san-phong-thuy-hoa-giai-ta-khi-cho-ngoi-nha-1.png',
+                'keywords' => 'bộ giường ngủ đẹp, thiết kế nội thất, bàn ghế phòng ngủ, bộ nội thất phòng ngủ, giường ngủ đẹp hiện đại, mẫu phòng ngủ đẹp, nội thất Fudo', 
+                'content' => 'Bạn muốn trang trí phòng khách trong nhà của bạn thật hiện đại mà đang phân vân trong việc lựa chọn loại đồ trang trí vừa hiện đại mà lại vừa phù hợp với bố cục chung trong căn nhà của bạn. Thảm sàn là một yếu tố không thể thiếu khi trang trí không gian phòng khách. Bạn đang phân vân trong việc lựa chọn loại thảm và không biết tìm kiếm hoặc mua ở đâu?
+                Hãy đến với Nội thất Fudo nơi cung cấp đầy đủ các loại <a href="https://noithatfudo.vn/living_room/">thảm sàn</a> hiện đại với đa dạng chủng loại, màu sắc, mẫu mã, kích thước,... đảm bảo thỏa mãn được các yêu cầu của bạn. 
+                Trong bài viết này, chúng tôi sẽ chia sẻ kinh nghiệm thực tế trong việc lựa chọn loại <a href="https://noithatfudo.vn/living_room/> thảm sàn phòng khách</a> phù hợp với người có lối sống hiện đại.
+                 
+                <img src="https://luxfuni.com/wp-content/uploads/2020/02/kinh-nghiem-chon-tham-trai-san-phong-khach-them-am-cung-6.jpg" alt="Thảm sàn phòng khách hiện đại màu xanh, trắng"/>
+                Dưới đây là một số tiêu chí mà chúng tôi đúc kết ra được trong quá trình lựa chọn <a href="https://noithatfudo.vn/living_room/"> thảm sàn</a> trong nhiều năm:
+                1.	Màu sắc
+                Màu sắc cũng là một yếu tố khá quan trọng trong việc lựa chọn loại <a href="https://noithatfudo.vn/living_room/"> thảm</a> phù hợp. Mỗi người sẽ có một màu sắc ưa thích riêng, có người thích màu này, có người lại thích màu khác. Có nhiều người họ lại lựa chọn theo màu phong thủy, màu bản mệnh; màu sắc đó có xung khắc với mệnh của mình hay không? Có người lại lựa chọn màu sắc phù hợp theo tổng thể bố cục của căn phòng. Có người lại lựa chọn màu sắc phù hợp với tính cách của bản thân. Nếu bạn chọn một màu mà bạn không thích nó sẽ gây cho bạn sự khó chịu và làm bạn muốn đổi một loại <a href="https://noithatfudo.vn/living_room/"> thảm</a>  khác.
+                Sau đây là một vài gợi ý bạn có thể tham khảo:
+                 
+                Màu sắc phù hợp với phong thủy – người mệnh mộc
+                <img src="https://www.nhathoa.com/uploads/files/2018/08/11/chon-tham-trai-san-phong-thuy-hoa-giai-ta-khi-cho-ngoi-nha-1.jpg" alt="Thảm sàn phòng khách hiện đại phù hợp với phong thủy, người mệnh mộc"/>
+                2.	Kiểu dáng
+                Về kiểu dáng, <a href="https://noithatfudo.vn/living_room/"> thảm sàn phòng khách</a> thường sẽ có kiểu dáng đơn giản hoặc là loại có họa tiết. Việc lựa chọn <a href="https://noithatfudo.vn/living_room/"> thảm</a> cũng đòi hỏi sự phù hợp về kiểu dáng phải ăn khớp với phong cách tổng thể của căn phòng, phù hợp với vị trí đặt góp phần làm cho căn phòng thêm tinh tế, hoa lệ.
+                 
+                Thảm sàn phòng khách hiện đại có họa tiết phức tạp
+                <img src="https://congtythietkexaydung.net/wp-content/uploads/2021/06/tham-trai-san.jpg" alt="Thảm sàn phòng khách hiện đại có họa tiết phức tạp"/> 
+                ',
+                'author' => 'Nguyễn Lê Trọng Nhân',
+                'status' => '1',
+            ],
+            [
+                'title' => 'Top 7 mẫu sofa được ưa chuộng hiện nay',
+                'short_description' => 'Phòng ngủ là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc.',
+                'image' => 'bo-sofa-phong-khach-cao-cap-phong-cach-tan-co-dien-GD932S-2.png',
+                'keywords' => 'bộ giường ngủ đẹp, thiết kế nội thất, bàn ghế phòng ngủ, bộ nội thất phòng ngủ, giường ngủ đẹp hiện đại, mẫu phòng ngủ đẹp, nội thất Fudo', 
+                'content' => 'Cửa hàng nội thất Fudo là một trong những thương hiệu nổi tiếng về đồ nội thất tại Việt Nam. Nếu bạn đã đầu tư vào một <a href="https://noithatfudo.vn/living_room/1>chiếc sofa</a> mới từ cửa hàng này, chắc chắn bạn sẽ muốn nó trông thật nổi bật. Trong bài viết này, chúng tôi sẽ đưa đến cho bạn 7 mẫu sofa được ưa chuộng hiện nay.
+ 
+                <img src="https://vuongquocnoithat.vn/images/2021/05/22/bo-sofa-phong-khach-cao-cap-phong-cach-tan-co-dien-GD932S-2.jpg" alt="Sofa được mọi người ưa chuộng"/>
+                1.Sofa da 
+                <a href="https://luxcasastore.com/uploads/images/2021/09/1632682934-single_product11-1614129187multiproduct50ghesofatiepkhachsangtrong.jpg">Sofa da</a> là một trong những loại sofa cao cấp hiện nay nhờ vào vật liệu. Ví dụ như da bò có tính đàn hồi tốt, giữ nhiệt và tạo cảm giác êm ái cho người dùng.
+                Mẫu ghế này sẽ mang đến sự sang trọng cho không gian phòng khách. Tuy nhiên, để mua được một chiếc ghế sofa này thì giá thành cũng không hề rẻ.
+                2.Sofa bọc vải
+                Với chất liệu thân thiện và giá cả hợp lí, <a href="https://noithatfudo.vn/living_room/1/3">sofa bọc vải </a> là lựa chọn mà nhiều người sử dụng. Sofa này vừa mềm mại, vừa ấm áp tạo ra sự thoải mái cho khách hàng. Ngoài ra, sự đa dạng về kiểu mẫu, màu sắc cũng là 1 yếu tố khiến cho <a href="https://noithatfudo.vn/living_room/1/1">ghế sofa bọc vải</a> được nhiều người lựa chọn.
+                 
+                <img src="https://bizweb.dktcdn.net/100/407/310/files/sofa-vai.jpg?v=1605758242276" alt="Sofa vải màu xám"/>
+                3.Sofa nỉ
+                Với chất liệu nỉ, những <a href="https://noithatdangkhoa.com/wp-content/uploads/2019/12/nen-chon-ghe-sofa-da-hay-sofa-ni-2.jpg">chiếc sofa</a> này sẽ giúp cho khách hàng có nhiều lựa chọn về mẫu dáng, màu sắc đề mà đầu tư. Thêm vào đó, những chi tiết nhỏ như hoa văn sẽ làm cho ghế sofa này thêm sinh động.
+                Tuy là đẹp, nhưng <a href="https://thegioisofa.com/wp-content/uploads/2021/09/Sofa-vai-bo-3.jpg">sofa nỉ</a> cũng có hạn chế nhất định, đó là nó dễ bị bám bụi và sẽ mất nhiều công sức để làm sạch nó.
+                4.Sofa gỗ
+                <a href="https://noithatlacgia.com/wp-content/uploads/2021/06/sofa-go-lv-oc-cho-hien-dai-3.jpg">Sofa gỗ</a> cũng là 1 loại sofa được phổ biến hiện nay, nhờ việc gỗ là một vật liệu dễ tìm và dễ gia công. Sofa gỗ là một lựa chọn tốt đối với những căn nhà có phòng khách ở tầng 1, hoặc những căn nhà có độ ẩm cao. Ngoài ra, tuổi thọ cao cộng với độ bền cũng là một yếu tố khiến các khách hàng thích thú, đặc biệt là những người trung niên.
+                5.Sofa giường
+                Đây là một loại sofa khá đặc biệt, khi nó được tích hợp thêm tính năng giường ngủ, giúp cho đa dạng chức năng cho người dùng. Khi mình sử dụng <a href="https://cdn.zsofa.vn/wp-content/uploads/2021/05/sofa-giuong-da-nang-2.jpg">sofa giường ngủ</a>, ngoài việc mình thư giãn trên chiếc ghế này, thì mình cũng có thể nghỉ ngơi, ngủ trên chiếc sofa này. Đây cũng là 1 lựa chọn tốt đối với khách hàng khi có người đến chơi nhưng thiếu chỗ nghỉ.
+                 
+                <img src=https://cf.shopee.vn/file/d5e39142b9c02fd27a0323ea09f50294 alt="Sofa tích hợp với giường ngủ"/>
+                
+                6.Sofa chữ L
+                <a href="https://sofadungthinh.com/uploads/images/2021/05/218x164-1620203999-single_product1-7.png">Sofa chữ L</a> là mẫu ghế sofa bao gồm 2 khối ghế ghép lại thành hình chữ L, thường được đưa vào góc của phòng khách để tối ưu không gian và mang đến sự thoải mái cho gia đình
+                <a href="https://sofadungthinh.com/uploads/images/2021/05/218x164-1620550150-single_product1-7.png">Sofa chữ L</a> có thiết kế vô cùng tinh tế với những chất liệu vải cực kì bền. Đây cũng là 1 kiểu sofa rất được phổ biến hiện nay.
+                7.Sofa đơn dài
+                Đây là 1 kiểu sofa khá thú vị, với 1 khối dài, 1 bên có cánh tay, còn bên kia không có.<a href="https://noithatkenli.vn/wp-content/uploads/2022/01/chaise-lounge.jpg">Sofa đơn dài</a> thường được đặt trong 1 góc nhỏ ở phòng khách để tối ưu không gian, thích hợp với những căn phòng nhỏ,với khi sống một mình.
+                 
+                <img src="https://noithatdangkhoa.com/wp-content/uploads/2022/02/sofa-phong-ngu-sfdk59.jpg" alt="Ghế sofa đơn dài màu xám"/>
+                 <p style="text-align: center;">Ghế sofa đơn dài màu xám</p>
+                Trên đây là 7 mẫu ghế sofa được mọi người ưu chuộng hiện nay. Hy vọng qua bài viết này, bạn sẽ có thể lựa chọn cho mình một chiếc ghế sofa phù hợp với diện tích phòng khách cho mình, làm cho căn phòng trở nên sang trọng hơn. Nếu bạn muốn biết thêm thông tin về ghế sofa hoặc những đồ nội thất khác, hãy truy cập Cửa hàng nội thất Fudo.
+                ',
+                'author' => 'Chu Tấn Phong',
+                'status' => '1',
+            ],
         ]);
         DB::table('users')->insert([
             [
@@ -327,7 +424,13 @@ Như vậy, đó là một số cách bảo quản sofa để giữ cho nó luô
                 'password' => Hash::make('123456'),
                 'level' => 1,
             ],
-            
+            [
+                'id' => 222,
+                'name' => 'Khách',
+                'email' => 'guest@gmail.com',
+                'password' => Hash::make('123456'),
+                'level' => 0,
+            ],
         ]);
 
         // DB::table('product_category')->insert([

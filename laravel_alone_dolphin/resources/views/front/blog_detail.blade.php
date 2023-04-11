@@ -207,6 +207,29 @@
                   
                 </div>
               </div>
+              
+              <div class="rating-content-guest">
+                <form action="/blog/{{ $blog_detail[0]->id }}" method="POST">
+                  <div class="container">
+
+                    <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
+                      <img src="https://static2.yan.vn/YanNews/2167221/202102/facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg" alt="">
+                    </div>
+                    <div class="col-xs-9 col-sm-10 col-md-11 col-lg-11">
+                      <p class="user_name_comment">Bình luận của khách</p>
+                      <input type="textarea" name="messages" class="comment-area" placeholder="Viết bình luận..." required>
+                      <div id="rateYo"></div>
+                      <input type="hidden" name="stars" id="user-comment-rating">
+                      <input type="hidden" name="user_id" value="222">
+                      <input type="hidden" name="email" value="guest@gmail.com">
+                      <input type="hidden" name="name" value="Người dùng">
+                      <input type="hidden" name="blog_id" value="{{ $blog_detail[0]->id }}">
+                      <button type="submit" style="background-color: #616bef; margin-top: 6px;" name="submit" class="btn btn-primary" id="submit">Gửi</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
               @endif
               <div class="blog-comment">
                 <h3 class="comment-header">Bình luận</h3>
@@ -249,7 +272,7 @@
               if(!$('#user-comment-rating').val())
                 $('#user-comment-rating').val(0);
                 
-              alert("The rating is set to " + data.rating + "!");
+              alert("Số sao bạn muốn đánh giá là " + data.rating + "?");
             });
         });
       $(function () {
