@@ -120,7 +120,6 @@ class HomeController extends Controller
         return view('front.blog_detail', compact('categories_header', 'rooms_header','blog_news', 'blog_detail', 'blog_star', 'blog_rating'));
     }
     public function blog_rating($id,Request $request){
-       
         $star = $request->input('stars') ? $request->input('stars') : 0;
         $formData = [
             'blog_id' =>$request->input('blog_id'),
