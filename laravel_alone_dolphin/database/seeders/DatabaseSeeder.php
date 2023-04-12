@@ -370,9 +370,6 @@ Như vậy, đó là một số cách bảo quản sofa để giữ cho nó luô
                 <img src="https://www.nhathoa.com/uploads/files/2018/08/11/chon-tham-trai-san-phong-thuy-hoa-giai-ta-khi-cho-ngoi-nha-1.jpg" alt="Thảm sàn phòng khách hiện đại phù hợp với phong thủy, người mệnh mộc"/>
                 2.	Kiểu dáng
                 Về kiểu dáng, <a href="https://noithatfudo.vn/living_room/"> thảm sàn phòng khách</a> thường sẽ có kiểu dáng đơn giản hoặc là loại có họa tiết. Việc lựa chọn <a href="https://noithatfudo.vn/living_room/"> thảm</a> cũng đòi hỏi sự phù hợp về kiểu dáng phải ăn khớp với phong cách tổng thể của căn phòng, phù hợp với vị trí đặt góp phần làm cho căn phòng thêm tinh tế, hoa lệ.
-                 
-                Thảm sàn phòng khách hiện đại có họa tiết phức tạp
-                <img src="https://congtythietkexaydung.net/wp-content/uploads/2021/06/tham-trai-san.jpg" alt="Thảm sàn phòng khách hiện đại có họa tiết phức tạp"/> 
                 ',
                 'author' => 'Nguyễn Lê Trọng Nhân',
                 'status' => '1',
