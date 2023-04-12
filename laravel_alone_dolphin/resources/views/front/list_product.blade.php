@@ -27,7 +27,7 @@
 @endsection
 @section('content')
 <!-- main -->
-<div class="main">
+<div class="main" style="margin-left: 1rem; margin-right: 1rem;">
     <div class="nav-room">
         <p class="direction">
             <a href="/home"><i>Trang chủ</i></a> / <i>{{ $name_cate_room[0]->room->name }}</i> / <i>{{

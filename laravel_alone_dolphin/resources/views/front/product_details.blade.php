@@ -127,10 +127,10 @@
                     @endfor
 
             </div>
-            <i
+            <!-- <i
                 class="arrow fi fi-rr-angle-left prev absolute -left-3 top-10 md:top-16 laptop:top-10 cursor-pointer"></i>
             <i
-                class="arrow fi fi-rr-angle-right next absolute -right-3 top-10 md:top-16 laptop:top-10 cursor-pointer"></i>
+                class="arrow fi fi-rr-angle-right next absolute -right-3 top-10 md:top-16 laptop:top-10 cursor-pointer"></i> -->
         </div>
     </div>
     <div class="md:mt-5">
