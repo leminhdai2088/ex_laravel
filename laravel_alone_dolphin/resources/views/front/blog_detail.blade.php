@@ -50,47 +50,6 @@
   }]    
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/", 
-  "@type": "HowTo", 
-  "name": "Làm sao để sắp xếp nội thất phòng ăn đẹp và thông thoáng?",
-  "description": "Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2023 và cách áp dụng chúng vào không gian sống của bạn",
-  "image": "http://noithatfudo.vn/front/images/image_blog/thiet-ke-phong-an-va-bep.png",
-  "step": [{
-    "@type": "HowToStep",
-    "text": "Lựa chọn bộ bàn ghế phù hợp với diện tích phòng ăn và phong cách thiết kế của căn nhà",
-    "name": "Lựa chọn bộ bàn ghế phù hợp",
-    "url": "http://noithatfudo.vn/blog/4"
-  },{
-    "@type": "HowToStep",
-    "text": "Chọn các món đồ nội thất phù hợp với phong cách thiết kế của căn nhà",
-    "name": "Chọn nội thất phù hợp với phong cách thiết kế của căn nhà",
-    "url": "http://noithatfudo.vn/blog/4"
-  },{
-    "@type": "HowToStep",
-    "text": "Bạn nên chọn tủ kệ có nhiều ngăn để tiện lợi cho việc lưu trữ",
-    "name": "Lưu trữ đồ dùng ăn uống",
-    "url": "http://noithatfudo.vn/blog/4"
-  },{
-    "@type": "HowToStep",
-    "text": "Nội thất thông minh là một giải pháp tối ưu cho phòng ăn nhỏ",
-    "name": "Sử dụng nội thất thông minh",
-    "url": "http://noithatfudo.vn/blog/4"
-  },{
-    "@type": "HowToStep",
-    "text": "Bố trí bàn ăn và ghế là một yếu tố quan trọng trong sự thoải mái của phòng ăn",
-    "name": "Bố trí bàn ăn và ghế sao cho hợp lý",
-    "url": "http://noithatfudo.vn/blog/4"
-  },{
-    "@type": "HowToStep",
-    "text": "Bạn nên tận dụng tối đa không gian trống bằng cách chọn bộ bàn ghế nhỏ, hình vuông hoặc tròn",
-    "name": "Tận dụng không gian trống",
-    "url": "http://noithatfudo.vn/blog/4"
-  }]    
-}
-</script>
-
     <title>{{ $blog_detail[0]->title }} - Nội thất Fudo</title>
     <style>
         img{

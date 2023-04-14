@@ -389,7 +389,7 @@
                         </div>
                     
                         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                            <a href="/blog/{{$blog->id}}">{{$blog->title}}</a>
+                            <a href="/blog/{{$blog->id}}" >{{$blog->title}}</a>
                             <p>{{$blog->short_description}}</p>
                         </div>
                     </div>
@@ -398,5 +398,6 @@
             </div>
         </div>
     </div>
-    </div>
+</div>
+
 @endsection
