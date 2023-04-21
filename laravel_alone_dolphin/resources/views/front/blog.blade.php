@@ -19,7 +19,8 @@
     {
       "@context":"https://schema.org",
       "@type":"ItemList",
-      "itemListElement":[
+      "itemListElement":
+      [
         {
           "@type":"ListItem",
           "position":1,
@@ -84,7 +85,7 @@
           "@type":"ListItem",
           "position":13,
           "url":"https://noithatfudo.vn/blog/13"
-        },
+        }
       ]
     }
     </script>
@@ -762,7 +763,7 @@
     "acceptedAnswer": {
       "@type": "Answer",
       "text": "Nếu bạn đang sống trong một căn phòng nhỏ và muốn tối đa hóa diện tích sử dụng thì giường ngủ thông minh là một lựa chọn tuyệt vời cho bạn. Những mẫu giường ngủ thông minh không chỉ tiết kiệm diện tích mà còn cung cấp nhiều tính năng tiện ích giúp bạn tận dụng không gian tối đa. Dưới đây là một số mẫu giường ngủ thông minh bạn có thể tham khảo."
-    },
+    }},
     {
     "@type": "Question",
     "name": "Làm thế nào để phòng luôn sạch đẹp cùng Fudo?",
@@ -811,15 +812,15 @@
     "acceptedAnswer": {
       "@type": "Answer",
       "text": "Bạn muốn trang trí phòng khách trong nhà của bạn thật hiện đại mà đang phân vân trong việc lựa chọn loại đồ trang trí vừa hiện đại mà lại vừa phù hợp với bố cục chung trong căn nhà của bạn. Thảm sàn là một yếu tố không thể thiếu khi trang trí không gian phòng khách. Bạn đang phân vân trong việc lựa chọn loại thảm và không biết tìm kiếm hoặc mua ở đâu?"
-    },
+    }},
     {
     "@type": "Question",
     "name": "Top 7 mẫu sofa được ưa chuộng hiện nay",
     "acceptedAnswer": {
       "@type": "Answer",
       "text": "Phòng ngủ là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc."
-    },
-  }]
+    }}
+  ]
 }
 </script>
     <title>Blog - Nội thất Fudo</title>
