@@ -319,7 +319,532 @@
       },{
         "@type": "ListItem",
         "position": 3,
-        "name": "Giường"
+        "name": "Đèn sàn"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng ngủ",
+        "item": "https://noithatfudo.vn/bed_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Bàn trang điểm"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng ngủ",
+        "item": "https://noithatfudo.vn/bed_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Đèn bàn"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng ngủ",
+        "item": "https://noithatfudo.vn/bed_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Đèn trang trí"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng ngủ",
+        "item": "https://noithatfudo.vn/bed_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Tủ lưu trữ"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng ngủ",
+        "item": "https://noithatfudo.vn/bed_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Kệ/tủ giày"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng ngủ",
+        "item": "https://noithatfudo.vn/bed_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Giá/kệ treo trang trí"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng ngủ",
+        "item": "https://noithatfudo.vn/bed_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Gương"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Bếp & Phòng ăn",
+        "item": "https://noithatfudo.vn/kitchen_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Bộ bàn ăn"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Bếp & Phòng ăn",
+        "item": "https://noithatfudo.vn/kitchen_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Bàn ăn"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Bếp & Phòng ăn",
+        "item": "https://noithatfudo.vn/kitchen_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Ghế ăn"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Bếp & Phòng ăn",
+        "item": "https://noithatfudo.vn/kitchen_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Thảm bếp"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Bếp & Phòng ăn",
+        "item": "https://noithatfudo.vn/kitchen_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Kệ bếp"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Bếp & Phòng ăn",
+        "item": "https://noithatfudo.vn/kitchen_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Khăn bếp"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng làm việc",
+        "item": "https://noithatfudo.vn/home_office"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Bàn"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng làm việc",
+        "item": "https://noithatfudo.vn/home_office"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Ghế"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng làm việc",
+        "item": "https://noithatfudo.vn/home_office"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Đèn bàn"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng làm việc",
+        "item": "https://noithatfudo.vn/home_office"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Đồng hồ"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng làm việc",
+        "item": "https://noithatfudo.vn/home_office"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Văn phòng phẩm"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng làm việc",
+        "item": "https://noithatfudo.vn/home_office"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Bảng trang trí"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng làm việc",
+        "item": "https://noithatfudo.vn/home_office"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Kệ/tủ lưu trữ"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng tắm",
+        "item": "https://noithatfudo.vn/bath_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Rèm"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng tắm",
+        "item": "https://noithatfudo.vn/bath_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Khăn tắm"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng tắm",
+        "item": "https://noithatfudo.vn/bath_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Gương"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng tắm",
+        "item": "https://noithatfudo.vn/bath_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Thảm chân"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Sản phẩm",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Phòng tắm",
+        "item": "https://noithatfudo.vn/bath_room"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Giá, kệ, tủ treo"
       }]
     }
     </script>
