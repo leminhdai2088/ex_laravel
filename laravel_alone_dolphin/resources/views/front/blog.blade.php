@@ -44,7 +44,47 @@
           "@type":"ListItem",
           "position":5,
           "url":"https://noithatfudo.vn/blog/5"
-        }
+        },
+        {
+          "@type":"ListItem",
+          "position":6,
+          "url":"https://noithatfudo.vn/blog/6"
+        },
+        {
+          "@type":"ListItem",
+          "position":7,
+          "url":"https://noithatfudo.vn/blog/7"
+        },
+        {
+          "@type":"ListItem",
+          "position":8,
+          "url":"https://noithatfudo.vn/blog/8"
+        },
+        {
+          "@type":"ListItem",
+          "position":9,
+          "url":"https://noithatfudo.vn/blog/9"
+        },
+        {
+          "@type":"ListItem",
+          "position":10,
+          "url":"https://noithatfudo.vn/blog/10"
+        },
+        {
+          "@type":"ListItem",
+          "position":11,
+          "url":"https://noithatfudo.vn/blog/11"
+        },
+        {
+          "@type":"ListItem",
+          "position":12,
+          "url":"https://noithatfudo.vn/blog/12"
+        },
+        {
+          "@type":"ListItem",
+          "position":13,
+          "url":"https://noithatfudo.vn/blog/13"
+        },
       ]
     }
     </script>
@@ -129,7 +169,8 @@
         "name": "Cách sắp xếp nội thất phòng ăn đẹp và thông thoáng"
       }]
     }
-    </script><script type="application/ld+json">
+    </script>
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -151,12 +192,180 @@
     }
     </script>
     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Trang chủ",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://noithatfudo.vn/blog"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Làm thế nào để phòng luôn sạch đẹp cùng Fudo"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Trang chủ",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://noithatfudo.vn/blog"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Cách Bảo Quản SOFA Luôn Đẹp Cùng Với Fudo"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Trang chủ",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://noithatfudo.vn/blog"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Góc nhìn mới về nội thất cho không gian văn phòng cùng Fudo"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Trang chủ",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://noithatfudo.vn/blog"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Những điều cần biết khi chọn mua bàn ăn"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Trang chủ",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://noithatfudo.vn/blog"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Thiết kế phòng ngủ đẹp, thông minh cùng với Fudo"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Trang chủ",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://noithatfudo.vn/blog"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Làm sao để trang trí phòng ngủ đẹp vào thoải mái?"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Trang chủ",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://noithatfudo.vn/blog"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Bí mật chọn thảm trang trí cho phòng khách hiện đại"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Trang chủ",
+        "item": "https://noithatfudo.vn"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://noithatfudo.vn/blog"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Top 7 mẫu sofa được ưa chuộng hiện nay"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://noithatfudo.vn/blo/1"
+    "@id": "https://noithatfudo.vn/blog/1"
   },
   "headline": "Bí quyết chọn sofa phù hợp với không gian",
   "description": "Các gợi ý về cách lựa chọn sofa để phù hợp với không gian sống và phong cách thiết kế nội thất của bạn.",
@@ -293,6 +502,231 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://noithatfudo.vn/blog/6"
+  },
+  "headline": "Làm thế nào để phòng luôn sạch đẹp cùng Fudo",
+  "description": "Bản thân mỗi người chúng ta ai cũng muốn có 1 không gian sạch sẽ và thoáng mát, nó giúp cho chúng ta trở nên dễ chịu hơn.",
+  "image": "http://127.0.0.1:8000/front/images/image_blog/sap-xep-phong-ngu-gon-gang.png",  
+  "author": {
+    "@type": "Person",
+    "name": "Nguyễn Tuấn Kha",
+    "url": "https://www.facebook.com/kha.nguyentuan.73"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2023-03-15",
+  "dateModified": "2023-03-15"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://noithatfudo.vn/blog/7"
+  },
+  "headline": "Cách Bảo Quản SOFA Luôn Đẹp Cùng Với Fudo",
+  "description": "Trong bài viết này, chúng tôi sẽ giới thiệu cho bạn một số cách vệ sinh và bảo quản sofa tại nhà để nó luôn đẹp và tiết kiệm chi phí sửa chữa",
+  "image": "http://127.0.0.1:8000/front/images/image_blog/aaa.png",  
+  "author": {
+    "@type": "Person",
+    "name": "Nguyễn Tuấn Kha",
+    "url": "https://www.facebook.com/kha.nguyentuan.73"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2023-03-15",
+  "dateModified": "2023-03-15"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://noithatfudo.vn/blog/8"
+  },
+  "headline": "Góc nhìn mới về nội thất cho không gian văn phòng cùng Fudo",
+  "description": "Sau đây, hãy cùng Nội thất Fudo khám phá những góc nhìn mới về nội thất trong môi trường văn phòng, làm việc nhé",
+  "image": "http://127.0.0.1:8000/front/images/image_blog/gia-cong-noi-that-tai-hai-phong-10.png",  
+  "author": {
+    "@type": "Person",
+    "name": "Nguyễn Quốc Kỳ",
+    "url": "https://www.facebook.com/ky.quoc.75873"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2023-03-15",
+  "dateModified": "2023-03-15"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://noithatfudo.vn/blog/9"
+  },
+  "headline": "Những điều cần biết khi chọn mua bàn ăn",
+  "description": "Phòng ăn không chỉ đóng vai trò là nơi chúng ta cùng nhau tận hưởng bữa ăn mà còn là trung tâm của không gian phòng ăn",
+  "image": "http://127.0.0.1:8000/front/images/image_blog/9-dieu-can-luu-y-chon-ban-an-phu-hop-how-to-choose-right-dining-table.png",  
+  "author": {
+    "@type": "Person",
+    "name": "Nguyễn Tuấn Kha",
+    "url": "https://www.facebook.com/kha.nguyentuan.73"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2023-03-15",
+  "dateModified": "2023-03-15"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://noithatfudo.vn/blog/10"
+  },
+  "headline": "Thiết kế phòng ngủ đẹp, thông minh cùng với Fudo",
+  "description": "Trong bài viết dưới đây, Nội thất Fudo sẽ giới thiệu các phong cách thiết kế phòng ngủ thông minh mang đến cho bạn không gian sống hoàn hảo, thoải mái.",
+  "image": "http://127.0.0.1:8000/front/images/image_blog/Thiet_ke_phong_ngu_dep.png",  
+  "author": {
+    "@type": "Person",
+    "name": "Nguyễn Tuấn Kha",
+    "url": "https://www.facebook.com/kha.nguyentuan.73"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2023-03-15",
+  "dateModified": "2023-03-15"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://noithatfudo.vn/blog/11"
+  },
+  "headline": "Làm sao để trang trí phòng ngủ đẹp vào thoải mái?",
+  "description": "Phòng ngủ là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc.",
+  "image": "http://127.0.0.1:8000/front/images/image_blog/thiet-ke-noi-that-phong-ngu-20.png",  
+  "author": {
+    "@type": "Person",
+    "name": "Nguyễn Tuấn Kha",
+    "url": "https://www.facebook.com/kha.nguyentuan.73"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2023-03-15",
+  "dateModified": "2023-03-15"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://noithatfudo.vn/blog/12"
+  },
+  "headline": "Bí mật chọn thảm trang trí cho phòng khách hiện đại",
+  "description": "Phòng ngủ là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc.",
+  "image": "http://127.0.0.1:8000/front/images/image_blog/chon-tham-trai-san-phong-thuy-hoa-giai-ta-khi-cho-ngoi-nha-1.png",  
+  "author": {
+    "@type": "Person",
+    "name": "Nguyễn Tuấn Kha",
+    "url": "https://www.facebook.com/kha.nguyentuan.73"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2023-03-15",
+  "dateModified": "2023-03-15"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://noithatfudo.vn/blog/13"
+  },
+  "headline": "Top 7 mẫu sofa được ưa chuộng hiện nay",
+  "description": "Phòng ngủ là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc.",
+  "image": "http://127.0.0.1:8000/front/images/image_blog/bo-sofa-phong-khach-cao-cap-phong-cach-tan-co-dien-GD932S-2.png",  
+  "author": {
+    "@type": "Person",
+    "name": "Nguyễn Tuấn Kha",
+    "url": "https://www.facebook.com/kha.nguyentuan.73"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2023-03-15",
+  "dateModified": "2023-03-15"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [{
     "@type": "Question",
@@ -328,7 +762,63 @@
     "acceptedAnswer": {
       "@type": "Answer",
       "text": "Nếu bạn đang sống trong một căn phòng nhỏ và muốn tối đa hóa diện tích sử dụng thì giường ngủ thông minh là một lựa chọn tuyệt vời cho bạn. Những mẫu giường ngủ thông minh không chỉ tiết kiệm diện tích mà còn cung cấp nhiều tính năng tiện ích giúp bạn tận dụng không gian tối đa. Dưới đây là một số mẫu giường ngủ thông minh bạn có thể tham khảo."
-    }
+    },
+    {
+    "@type": "Question",
+    "name": "Làm thế nào để phòng luôn sạch đẹp cùng Fudo?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Để cho phòng luôn sạch đẹp cùng với nội thất Fudo, bản thân mỗi người chúng ta ai cũng muốn có 1 không gian sạch sẽ và thoáng mát, nó giúp cho chúng ta trở nên dễ chịu hơn. Tuy vậy, muốn để căn phòng của chúng ta luôn trong trạng thái sạch đẹp, thoáng mát là một việc không hề dễ dàng"
+    }},
+    {
+    "@type": "Question",
+    "name": "Cách Bảo Quản SOFA Luôn Đẹp Cùng Với Fudo",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Cửa hàng nội thất Fudo là một trong những thương hiệu nổi tiếng về đồ nội thất tại Việt Nam. Nếu bạn đã đầu tư vào một chiếc sofa mới từ cửa hàng này, thì chắc chắn bạn muốn giữ cho nó luôn đẹp và bền lâu. Trong bài viết này, chúng tôi sẽ giới thiệu cho bạn một số cách vệ sinh và bảo quản sofa tại nhà để nó luôn đẹp và tiết kiệm chi phí sửa chữa."
+    }},
+    {
+    "@type": "Question",
+    "name": "Góc nhìn mới về nội thất cho không gian văn phòng cùng Fudo",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Từ trước đến nay, chúng ta đã luôn quan niệm rằng: bàn ăn nên được để ở phòng bếp hay là ghế sofa nên được để trong phòng khách. Điều đó vô tình thu hẹp sự sáng tạo, thiết kế thú vị của mỗi văn phòng. Sau đây, hãy cùng Nội thất Fudo khám phá những góc nhìn mới về nội thất trong môi trường văn phòng, làm việc nhé."
+    }},
+    {
+    "@type": "Question",
+    "name": "Những điều cần biết khi chọn mua bàn ăn",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Khi trang trí cho không gian ăn uống của gia đình, bàn ăn là một trong những món đồ nội thất không thể thiếu. Nó không chỉ đóng vai trò là nơi chúng ta cùng nhau tận hưởng bữa ăn mà còn là trung tâm của không gian phòng ăn. Tuy nhiên, chọn mua một bàn ăn phù hợp với không gian phòng ăn và phù hợp với phong cách của bạn không phải là điều dễ dàng. Trong bài viết này, nội thất Fudo sẽ chia sẻ với bạn một số điều cần biết khi chọn mua bàn ăn để giúp bạn có được lựa chọn đúng đắn."
+    }},
+    {
+    "@type": "Question",
+    "name": "Thiết kế phòng ngủ đẹp, thông minh cùng với Fudo",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hiện nay, khi không gian ngày càng trở nên chật hẹp hơn thì thiết kế phòng ngủ thông minh là sự lựa chọn tuyệt vời để tối ưu không gian của bạn nhưng vẫn đẹp và tiện nghi. Trong bài viết dưới đây, Nội thất Fudo sẽ giới thiệu các phong cách thiết kế phòng ngủ thông minh mang đến cho bạn không gian sống hoàn hảo, thoải mái."
+    }},
+    {
+    "@type": "Question",
+    "name": "Làm sao để trang trí phòng ngủ đẹp vào thoải mái?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Phòng ngủ là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc."
+    }},
+    {
+    "@type": "Question",
+    "name": "Bí mật chọn thảm trang trí cho phòng khách hiện đại",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Bạn muốn trang trí phòng khách trong nhà của bạn thật hiện đại mà đang phân vân trong việc lựa chọn loại đồ trang trí vừa hiện đại mà lại vừa phù hợp với bố cục chung trong căn nhà của bạn. Thảm sàn là một yếu tố không thể thiếu khi trang trí không gian phòng khách. Bạn đang phân vân trong việc lựa chọn loại thảm và không biết tìm kiếm hoặc mua ở đâu?"
+    },
+    {
+    "@type": "Question",
+    "name": "Top 7 mẫu sofa được ưa chuộng hiện nay",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Phòng ngủ là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc."
+    },
   }]
 }
 </script>
