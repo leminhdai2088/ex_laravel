@@ -884,6 +884,7 @@
                             <p>{{$blog->short_description}}</p>
                         </div>
                     </div>
+                    <hr>
                     @endforeach
                 </div>
             </div>
