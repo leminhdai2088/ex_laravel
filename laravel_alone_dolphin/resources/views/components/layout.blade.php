@@ -9,6 +9,13 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="/front/css/header.css">
     <link rel="icon" href="/front/images/fudo.png" type="image/x-icon" >
+    <meta property="og:site_name" content="Nội thất Fudo"/>
+    <meta property="og:url" content="https://noithatfudo.vn" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Nội thất Fudo - Thiết kế và sản xuất nội thất thông minh cao cấp" />
+    <meta property="og:description" content="Nội thất Fudo chuyên thiết kế và sản xuất các sản phẩm nội thất cao cấp, đem lại không gian sống tốt nhất cho khách hàng." />
+    <meta property="og:image" content="https://noithatfudo.vn/front/images/noithatfudo.png" />
+    <meta property="og:latitude" content="10.8700306" />
     <!-- Start VWO Async SmartCode -->
     <script type='text/javascript' id='vwoCode'>
     window._vwo_code=window._vwo_code || (function() {
