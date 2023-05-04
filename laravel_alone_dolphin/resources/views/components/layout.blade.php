@@ -9,6 +9,9 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="/front/css/header.css">
     <link rel="icon" href="/front/images/fudo.png" type="image/x-icon" >
+    <!-- xác minh gg search console -->
+    <meta name="google-site-verification" content="jGDxxcPmEdLov608YwNnMg3haztx3t2fZlmOI-DEKTw" />
+
     <meta property="og:site_name" content="Nội thất Fudo"/>
     <meta property="og:url" content="https://noithatfudo.vn" />
     <meta property="og:type" content="article" />
@@ -35,10 +38,10 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDFZLWM6G4"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-KDFZLWM6G4');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-KDFZLWM6G4');
     </script>
     @vite('resources/css/app.css')
     @yield('head')
