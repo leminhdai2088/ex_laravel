@@ -115,7 +115,7 @@
                 <div class="right-header flex content-center items-center gap-3 md:gap-6">
                     <div class="text-gray-700 relative my-auto max-w-[120px] md:max-w-[250px]">
                         <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                            <button class="p-1 text-gray-400 focus:outline-none focus:shadow-outline">
+                            <button aria-label="search button" class="p-1 text-gray-400 focus:outline-none focus:shadow-outline">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 text-[#6B7280]">
                                     <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -246,7 +246,7 @@
                 <div class="right-header flex content-center items-center gap-3 md:gap-6">
                     <div class="text-gray-700 relative my-auto max-w-[120px] md:max-w-[250px]">
                         <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                            <button class="p-1 text-gray-400 focus:outline-none focus:shadow-outline">
+                            <button aria-label="search button" class="p-1 text-gray-400 focus:outline-none focus:shadow-outline">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 text-[#6B7280]">
                                     <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -269,8 +269,8 @@
                   "
                             placeholder="Tìm kiếm...">
                     </div>
-                    <a href="/sign_in" class="flex items-center"><i class="fi fi-rr-user"></i></a>
-                    <a href="/cart" class="flex items-center relative">
+                    <a href="/sign_in" aria-label="Liên kết tới trang đăng nhập" class="flex items-center"><i class="fi fi-rr-user"></i></a>
+                    <a href="/cart" aria-label="Liên kết tới trang giỏ hàng" class="flex items-center relative">
                         {{-- <span class="absolute -top-3 -right-3 text-[10px] rounded-full bg-gray-300 px-1">10</span> --}}
                         <i class="fi fi-rr-shopping-cart"></i>
                     </a>
