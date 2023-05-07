@@ -9,7 +9,7 @@
   <!-- nivo slider -->
   <link rel="stylesheet" href="/front/css/page_home/nivo-slider/themes/default/default.css" type="text/css"
     media="screen">
-  <title>Nội thất Fudo</title>
+  <title>Nội thất Fudo - UIT | Cửa hàng nội thất uy tín, chất lượng</title>
   <meta name="description" content="Nội thất Fudo cung cấp đa dạng các sản phẩm nội thất cao cấp từ ghế sofa, giường ngủ đến bàn ăn, tủ quần áo với giá cả cạnh tranh. Hãy truy cập ngay để chọn lựa sản phẩm phù hợp cho không gian sống của bạn. Miễn phí vận chuyển và lắp ráp nhanh chóng.">
   <meta name="keywords" content="nội thất, nội thất Fudo, nội thất giá rẻ, nội thất hiện đại, sofa, bàn ăn, giường ngủ, tủ quần áo, đèn, trang trí, mua sắm nội thất, nội thất thông minh">
   <link rel="stylesheet" href="/front/css/page_home/nivo-slider/nivo-slider.css" type="text/css" media="screen">

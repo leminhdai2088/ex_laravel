@@ -16,7 +16,7 @@
     <meta property="og:url" content="https://noithatfudo.vn" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Nội thất Fudo - Thiết kế và sản xuất nội thất thông minh cao cấp" />
-    <meta property="og:description" content="Nội thất Fudo chuyên thiết kế và sản xuất các sản phẩm nội thất cao cấp, đem lại không gian sống tốt nhất cho khách hàng." />
+    <meta property="og:description" content="Nội thất Fudo chuyên thiết kế, sản xuất và cung cấp các sản phẩm nội thất cao cấp, đem lại không gian sống tốt nhất cho khách hàng." />
     <meta property="og:image" content="https://noithatfudo.vn/front/images/noithatfudo.png" />
     <meta property="og:latitude" content="10.8700306" />
     <!-- Start VWO Async SmartCode -->
