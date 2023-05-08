@@ -77,7 +77,7 @@
         @foreach($products as $product)
         <div class="grid-item">
             <a href="/{{ $room }}/{{ $loai }}/{{ $product->id }}"><img class="product-img"
-                    src="/front/images/image_products/{{ $product->product_images[0]->path }}" alt="img"></a>
+                    src="/front/images/image_products/{{ $product->product_images[0]->path }}" alt="{{ $product->name }} - Sản phẩm {{ $product->product_category->name }} {{ $product->room->name }} của Nội thất Fudo"></a>
             <div class="text-items">
                 <a href="#">
                     <h3 class="name-item">{{ $product->name}}</h3>

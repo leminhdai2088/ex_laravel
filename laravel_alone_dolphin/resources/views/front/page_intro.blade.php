@@ -85,7 +85,7 @@
         <div class="ourteam">
             <div class="nr-ourteams">
                 <figure>
-                    <img src="/front/images/img_page_intro/about_s4_item1.webp" alt="">
+                    <img src="/front/images/img_page_intro/about_s4_item1.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                 </figure>
                 <div class="ourteams-text">
                     <h4>KẾT NỐI</h4>
@@ -96,7 +96,7 @@
             </div>
             <div class="nr-ourteams">
                 <figure>
-                    <img src="/front/images/img_page_intro/about_s4_item2.webp" alt="">
+                    <img src="/front/images/img_page_intro/about_s4_item2.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                 </figure>
                 <div class="img_overlay"></div>
                 <div class="ourteams-text">
@@ -108,7 +108,7 @@
             </div>
             <div class="nr-ourteams">
                 <figure>
-                    <img src="/front/images/img_page_intro/about_s4_item3.webp" alt="">
+                    <img src="/front/images/img_page_intro/about_s4_item3.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                 </figure>
                 <div class="ourteams-text">
                     <h4>CHỦ ĐỘNG</h4>
@@ -169,323 +169,323 @@
                     <div class="img-container">
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide1.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide1.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide2.jpg" alt="">
+                            <img src="/front/images/img_page_intro/imgslide2.jpg" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide3.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide3.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide4.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide4.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide5.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide5.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide6.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide6.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide7.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide7.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide8.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide8.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide9.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide9.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide10.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide10.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide11.jpg" alt="">
+                            <img src="/front/images/img_page_intro/imgslide11.jpg" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide12.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide12.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide13.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide13.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide14.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide14.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide15.jpg" alt="">
+                            <img src="/front/images/img_page_intro/imgslide15.jpg" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide16.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide16.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide17.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide17.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide18.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide18.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide19.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide19.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide20.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide20.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide21.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide21.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide22.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide22.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide23.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide23.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide24.jpg" alt="">
+                            <img src="/front/images/img_page_intro/imgslide24.jpg" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide25.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide25.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide26.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide26.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide27.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide27.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide28.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide28.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide29.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide29.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide30.jpg" alt="">
+                            <img src="/front/images/img_page_intro/imgslide30.jpg" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide31.jpg" alt="">
+                            <img src="/front/images/img_page_intro/imgslide31.jpg" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide32.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide32.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide33.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide33.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide34.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide34.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide35.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide35.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide36.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide36.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide37.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide37.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide38.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide38.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide39.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide39.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide40.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide40.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide41.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide41.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide42.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide42.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide43.jpg" alt="">
+                            <img src="/front/images/img_page_intro/imgslide43.jpg" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide44.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide44.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide45.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide45.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide46.jpg" alt="">
+                            <img src="/front/images/img_page_intro/imgslide46.jpg" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide47.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide47.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide48.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide48.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide49.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide49.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide50.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide50.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide51.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide51.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide52.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide52.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide53.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide53.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide54.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide54.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide55.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide55.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide56.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide56.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide57.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide57.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide58.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide58.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide59.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide59.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide60.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide60.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide61.jpg" alt="">
+                            <img src="/front/images/img_page_intro/imgslide61.jpg" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide62.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide62.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide63.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide63.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide64.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide64.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide65.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide65.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide66.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide66.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide67.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide67.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide68.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide68.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide69.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide69.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide70.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide70.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide71.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide71.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide72.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide72.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide73.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide73.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide74.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide74.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide75.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide75.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide76.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide76.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide77.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide77.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide78.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide78.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide79.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide79.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                         <div class="no-scrollbar image-slider-2">
                             <!-- add image -->
-                            <img src="/front/images/img_page_intro/imgslide80.webp" alt="">
+                            <img src="/front/images/img_page_intro/imgslide80.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
                         </div>
                     </div>
                 </div>
@@ -525,13 +525,13 @@
                     <div class="footer-text">Email: 2052xxxx@gm.uit.edu.vn</div>
                     <div class="footer-text">Địa chỉ: trường đại học Công nghệ Thông tin</div>
                     <div class="link flex gap-5 mt-2">
-                        <a href="#"><img src="/front/images/icon/facebook.svg" alt="" height="30"
+                        <a href="#"><img src="/front/images/icon/facebook.svg" alt="Nội thất Fudo - Facebook" height="30"
                                 width="30"></a>
-                        <a href="#"><img src="/front/images/icon/youtube.svg" alt="" height="30"
+                        <a href="#"><img src="/front/images/icon/youtube.svg" alt="Nội thất Fudo - Youtube" height="30"
                                 width="30"></a>
-                        <a href="#"><img src="/front/images/icon/behance.svg" alt="" height="30"
+                        <a href="#"><img src="/front/images/icon/behance.svg" alt="Nội thất Fudo - Behance" height="30"
                                 width="30"></a>
-                        <a href="#"><img src="/front/images/icon/wordpress.svg" alt="" height="30"
+                        <a href="#"><img src="/front/images/icon/wordpress.svg" alt="Nội thất Fudo - Wordpress" height="30"
                                 width="30"></a>
                     </div>
                 </div>

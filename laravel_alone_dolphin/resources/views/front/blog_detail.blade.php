@@ -70,6 +70,10 @@
         .row{
           margin-bottom: 32px;
         }
+        .content-container .content-main a{
+          text-decoration: underline;
+          color: #6565e3;
+        }
     </style>
 @endsection
 @section('content')

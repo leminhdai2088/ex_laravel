@@ -867,11 +867,11 @@
 @section('content')
 <!-- Slideshow container -->
 <div id="slider" class="nivoSlider">
-  <img src="/front/images/img_home/bg1.webp" data-thumb="images/toystory.jpg" alt="" />
-  <img src="/front/images/img_home/bg2.webp" data-thumb="images/up.jpg" alt="" />
-  <img src="/front/images/img_home/img_slider_2.webp" data-thumb="images/walle.jpg" alt=""
+  <img src="/front/images/img_home/bg1.webp" data-thumb="images/toystory.jpg" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng" />
+  <img src="/front/images/img_home/bg2.webp" data-thumb="images/up.jpg" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng" />
+  <img src="/front/images/img_home/img_slider_2.webp" data-thumb="images/walle.jpg" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng"
     data-transition="slideInLeft" />
-  <img src="/front/images/img_home/img_slider_5.webp" data-thumb="images/nemo.jpg" alt="" />
+  <img src="/front/images/img_home/img_slider_5.webp" data-thumb="images/nemo.jpg" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng" />
 </div>
 
 
@@ -881,7 +881,7 @@
   <div class="image-slider-0 row">
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
       <div class="image-0">
-        <img src="/front/images/img_home/depkeusa.webp" alt="">
+        <img src="/front/images/img_home/depkeusa.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
       </div>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 danhmucsanpham">
@@ -890,37 +890,37 @@
         <h3 style="font-size: 24px;">Danh mục sản phẩm</h3>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/sofa.webp" alt="">
+        <img src="/front/images/img_home/sofa.webp" alt="Nội thất Fudo - Danh mục sản phẩm sofa">
         <p>SOFA - sofas</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/ban.webp" alt="">
+        <img src="/front/images/img_home/ban.webp" alt="Nội thất Fudo - Danh mục sản phẩm bàn">
         <p>BÀN - tables</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/ghe.webp" alt="">
+        <img src="/front/images/img_home/ghe.webp" alt="Nội thất Fudo - Danh mục sản phẩm ghế">
         <p>GHẾ - chairs</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/tu.webp" alt="">
+        <img src="/front/images/img_home/tu.webp" alt="Nội thất Fudo - Danh mục bộ sưu tập sản phẩm">
         <p>BỘ SƯU TẬP - collections</p>
       </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 danhmuc2">
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/guong.webp" alt="">
+        <img src="/front/images/img_home/product/guong.webp" alt="Nội thất Fudo - Danh mục sản phẩm gương">
         <p>GƯƠNG - mirrors</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/den.webp" alt="">
+        <img src="/front/images/img_home/product/den.webp" alt="Nội thất Fudo - Danh mục sản phẩm đèn">
         <p>ĐÈN - lamps</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/giuong.webp" alt="">
+        <img src="/front/images/img_home/product/giuong.webp" alt="Nội thất Fudo - Danh mục sản phẩm giường">
         <p>GIƯỜNG - beds</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/ketu.webp" alt="">
+        <img src="/front/images/img_home/product/ketu.webp" alt="Nội thất Fudo - Danh mục sản phẩm kệ tủ">
         <p>KỆ TỦ - shelf units, cabinets</p>
       </div>
     </div>
@@ -928,19 +928,19 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 danhmuc2">
 
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/changagoi.webp" alt="">
+        <img src="/front/images/img_home/product/changagoi.webp" alt="Nội thất Fudo - Danh mục sản phẩm chăn, ga, gối">
         <p>CHĂN, GA, GỐI - Bedding</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/trangtri.webp" alt="">
+        <img src="/front/images/img_home/product/trangtri.webp" alt="Nội thất Fudo - Danh mục sản phẩm trang trí">
         <p>TRANG TRÍ - decorations</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/dogiadung.webp" alt="">
+        <img src="/front/images/img_home/product/dogiadung.webp" alt="Nội thất Fudo - Danh mục sản phẩm đồ gia dụng">
         <p>ĐỒ GIA DỤNG - household goods</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img src="/front/images/img_home/product/sanphamdetmay.webp" alt="">
+        <img src="/front/images/img_home/product/sanphamdetmay.webp" alt="Nội thất Fudo - Danh mục sản phẩm dệt may">
         <p>SẢN PHẨM DỆT MAY - home textile</p>
       </div>
     </div>
@@ -978,31 +978,31 @@
   <div class="image-slider-1">
     <div class="image-item-1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="image-1">
-        <img src="/front/images/img_home/dalat.webp" alt="" width="">
+        <img src="/front/images/img_home/dalat.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng" width="">
       </div>
       <h4>DALAT GRACE Concept</h4>
     </div>
     <div class="image-item-1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="image-1">
-        <img src="/front/images/img_home/EZ.webp" alt="" width="">
+        <img src="/front/images/img_home/EZ.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng" width="">
       </div>
       <h4>EZ Concept</h4>
     </div>
     <div class="image-item-1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="image-1">
-        <img src="/front/images/img_home/EZ-TINY.webp" alt="" width="">
+        <img src="/front/images/img_home/EZ-TINY.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng" width="">
       </div>
       <h4>EZ TINY Concept</h4>
     </div>
     <div class="image-item-1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="image-1">
-        <img src="/front/images/img_home/QUADA.webp" alt="" width="">
+        <img src="/front/images/img_home/QUADA.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng" width="">
       </div>
       <h4>QUADA Concept</h4>
     </div>
     <div class="image-item-1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="image-1">
-        <img src="/front/images/img_home/SAGO.webp" alt="" width="">
+        <img src="/front/images/img_home/SAGO.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng" width="">
       </div>
       <h4>SAGO Concept</h4>
     </div>
@@ -1016,18 +1016,18 @@
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 image-items-2">
 
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 image-items-2">
-        <img src="/front/images/img_home/canho.webp" alt="">
+        <img src="/front/images/img_home/canho.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 image-items-2">
-        <img src="/front/images/img_home/nhapho.webp" alt="">
+        <img src="/front/images/img_home/nhapho.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 image-items-2">
-        <img src="/front/images/img_home/congcong.webp" alt="">
+        <img src="/front/images/img_home/congcong.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
       </div>
 
     </div>
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 image-items-2">
-      <img src="/front/images/img_home/inspiration.webp" alt="">
+      <img src="/front/images/img_home/inspiration.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
     </div>
   </div>
 </div>
@@ -1055,7 +1055,7 @@
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-us-img">
-      <img src="/front/images/img_home/about-us.webp" alt="">
+      <img src="/front/images/img_home/about-us.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
     </div>
   </div>
 </div>
@@ -1069,42 +1069,42 @@
       <div class="image-slider-2">
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh1.webp" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh1.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
           </div>
         </div><!--end anh-->
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh2.webp" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh2.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
           </div>
         </div>
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh3.webp" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh3.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
           </div>
         </div>
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh4.webp" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh4.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
           </div>
         </div>
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh5.webp" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh5.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
           </div>
         </div>
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh6.webp" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh6.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
           </div>
         </div>
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh7.webp" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh7.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
           </div>
         </div>
         <div class="image-item-2 col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <div class="image-2">
-            <img src="/front/images/img_home/chiasekhoanhkhac/anh8.webp" alt="">
+            <img src="/front/images/img_home/chiasekhoanhkhac/anh8.webp" alt="Nội thất Fudo - Nội thất thông minh hiện đại cho mọi không gian phòng">
           </div>
         </div>
       </div>

@@ -117,13 +117,13 @@
     <div>
         <div class="gallery mb-2">
             @for($i = 0; $i < count($product->product_images); $i++)
-                <img src="/front/images/image_products/{{ $product->product_images[$i]->path }}" alt="">
+                <img src="/front/images/image_products/{{ $product->product_images[$i]->path }}" alt="{{ $product->name }} - Sản phẩm {{ $product->product_category->name }} {{ $product->room->name }} của Nội thất Fudo">
                 @endfor
         </div>
         <div class="relative w-[95vw] laptop:w-[500px]">
             <div class="gallery-slide">
                 @for($i = 0; $i < count($product->product_images); $i++)
-                    <img src="/front/images/image_products/{{ $product->product_images[$i]->path }}" alt="">
+                    <img src="/front/images/image_products/{{ $product->product_images[$i]->path }}" alt="{{ $product->name }} - Sản phẩm {{ $product->product_category->name }} {{ $product->room->name }} của Nội thất Fudo">
                     @endfor
 
             </div>
