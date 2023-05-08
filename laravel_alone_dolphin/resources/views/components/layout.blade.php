@@ -19,6 +19,7 @@
     <meta property="og:description" content="Nội thất Fudo chuyên thiết kế, sản xuất và cung cấp các sản phẩm nội thất cao cấp, đem lại không gian sống tốt nhất cho khách hàng." />
     <meta property="og:image" content="https://noithatfudo.vn/front/images/noithatfudo.png" />
     <meta property="og:latitude" content="10.8700306" />
+    <meta name="ahrefs-site-verification" content="2fb5371c64631a416de0dec0185e7ecb6a72640ac5cf86fe733e45f0e997ffb0">
     <!-- Start VWO Async SmartCode -->
     <script type='text/javascript' id='vwoCode'>
     window._vwo_code=window._vwo_code || (function() {
