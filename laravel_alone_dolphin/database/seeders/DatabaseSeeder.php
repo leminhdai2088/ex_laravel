@@ -27,6 +27,7 @@ class DatabaseSeeder extends Seeder
         DB::table('blog')->insert([
             [
                 'title' => 'Bí quyết chọn sofa phù hợp với không gian',
+                'link' => 'bi-quyet-chon-sofa-phu-hop-voi-khong-gian',
                 'short_description' => 'Các gợi ý về cách lựa chọn sofa để phù hợp với không gian sống và phong cách thiết kế nội thất của bạn.',
                 'image' => 'bi-quyet-chon-sofa-phu-hop-voi-khong-gian.png',
                 'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
@@ -54,6 +55,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'title' => '5 cách sắp xếp phòng khách thông minh',
+                'link' => '5-cach-sap-xep-phong-khach-thong-minh',
                 'short_description' => 'Các gợi ý về cách sắp xếp phòng khách để tối ưu hóa không gian và tạo cảm giác thoải mái và dễ chịu cho người dùng.',
                 'image' => 'tai-sao-phai-tim-cach-sap-xep-phong-khach-nho.jpg',
                 'keywords' => 'phòng khách, không gian sống, thiết kế nội thất, nội thất fudo, noithatfudo',
@@ -74,6 +76,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'title' => 'Top 7 xu hướng thiết kế nội thất năm 2023',
+                'link' => 'top-7-xu-huong-thiet-ke-noi-that-nam-2023',
                 'short_description' => 'Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2023 và cách áp dụng chúng vào không gian sống của bạn',
                 'image' => 'top-7-xu-huong-thiet-ke-noi-that-nam-2023.png',
                 'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
@@ -98,6 +101,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'title' => 'Cách sắp xếp nội thất phòng ăn đẹp và thông thoáng',
+                'link' => 'cach-sap-xep-noi-that-phong-an-dep-va-thong-thoang',
                 'short_description' => 'Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2023 và cách áp dụng chúng vào không gian sống của bạn',
                 'image' => 'thiet-ke-phong-an-va-bep.png',
                 'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
@@ -119,6 +123,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'title' => 'Tổng hợp những mẫu giường ngủ thông minh tiết kiệm diện tích cho phòng ngủ nhỏ',
+                'link' => 'tong-hop-nhung-mau-giuong-ngu-thong-minh-tiet-kiem-dien-tich-cho-phong-ngu-nho',
                 'short_description' => 'Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2023 và cách áp dụng chúng vào không gian sống của bạn',
                 'image' => 'giuong-tang-thong-minh-1-min.png',
                 'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
@@ -139,6 +144,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'title' => 'Làm thế nào để phòng luôn sạch đẹp cùng Fudo',
+                'link' => 'lam-the-nao-de-phong-luon-sach-dep-cung-fudo',
                 'short_description' => 'Bản thân mỗi người chúng ta ai cũng muốn có 1 không gian sạch sẽ và thoáng mát, nó giúp cho chúng ta trở nên dễ chịu hơn.',
                 'image' => 'sap-xep-phong-ngu-gon-gang.png',
                 'keywords' => 'sofa, thiết kế nội thất, không gian sống, nội thất fudo, noithatfudo',
@@ -160,6 +166,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'title' => 'Cách Bảo Quản SOFA Luôn Đẹp Cùng Với Fudo',
+                'link' => 'cach-bao-quan-sofa-luon-dep-cung-voi-fudo',
                 'short_description' => 'Trong bài viết này, chúng tôi sẽ giới thiệu cho bạn một số cách vệ sinh và bảo quản sofa tại nhà để nó luôn đẹp và tiết kiệm chi phí sửa chữa',
                 'image' => 'aaa.png',
                 'keywords' => 'sofa, thiết kế nội thất, showroom sofa gỗ, nội thất fudo, nội thất phòng khách',
@@ -209,6 +216,7 @@ Như vậy, đó là một số cách bảo quản sofa để giữ cho nó luô
             ],
             [
                 'title' => 'Góc nhìn mới về nội thất cho không gian văn phòng cùng Fudo',
+                'link' => 'goc-nhin-moi-ve-noi-that-cho-khong-gian-van-phong-cung-fudo',
                 'short_description' => 'Sau đây, hãy cùng Nội thất Fudo khám phá những góc nhìn mới về nội thất trong môi trường văn phòng, làm việc nhé',
                 'image' => 'gia-cong-noi-that-tai-hai-phong-10.png',
                 'keywords' => 'phòng làm việc, thiết kế nội thất, mẫu bàn ghế phòng khách 2023, nội thất văn phòng, nội thất fudo, noithatfudo',
@@ -240,6 +248,7 @@ Như vậy, đó là một số cách bảo quản sofa để giữ cho nó luô
             ],
             [
                 'title' => 'Những điều cần biết khi chọn mua bàn ăn',
+                'link' => 'nhung-dieu-can-biet-khi-chon-mua-ban-an',
                 'short_description' => 'Phòng ăn không chỉ đóng vai trò là nơi chúng ta cùng nhau tận hưởng bữa ăn mà còn là trung tâm của không gian phòng ăn',
                 'image' => '9-dieu-can-luu-y-chon-ban-an-phu-hop-how-to-choose-right-dining-table.png',
                 'keywords' => 'mẫu thiết kế phòng bếp đẹp hiện đại, thiết kế nội thất, nội thất phòng bếp, nội thất fudo, thiết kế nhà bếp',
@@ -274,6 +283,7 @@ Như vậy, đó là một số cách bảo quản sofa để giữ cho nó luô
             ],
             [
                 'title' => 'Thiết kế phòng ngủ đẹp, thông minh cùng với Fudo',
+                'link' => 'thiet-ke-phong-ngu-dep-thong-minh-cung-voi-Fudo',
                 'short_description' => 'Trong bài viết dưới đây, Nội thất Fudo sẽ giới thiệu các phong cách thiết kế phòng ngủ thông minh mang đến cho bạn không gian sống hoàn hảo, thoải mái.',
                 'image' => 'Thiet_ke_phong_ngu_dep.png',
                 'keywords' => 'bộ giường ngủ đẹp, thiết kế nội thất, bàn ghế phòng ngủ, bộ nội thất phòng ngủ, giường ngủ đẹp hiện đại, mẫu phòng ngủ đẹp, nội thất Fudo', 
@@ -319,7 +329,8 @@ Như vậy, đó là một số cách bảo quản sofa để giữ cho nó luô
                 'status' => '1',
             ],
             [
-                'title' => 'Làm sao để trang trí phòng ngủ đẹp vào thoải mái?',
+                'title' => 'Làm sao để trang trí phòng ngủ đẹp và thoải mái?',
+                'link' => 'lam-sao-de-trang-tri-phong-ngu-dep-va-thoai-mai',
                 'short_description' => 'Phòng ngủ là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc.',
                 'image' => 'thiet-ke-noi-that-phong-ngu-20.png',
                 'keywords' => 'bộ giường ngủ đẹp, thiết kế nội thất, bàn ghế phòng ngủ, bộ nội thất phòng ngủ, giường ngủ đẹp hiện đại, mẫu phòng ngủ đẹp, nội thất Fudo', 
@@ -353,6 +364,7 @@ Như vậy, đó là một số cách bảo quản sofa để giữ cho nó luô
             ],
             [
                 'title' => 'Bí mật chọn thảm trang trí cho phòng khách hiện đại',
+                'link' => 'bi-mat-chon-tham-trang-tri-cho-phong-khach-hien-dai',
                 'short_description' => 'Phòng ngủ là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc.',
                 'image' => 'chon-tham-trai-san-phong-thuy-hoa-giai-ta-khi-cho-ngoi-nha-1.png',
                 'keywords' => 'bộ giường ngủ đẹp, thiết kế nội thất, bàn ghế phòng ngủ, bộ nội thất phòng ngủ, giường ngủ đẹp hiện đại, mẫu phòng ngủ đẹp, nội thất Fudo', 
@@ -376,6 +388,7 @@ Như vậy, đó là một số cách bảo quản sofa để giữ cho nó luô
             ],
             [
                 'title' => 'Top 7 mẫu sofa được ưa chuộng hiện nay',
+                'link' => 'top-7-mau-sofa-duoc-ua-chuong-hien-nay',
                 'short_description' => 'Phòng ngủ là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc.',
                 'image' => 'bo-sofa-phong-khach-cao-cap-phong-cach-tan-co-dien-GD932S-2.png',
                 'keywords' => 'bộ giường ngủ đẹp, thiết kế nội thất, bàn ghế phòng ngủ, bộ nội thất phòng ngủ, giường ngủ đẹp hiện đại, mẫu phòng ngủ đẹp, nội thất Fudo', 

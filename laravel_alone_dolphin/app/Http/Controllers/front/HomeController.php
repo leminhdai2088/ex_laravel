@@ -109,17 +109,18 @@ class HomeController extends Controller
         $blogs = blog::all();
         return view('front.blog', compact('categories_header', 'rooms_header', 'blogs', 'blog_news'));
     }
-    public function blog_detail($id){
+    public function blog_detail($link){
         $categories_header = product_category::all();
         $rooms_header = rooms::all();
         $ids = [1, 2, 3];
+        $id = blog::where('link', $link)->value('id');
         $blog_news = blog::whereIn('id', $ids)->get();
-        $blog_detail = blog::where('id', $id)->get();
+        $blog_detail = blog::where('link', $link)->get();
         $blog_star = blog_rating::where('blog_id', $id)->avg('stars');
         $blog_rating = blog_rating::where('blog_id', $id)->get();
         return view('front.blog_detail', compact('categories_header', 'rooms_header','blog_news', 'blog_detail', 'blog_star', 'blog_rating'));
     }
-    public function blog_rating($id,Request $request){
+    public function blog_rating($link,Request $request){
         $star = $request->input('stars') ? $request->input('stars') : 0;
         $formData = [
             'blog_id' =>$request->input('blog_id'),
@@ -130,6 +131,6 @@ class HomeController extends Controller
             'stars' =>$star
         ];
         blog_rating::create($formData);
-        return redirect("/blog/{$id}");
+        return redirect("/blog/{$link}");
     }
 }

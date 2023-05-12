@@ -96,10 +96,10 @@
                 @foreach($blog_news as $blog_new)
                 <div class="item-article row">
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <a href="/blog/{{$blog_new->id}}"><img src="/front/images/image_blog/{{ $blog_new->image }}" alt="{{$blog_new->title}}"></a>
+                        <a href="/blog/{{$blog_new->link}}"><img src="/front/images/image_blog/{{ $blog_new->image }}" alt="{{$blog_new->title}}"></a>
                     </div>
                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                        <a href="/blog/{{$blog_new->id}}">
+                        <a href="/blog/{{$blog_new->link}}">
                             <h3>{{$blog_new->title}}</h3>
                         </a> 
                     </div>
@@ -139,7 +139,7 @@
               </div>
               @if(auth()->user())
               <div class="rating-content">
-                <form action="/blog/{{ $blog_detail[0]->id }}" method="POST">
+                <form action="/blog/{{ $blog_detail[0]->link }}" method="POST">
                   <input type="hidden" name="_token" value="{{csrf_token()}}">
                   <div class="container">
 

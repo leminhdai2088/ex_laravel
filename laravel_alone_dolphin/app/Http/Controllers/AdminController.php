@@ -154,6 +154,7 @@ class AdminController extends Controller
         }
         $data_blog = [
             'title' => $request->input('title'),
+            'link' => $request->input('link'),
             'short_description' => $request->input('short_description'),
             'image' => $file->getClientOriginalName(),
             'keywords' => $request->input('keywords'),
@@ -189,6 +190,7 @@ class AdminController extends Controller
     public function edit_blog_post($id, Request $request){
         $blog = blog::find($id);
         $blog->title = $request->title;
+        $blog->link = $request->link;
         $blog->short_description = $request->short_description;
         $blog->keywords = $request->keywords;
         $blog->content = $request->content;

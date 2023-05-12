@@ -63,6 +63,12 @@
                         required>{{ $blog->title }}</textarea>
                     </div>
                 </div>
+                <div class="row mb-3">
+                    <div class="col-8">
+                        <textarea name="link" type="text" class="product-name form-control"
+                        required>{{ $blog->link }}</textarea>
+                    </div>
+                </div>
 
                 <div class="row mb-3">
                     <div class="col-8">

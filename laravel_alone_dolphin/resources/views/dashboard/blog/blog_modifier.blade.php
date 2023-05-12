@@ -61,10 +61,17 @@
                     <div class="col-12">
                         <input name="title" type="text" class="product-name form-control" placeholder="Tiêu đề"
                             required>
+                        </div>
+                        
+                        
                     </div>
-                    
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <input name="link" type="text" class="product-name form-control" placeholder="Link"
+                                required>   
+                            </div>
+                        
                 </div>
-
                 <textarea name="short_description" class="form-control mb-3" aria-label="With textarea" placeholder="Mô tả ngắn"
                     style="height: 50px; resize: none;" required></textarea>
                 

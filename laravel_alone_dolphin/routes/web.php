@@ -82,11 +82,11 @@ Route::get('/about_us', [front\HomeController::class, 'about']);
 
 Route::get('/blog', [front\HomeController::class, 'blog']);
 
-Route::get('/blog/{id}', [front\HomeController::class, 'blog_detail']);
+Route::get('/blog/{link}', [front\HomeController::class, 'blog_detail']);
 
 // Route::post('/blog/{id}', [front\HomeController::class, 'blog_rating']);
 
-Route::prefix('/blog/{id}')->middleware('auth')->group(function () {
+Route::prefix('/blog/{link}')->middleware('auth')->group(function () {
     Route::post('/', [HomeController::class, 'blog_rating']);
 });
 
