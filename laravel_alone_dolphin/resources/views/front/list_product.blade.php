@@ -9,6 +9,7 @@
 <meta name="description" content="{{$product_cate[0]->meta_description}}">
 <meta name="keywords" content="fudo, nội thất, nội thất fudo, sofa, bàn ăn, giường ngủ, tủ quần áo, đèn, trang trí, mua sắm nội thất, nội thất giá rẻ, nội thất phòng ngủ, nội thất phòng khách, nội thất phòng bếp, nội thất phòng làm việc, nội thất phòng tắm"> 
 <link rel="canonical" href="https://noithatfudo.vn/living_room/1"/>
+<title>{{ $name_cate_room[0]->product_category->name }}</title>
 <style>
     .product-img {
         width: 100%;
