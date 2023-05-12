@@ -24,67 +24,67 @@
         {
           "@type":"ListItem",
           "position":1,
-          "url":"https://noithatfudo.vn/blog/1"
+          "url":"https://noithatfudo.vn/blog/bi-quyet-chon-sofa-phu-hop-voi-khong-gian"
         },
         {
           "@type":"ListItem",
           "position":2,
-          "url":"https://noithatfudo.vn/blog/2"
+          "url":"https://noithatfudo.vn/blog/5-cach-sap-xep-phong-khach-thong-minh"
         },
         {
           "@type":"ListItem",
           "position":3,
-          "url":"https://noithatfudo.vn/blog/3"
+          "url":"https://noithatfudo.vn/blog/top-7-xu-huong-thiet-ke-noi-that-nam-2023"
         },
         {
           "@type":"ListItem",
           "position":4,
-          "url":"https://noithatfudo.vn/blog/4"
+          "url":"https://noithatfudo.vn/blog/cach-sap-xep-noi-that-phong-an-dep-va-thong-thoang"
         },
         {
           "@type":"ListItem",
           "position":5,
-          "url":"https://noithatfudo.vn/blog/5"
+          "url":"https://noithatfudo.vn/blog/tong-hop-nhung-mau-giuong-ngu-thong-minh-tiet-kiem-dien-tich-cho-phong-ngu-nho"
         },
         {
           "@type":"ListItem",
           "position":6,
-          "url":"https://noithatfudo.vn/blog/6"
+          "url":"https://noithatfudo.vn/blog/lam-the-nao-de-phong-luon-sach-dep-cung-fudo"
         },
         {
           "@type":"ListItem",
           "position":7,
-          "url":"https://noithatfudo.vn/blog/7"
+          "url":"https://noithatfudo.vn/blog/cach-bao-quan-sofa-luon-dep-cung-voi-fudo"
         },
         {
           "@type":"ListItem",
           "position":8,
-          "url":"https://noithatfudo.vn/blog/8"
+          "url":"https://noithatfudo.vn/blog/goc-nhin-moi-ve-noi-that-cho-khong-gian-van-phong-cung-fudo"
         },
         {
           "@type":"ListItem",
           "position":9,
-          "url":"https://noithatfudo.vn/blog/9"
+          "url":"https://noithatfudo.vn/blog/nhung-dieu-can-biet-khi-chon-mua-ban-an"
         },
         {
           "@type":"ListItem",
           "position":10,
-          "url":"https://noithatfudo.vn/blog/10"
+          "url":"https://noithatfudo.vn/blog/thiet-ke-phong-ngu-dep-thong-minh-cung-voi-Fudo"
         },
         {
           "@type":"ListItem",
           "position":11,
-          "url":"https://noithatfudo.vn/blog/11"
+          "url":"https://noithatfudo.vn/blog/lam-sao-de-trang-tri-phong-ngu-dep-va-thoai-mai"
         },
         {
           "@type":"ListItem",
           "position":12,
-          "url":"https://noithatfudo.vn/blog/12"
+          "url":"https://noithatfudo.vn/blog/bi-mat-chon-tham-trang-tri-cho-phong-khach-hien-dai"
         },
         {
           "@type":"ListItem",
           "position":13,
-          "url":"https://noithatfudo.vn/blog/13"
+          "url":"https://noithatfudo.vn/blog/top-7-mau-sofa-duoc-ua-chuong-hien-nay"
         }
       ]
     }
@@ -366,7 +366,7 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://noithatfudo.vn/blog/1"
+    "@id": "https://noithatfudo.vn/blog/bi-quyet-chon-sofa-phu-hop-voi-khong-gian"
   },
   "headline": "Bí quyết chọn sofa phù hợp với không gian",
   "description": "Các gợi ý về cách lựa chọn sofa để phù hợp với không gian sống và phong cách thiết kế nội thất của bạn.",
@@ -394,7 +394,7 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://noithatfudo.vn/blog/2"
+    "@id": "https://noithatfudo.vn/blog/5-cach-sap-xep-phong-khach-thong-minh"
   },
   "headline": "5 cách sắp xếp phòng khách thông minh",
   "description": "Các gợi ý về cách sắp xếp phòng khách để tối ưu hóa không gian và tạo cảm giác thoải mái và dễ chịu cho người dùng.",
@@ -422,7 +422,7 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://noithatfudo.vn/blog/3"
+    "@id": "https://noithatfudo.vn/blog/top-7-xu-huong-thiet-ke-noi-that-nam-2023"
   },
   "headline": "Top 7 xu hướng thiết kế nội thất năm 2023",
   "description": "Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2023 và cách áp dụng chúng vào không gian sống của bạn",
@@ -450,7 +450,7 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://noithatfudo.vn/blog/4"
+    "@id": "https://noithatfudo.vn/blog/cach-sap-xep-noi-that-phong-an-dep-va-thong-thoang"
   },
   "headline": "Cách sắp xếp nội thất phòng ăn đẹp và thông thoáng",
   "description": "Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2023 và cách áp dụng chúng vào không gian sống của bạn",
@@ -478,7 +478,7 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://noithatfudo.vn/blog/5"
+    "@id": "https://noithatfudo.vn/blog/tong-hop-nhung-mau-giuong-ngu-thong-minh-tiet-kiem-dien-tich-cho-phong-ngu-nho"
   },
   "headline": "Tổng hợp những mẫu giường ngủ thông minh tiết kiệm diện tích cho phòng ngủ nhỏ",
   "description": "Các xu hướng thiết kế nội thất đang được ưa chuộng trong năm 2023 và cách áp dụng chúng vào không gian sống của bạn",
@@ -506,7 +506,7 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://noithatfudo.vn/blog/6"
+    "@id": "https://noithatfudo.vn/blog/lam-the-nao-de-phong-luon-sach-dep-cung-fudo"
   },
   "headline": "Làm thế nào để phòng luôn sạch đẹp cùng Fudo",
   "description": "Bản thân mỗi người chúng ta ai cũng muốn có 1 không gian sạch sẽ và thoáng mát, nó giúp cho chúng ta trở nên dễ chịu hơn.",
@@ -534,7 +534,7 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://noithatfudo.vn/blog/7"
+    "@id": "https://noithatfudo.vn/blog/cach-bao-quan-sofa-luon-dep-cung-voi-fudo"
   },
   "headline": "Cách Bảo Quản SOFA Luôn Đẹp Cùng Với Fudo",
   "description": "Trong bài viết này, chúng tôi sẽ giới thiệu cho bạn một số cách vệ sinh và bảo quản sofa tại nhà để nó luôn đẹp và tiết kiệm chi phí sửa chữa",
@@ -562,7 +562,7 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://noithatfudo.vn/blog/8"
+    "@id": "https://noithatfudo.vn/blog/goc-nhin-moi-ve-noi-that-cho-khong-gian-van-phong-cung-fudo"
   },
   "headline": "Góc nhìn mới về nội thất cho không gian văn phòng cùng Fudo",
   "description": "Sau đây, hãy cùng Nội thất Fudo khám phá những góc nhìn mới về nội thất trong môi trường văn phòng, làm việc nhé",
@@ -590,7 +590,7 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://noithatfudo.vn/blog/9"
+    "@id": "https://noithatfudo.vn/blog/nhung-dieu-can-biet-khi-chon-mua-ban-an"
   },
   "headline": "Những điều cần biết khi chọn mua bàn ăn",
   "description": "Phòng ăn không chỉ đóng vai trò là nơi chúng ta cùng nhau tận hưởng bữa ăn mà còn là trung tâm của không gian phòng ăn",
@@ -618,7 +618,7 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://noithatfudo.vn/blog/10"
+    "@id": "https://noithatfudo.vn/blog/thiet-ke-phong-ngu-dep-thong-minh-cung-voi-Fudo"
   },
   "headline": "Thiết kế phòng ngủ đẹp, thông minh cùng với Fudo",
   "description": "Trong bài viết dưới đây, Nội thất Fudo sẽ giới thiệu các phong cách thiết kế phòng ngủ thông minh mang đến cho bạn không gian sống hoàn hảo, thoải mái.",
@@ -646,7 +646,7 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://noithatfudo.vn/blog/11"
+    "@id": "https://noithatfudo.vn/blog/lam-sao-de-trang-tri-phong-ngu-dep-va-thoai-mai"
   },
   "headline": "Làm sao để trang trí phòng ngủ đẹp vào thoải mái?",
   "description": "Phòng ngủ là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc.",
@@ -674,7 +674,7 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://noithatfudo.vn/blog/12"
+    "@id": "https://noithatfudo.vn/blog/bi-mat-chon-tham-trang-tri-cho-phong-khach-hien-dai"
   },
   "headline": "Bí mật chọn thảm trang trí cho phòng khách hiện đại",
   "description": "Phòng ngủ là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc.",
@@ -702,7 +702,7 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://noithatfudo.vn/blog/13"
+    "@id": "https://noithatfudo.vn/blog/top-7-mau-sofa-duoc-ua-chuong-hien-nay"
   },
   "headline": "Top 7 mẫu sofa được ưa chuộng hiện nay",
   "description": "Phòng ngủ là không gian riêng tư và quan trọng nhất trong căn nhà của chúng ta. Đó là nơi mà chúng ta thư giãn và tái tạo năng lượng sau một ngày dài làm việc.",

@@ -26,27 +26,27 @@
     "@type": "HowToStep",
     "text": "Chọn bộ bàn ghế phù hợp với diện tích phòng khách",
     "name": "Bố trí bộ bàn ghế",
-    "url": "http://noithatfudo.vn/blog/2"
+    "url": "http://noithatfudo.vn/blog/5-cach-sap-xep-phong-khach-thong-minh"
   },{
     "@type": "HowToStep",
     "text": "Sử dụng đèn chiếu sáng để tạo ra không gian sáng hơn",
     "name": "Sử dụng đèn chiếu sáng",
-    "url": "http://noithatfudo.vn/blog/2"
+    "url": "http://noithatfudo.vn/blog/5-cach-sap-xep-phong-khach-thong-minh"
   },{
     "@type": "HowToStep",
     "text": "Tiết kiệm không gian và đa dạng hóa",
     "name": "Sử dụng nội thất thông minh",
-    "url": "http://noithatfudo.vn/blog/2"
+    "url": "http://noithatfudo.vn/blog/5-cach-sap-xep-phong-khach-thong-minh"
   },{
     "@type": "HowToStep",
     "text": "Tạo ra sự tươi mới và phong phú",
     "name": "Đa dạng hoá vật dụng trang trí",
-    "url": "http://noithatfudo.vn/blog/2"
+    "url": "http://noithatfudo.vn/blog/5-cach-sap-xep-phong-khach-thong-minh"
   },{
     "@type": "HowToStep",
     "text": "Sắp xếp đồ đạc một cách hợp lý để không gian trở nên gọn gàng và dễ chịu hơn",
     "name": "Sắp xếp hợp lý",
-    "url": "http://noithatfudo.vn/blog/2"
+    "url": "http://noithatfudo.vn/blog/5-cach-sap-xep-phong-khach-thong-minh"
   }]    
 }
 </script>
