@@ -8,25 +8,29 @@
 @if ($name_cate_room[0]->room->id == 1)
 <title>Nội thất phòng khách hiện đại - Nội thất Fudo</title>
 <meta name="description" content="Nội Thất Fudo cung cấp các sản phẩm nội thất phòng khách như sofa, bàn cafe, kệ tủ giày, tủ rượu, đèn sàn, đồng hồ cho nhà ống, chung cư, nhà phố, đạt chuẩn quốc tế">
+<meta name="keywords" content="fudo, nội thất, nội thất fudo, nội thất giá rẻ, nội thất phòng khách, sofa, ghế, kệ tủ trang trí phòng khách, đồng hồ, tranh ảnh phòng khách, decor phòng khách nhỏ"> 
 @endif
 @if ($name_cate_room[0]->room->id == 2)
 <title>Nội thất ngủ đẹp - Nội thất Fudo</title>
 <meta name="description" content="Nội Thất Fudo cung cấp các sản phẩm nội thất phòng ngủ như giường ngủ, bàn ghế phòng ngủ, tủ kệ tivi, tủ đầu giường, bàn trang điểm,... với thiết kế đẹp và hiện đại">
+<meta name="keywords" content="fudo, nội thất, nội thất fudo, nội thất giá rẻ, nội thất phòng ngủ, phòng ngủ đẹp đơn giản, đèn trang trí phòng ngủ, bàn trang điểm, tủ phòng ngủ, trang trí phòng ngủ nhỏ">
 @endif
 @if ($name_cate_room[0]->room->id == 3)
 <title>Nội thất bếp và phòng ăn - Nội thất Fudo</title>
 <meta name="description" content="Nội Thất Fudo cung cấp các sản phẩm nội thất bếp và phòng ăn như bộ bàn ăn, ghế ăn, thảm bếp, kệ bếp, khăn bếp với phong cách hiện đại cho nhà bếp, nhà hàng, chung cư">
+<meta name="keywords" content="fudo, nội thất, nội thất fudo, nội thất giá rẻ, nội thất phòng bếp, thiết kế phòng bếp, bộ bàn ăn noven, thảm bếp line"> 
 @endif
 @if ($name_cate_room[0]->room->id == 4)
 <title>Nội thất phòng làm việc - Nội thất Fudo</title>
 <meta name="description" content="Nội Thất Fudo cung cấp các sản phẩm nội thất phòng làm việc như bàn làm việc, bàn máy tính, tủ sách, với thiết kế hiện đại">
+<meta name="keywords" content="fudo, nội thất, nội thất fudo, nội thất giá rẻ, nội thất phòng làm việc, văn phòng phẩm, thiết kế nội thất văn phòng, khay đựng ghim kẹp"> 
 @endif
 @if ($name_cate_room[0]->room->id == 5)
 <title>Nội thất phòng tắm - Nội thất Fudo</title>
 <meta name="description" content="Nội Thất Fudo cung cấp các sản phẩm nội thất phòng tắm như rèm, khăn tắm, gương, thảm chân đẹp và chất lượng cao">
+<meta name="keywords" content="fudo, nội thất, nội thất fudo, nội thất giá rẻ, trang trí nội thất phòng tắm, thảm chân, khăn tắm cloudy"> 
 @endif
 
-<meta name="keywords" content="fudo, nội thất, nội thất fudo, nội thất giá rẻ, nội thất phòng ngủ, nội thất phòng khách, nội thất phòng bếp, nội thất phòng làm việc, nội thất phòng tắm"> 
 <link rel="canonical" href="https://noithatfudo.vn/living_room"/>
 
 <style>
