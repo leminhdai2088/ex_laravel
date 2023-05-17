@@ -850,7 +850,7 @@
     </script>
   <link rel="canonical" href="https://noithatfudo.vn/">
   <style>
-    .w-full {
+    /* .w-full {
     width: 100% !important;
   }
   .slick-slide {
@@ -860,7 +860,7 @@
   .w-\[1200px\]{
     width: auto !important;
     padding: 0 10rem !important;
-  }
+  } */
   </style>
 
 @endsection
